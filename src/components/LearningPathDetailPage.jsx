@@ -40,7 +40,7 @@ export default function LearningPathDetailPage() {
     const description = truncateMetaDescription(
       path.description
         ? `${path.description} Follow ${steps.length} steps through profiles, collections, and a quiz on FootyCompass.`
-        : `Guided football study path: ${steps.length} steps through profiles and quizzes on FootyCompass.`,
+        : `Guided football route: ${steps.length} steps through profiles and quizzes.`,
     );
     applyPageSeo({
       title,

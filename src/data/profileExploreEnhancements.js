@@ -12,7 +12,7 @@ export const PROFILE_EXPLORE_LEADS = {
   fluminense:
     'Tricolor club from Rio — browse the squad, then jump into Brasileirão quizzes for spaced repetition.',
   'atletico-mineiro':
-    'Belo Horizonte heavyweight in the Brazilian dataset — squad first, then league quiz routes on FootyCompass.',
+    'Belo Horizonte heavyweight in Brazilian football — squad first, then league quiz routes.',
   'fc-dallas':
     'MLS Western Conference club — use the squad list, then MLS player quizzes to lock in names.',
   chapecoense:
@@ -24,9 +24,9 @@ export const PROFILE_EXPLORE_LEADS = {
   vitoria:
     'Bahia-based Brasileirão club — study positions in the squad, then quiz yourself on Brazilian players.',
   mirassol:
-    'Paulista club in the dataset — useful for squad geography before Brasileirão-themed quiz sessions.',
+    'Paulista club in the top Brazilian tier — useful for squad geography before Brasileirão-themed quizzes.',
   'orlando-pirates':
-    'South African side in the dataset — scan the squad, then explore wider league quizzes.',
+    'South African side with a full squad listing — scan the roster, then explore wider league quizzes.',
   'mamelodi-sundowns':
     'Sundowns carry one of the deeper African squad lists here — pair browsing with national-team and quiz hubs.',
   'inter-miami':

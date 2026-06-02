@@ -32,15 +32,15 @@ export default function CollectionsPage() {
       <BreadcrumbNav
         items={[
           { label: 'Home', to: '/' },
-          { label: 'Collections & paths' },
+          { label: 'Collections' },
         ]}
       />
       <header className="page-header">
-        <p className="page-header__eyebrow">Study tools</p>
-        <h1>Collections & paths</h1>
+        <p className="page-header__eyebrow">Football lists</p>
+        <h1>Collections</h1>
         <p>
-          <strong>Learning paths</strong> walk you through profiles and a quiz at the end.{' '}
-          <strong>Collections</strong> are shorter lists you can finish in any order.
+          Themed player lists to study before a quiz — World Cup prep, national teams, and tactical
+          roles. Open profiles in any order, then finish with the linked quiz.
         </p>
       </header>
 

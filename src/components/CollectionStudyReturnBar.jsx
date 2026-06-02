@@ -1,11 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { getCollectionById } from '../data/collectionsData';
-import {
-  clearCollectionStudy,
-  getCollectionStudyContext,
-  startCollectionStudy,
-} from '../utils/collectionStudyContext';
+import { clearCollectionStudy, startCollectionStudy } from '../utils/collectionStudyContext';
 
 export default function CollectionStudyReturnBar() {
   const [searchParams] = useSearchParams();
@@ -18,14 +14,12 @@ export default function CollectionStudyReturnBar() {
   }, [studyId]);
 
   const context = useMemo(() => {
-    if (studyId) {
-      const collection = getCollectionById(studyId);
-      return {
-        collectionId: studyId,
-        collectionTitle: collection?.title ?? 'Collection',
-      };
-    }
-    return getCollectionStudyContext();
+    if (!studyId) return null;
+    const collection = getCollectionById(studyId);
+    return {
+      collectionId: studyId,
+      collectionTitle: collection?.title ?? 'Collection',
+    };
   }, [studyId]);
 
   if (!context?.collectionId) return null;

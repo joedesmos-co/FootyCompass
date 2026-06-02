@@ -35,6 +35,6 @@ export function buildCollectionDiscoveryLinks(type, id, limit = 2) {
   return getCollectionsFeaturingEntity(type, id, limit).map((c) => ({
     label: c.title,
     to: c.to,
-    hint: `${c.difficulty} · curated study path`,
+    hint: `${c.difficulty} collection`,
   }));
 }

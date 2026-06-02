@@ -216,7 +216,7 @@ export function buildKeepExploringLinks(ctx = {}) {
   if (team?.id) add(LINK_CLUB_QUIZ_GUIDE, `/hubs/quizzes/team/${team.id}`, 'How to quiz this club');
   if (lid) {
     add(linkLeaguePage(ctx.leagueName), `/league/${lid}`, 'Clubs, rivalries, and league quizzes');
-    add(LINK_LEAGUE_QUIZ_GUIDE, `/hubs/quizzes/league/${lid}`, 'Study paths for this competition');
+    add(LINK_LEAGUE_QUIZ_GUIDE, `/hubs/quizzes/league/${lid}`, 'League quiz tips');
   }
 
   if (team?.rivals?.length && leagueTeams?.length) {

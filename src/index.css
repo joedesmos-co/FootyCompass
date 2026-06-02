@@ -15621,3 +15621,145 @@ section.empty-state,
     row-gap: 0.65rem;
   }
 }
+
+/* ——— Usability pass: home quick nav, compact pages, consistent key-player visuals ——— */
+
+.home-quick-nav {
+  margin: 0 auto var(--space-md);
+  padding: 0 var(--space-md);
+  max-width: var(--layout-max);
+}
+
+.home-quick-nav__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-quick-nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  min-height: 3.75rem;
+  padding: 0.55rem 0.35rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: rgba(7, 17, 13, 0.45);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.home-quick-nav__link:hover,
+.home-quick-nav__link:focus-visible {
+  border-color: var(--color-border-strong);
+  outline: none;
+}
+
+.home-quick-nav__link strong {
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.home-quick-nav__link span {
+  font-size: 0.62rem;
+  color: var(--color-muted);
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.home-footer-trust {
+  margin-top: var(--space-lg);
+  padding: var(--space-md) var(--space-md) var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.home-footer-trust .home-trust-strip {
+  margin: 0 auto;
+  max-width: var(--layout-max);
+}
+
+.explore-index-grid--compact {
+  gap: 0.75rem;
+}
+
+.explore-index-footnote {
+  margin: var(--space-md) 0 0;
+  font-size: var(--type-meta);
+  color: var(--color-muted);
+  line-height: 1.45;
+}
+
+.explore-index-footnote a {
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.explore-index-footnote a:hover,
+.explore-index-footnote a:focus-visible {
+  text-decoration: underline;
+}
+
+.home-spotlight__visual .player-visual--card {
+  width: 3.75rem;
+  aspect-ratio: 4 / 5;
+}
+
+.team-key-players__card .player-visual--card {
+  width: 3.25rem;
+  flex-shrink: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.collections-page__section {
+  margin-bottom: var(--space-lg);
+}
+
+.collections-page__section-desc {
+  margin-bottom: var(--space-sm);
+}
+
+.explore-page .page-header {
+  margin-bottom: var(--space-md);
+}
+
+.home-popular-now {
+  gap: var(--space-md);
+}
+
+.home-popular-now__section + .home-popular-now__section {
+  margin-top: var(--space-md);
+}
+
+.home-spotlight {
+  margin-bottom: var(--space-md);
+}
+
+@media (max-width: 720px) {
+  .home-quick-nav__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-quick-nav__grid li:nth-child(4),
+  .home-quick-nav__grid li:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-quick-nav__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-quick-nav__grid li:last-child {
+    grid-column: 1 / -1;
+  }
+}

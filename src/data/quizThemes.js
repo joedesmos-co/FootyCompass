@@ -89,7 +89,7 @@ export const QUIZ_THEME_CATALOG = [
     minPool: 3,
     seoTitle: 'Champions League player quiz',
     seoDescription:
-      'Champions League player quiz with European club context — UCL legends and veterans in the dataset.',
+      'Champions League player quiz with European club context — UCL legends and veterans from top clubs.',
     collectionIds: ['ucl-legends', 'champions-league-veterans'],
   },
   {
@@ -169,14 +169,14 @@ export const QUIZ_THEME_CATALOG = [
   {
     id: 'derby-rivalries',
     label: 'Derby rivalries',
-    description: 'Players from clubs with listed rivals — derbies, feuds, and local bragging rights.',
+    description: 'Players from clubs with famous rivals — derbies, feuds, and local bragging rights.',
     icon: '⚔️',
     category: 'competition',
     defaultDifficulty: 'hard',
     minPool: 3,
     seoTitle: 'Football rivalry quiz',
     seoDescription:
-      'Rivalry football quiz — players from derby clubs in the dataset. Learn names through local feuds.',
+      'Rivalry football quiz — players from derby clubs. Learn names through local feuds.',
   },
 ];
 

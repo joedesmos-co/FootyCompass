@@ -24,7 +24,9 @@ import {
   getFootballAccentStyle,
   getLeagueDisplayName,
   isExternalClubStubTeam,
+  isExternalLeagueId,
 } from '../utils/footballDisplay';
+import { isOtherClubTeamPageLinkSafe } from '../utils/externalClubBrowse';
 import CountryFlag from './CountryFlag';
 import DataTrustNotice from './DataTrustNotice';
 import ExternalStubNotice from './ExternalStubNotice';
@@ -258,6 +260,11 @@ export default function PlayerProfile() {
   const teamMatePool = teamBundle.teamId === player?.teamId ? teamBundle.pool : [];
   const leagueTeamsForExplore =
     teamBundle.teamId === player?.teamId ? teamBundle.leagueTeams : [];
+  const clubPageSafe = teamContext
+    ? isOtherClubTeamPageLinkSafe(teamContext, teamMatePool.length)
+    : Boolean(player?.teamId) &&
+      !isExternalClubStubTeam({ id: player.teamId, leagueId: player.leagueId });
+  const leaguePageSafe = Boolean(player?.leagueId) && !isExternalLeagueId(player.leagueId);
 
   // Only load nationalTeamData when the player has a relevant label.
   // This keeps the nationalTeamData chunk off routes that never need it.
@@ -464,18 +471,22 @@ export default function PlayerProfile() {
   const playerInfoItems = [
     {
       label: FIELD_CLUB,
-      value: (
+      value: clubPageSafe ? (
         <Link to={`/team/${player.teamId}`} className="player-profile__info-link">
           {teamName}
         </Link>
+      ) : (
+        <span>{teamName || '—'}</span>
       ),
     },
     {
       label: FIELD_LEAGUE,
-      value: (
+      value: leaguePageSafe ? (
         <Link to={`/league/${player.leagueId}`} className="player-profile__info-link">
           {leagueName}
         </Link>
+      ) : (
+        <span>{leagueName}</span>
       ),
     },
     (liveNationalTeam || nationalTeamPlainLabel) && {
@@ -516,7 +527,7 @@ export default function PlayerProfile() {
         items={[
           { label: CRUMB_HOME, to: '/' },
           { label: CRUMB_BROWSE, to: '/browse' },
-          teamName && teamName !== 'Unknown'
+          teamName && teamName !== 'Unknown' && clubPageSafe
             ? { label: teamName, to: `/team/${player.teamId}` }
             : null,
           { label: player.name },
@@ -542,18 +553,30 @@ export default function PlayerProfile() {
               className="player-profile__position player-profile__position--hero"
             />
             <div className="player-profile__identity" aria-label="Club and country">
-              <Link
-                to={`/team/${player.teamId}`}
-                className="player-identity-chip player-identity-chip--club"
-              >
-                {teamName}
-              </Link>
-              <Link
-                to={`/league/${player.leagueId}`}
-                className="player-identity-chip player-identity-chip--league"
-              >
-                {leagueName}
-              </Link>
+              {clubPageSafe ? (
+                <Link
+                  to={`/team/${player.teamId}`}
+                  className="player-identity-chip player-identity-chip--club"
+                >
+                  {teamName}
+                </Link>
+              ) : (
+                <span className="player-identity-chip player-identity-chip--club player-identity-chip--plain">
+                  {teamName}
+                </span>
+              )}
+              {leaguePageSafe ? (
+                <Link
+                  to={`/league/${player.leagueId}`}
+                  className="player-identity-chip player-identity-chip--league"
+                >
+                  {leagueName}
+                </Link>
+              ) : (
+                <span className="player-identity-chip player-identity-chip--league player-identity-chip--plain">
+                  {leagueName}
+                </span>
+              )}
               {liveNationalTeam ? (
                 <Link
                   to={`/national-team/${liveNationalTeam.id}`}
@@ -609,8 +632,12 @@ export default function PlayerProfile() {
         className={`player-profile__quick-links${profileEditorial.topTier ? ' player-profile__quick-links--curated' : ''}`}
         aria-label="Quick actions"
       >
-        {quizReady && <Link to={`/quiz?team=${player.teamId}`}>{NAME_CLUB_QUIZ}</Link>}
-        <Link to={`/hubs/quizzes/team/${player.teamId}`}>{LINK_CLUB_QUIZ_GUIDE}</Link>
+        {quizReady && clubPageSafe ? (
+          <Link to={`/quiz?team=${player.teamId}`}>{NAME_CLUB_QUIZ}</Link>
+        ) : null}
+        {clubPageSafe ? (
+          <Link to={`/hubs/quizzes/team/${player.teamId}`}>{LINK_CLUB_QUIZ_GUIDE}</Link>
+        ) : null}
         {!profileEditorial.topTier && player.nationality ? (
           <Link
             to={`/hubs/players/nationality/${encodeURIComponent(String(player.nationality).trim())}`}

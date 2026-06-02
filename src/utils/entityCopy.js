@@ -43,7 +43,7 @@ export const EXPLORE_BREADCRUMB = { label: EXPLORE_NAV_LABEL, to: EXPLORE_PATH }
 export const EXPLORE_INDEX_EYEBROW = 'Explore football';
 export const EXPLORE_INDEX_TITLE = 'Explore players, clubs & quizzes';
 export const EXPLORE_INDEX_LEDE =
-  'Curated paths into player profiles, club pages, league quizzes, and international study — pick a topic and play.';
+  'Pick a topic — quizzes by league and club, players by country, young stars, and World Cup prep. Open profiles, then play.';
 export const EXPLORE_QUIZZES_TITLE = NAME_FOOTBALL_QUIZZES;
 export const EXPLORE_QUIZZES_LEDE =
   'Player quizzes from hints plus club knowledge formats — stadiums, rivalries, and league geography.';

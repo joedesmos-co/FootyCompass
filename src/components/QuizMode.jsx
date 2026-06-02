@@ -1288,7 +1288,7 @@ function QuizModeLoaded({ registry, teamById, leagueById }) {
                     <li key={collection.id}>
                       <Link to={collection.to} className="quiz-summary__next-link">
                         <strong>{collection.title}</strong>
-                        <span>{collection.difficulty} · curated study path</span>
+                        <span>{collection.difficulty} collection</span>
                       </Link>
                     </li>
                   ))}

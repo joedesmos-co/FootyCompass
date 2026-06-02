@@ -91,7 +91,7 @@ export function buildRivalryContext(nationalTeam) {
     return rival?.displayName ?? id.replace(/-/g, ' ');
   });
 
-  return `${nationalTeam.displayName} share listed rivalries with ${named.slice(0, 4).join(', ')} — useful context for international quizzes and study paths.`;
+  return `${nationalTeam.displayName}'s fiercest international rivalries include ${named.slice(0, 4).join(', ')} — classic fixtures worth knowing.`;
 }
 
 /**
@@ -104,22 +104,24 @@ export function buildTournamentRelevanceContext(nationalTeam) {
 
   if (isFeatured) {
     parts.push(
-      `${nationalTeam.displayName} are featured on the FootyCompass World Cup 2026 prep page (study draw, collections, and nation quizzes).`,
+      `${nationalTeam.displayName} are featured on our World Cup 2026 hub — squads, quizzes, and tournament prep.`,
     );
   }
 
   if (wcStatus.kind === 'roster') {
     const { rosterPlayerIds } = getWorldCup2026RosterIds(nationalTeam.id);
     parts.push(
-      `World Cup 2026: ${rosterPlayerIds.length} player${rosterPlayerIds.length === 1 ? '' : 's'} on our tournament roster list.`,
+      `World Cup 2026: ${rosterPlayerIds.length} player${rosterPlayerIds.length === 1 ? '' : 's'} on our confirmed tournament list.`,
     );
   } else if (wcStatus.kind === 'projected') {
     const { projectedRosterPlayerIds } = getWorldCup2026RosterIds(nationalTeam.id);
     parts.push(
-      `World Cup 2026: ${projectedRosterPlayerIds.length} projected roster name${projectedRosterPlayerIds.length === 1 ? '' : 's'} tracked.`,
+      `World Cup 2026: ${projectedRosterPlayerIds.length} projected name${projectedRosterPlayerIds.length === 1 ? '' : 's'} we're tracking.`,
     );
   } else if (isFeatured) {
-    parts.push('World Cup 2026 squad list still TBD — browse the linked national pool meanwhile.');
+    parts.push(
+      'Official World Cup 2026 squad not confirmed yet — browse linked players from club football.',
+    );
   }
 
   return parts.join(' ');

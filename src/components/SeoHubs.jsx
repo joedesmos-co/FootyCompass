@@ -17,7 +17,6 @@ import {
 import { getManifestLeague } from '../data/contentManifest';
 import LeagueBadge from './LeagueBadge';
 import BreadcrumbNav from './BreadcrumbNav';
-import DataTrustNotice from './DataTrustNotice';
 import { NATIONALITY_HUB_INDEX_LIMIT } from '../utils/internalLinking.js';
 import {
   EXPLORE_INDEX_EYEBROW,
@@ -114,13 +113,13 @@ export function SeoHubsIndex() {
     links,
     faqs: [
       {
-        question: 'What is Explore on FootyCompass?',
+        question: 'What is Explore?',
         answer:
-          'Explore groups quizzes, nationalities, and study topics so you can jump into player and club profiles, then play without hunting through menus.',
+          'Explore groups football topics — quizzes, nationalities, young players, and World Cup prep — so you can jump straight into profiles and play.',
       },
       {
-        question: 'Is the dataset updated live?',
-        answer: `No—FootyCompass ships with a static dataset snapshot (currently ${DATASET_META.dataAsOf}).`,
+        question: 'Do I need an account?',
+        answer: 'No — browse, quiz, and save progress on this device without signing up.',
       },
     ],
   });
@@ -132,14 +131,9 @@ export function SeoHubsIndex() {
         <p className="page-header__eyebrow">{EXPLORE_INDEX_EYEBROW}</p>
         <h1>{EXPLORE_INDEX_TITLE}</h1>
         <p>{EXPLORE_INDEX_LEDE}</p>
-        <p className="page-header__meta">
-          Dataset updated <strong>{DATASET_META.dataAsOf}</strong> · No account required
-        </p>
       </header>
 
-      <DataTrustNotice compact />
-
-      <ul className="explore-index-grid" aria-label="Explore topics">
+      <ul className="explore-index-grid explore-index-grid--compact" aria-label="Explore topics">
         <li className="explore-index-card">
           <h3>Quizzes</h3>
           <p>Player and club quizzes by league, theme, and format.</p>
@@ -156,26 +150,25 @@ export function SeoHubsIndex() {
         </li>
         <li className="explore-index-card">
           <h3>Young players</h3>
-          <p>High-importance U23 players in the dataset.</p>
+          <p>Under-23 stars making headlines right now.</p>
           <Link to="/hubs/players/best-young-footballers" className="btn btn--primary btn--small">
             Best young footballers
           </Link>
         </li>
         <li className="explore-index-card">
           <h3>World Cup</h3>
-          <p>International quizzes and nation study paths.</p>
+          <p>International quizzes and 2026 tournament prep.</p>
           <Link to="/hubs/world-cup/player-quiz" className="btn btn--primary btn--small">
             {LINK_WORLD_CUP_PREP}
           </Link>
         </li>
-        <li className="explore-index-card">
-          <h3>Learn players</h3>
-          <p>A short study route before you quiz.</p>
-          <Link to="/hubs/learn/football-players" className="btn btn--secondary btn--small">
-            {LINK_LEARN_PLAYERS}
-          </Link>
-        </li>
       </ul>
+
+      <p className="explore-index-footnote">
+        Also try{' '}
+        <Link to="/hubs/learn/football-players">{LINK_LEARN_PLAYERS}</Link> or browse{' '}
+        <Link to="/collections">collections</Link>. Content last updated {DATASET_META.dataAsOf}.
+      </p>
     </div>
   );
 }
@@ -550,7 +543,7 @@ export function SeoPlayersByNationalityHub() {
       {
         question: 'How are players grouped by nationality?',
         answer:
-          'Nationality pages are generated from the current dataset snapshot and are meant for learning and discovery, not as official rosters.',
+          'Nationality pages group players by country for learning and discovery — not official federation rosters.',
       },
       {
         question: 'Can I use this to study for quizzes?',
@@ -579,7 +572,7 @@ export function SeoPlayersByNationalityHub() {
         </p>
       </header>
 
-      <ExploreSection title="Top nationalities in the dataset">
+      <ExploreSection title="Top nationalities">
         <ul className="card-grid" aria-label="Nationalities">
           {nations.slice(0, 48).map((row) => (
             <li key={row.nation} className="player-card">
@@ -661,12 +654,12 @@ export function SeoNationalityPlayersHub() {
       {
         question: `What will I find on the ${formatCountryLabel(nationLabel)} players page?`,
         answer:
-          'A curated set of player profiles from the current dataset, with quick links to keep exploring and to jump into quizzes.',
+          'A curated set of player profiles with quick links to keep exploring and jump into quizzes.',
       },
       {
         question: 'Is this an official roster?',
         answer:
-          'No. It’s a learning list built from a dataset snapshot and is not an official federation roster.',
+          'No. It’s a learning list for football fans — not an official federation roster.',
       },
     ],
   });
@@ -719,7 +712,7 @@ export function SeoBestYoungFootballersHub() {
   const canonical = canonicalUrlForPath(pathname);
   const title = pageTitle('Best young footballers');
   const description =
-    'Best young footballers in the current dataset (based on importance score and available birth dates). Explore profiles and then play quizzes.';
+    'Best young footballers under 23 — ranked by profile importance. Explore players, then play quizzes.';
 
   const youngPlayers = useMemo(() => {
     const now = new Date();
@@ -748,7 +741,7 @@ export function SeoBestYoungFootballersHub() {
       {
         question: 'How are “best young footballers” selected?',
         answer:
-          'This list uses players with birth dates in the dataset and ranks them by importance score.',
+          'Players under 23 with known birth dates, ranked by profile importance.',
       },
       {
         question: 'Is the list definitive?',
@@ -771,8 +764,8 @@ export function SeoBestYoungFootballersHub() {
         <p className="page-header__eyebrow">Players</p>
         <h1>Best young footballers</h1>
         <p>
-          A starter list of young players based on importance score in the current FootyCompass
-          dataset. Open profiles to learn clubs, leagues, and roles.
+          Under-23 players ranked by profile importance. Open profiles to learn clubs, leagues, and
+          roles — then quiz yourself.
         </p>
         <p className="page-header__meta">
           Last updated: <strong>{DATASET_META.dataAsOf}</strong>
@@ -820,7 +813,7 @@ export function SeoWorldCupPlayerQuizHub() {
       {
         question: 'Is this an official World Cup roster?',
         answer:
-          'No. This page is for learning and prep and uses a dataset snapshot—not official tournament squads.',
+          'No. This page is for learning and World Cup prep — not official tournament squads.',
       },
       {
         question: 'How should I use this for prep?',

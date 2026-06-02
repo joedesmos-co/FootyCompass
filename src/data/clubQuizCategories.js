@@ -51,7 +51,7 @@ export const CLUB_QUIZ_CATEGORY_CATALOG = [
     mvpTier: 1,
     seoTitle: 'Football rivalry quiz',
     seoDescription:
-      'Rivalry and derby quiz: match clubs to their listed rivals in the FootyCompass dataset.',
+      'Rivalry and derby quiz: match clubs to their famous rivals — derbies, feuds, and local bragging rights.',
   },
   {
     id: 'country',

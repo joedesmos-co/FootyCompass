@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import { DATASET_META } from '../data/datasetMeta';
 import { SITE_NAME } from '../utils/brand';
 import PageFallback from './PageFallback';
+import HomeQuickNav from './HomeQuickNav';
 import HomeTrustStrip from './HomeTrustStrip';
-import HomePillars from './HomePillars';
 
 const HomePopularNow = lazy(() => import('./HomePopularNow'));
 const HomeSpotlight = lazy(() => import('./HomeSpotlight'));
-const HomeBelowFold = lazy(() => import('./HomeBelowFold'));
 
 export default function Home() {
   const playerCount = DATASET_META.playerCount.toLocaleString();
@@ -17,34 +16,26 @@ export default function Home() {
     <div className="home home--premium">
       <section className="hero hero--home hero--redesign hero--polished">
         <div className="hero__content">
-          <p className="hero__eyebrow">Free football quizzes · Premier League, La Liga, MLS &amp; World Cup</p>
+          <p className="hero__eyebrow">Premier League · La Liga · MLS · World Cup 2026</p>
           <h1 className="hero__title hero__title--seo">
-            Learn football players &amp; clubs — then quiz yourself
+            Know the game. Quiz yourself.
           </h1>
           <p className="hero__brand-line">
             <span className="hero__brand-name">{SITE_NAME}</span>
-            <span className="hero__brand-tagline">Football profiles, squads, and quizzes</span>
+            <span className="hero__brand-tagline">Players, clubs, and football quizzes</span>
           </p>
           <p className="hero__subcopy hero__subcopy--lead">
-            <strong>Learn</strong> squads, <strong>quiz</strong> on names and club knowledge,{' '}
-            <strong>discover</strong> leagues and World Cup 2026 prep — no account required.
+            Study squads, test yourself on names and club knowledge, and follow the road to World Cup
+            2026 — free, no account.
           </p>
 
           <div className="hero__actions hero__actions--stack">
             <Link to="/quiz" className="btn btn--primary btn--large hero__cta-primary">
               Play player quiz
             </Link>
-            <Link to="/club-quiz" className="btn btn--secondary hero__cta-secondary">
-              Club football quiz
+            <Link to="/browse" className="btn btn--secondary hero__cta-secondary">
+              Browse players &amp; clubs
             </Link>
-            <div className="hero__actions-row hero__actions-row--priority">
-              <Link to="/daily" className="btn btn--secondary">
-                Daily challenge
-              </Link>
-              <Link to="/browse" className="btn btn--secondary">
-                Browse players
-              </Link>
-            </div>
           </div>
 
           <dl className="hero__stats" aria-label="FootyCompass at a glance">
@@ -61,8 +52,6 @@ export default function Home() {
               <dd>Leagues</dd>
             </div>
           </dl>
-
-          <HomeTrustStrip />
         </div>
 
         <div className="hero-visual" aria-hidden="true">
@@ -91,19 +80,19 @@ export default function Home() {
         </div>
       </section>
 
-      <HomePillars />
+      <HomeQuickNav />
 
-      <Suspense fallback={<PageFallback label="Loading popular picks…" />}>
+      <Suspense fallback={<PageFallback label="Loading picks…" />}>
         <HomePopularNow />
       </Suspense>
 
-      <Suspense fallback={<PageFallback label="Loading featured spotlight…" />}>
+      <Suspense fallback={<PageFallback label="Loading featured pick…" />}>
         <HomeSpotlight />
       </Suspense>
 
-      <Suspense fallback={<PageFallback label="Loading explore sections…" />}>
-        <HomeBelowFold />
-      </Suspense>
+      <footer className="home-footer-trust">
+        <HomeTrustStrip />
+      </footer>
     </div>
   );
 }
