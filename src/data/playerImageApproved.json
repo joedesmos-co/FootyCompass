@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-05-31",
+  "updatedAt": "2026-06-02",
   "entries": {
     "tm-28003": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg",
@@ -50,7 +50,7 @@
       "commonsDescription": "Brazilian footballer Neymar at Red Bull Arena in Harrison, New Jersey to watch a Major League Soccer match between New York Red Bulls and Los Angeles Galaxy in October 2011.",
       "imageWidth": 2104,
       "imageHeight": 2802,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "vinicius": {
@@ -135,7 +135,7 @@
       "commonsDescription": "This file comes from the Flickr stream of the Public News Agency of Ecuador and South America and is copyrighted. This file is verified as being licenced under an appropriate Creative Commons licence. In short: you are free to modify the file as long as you attribute Photographer name/Andes and distribute it under the same licence.",
       "imageWidth": 1381,
       "imageHeight": 2168,
-      "qualityScore": 96,
+      "qualityScore": 90,
       "qualityGrade": "excellent"
     },
     "saka": {
@@ -427,23 +427,6 @@
       "qualityScore": 100,
       "qualityGrade": "excellent"
     },
-    "neuer": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Manuel_Neuer%2C_Germany_national_football_team_%2801%29.jpg/960px-Manuel_Neuer%2C_Germany_national_football_team_%2801%29.jpg",
-      "imageAlt": "Manuel Neuer, Goalkeeper — licensed photo",
-      "imageCredit": "Steindy ( talk ) 10:35, 27 June 2011 (UTC)",
-      "imageLicense": "CC BY-SA 3.0",
-      "imageSource": "Wikimedia Commons",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AManuel_Neuer%2C_Germany_national_football_team_(01).jpg",
-      "imageAttributionRequired": true,
-      "imageSrcSet": null,
-      "status": "approved",
-      "commonsFile": "Manuel Neuer, Germany national football team (01).jpg",
-      "commonsDescription": "Manuel Neuer ( FC Schalke 04 / FC Bayern München ), german national football team",
-      "imageWidth": 1200,
-      "imageHeight": 1800,
-      "qualityScore": 100,
-      "qualityGrade": "excellent"
-    },
     "tm-138927": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Daniel_Carvajal_entrenando.JPG/960px-Daniel_Carvajal_entrenando.JPG",
       "imageAlt": "Daniel Carvajal, Defender - Right-Back — licensed photo",
@@ -543,8 +526,8 @@
       "commonsDescription": "English footballer Trent Alexander-Arnold on 24 June 2018, during the 2018 FIFA World Cup group stage match between England and Panama.",
       "imageWidth": 400,
       "imageHeight": 520,
-      "qualityScore": 82,
-      "qualityGrade": "excellent"
+      "qualityScore": 76,
+      "qualityGrade": "good"
     },
     "ederson": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Ederson_Santana_de_Moraes_-_Zenit-Benf_%282016%29.jpg",
@@ -781,8 +764,8 @@
       "commonsDescription": "Pedro González López (born 25 November 2002), more commonly known as Pedri, is a Spanish professional footballer who plays as a midfielder for La Liga club Barcelona and the Spain national team.",
       "imageWidth": 1227,
       "imageHeight": 1788,
-      "qualityScore": 84,
-      "qualityGrade": "excellent"
+      "qualityScore": 78,
+      "qualityGrade": "good"
     },
     "tm-44352": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Festejo_Luis_Su%C3%A1rez.jpg/960px-Festejo_Luis_Su%C3%A1rez.jpg",
@@ -815,7 +798,7 @@
       "commonsDescription": "Alexis Sánchez , in the final of the 2006 Clausura Tournment of the Chilean football league, between Colo-Colo and Audax Italiano",
       "imageWidth": 646,
       "imageHeight": 800,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-687626": {
@@ -832,7 +815,7 @@
       "commonsDescription": "Brighton and Hove Albion vs RCD Espanyol preseason game on 30 July 2022",
       "imageWidth": 2250,
       "imageHeight": 2783,
-      "qualityScore": 88,
+      "qualityScore": 82,
       "qualityGrade": "excellent"
     },
     "tm-861410": {
@@ -917,25 +900,8 @@
       "commonsDescription": "Kylian Sanmi Mbappé Lottin (French pronunciation: ​[kiljan (ə)mbape]; born 20 December 1998) is a French professional footballer who plays as a forward for Paris Saint-Germain, on loan from Monaco, and the France national team.",
       "imageWidth": 1188,
       "imageHeight": 1929,
-      "qualityScore": 84,
-      "qualityGrade": "excellent"
-    },
-    "tm-106987": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/2014-05-30_Austria_-_Iceland_football_match%2C_Marcel_Sabitzer_0591.jpg/960px-2014-05-30_Austria_-_Iceland_football_match%2C_Marcel_Sabitzer_0591.jpg",
-      "imageAlt": "Marcel Sabitzer, Midfield - Central Midfield — licensed photo",
-      "imageCredit": "Please attribute as: \"Wikipedia / Tobias Klenze\" (user page link optional). Remember that you must also mention the license (and link to it). So for example, if this picture is licensed under CC-BY-SA 4.0, the following is correct: Image: Wikipedia / Tobias Klenze / CC-BY-SA 4.0 . The license must be a link!",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "Wikimedia Commons",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014-05-30_Austria_-_Iceland_football_match%2C_Marcel_Sabitzer_0591.jpg",
-      "imageAttributionRequired": true,
-      "imageSrcSet": null,
-      "status": "approved",
-      "commonsFile": "2014-05-30 Austria - Iceland football match, Marcel Sabitzer 0591.jpg",
-      "commonsDescription": "Austria - Iceland football match in Innsbruck, Austria on 2014-05-30. Austria in red, Iceland in blue.",
-      "imageWidth": 2122,
-      "imageHeight": 3485,
-      "qualityScore": 90,
-      "qualityGrade": "excellent"
+      "qualityScore": 78,
+      "qualityGrade": "good"
     },
     "tm-111873": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sheikh_Hasina_presents_souvenir_gift_to_Emiliano_Mart%C3%ADnez_2023-07-03_%28PID-0015060%29.jpg/960px-Sheikh_Hasina_presents_souvenir_gift_to_Emiliano_Mart%C3%ADnez_2023-07-03_%28PID-0015060%29.jpg",
@@ -985,7 +951,7 @@
       "commonsDescription": "Ghanaian footballer Thomas Partey on 1 October 2019, before the UEFA Champions League match between Atlético Madrid and Lokomotiv in Moscow.",
       "imageWidth": 839,
       "imageHeight": 1200,
-      "qualityScore": 94,
+      "qualityScore": 88,
       "qualityGrade": "excellent"
     },
     "tm-282411": {
@@ -1087,7 +1053,7 @@
       "commonsDescription": "Thiago Almada (left) and an Arsenal player during the 2023 MLS All-Star Game.",
       "imageWidth": 1087,
       "imageHeight": 1875,
-      "qualityScore": 96,
+      "qualityScore": 90,
       "qualityGrade": "excellent"
     },
     "tm-86202": {
@@ -1172,7 +1138,7 @@
       "commonsDescription": "Raúl Jiménez during the second match of the 2013 CONCACAF Gold Cup between Mexico and Panama at the Rose Bowl, Pasadena, Calif., on 7 July 2013. Panama would hold on to win this match 2-1. (© Fernando J Tirado 2013)",
       "imageWidth": 800,
       "imageHeight": 1200,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-238407": {
@@ -1206,7 +1172,7 @@
       "commonsDescription": "Belgian footballer Youri Tielemans on 28 June 2018, during the 2018 FIFA World Cup group stage match between England and Belgium.",
       "imageWidth": 500,
       "imageHeight": 990,
-      "qualityScore": 88,
+      "qualityScore": 82,
       "qualityGrade": "excellent"
     },
     "tm-255508": {
@@ -1342,7 +1308,7 @@
       "commonsDescription": "President Yoon Suk Yeol and first lady Kim Keon Hee host a dinner for the national football team. December 8, 2022 Yeongbingwan, Cheong Wa Dae, Jongno-gu, Seoul Presidential Security Service Official Photographer : Kang Min Seok All photographs in the official Flikr account of the Republic of Korea are available only for publication by news organizations and/or for public purposes with proper attribution to the correct source (photographer and organizations mentioned above). Any distortion to the original meaning of a photograph for provision to a third party through posting and resale, partial reproduction, falsification or use of the photograph with other images is strictly prohibited without the express written permission of the government of the Republic of Korea. Thank you. 윤석열 대통령과 김건희 여사가 8일 청와대 영빈관에서 축구 국가대표팀 환영 만찬을 가졌습니다. 2022-12-8 청와대 영빈관 대통령경호처 강민석 플리커 채널 'Republic of Korea'에 게재되는 대한민국정부 사진은 올바른 저작권 이름 (촬영자 / 상기 명기된 기관)으로 표기한 이후 보도 혹은 공익목적으로 사용하실 수 있습니다. 의미를 왜곡하는 맥락에서 사진을 게시하고 재판매, 부분 복제, 변조 또는 다른 이미지에 통합하는 것과 같은 사진의 모든 수정, 자료를 제3자에게 제공하는 것은 대한민국정부(운영자/저작권자)의 명시적인 허가 없이 금지됩니다.",
       "imageWidth": 1088,
       "imageHeight": 1632,
-      "qualityScore": 88,
+      "qualityScore": 82,
       "qualityGrade": "excellent"
     },
     "tm-316889": {
@@ -1461,7 +1427,7 @@
       "commonsDescription": "Deventer, Sunday 2 April, 2023, season 2022 / 2023 , match between Go Ahead Eagles and Ajax , Final result 0-0",
       "imageWidth": 917,
       "imageHeight": 1275,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-202886": {
@@ -1512,7 +1478,7 @@
       "commonsDescription": "Deventer, Sunday 2 April, 2023, season 2022 / 2023 , match between Go Ahead Eagles and Ajax , Final result 0-0",
       "imageWidth": 1781,
       "imageHeight": 2516,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-429983": {
@@ -1529,7 +1495,7 @@
       "commonsDescription": "Jørgen Strand Larsen training prior to the match between Fulham and Wolverhampton Wanderers.",
       "imageWidth": 1214,
       "imageHeight": 2316,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-82442": {
@@ -1546,7 +1512,7 @@
       "commonsDescription": "Olivier Giroud ( born 30 September 1986) is a French professional footballer who plays as a forward for Premier League club Arsenal and the France national team",
       "imageWidth": 3439,
       "imageHeight": 5127,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-962110": {
@@ -1563,7 +1529,7 @@
       "commonsDescription": "Pau Cubarsí - Spanish professional footballer who plays as a centre-back for La Liga club Barcelona and the Spain national team. He is considered one of the best young defenders in the world.",
       "imageWidth": 1291,
       "imageHeight": 2188,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-309400": {
@@ -1988,7 +1954,7 @@
       "commonsDescription": "Nicolas Jackson arriving at Craven Cottage prior to the Premier League match between Fulham and Chelsea on 20 April 2025.",
       "imageWidth": 1245,
       "imageHeight": 1766,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-93844": {
@@ -2022,23 +1988,6 @@
       "commonsDescription": "Fußball, Männer,Freundschaftsspiel, RB Leipzig - FC Liverpool: Darwin Nunez (FC Liverpool, 27) nach dem Tor zum 0:5 Endstand; Tor, goal, Torerfolg, Aktion; Jubel, celebration",
       "imageWidth": 1781,
       "imageHeight": 2479,
-      "qualityScore": 100,
-      "qualityGrade": "excellent"
-    },
-    "tm-148367": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christian_N%C3%B8rgaard%2C_Brentford_F.C._footballer%2C_May_2022.jpg/960px-Christian_N%C3%B8rgaard%2C_Brentford_F.C._footballer%2C_May_2022.jpg",
-      "imageAlt": "Christian Nørgaard, Midfield - Defensive Midfield — licensed photo",
-      "imageCredit": "Ardfern",
-      "imageLicense": "CC BY-SA 4.0",
-      "imageSource": "Wikimedia Commons",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AChristian_N%C3%B8rgaard%2C_Brentford_F.C._footballer%2C_May_2022.jpg",
-      "imageAttributionRequired": true,
-      "imageSrcSet": null,
-      "status": "approved",
-      "commonsFile": "Christian Nørgaard, Brentford F.C. footballer, May 2022.jpg",
-      "commonsDescription": "Danish footballer Christian Nørgaard playing in a match.",
-      "imageWidth": 1139,
-      "imageHeight": 1661,
       "qualityScore": 100,
       "qualityGrade": "excellent"
     },
@@ -2090,7 +2039,7 @@
       "commonsDescription": "Liverpool and Wales winger Harry Wilson defends a free-kick in an UEFA Youth League group match between Basel U19s and Liverpool U19s at Campus FC Basel, 1st October 2014.",
       "imageWidth": 968,
       "imageHeight": 1392,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-381950": {
@@ -2226,7 +2175,7 @@
       "commonsDescription": "Belgian association football player Michy Batshuayi on 16 November 2019, during the 2020 UEFA European Championship qualifying match between Belgium and Russia in Saint Petersburg.",
       "imageWidth": 700,
       "imageHeight": 960,
-      "qualityScore": 94,
+      "qualityScore": 88,
       "qualityGrade": "excellent"
     },
     "tm-212847": {
@@ -2243,7 +2192,7 @@
       "commonsDescription": "Brighton and Hove Albion vs RCD Espanyol preseason game on 30 July 2022",
       "imageWidth": 2341,
       "imageHeight": 2929,
-      "qualityScore": 94,
+      "qualityScore": 88,
       "qualityGrade": "excellent"
     },
     "tm-278332": {
@@ -2515,7 +2464,7 @@
       "commonsDescription": "Vanja Milinković Savić in the game between Montenegro and Serbia National Football Team, 27. march 2023.",
       "imageWidth": 3024,
       "imageHeight": 4032,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-405398": {
@@ -2617,7 +2566,7 @@
       "commonsDescription": "Jackson Tchatchoua training prior to the match between Fulham and Wolverhampton Wanderers.",
       "imageWidth": 1613,
       "imageHeight": 2204,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-192557": {
@@ -2685,7 +2634,7 @@
       "commonsDescription": "Match between Botafogo-SP and Corinthians, played on 14 February 2024",
       "imageWidth": 1521,
       "imageHeight": 2347,
-      "qualityScore": 94,
+      "qualityScore": 88,
       "qualityGrade": "excellent"
     },
     "tm-10471": {
@@ -3011,23 +2960,6 @@
       "qualityScore": 100,
       "qualityGrade": "excellent"
     },
-    "tm-74842": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Mario_G%C3%B6tze%2C_Germany_national_football_team_%2801%29.jpg/960px-Mario_G%C3%B6tze%2C_Germany_national_football_team_%2801%29.jpg",
-      "imageAlt": "Mario Götze, Midfield - Attacking Midfield — licensed photo",
-      "imageCredit": "Steindy ( talk ) 19:34, 27 June 2011 (UTC)",
-      "imageLicense": "CC BY-SA 3.0",
-      "imageSource": "Wikimedia Commons",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMario_G%C3%B6tze%2C_Germany_national_football_team_(01).jpg",
-      "imageAttributionRequired": true,
-      "imageSrcSet": null,
-      "status": "approved",
-      "commonsFile": "Mario Götze, Germany national football team (01).jpg",
-      "commonsDescription": "Mario Götze ( Borussia Dortmund ), german national football team",
-      "imageWidth": 1200,
-      "imageHeight": 1800,
-      "qualityScore": 100,
-      "qualityGrade": "excellent"
-    },
     "tm-496268": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Joaquin-Piquerez-Palmeiras-Athletico-jul-2022-2.jpg/960px-Joaquin-Piquerez-Palmeiras-Athletico-jul-2022-2.jpg",
       "imageAlt": "Joaquín Piquerez, Defender - Left-Back — licensed photo",
@@ -3113,40 +3045,6 @@
       "qualityScore": 100,
       "qualityGrade": "excellent"
     },
-    "valverde": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Federico_Valverde_2021_%28cropped%29.jpg",
-      "imageAlt": "Federico Valverde, Central Midfielder — licensed photo",
-      "imageCredit": "Real Madrid",
-      "imageLicense": "CC BY 3.0",
-      "imageSource": "Wikimedia Commons",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFederico_Valverde_2021_(cropped).jpg",
-      "imageAttributionRequired": true,
-      "imageSrcSet": null,
-      "status": "approved",
-      "commonsFile": "Federico Valverde 2021 (cropped).jpg",
-      "commonsDescription": "Federico Valverde during an interview for the Real Madrid youtube channel",
-      "imageWidth": 895,
-      "imageHeight": 680,
-      "qualityScore": 72,
-      "qualityGrade": "good"
-    },
-    "lewandowski": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Robert_Lewandowski_2011_%283%29_%28cropped%29.jpg",
-      "imageAlt": "Robert Lewandowski, Striker — licensed photo",
-      "imageCredit": "Roger Gorączniak",
-      "imageLicense": "CC BY 3.0",
-      "imageSource": "Wikimedia Commons",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ARobert_Lewandowski_2011_(3)_(cropped).jpg",
-      "imageAttributionRequired": true,
-      "imageSrcSet": null,
-      "status": "approved",
-      "commonsFile": "Robert Lewandowski 2011 (3) (cropped).jpg",
-      "commonsDescription": "Polish football player Robert Lewandowski (and Hungarians: 2. József Varga, 3. Vilmos Vanczák",
-      "imageWidth": 816,
-      "imageHeight": 900,
-      "qualityScore": 70,
-      "qualityGrade": "good"
-    },
     "de-bruyne": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Kevin_de_Bruyne_2016-12-26_%28cropped%29.jpg",
       "imageAlt": "Kevin De Bruyne, Attacking Midfielder — licensed photo",
@@ -3212,8 +3110,8 @@
       "commonsDescription": "AMIRI announces a new collaboration with FC Barcelona - one of the world's most decorated football clubs, winners of a record 80 domestic trophies, and of 23 European and worldwide titles - as official formalwear partner.",
       "imageWidth": 706,
       "imageHeight": 720,
-      "qualityScore": 80,
-      "qualityGrade": "excellent"
+      "qualityScore": 74,
+      "qualityGrade": "good"
     },
     "tm-161011": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/2022128173937_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_M%C3%B6nchengladbach_-_Sven_-_1D_X_MK_II_-_2399_-_B70I8510_%28Filip_Kosti%C4%87_cropped%29.jpg/960px-2022128173937_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_M%C3%B6nchengladbach_-_Sven_-_1D_X_MK_II_-_2399_-_B70I8510_%28Filip_Kosti%C4%87_cropped%29.jpg",
@@ -3552,7 +3450,7 @@
       "commonsDescription": "Mads Hermansen signing autographs after the Fulham and Leicester City match.",
       "imageWidth": 1826,
       "imageHeight": 2446,
-      "qualityScore": 96,
+      "qualityScore": 90,
       "qualityGrade": "excellent"
     },
     "tm-480116": {
@@ -3841,7 +3739,7 @@
       "commonsDescription": "Raheem Sterling before the game between Liverpool and AS Roma at Fenway Park, 25 July 2012.",
       "imageWidth": 992,
       "imageHeight": 1576,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-973085": {
@@ -3858,8 +3756,8 @@
       "commonsDescription": "Carlos Baleba pictured during the match between Fulham and Brighton and Hove Albion.",
       "imageWidth": 412,
       "imageHeight": 840,
-      "qualityScore": 82,
-      "qualityGrade": "excellent"
+      "qualityScore": 76,
+      "qualityGrade": "good"
     },
     "tm-129554": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/StevenBerghuis1.jpg",
@@ -3994,7 +3892,7 @@
       "commonsDescription": "Hwang Hee-chan training prior to the match between Fulham and Wolverhampton Wanderers.",
       "imageWidth": 1862,
       "imageHeight": 2238,
-      "qualityScore": 90,
+      "qualityScore": 84,
       "qualityGrade": "excellent"
     },
     "tm-443710": {
@@ -4368,8 +4266,8 @@
       "commonsDescription": "Diant Ramaj during the 2023–24 Eredivisie game between FC Utrecht and Ajax (4–3), Stadion Galgenwaard , Utrecht, the Netherlands",
       "imageWidth": 340,
       "imageHeight": 515,
-      "qualityScore": 82,
-      "qualityGrade": "excellent"
+      "qualityScore": 76,
+      "qualityGrade": "good"
     },
     "tm-257324": {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/FC_Red_Bull_Salzburg_gegen_FC_Nordsjaelland_%28Testspiel_2023-07-08%29_Jeppe_Theis_Tverskov.jpg/960px-FC_Red_Bull_Salzburg_gegen_FC_Nordsjaelland_%28Testspiel_2023-07-08%29_Jeppe_Theis_Tverskov.jpg",

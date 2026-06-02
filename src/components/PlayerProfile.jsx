@@ -5,7 +5,7 @@ import { loadPlayerById } from '../data/playerStore';
 import { peekTeamName } from '../data/teamStore';
 import { useFavorites } from '../hooks/useFavorites';
 import { useSearchIndex } from '../hooks/useSearchIndex';
-import { getDisplayQuickFact, isBrowseOnlyPlayer } from '../utils/playerEditorial';
+import { isBrowseOnlyPlayer } from '../utils/playerEditorial';
 import {
   buildPlayerProfileEditorial,
   PLAYER_PLACEHOLDER_FACT_RE,
@@ -27,6 +27,7 @@ import {
   isExternalLeagueId,
 } from '../utils/footballDisplay';
 import { isOtherClubTeamPageLinkSafe } from '../utils/externalClubBrowse';
+import { formatPlayerShirtNumber, getPlayerShirtNumber } from '../utils/playerShirtNumber';
 import CountryFlag from './CountryFlag';
 import DataTrustNotice from './DataTrustNotice';
 import ExternalStubNotice from './ExternalStubNotice';
@@ -50,6 +51,7 @@ import { canonicalUrlForPath } from '../utils/brand.js';
 import BreadcrumbNav from './BreadcrumbNav';
 import CollectionStudyReturnBar from './CollectionStudyReturnBar';
 import {
+  BADGE_QUIZ_READY,
   CRUMB_BROWSE,
   CRUMB_HOME,
   CTA_BACK_TO_BROWSE,
@@ -433,7 +435,6 @@ export default function PlayerProfile() {
   const careerSummary = profileEditorial.careerSummary;
   const browseOnly = isBrowseOnlyPlayer(player);
   const quizReady = isQuizEligiblePlayer(player);
-  const displayFact = getDisplayQuickFact(player);
   const quizHints = Array.isArray(player.quizHints) ? player.quizHints.filter(Boolean) : [];
   const careerHistory = Array.isArray(player.careerHistory) ? player.careerHistory : [];
   const hasQuizClues = quizReady && quizHints.length > 0;
@@ -445,6 +446,7 @@ export default function PlayerProfile() {
 
   const preferredFoot = pickFirstPresent(player.preferredFoot, player.foot, player.strongFoot);
   const height = pickFirstPresent(player.height, player.heightCm, player.heightCM);
+  const shirtNumber = formatPlayerShirtNumber(getPlayerShirtNumber(player));
 
   const playStyleTags = toTagList(player.playingStyle, 7);
   const playStyleSummary = pickFirstPresent(player.playStyleSummary, player.styleSummary);
@@ -541,17 +543,38 @@ export default function PlayerProfile() {
       >
         <div className="player-profile__hero-main">
           <div className="player-profile__hero-visual">
-            <PlayerVisual player={player} size="profile" priority showCredit />
+            <PlayerVisual
+              player={player}
+              size="profile"
+              priority
+              showCredit
+              shirtNumber={shirtNumber}
+            />
           </div>
           <div className="player-profile__hero-copy">
-            <h1>{player.name}</h1>
+            <div className="player-profile__hero-head">
+              {shirtNumber ? (
+                <span className="player-profile__shirt-badge" aria-label={`Shirt number ${shirtNumber}`}>
+                  {shirtNumber}
+                </span>
+              ) : null}
+              <h1>{player.name}</h1>
+            </div>
             {profileEditorial.heroLede ? (
               <p className="player-profile__hero-lede">{profileEditorial.heroLede}</p>
             ) : null}
-            <PositionLabel
-              position={player.position}
-              className="player-profile__position player-profile__position--hero"
-            />
+            <div className="player-profile__hero-identity-row">
+              <PositionLabel
+                position={player.position}
+                className="player-profile__position player-profile__position--hero"
+              />
+              {roleSummary && roleSummary !== formatPosition(player.position) ? (
+                <span className="player-profile__role-chip">{roleSummary}</span>
+              ) : null}
+              {quizReady ? (
+                <span className="player-profile__quiz-chip">{BADGE_QUIZ_READY}</span>
+              ) : null}
+            </div>
             <div className="player-profile__identity" aria-label="Club and country">
               {clubPageSafe ? (
                 <Link
@@ -592,6 +615,17 @@ export default function PlayerProfile() {
                 )
               )}
             </div>
+            <dl className="player-profile__hero-stats" aria-label="Player snapshot">
+              {playerInfoItems.map((item) => (
+                <div
+                  key={item.label}
+                  className={`player-profile__hero-stat player-stat${STAT_EMPHASIS_CLASS[item.label] ? ` ${STAT_EMPHASIS_CLASS[item.label]}` : ''}`}
+                >
+                  <dt>{item.label}</dt>
+                  <dd>{item.value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
         <div className="profile__side-actions player-profile__hero-aside">
@@ -615,8 +649,6 @@ export default function PlayerProfile() {
           </ShareButton>
         </div>
       </header>
-
-      <DataTrustNotice compact />
 
       {browseOnly && (
         <p className="player-study__note" role="status">
@@ -652,24 +684,6 @@ export default function PlayerProfile() {
           <Link to="/quiz?theme=legends">Legends quiz</Link>
         ) : null}
       </nav>
-
-      <section
-        className="info-card player-info-card player-section player-section--snapshot"
-        aria-labelledby="player-info-title"
-      >
-        <PlayerSectionHead icon="◎" title="Snapshot" id="player-info-title" />
-        <dl className="player-info-grid">
-          {playerInfoItems.map((item) => (
-            <div
-              key={item.label}
-              className={`player-info-grid__item player-stat${STAT_EMPHASIS_CLASS[item.label] ? ` ${STAT_EMPHASIS_CLASS[item.label]}` : ''}`}
-            >
-              <dt>{item.label}</dt>
-              <dd>{item.value}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
 
       {profileEditorial.showAbout ? (
         <section
@@ -802,22 +816,9 @@ export default function PlayerProfile() {
           </article>
         )}
 
-        <article className="info-card player-section player-section--summary">
-          <PlayerSectionHead icon="◆" title="At a glance" />
-          <ul className="player-snapshot__list">
-            <li>
-              <span className="player-snapshot__label">Role</span>
-              <span>{roleSummary}</span>
-            </li>
-            {displayFact ? (
-              <li>
-                <span className="player-snapshot__label">Note</span>
-                <span>{displayFact}</span>
-              </li>
-            ) : null}
-          </ul>
-        </article>
       </section>
+
+      <DataTrustNotice compact />
 
       {profileEditorial.topTier ||
       profileEditorial.isThin ||

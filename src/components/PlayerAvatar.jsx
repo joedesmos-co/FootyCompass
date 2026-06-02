@@ -7,6 +7,7 @@ import {
   getPositionBadgeLabel,
   resolvePlayerAvatarTheme,
 } from '../utils/identityVisual';
+import { formatPlayerShirtNumber, getPlayerShirtNumber } from '../utils/playerShirtNumber';
 import {
   getPlayerImageAttribution,
   getPlayerImageAttributes,
@@ -22,12 +23,14 @@ function PlayerAvatarPlaceholder({
   compact,
   style,
   teamName,
+  shirtNumber,
 }) {
   const theme = resolvePlayerAvatarTheme(player, team);
   const initials = getPlayerInitials(player?.name);
   const positionBadge = getPositionBadgeLabel(player?.position);
   const isThumb = size === 'thumb';
   const isCircle = isThumb || size === 'profile';
+  const shirtLabel = shirtNumber ? String(shirtNumber) : null;
 
   return (
     <div
@@ -39,6 +42,11 @@ function PlayerAvatarPlaceholder({
       <span className={`player-avatar__disc${isCircle ? ' player-avatar__disc--circle' : ''}`}>
         <span className="player-avatar__silhouette" aria-hidden="true" />
         <span className="player-avatar__ring" aria-hidden="true" />
+        {shirtLabel && size === 'profile' ? (
+          <span className="player-visual__jersey" aria-hidden="true">
+            <span className="player-visual__jersey-num">{shirtLabel}</span>
+          </span>
+        ) : null}
         {theme.flag ? (
           <span className="player-avatar__flag" aria-hidden="true">
             {theme.flag}
@@ -68,6 +76,7 @@ function PlayerAvatarComponent({
   teamName: teamNameProp,
   preferPhoto = true,
   showCredit = false,
+  shirtNumber: shirtNumberProp,
 }) {
   const team = teamProp ?? peekTeamById(player?.teamId);
   const source = resolvePlayerImageSource(player);
@@ -77,6 +86,8 @@ function PlayerAvatarComponent({
   const teamName = teamNameProp ?? player?._teamName ?? team?.name ?? 'Unknown';
   const attribution = getPlayerImageAttribution(player, source);
   const shouldShowCredit = showCredit && Boolean(attribution);
+  const shirtNumber =
+    shirtNumberProp ?? formatPlayerShirtNumber(getPlayerShirtNumber(player));
 
   useEffect(() => {
     warnMissingImageAttribution(player);
@@ -98,7 +109,11 @@ function PlayerAvatarComponent({
           style={style}
         >
           <img {...imageAttrs} onError={() => setFailedPlayerId(player?.id ?? '')} />
-          {getPositionBadgeLabel(player?.position) ? (
+          {shirtNumber ? (
+            <span className="player-avatar__shirt player-avatar__shirt--photo" aria-hidden="true">
+              {shirtNumber}
+            </span>
+          ) : getPositionBadgeLabel(player?.position) ? (
             <span className="player-avatar__position player-avatar__position--photo">
               {getPositionBadgeLabel(player.position)}
             </span>
@@ -117,6 +132,7 @@ function PlayerAvatarComponent({
       compact={compact}
       style={style}
       teamName={teamName}
+      shirtNumber={shirtNumber}
     />
   );
 }

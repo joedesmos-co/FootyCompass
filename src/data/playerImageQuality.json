@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-05-29",
-  "minApprovalScore": 62,
-  "minAutoApproveScore": 72,
+  "minApprovalScore": 65,
+  "minAutoApproveScore": 74,
   "minPortraitHeight": 420,
   "minPixelArea": 140000,
   "minSearchWidth": 280,

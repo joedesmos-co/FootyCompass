@@ -9,7 +9,7 @@ const denyFiles = new Set(
   (qualityConfig.denyCommonsFiles ?? []).map((file) => String(file).trim().toLowerCase()),
 );
 
-const minApprovalScore = qualityConfig.minApprovalScore ?? 62;
+const minApprovalScore = qualityConfig.minApprovalScore ?? 65;
 
 export function isDeniedCommonsFile(commonsFile) {
   const file = String(commonsFile ?? '').trim().toLowerCase();
@@ -28,5 +28,10 @@ export function isOverlayImageBlocked(playerId, entry) {
   if (isDeniedCommonsFile(entry.commonsFile)) return true;
   if (entry.qualityScore != null && entry.qualityScore < minApprovalScore) return true;
   if (entry.qualityGrade === 'reject' || entry.qualityGrade === 'poor') return true;
+  const flags = Array.isArray(entry.qualityFlags) ? entry.qualityFlags : [];
+  if (flags.includes('multi_player_file') || flags.includes('group_or_team')) return true;
+  if (flags.includes('wide_landscape') && !flags.includes('portrait') && !flags.includes('portrait_hint')) {
+    return true;
+  }
   return false;
 }

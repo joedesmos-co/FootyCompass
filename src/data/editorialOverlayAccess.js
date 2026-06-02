@@ -19,6 +19,9 @@ const PLAYER_FIELDS = [
   'quizHints',
   'roleSummary',
   'careerContext',
+  'shirtNumber',
+  'jerseyNumber',
+  'squadNumber',
 ];
 
 const TEAM_FIELDS = [

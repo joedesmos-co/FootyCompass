@@ -30,6 +30,10 @@ const SCREENSHOT_PATTERNS = [
 
 const MULTI_PLAYER_FILE_PATTERN = /\band\s+[A-ZÁÉÍÓÚÄÖÜ][a-záéíóúäöü'-]+/i;
 
+/** Comma- or ampersand-separated names in filename — usually multi-person shots. */
+const MULTI_NAME_FILE_PATTERN =
+  /(?:,\s*[A-ZÁÉÍÓÚÄÖÜ][a-záéíóúäöü'-]+(?:\s+[A-ZÁÉÍÓÚ][a-záéíóú'-]+)?|\s+&\s+[A-ZÁÉÍÓÚ])/;
+
 const GROUP_FILE_PATTERNS = [
   /\band\s+[A-ZÁÉÍÓÚÄÖÜ]/i,
   /line[- ]?up/i,
@@ -185,6 +189,16 @@ export function scorePlayerImage(meta, playerName, verifyName = null) {
     };
   }
 
+  if (MULTI_NAME_FILE_PATTERN.test(file) && !/\(cropped\)/i.test(file)) {
+    return {
+      score: 0,
+      grade: 'reject',
+      flags: ['multi_player_file'],
+      reasons: ['filename lists multiple people'],
+      pass: false,
+    };
+  }
+
   for (const pattern of HARD_REJECT_PATTERNS) {
     if (pattern.test(file) || pattern.test(hay)) {
       return {
@@ -330,7 +344,7 @@ export function scorePlayerImage(meta, playerName, verifyName = null) {
 
   for (const pattern of GROUP_FILE_PATTERNS) {
     if (pattern.test(file) || pattern.test(hay)) {
-      score -= 22;
+      score -= 28;
       flags.push('group_or_team');
       reasons.push('group/team photo pattern');
       break;
@@ -410,12 +424,18 @@ export function scorePlayerImage(meta, playerName, verifyName = null) {
     !(flags.includes('match_filename') && !hasPortraitHint) &&
     !(flags.includes('team_photo_file') && !hasPortraitHint) &&
     !(flags.includes('event_stadium') && flags.includes('name_not_in_filename') && !hasPortraitHint) &&
-    !(flags.includes('group_or_team') && flags.includes('event_stadium') && !hasPortraitHint) &&
+    !(flags.includes('group_or_team') && !hasPortraitHint && matchedNameTokens.length === 0) &&
+    !(flags.includes('group_or_team') && flags.includes('wide_landscape')) &&
     !(fileYear !== null && fileYear <= 2012 && flags.includes('event_stadium')) &&
     !(flags.includes('name_not_in_filename') && !hasPortraitHint && score < MIN_AUTO_APPROVE_SCORE) &&
     !flags.includes('non_portrait_context') &&
     !(flags.includes('fixture_context') && !hasPortraitHint) &&
-    !(flags.includes('wide_landscape') && !hasPortraitHint && matchedNameTokens.length === 0) &&
+    !(
+      flags.includes('wide_landscape') &&
+      !flags.includes('portrait') &&
+      !hasPortraitHint &&
+      matchedNameTokens.length === 0
+    ) &&
     !(flags.includes('screenshot_like') && score < MIN_AUTO_APPROVE_SCORE);
 
   return { score, grade, flags: [...new Set(flags)], reasons, pass };
