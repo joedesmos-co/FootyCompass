@@ -12,6 +12,7 @@ import {
 } from '../data/nationalTeamData';
 import { getQuizEligiblePlayers } from '../utils/quizEligibility';
 import { QUIZ_NATIONAL_TEAM_MIN_POOL } from '../utils/quizSession';
+import ProfileStatStrip from './ProfileStatStrip';
 import NationalTeamBadge from './NationalTeamBadge';
 import DataTrustNotice from './DataTrustNotice';
 import { FEATURED_NATIONAL_TEAM_IDS } from '../data/worldCupHubData';
@@ -19,7 +20,10 @@ import { getWorldCup2026RosterStatus } from '../data/worldCup2026Rosters';
 import { isWorldCup2026QualifiedTeam } from '../data/worldCup2026Prep';
 import TeamSquadView from './TeamSquadView';
 import PlayerVisual from './PlayerVisual';
-import { formatPosition } from '../utils/footballDisplay';
+import {
+  formatPosition,
+  getFootballAccentStyle,
+} from '../utils/footballDisplay';
 import { getCanonicalUrl, upsertJsonLdScript } from '../utils/jsonLd';
 import {
   applyEntityNotFoundSeo,
@@ -305,31 +309,45 @@ export default function NationalTeamProfile() {
       <BreadcrumbNav items={breadcrumbItems} />
       <CollectionStudyReturnBar />
 
-      <header className="profile__hero profile__hero--national">
-        <div className="profile__identity">
-          <NationalTeamBadge nationalTeam={nationalTeam} size="profile" />
-          <div>
-            <p className="profile__league">{nationalTeam.confederation}</p>
-            <h1>{nationalTeam.displayName}</h1>
-            {nationalHeroLede ? (
-              <p className="national-team-profile__lede national-team-profile__lede--hero">
-                {nationalHeroLede}
-              </p>
-            ) : null}
-            <p className="profile__sub">
-              {linkedCount} players in squad
-              {quizReady.length > 0 ? ` · ${quizReady.length} in quizzes` : ''}
-              {nationalTeam.fifaRanking != null ? ` · FIFA rank ${nationalTeam.fifaRanking}` : ''}
-            </p>
-            {wcRosterStatus ? (
-              <p className="national-team-profile__wc-roster-status">{wcRosterStatus.label}</p>
-            ) : null}
-            {nationalTeam.shortHistory && !nationalHeroLede ? (
-              <p className="national-team-profile__lede">{nationalTeam.shortHistory}</p>
-            ) : null}
+      <header
+        className="profile__hero profile__hero--national national-hero national-hero--sports football-accent-surface"
+        style={getFootballAccentStyle(nationalTeam)}
+      >
+        <div className="national-hero__main">
+          <div className="profile__identity">
+            <NationalTeamBadge nationalTeam={nationalTeam} size="profile" />
+            <div>
+              <p className="profile__league">{nationalTeam.confederation}</p>
+              <h1>{nationalTeam.displayName}</h1>
+              {nationalHeroLede ? (
+                <p className="national-team-profile__lede national-team-profile__lede--hero">
+                  {nationalHeroLede}
+                </p>
+              ) : nationalTeam.shortHistory ? (
+                <p className="national-team-profile__lede">{nationalTeam.shortHistory}</p>
+              ) : null}
+              {wcRosterStatus ? (
+                <p className="national-team-profile__wc-roster-status">{wcRosterStatus.label}</p>
+              ) : null}
+            </div>
           </div>
+
+          <ProfileStatStrip
+            compact
+            items={[
+              { label: 'Squad', value: `${linkedCount} players` },
+              quizReady.length > 0
+                ? { label: 'Quiz', value: `${quizReady.length} ready` }
+                : null,
+              nationalTeam.fifaRanking != null
+                ? { label: 'FIFA rank', value: String(nationalTeam.fifaRanking) }
+                : null,
+              isFeatured ? { label: 'Tournament', value: 'World Cup 2026' } : null,
+            ]}
+          />
         </div>
-        <div className="team-profile__actions">
+
+        <div className={`team-profile__actions${topTier ? ' team-profile__actions--compact' : ''}`}>
           {isFeatured ? (
             <Link to="/world-cup" className="btn btn--secondary">
               World Cup 2026
@@ -365,8 +383,6 @@ export default function NationalTeamProfile() {
         </div>
       </header>
 
-      <DataTrustNotice compact />
-
       <NationalTeamProfileHub
         nationalTeam={nationalTeam}
         squad={squad}
@@ -375,11 +391,13 @@ export default function NationalTeamProfile() {
         compact={topTier}
       />
 
-      <NationalTeamDiscoveryStrip
-        nationalTeam={nationalTeam}
-        quizReady={canLaunchNationalQuiz}
-        squad={squad}
-      />
+      {!topTier ? (
+        <NationalTeamDiscoveryStrip
+          nationalTeam={nationalTeam}
+          quizReady={canLaunchNationalQuiz}
+          squad={squad}
+        />
+      ) : null}
 
       {showKeepExploring ? (
         <ProfileKeepExploring
@@ -421,14 +439,11 @@ export default function NationalTeamProfile() {
       ) : null}
 
       {keyPlayerCards.length > 0 ? (
-        <section className="team-key-players info-card profile__section" aria-labelledby="nt-key-players">
-          <div className="team-key-players__header">
+        <section className="team-key-players profile__section" aria-labelledby="nt-key-players">
+          <div className="team-key-players__header team-key-players__header--inline">
             <h2 id="nt-key-players">Players to know</h2>
-            <p className="team-key-players__note">
-              Top names linked to this nation — open profiles for hints, then try the nation quiz.
-            </p>
           </div>
-          <ul className="team-key-players__grid">
+          <ul className="team-key-players__grid team-key-players__grid--rail">
             {keyPlayerCards.map((card) => (
               <li key={card.player.id}>
                 <Link to={`/player/${card.player.id}`} className="team-key-players__card">
@@ -448,7 +463,7 @@ export default function NationalTeamProfile() {
       ) : null}
 
       {nationalTeam.rivalIds?.length > 0 && (
-        <section className="profile__section info-card" aria-labelledby="nt-rivals-title">
+        <section className="profile-editorial__block profile__section" aria-labelledby="nt-rivals-title">
           <h2 id="nt-rivals-title">Rival nations</h2>
           {profileStructured?.rivalry ? (
             <p className="national-team-hub__prose national-team-hub__prose--tight">
@@ -476,7 +491,7 @@ export default function NationalTeamProfile() {
       )}
 
       {clubFlows.length > 0 && (
-        <section className="profile__section info-card" aria-label="Nation to club learning flow">
+        <section className="profile-editorial__block profile__section" aria-label="Nation to club learning flow">
           <h2>Where they play club football</h2>
           <p className="collections-page__section-desc">
             Clubs supplying the most players for this nation — jump to squads before quizzing.
@@ -493,6 +508,8 @@ export default function NationalTeamProfile() {
           </ul>
         </section>
       )}
+
+      <DataTrustNotice compact />
 
       <TeamSquadView
         players={squad}

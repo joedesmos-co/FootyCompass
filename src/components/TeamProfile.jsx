@@ -23,6 +23,7 @@ import ExternalStubNotice from './ExternalStubNotice';
 import FavoriteButton from './FavoriteButton';
 import PageFallback from './PageFallback';
 import PlayerVisual from './PlayerVisual';
+import ProfileStatStrip from './ProfileStatStrip';
 import TeamBadge from './TeamBadge';
 import TeamSquadView from './TeamSquadView';
 import { getTeamProfileEditorial } from '../utils/teamProfileDisplay';
@@ -149,11 +150,6 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
   const cultureLine =
     truncateClubText(team.fanGuide, cultureMax) ||
     truncateClubText(team.shortHistory, cultureMax);
-  const keyPlayersNote =
-    teamEditorial.playersToKnowIntro ||
-    (teamEditorial.hasStory
-      ? 'Faces to know before you scroll the full squad.'
-      : 'Start with the highest-profile names in the squad list below.');
   const profileSubline = buildTeamProfileSubline(team);
   const thinClub = isThinTeam(team, 4);
   const highTraffic = isHighTrafficTeam(team, roster);
@@ -235,38 +231,55 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
       <CollectionStudyReturnBar />
 
       <header
-        className="profile__hero profile__hero--team club-hero football-accent-surface"
+        className="profile__hero profile__hero--team club-hero club-hero--sports football-accent-surface"
         style={getFootballAccentStyle(team)}
       >
-        <div className="profile__identity club-hero__identity">
-          <TeamBadge team={team} size="profile" />
-          <div className="club-hero__copy">
-            <Link to={`/league/${team.leagueId}`} className="profile__league profile__league-link">
-              {leagueName}
-            </Link>
-            <h1>{team.name}</h1>
-            {profileSubline ? (
-              <p className="profile__sub club-hero__sub">{profileSubline}</p>
-            ) : isExternalStub ? (
-              <p className="profile__sub club-hero__sub">
-                Limited club page — squad and quiz links below.
-              </p>
-            ) : null}
-            {identityTags.length > 0 && (
-              <ul className="club-hero__tags" aria-label="Playing identity">
-                {identityTags.map(({ key, label }) => (
-                  <li key={key}>
-                    <span className="player-identity-chip">{label}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-            {cultureLine && !isExternalStub ? (
-              <p className="club-hero__lede">{cultureLine}</p>
-            ) : null}
+        <div className="club-hero__main">
+          <div className="profile__identity club-hero__identity">
+            <TeamBadge team={team} size="profile" />
+            <div className="club-hero__copy">
+              <Link to={`/league/${team.leagueId}`} className="profile__league profile__league-link">
+                {leagueName}
+              </Link>
+              <h1>{team.name}</h1>
+              {cultureLine && !isExternalStub ? (
+                <p className="club-hero__lede">{cultureLine}</p>
+              ) : profileSubline ? (
+                <p className="profile__sub club-hero__sub">{profileSubline}</p>
+              ) : isExternalStub ? (
+                <p className="profile__sub club-hero__sub">
+                  Limited club page — squad and quiz links below.
+                </p>
+              ) : null}
+              {identityTags.length > 0 && (
+                <ul className="club-hero__tags" aria-label="Playing identity">
+                  {identityTags.map(({ key, label }) => (
+                    <li key={key}>
+                      <span className="player-identity-chip">{label}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
+
+          <ProfileStatStrip
+            compact
+            items={[
+              { label: 'League', value: <Link to={`/league/${team.leagueId}`}>{leagueName}</Link> },
+              team.stadium ? { label: 'Stadium', value: team.stadium } : null,
+              team.founded ? { label: 'Founded', value: String(team.founded) } : null,
+              roster.length > 0
+                ? { label: 'Squad', value: `${roster.length} players` }
+                : null,
+              hasTeamQuiz
+                ? { label: 'Quiz', value: `${getQuizEligiblePlayers(roster).length} ready` }
+                : null,
+            ]}
+          />
         </div>
-        <div className="team-profile__actions">
+
+        <div className={`team-profile__actions${premiumClub ? ' team-profile__actions--compact' : ''}`}>
           <FavoriteButton
             itemName={team.name}
             saved={saved}
@@ -317,8 +330,6 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
         </div>
       </header>
 
-      <DataTrustNotice compact />
-
       {isExternalStub ? <ExternalStubNotice compact /> : null}
 
       <TeamClubProfileHub
@@ -330,7 +341,7 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
         isExternalStub={isExternalStub}
       />
 
-      {!isExternalStub ? (
+      {!isExternalStub && !premiumClub ? (
         <ClubQuizDiscoveryStrip
           team={team}
           leagueName={leagueName}
@@ -341,12 +352,11 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
 
       <div className="team-page-rich">
         {keyPlayerCards.length > 0 && (
-          <section className="team-key-players info-card" aria-labelledby="team-key-players-title">
-            <div className="team-key-players__header">
+          <section className="team-key-players profile__section" aria-labelledby="team-key-players-title">
+            <div className="team-key-players__header team-key-players__header--inline">
               <h2 id="team-key-players-title">{keyPlayersTitle}</h2>
-              <p className="team-key-players__note">{keyPlayersNote}</p>
             </div>
-            <ul className="team-key-players__grid">
+            <ul className="team-key-players__grid team-key-players__grid--rail">
               {keyPlayerCards.map((card) => {
                 if (card.player) {
                   return (
@@ -382,7 +392,7 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
           </section>
         )}
 
-        <article className="info-card info-card--wide team-profile__squad-card">
+        <article className="profile-editorial__block profile-editorial__block--flush team-profile__squad-card">
           {squadLoading ? (
             <PageFallback label="Loading squad…" />
           ) : (
@@ -393,6 +403,8 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
             />
           )}
         </article>
+
+        <DataTrustNotice compact />
 
         {showKeepExploring ? (
           <ProfileKeepExploring

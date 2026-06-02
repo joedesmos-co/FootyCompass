@@ -103,7 +103,7 @@ export default function TeamClubProfileHub({
 
   return (
     <div
-      className={`team-club-hub${enriched ? ' team-club-hub--premium team-club-hub--enriched' : ''}`}
+      className={`team-club-hub profile-editorial-stack${enriched ? ' team-club-hub--premium team-club-hub--enriched' : ''}`}
       style={getFootballAccentStyle(team)}
     >
       {quickFacts.length > 0 ? (
@@ -142,7 +142,7 @@ export default function TeamClubProfileHub({
       )}
 
       {showStory ? (
-        <section className="team-club-hub__panel info-card" aria-labelledby="team-why-matters-title">
+        <section className="team-club-hub__panel profile-editorial__block" aria-labelledby="team-why-matters-title">
           <h2 id="team-why-matters-title" className="team-club-hub__card-title">
             History
           </h2>
@@ -152,7 +152,7 @@ export default function TeamClubProfileHub({
 
       {showTactical ? (
         <section
-          className="team-club-hub__panel info-card"
+          className="team-club-hub__panel profile-editorial__block"
           aria-labelledby="team-tactical-identity-title"
         >
           <h2 id="team-tactical-identity-title" className="team-club-hub__card-title">
@@ -163,7 +163,7 @@ export default function TeamClubProfileHub({
       ) : null}
 
       {showSyntheticStory ? (
-        <section className="team-club-hub__panel info-card" aria-labelledby="team-club-identity-title">
+        <section className="team-club-hub__panel profile-editorial__block" aria-labelledby="team-club-identity-title">
           <h2 id="team-club-identity-title" className="team-club-hub__card-title">
             At a glance
           </h2>
@@ -172,7 +172,7 @@ export default function TeamClubProfileHub({
       ) : null}
 
       {showStadium ? (
-        <section className="team-club-hub__panel info-card" aria-labelledby="team-stadium-title">
+        <section className="team-club-hub__panel profile-editorial__block" aria-labelledby="team-stadium-title">
           <h2 id="team-stadium-title" className="team-club-hub__card-title">
             Home ground
           </h2>
@@ -181,7 +181,7 @@ export default function TeamClubProfileHub({
       ) : null}
 
       {showLeagueContext ? (
-        <section className="team-club-hub__panel info-card" aria-labelledby="team-league-context-title">
+        <section className="team-club-hub__panel profile-editorial__block" aria-labelledby="team-league-context-title">
           <h2 id="team-league-context-title" className="team-club-hub__card-title">
             {leagueName}
           </h2>
@@ -193,7 +193,7 @@ export default function TeamClubProfileHub({
       ) : null}
 
       {showFanGuide ? (
-        <details className="team-fan-guide info-card" open>
+        <details className="team-fan-guide profile-editorial__block" open>
           <summary className="team-fan-guide__summary">
             <span className="team-club-hub__card-title">For supporters</span>
             <span className="team-fan-guide__hint">Colours, culture, and what matters on matchday</span>
@@ -210,7 +210,7 @@ export default function TeamClubProfileHub({
       ) : null}
 
       {showFanIdentity ? (
-        <section className="team-club-hub__panel info-card" aria-labelledby="team-fan-identity-title">
+        <section className="team-club-hub__panel profile-editorial__block" aria-labelledby="team-fan-identity-title">
           <h2 id="team-fan-identity-title" className="team-club-hub__card-title">
             Fan identity
           </h2>
@@ -221,7 +221,7 @@ export default function TeamClubProfileHub({
       {(showRivals || showHonors || showLegends) && (
         <div className="team-club-hub__grid">
           {showRivals ? (
-            <section className="team-club-hub__panel info-card" aria-labelledby="team-rivals-title">
+            <section className="team-club-hub__panel profile-editorial__block" aria-labelledby="team-rivals-title">
               <h2 id="team-rivals-title" className="team-club-hub__card-title">
                 Rivalries
               </h2>
@@ -248,7 +248,7 @@ export default function TeamClubProfileHub({
           ) : null}
 
           {showHonors ? (
-            <section className="team-club-hub__panel info-card" aria-labelledby="team-honors-title">
+            <section className="team-club-hub__panel profile-editorial__block" aria-labelledby="team-honors-title">
               <h2 id="team-honors-title" className="team-club-hub__card-title">
                 Honours & trophies
               </h2>
@@ -262,7 +262,7 @@ export default function TeamClubProfileHub({
 
           {showLegends ? (
             <section
-              className="team-club-hub__panel info-card team-club-hub__panel--wide"
+              className="team-club-hub__panel profile-editorial__block team-club-hub__panel--wide"
               aria-labelledby="team-legends-title"
             >
               <h2 id="team-legends-title" className="team-club-hub__card-title">
@@ -285,7 +285,7 @@ export default function TeamClubProfileHub({
       )}
 
       {(showRivalsBlurb || showLegendsBlurb) && (
-        <section className="team-club-hub__panel info-card" aria-label="Additional club notes">
+        <section className="team-club-hub__panel profile-editorial__block" aria-label="Additional club notes">
           {showRivalsBlurb ? (
             <p className="team-club-hub__prose">{profile.rivals}</p>
           ) : null}

@@ -13,8 +13,8 @@ export default function Home() {
   const playerCount = DATASET_META.playerCount.toLocaleString();
 
   return (
-    <div className="home home--premium">
-      <section className="hero hero--home hero--redesign hero--polished">
+    <div className="home home--premium home--sports">
+      <section className="hero hero--home hero--redesign hero--polished hero--sports">
         <div className="hero__content">
           <p className="hero__eyebrow">Premier League · La Liga · MLS · World Cup 2026</p>
           <h1 className="hero__title hero__title--seo">

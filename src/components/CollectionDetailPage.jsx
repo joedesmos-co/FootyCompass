@@ -239,7 +239,7 @@ export default function CollectionDetailPage() {
         ]}
       />
 
-      <header className="page-header collection-detail-header">
+      <header className="page-header collection-detail-header collection-detail-header--compact">
         <div className="collection-detail-header__meta">
           <span className={`collection-tag collection-tag--${collection.difficulty.toLowerCase()}`}>
             {collection.difficulty}
@@ -278,15 +278,11 @@ export default function CollectionDetailPage() {
           <p className="collection-detail-header__complete">Collection complete</p>
         )}
         <p className="collection-detail-header__xp-hint">
-          Open each profile, then tap Mark learned to track progress.
+          Open each profile, mark learned when ready, then finish with the quiz.
+          {(isAdvancedFootballCollection(collection.id) ||
+            isNationalTeamLearningCollection(collection.id)) &&
+            ' Use Compare for side-by-side roles when helpful.'}
         </p>
-        {(isAdvancedFootballCollection(collection.id) ||
-          isNationalTeamLearningCollection(collection.id)) && (
-          <p className="collection-detail-header__study-tip">
-            Study flow: open each profile, save players to review later, use Compare for side-by-side
-            roles, then run the scoped quiz.
-          </p>
-        )}
         <ActionRow className="collection-detail-header__actions">
           <Link to={quizHref} className="btn btn--primary">
             {quizLabel}

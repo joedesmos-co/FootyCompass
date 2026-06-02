@@ -10,7 +10,6 @@ import {
   buildPlayerProfileEditorial,
   PLAYER_PLACEHOLDER_FACT_RE,
 } from '../utils/playerProfileEditorial';
-import { IMPORTANCE_SCORE_LABEL, IMPORTANCE_SCORE_TITLE } from '../utils/consumerCopy';
 import { getRoleSummary } from '../utils/playerImportance';
 import { isQuizEligiblePlayer } from '../utils/quizPlayerRules';
 import { useRecordRecentView } from '../hooks/useRecordRecentView';
@@ -34,6 +33,7 @@ import ExternalStubNotice from './ExternalStubNotice';
 import FavoriteButton from './FavoriteButton';
 import PageFallback, { PageLoadingInline } from './PageFallback';
 import PlayerVisual from './PlayerVisual';
+import ProfileStatStrip from './ProfileStatStrip';
 import PositionLabel from './PositionLabel';
 import RelatedPlayersSection from './RelatedPlayersSection';
 import ShareButton from './ShareButton';
@@ -167,15 +167,14 @@ function shouldShowNationalityRow(player, liveNationalTeam) {
   return !nationalityMatchesLiveTeam(citizenship, liveNationalTeam);
 }
 
-const STAT_EMPHASIS_CLASS = {
-  [FIELD_CLUB]: 'player-stat--club',
-  [FIELD_LEAGUE]: 'player-stat--league',
-  [FIELD_NATIONAL_TEAM]: 'player-stat--national',
-  [FIELD_NATIONALITY]: 'player-stat--nationality',
-  [FIELD_POSITION]: 'player-stat--position',
-};
-
-function PlayerSectionHead({ icon, title, id }) {
+function PlayerSectionHead({ icon = '', title, id, editorial = false }) {
+  if (editorial) {
+    return (
+      <h2 id={id} className="profile-editorial__heading">
+        {title}
+      </h2>
+    );
+  }
   return (
     <div className="player-section__head">
       <span className="player-section__icon" aria-hidden="true">
@@ -538,101 +537,76 @@ export default function PlayerProfile() {
       <CollectionStudyReturnBar />
 
       <header
-        className="profile__hero profile__hero--player player-profile__hero football-accent-surface"
+        className="profile__hero profile__hero--player player-profile__hero player-profile__hero--sports football-accent-surface"
         style={accentStyle}
       >
-        <div className="player-profile__hero-main">
-          <div className="player-profile__hero-visual">
-            <PlayerVisual
-              player={player}
-              size="profile"
-              priority
-              showCredit
-              shirtNumber={shirtNumber}
-            />
-          </div>
-          <div className="player-profile__hero-copy">
-            <div className="player-profile__hero-head">
-              {shirtNumber ? (
-                <span className="player-profile__shirt-badge" aria-label={`Shirt number ${shirtNumber}`}>
-                  {shirtNumber}
-                </span>
-              ) : null}
-              <h1>{player.name}</h1>
-            </div>
-            {profileEditorial.heroLede ? (
-              <p className="player-profile__hero-lede">{profileEditorial.heroLede}</p>
-            ) : null}
-            <div className="player-profile__hero-identity-row">
-              <PositionLabel
-                position={player.position}
-                className="player-profile__position player-profile__position--hero"
-              />
-              {roleSummary && roleSummary !== formatPosition(player.position) ? (
-                <span className="player-profile__role-chip">{roleSummary}</span>
-              ) : null}
-              {quizReady ? (
-                <span className="player-profile__quiz-chip">{BADGE_QUIZ_READY}</span>
-              ) : null}
-            </div>
-            <div className="player-profile__identity" aria-label="Club and country">
-              {clubPageSafe ? (
-                <Link
-                  to={`/team/${player.teamId}`}
-                  className="player-identity-chip player-identity-chip--club"
-                >
-                  {teamName}
-                </Link>
-              ) : (
-                <span className="player-identity-chip player-identity-chip--club player-identity-chip--plain">
-                  {teamName}
-                </span>
-              )}
-              {leaguePageSafe ? (
-                <Link
-                  to={`/league/${player.leagueId}`}
-                  className="player-identity-chip player-identity-chip--league"
-                >
-                  {leagueName}
-                </Link>
-              ) : (
-                <span className="player-identity-chip player-identity-chip--league player-identity-chip--plain">
-                  {leagueName}
-                </span>
-              )}
-              {liveNationalTeam ? (
-                <Link
-                  to={`/national-team/${liveNationalTeam.id}`}
-                  className="player-identity-chip player-identity-chip--national"
-                >
-                  {liveNationalTeam.displayName}
-                </Link>
-              ) : (
-                nationalTeamPlainLabel && (
-                  <span className="player-identity-chip player-identity-chip--national player-identity-chip--plain">
-                    {nationalTeamPlainLabel}
-                  </span>
-                )
-              )}
-            </div>
-            <dl className="player-profile__hero-stats" aria-label="Player snapshot">
-              {playerInfoItems.map((item) => (
-                <div
-                  key={item.label}
-                  className={`player-profile__hero-stat player-stat${STAT_EMPHASIS_CLASS[item.label] ? ` ${STAT_EMPHASIS_CLASS[item.label]}` : ''}`}
-                >
-                  <dt>{item.label}</dt>
-                  <dd>{item.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
+        <div className="player-profile__hero-visual">
+          <PlayerVisual
+            player={player}
+            size="profile"
+            priority
+            showCredit
+            shirtNumber={shirtNumber}
+          />
         </div>
-        <div className="profile__side-actions player-profile__hero-aside">
-          <div className="profile__score-block" title={IMPORTANCE_SCORE_TITLE}>
-            <span className="profile__score-label">{IMPORTANCE_SCORE_LABEL}</span>
-            <span className="profile__score-value">{player.importanceScore}</span>
+
+        <div className="player-profile__hero-body">
+          <div className="player-profile__hero-head">
+            {shirtNumber ? (
+              <span className="player-profile__shirt-badge" aria-label={`Shirt number ${shirtNumber}`}>
+                {shirtNumber}
+              </span>
+            ) : null}
+            <h1>{player.name}</h1>
           </div>
+
+          <div className="player-profile__hero-identity-row">
+            <PositionLabel
+              position={player.position}
+              className="player-profile__position player-profile__position--hero"
+            />
+            {roleSummary && roleSummary !== formatPosition(player.position) ? (
+              <span className="player-profile__role-chip">{roleSummary}</span>
+            ) : null}
+            {quizReady ? (
+              <span className="player-profile__quiz-chip">{BADGE_QUIZ_READY}</span>
+            ) : null}
+          </div>
+
+          {profileEditorial.heroLede ? (
+            <p className="player-profile__hero-lede">{profileEditorial.heroLede}</p>
+          ) : null}
+
+          <ProfileStatStrip items={playerInfoItems} compact />
+
+          <nav
+            className={`player-profile__hero-links${profileEditorial.topTier ? ' player-profile__hero-links--curated' : ''}`}
+            aria-label="Quick actions"
+          >
+            {quizReady && clubPageSafe ? (
+              <Link to={`/quiz?team=${player.teamId}`} className="btn btn--primary btn--small">
+                {NAME_CLUB_QUIZ}
+              </Link>
+            ) : null}
+            {quizReady ? (
+              <Link to="/quiz" className="btn btn--secondary btn--small">
+                Player quiz
+              </Link>
+            ) : null}
+            {clubPageSafe ? (
+              <Link to={`/hubs/quizzes/team/${player.teamId}`}>{LINK_CLUB_QUIZ_GUIDE}</Link>
+            ) : null}
+            {!profileEditorial.topTier && player.nationality ? (
+              <Link
+                to={`/hubs/players/nationality/${encodeURIComponent(String(player.nationality).trim())}`}
+              >
+                {linkNationalityPlayers(player.nationality)}
+              </Link>
+            ) : null}
+          </nav>
+        </div>
+
+        <div className="player-profile__hero-toolbar">
           <FavoriteButton
             itemName={player.name}
             saved={saved}
@@ -660,74 +634,39 @@ export default function PlayerProfile() {
         <ExternalStubNotice compact />
       ) : null}
 
-      <nav
-        className={`player-profile__quick-links${profileEditorial.topTier ? ' player-profile__quick-links--curated' : ''}`}
-        aria-label="Quick actions"
-      >
-        {quizReady && clubPageSafe ? (
-          <Link to={`/quiz?team=${player.teamId}`}>{NAME_CLUB_QUIZ}</Link>
+      <div className="profile-editorial-stack player-profile__editorial">
+        {profileEditorial.showAbout ? (
+          <section className="profile-editorial__block player-section player-section--about" aria-labelledby="player-about-title">
+            <PlayerSectionHead editorial title="About" id="player-about-title" />
+            <p className="player-profile__about">{profileEditorial.about}</p>
+          </section>
         ) : null}
-        {clubPageSafe ? (
-          <Link to={`/hubs/quizzes/team/${player.teamId}`}>{LINK_CLUB_QUIZ_GUIDE}</Link>
+
+        {showKnownForSection ? (
+          <section className="profile-editorial__block player-section player-section--known-for" aria-labelledby="player-known-for-title">
+            <PlayerSectionHead editorial title="Known for" id="player-known-for-title" />
+            <ul className="tag-list tag-list--tight player-tag-list" aria-label="Known for">
+              {profileEditorial.knownFor.map((item) => (
+                <li key={item} className="tag tag--solid">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </section>
         ) : null}
-        {!profileEditorial.topTier && player.nationality ? (
-          <Link
-            to={`/hubs/players/nationality/${encodeURIComponent(String(player.nationality).trim())}`}
-          >
-            {linkNationalityPlayers(player.nationality)}
-          </Link>
+
+        {profileEditorial.showPlayStyleBlurb ? (
+          <section className="profile-editorial__block player-section player-section--playstyle-blurb" aria-labelledby="player-playstyle-blurb-title">
+            <PlayerSectionHead editorial title="How they play" id="player-playstyle-blurb-title" />
+            <p className="player-profile__about">{profileEditorial.playStyleBlurb}</p>
+          </section>
         ) : null}
-        {!profileEditorial.topTier && quizReady && typeof player.age === 'number' && player.age <= 23 ? (
-          <Link to="/quiz?theme=wonderkids">Wonderkids quiz</Link>
-        ) : null}
-        {!profileEditorial.topTier && quizReady && (player.importanceScore ?? 0) >= 88 ? (
-          <Link to="/quiz?theme=legends">Legends quiz</Link>
-        ) : null}
-      </nav>
 
-      {profileEditorial.showAbout ? (
-        <section
-          className="info-card player-section player-section--about"
-          aria-labelledby="player-about-title"
-        >
-          <PlayerSectionHead icon="📋" title="About the player" id="player-about-title" />
-          <p className="player-profile__about">{profileEditorial.about}</p>
-        </section>
-      ) : null}
-
-      {showKnownForSection ? (
-        <section
-          className="info-card player-section player-section--known-for"
-          aria-labelledby="player-known-for-title"
-        >
-          <PlayerSectionHead icon="★" title="Known for" id="player-known-for-title" />
-          <ul className="tag-list tag-list--tight player-tag-list" aria-label="Known for">
-            {profileEditorial.knownFor.map((item) => (
-              <li key={item} className="tag tag--solid">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-
-      {profileEditorial.showPlayStyleBlurb ? (
-        <section
-          className="info-card player-section player-section--playstyle-blurb"
-          aria-labelledby="player-playstyle-blurb-title"
-        >
-          <PlayerSectionHead icon="⚡" title="How they play" id="player-playstyle-blurb-title" />
-          <p className="player-profile__about">{profileEditorial.playStyleBlurb}</p>
-        </section>
-      ) : null}
-
-      <div className="player-profile__divider" aria-hidden="true" />
-
-      <section className="player-profile__body" aria-label={`${player.name} profile`}>
+        <div className="player-profile__editorial-grid">
         {(playStyleTags.length > 0 || playStyleSummary) &&
         !(profileEditorial.topTier && profileEditorial.showPlayStyleBlurb) ? (
-          <article className="info-card player-section player-section--playstyle">
-            <PlayerSectionHead icon="⚡" title="Play style" />
+          <article className="profile-editorial__block player-section player-section--playstyle">
+            <PlayerSectionHead editorial title="Play style" />
             {playStyleTags.length > 0 && (
               <ul className="tag-list player-tag-list" aria-label="Play style tags">
                 {playStyleTags.map((tag) => (
@@ -744,8 +683,8 @@ export default function PlayerProfile() {
         ) : null}
 
         {strengths.length > 0 && (
-          <article className="info-card player-section player-section--strengths">
-            <PlayerSectionHead icon="✦" title="Strengths" />
+          <article className="profile-editorial__block player-section player-section--strengths">
+            <PlayerSectionHead editorial title="Strengths" />
             <ul className="tag-list tag-list--tight player-tag-list" aria-label="Strengths">
               {strengths.map((s) => (
                 <li key={s} className="tag tag--solid">
@@ -756,8 +695,8 @@ export default function PlayerProfile() {
           </article>
         )}
 
-        <article className="info-card player-section player-section--career">
-          <PlayerSectionHead icon="↗" title="Career highlights" />
+        <article className="profile-editorial__block player-section player-section--career">
+          <PlayerSectionHead editorial title="Career" />
           {hasCareerStops ? (
             <ol className="career-timeline career-timeline--compact">
               {careerHistory.map((entry) => (
@@ -779,9 +718,9 @@ export default function PlayerProfile() {
         </article>
 
         <article
-          className={`info-card player-section player-section--honors${showHonors ? '' : ' player-section--muted'}`}
+          className={`profile-editorial__block player-section player-section--honors${showHonors ? '' : ' player-section--muted'}`}
         >
-          <PlayerSectionHead icon="🏆" title="Honors" />
+          <PlayerSectionHead editorial title="Honors" />
           {showHonors ? (
             <ul className="bullet-list player-honors-list" aria-label="Honors and trophies">
               {honors.map((h) => (
@@ -794,8 +733,8 @@ export default function PlayerProfile() {
         </article>
 
         {showFunFact ? (
-          <article className="info-card player-section player-section--facts">
-            <PlayerSectionHead icon="✨" title="Fun facts" />
+          <article className="profile-editorial__block player-section player-section--facts">
+            <PlayerSectionHead editorial title="Quick fact" />
             <ul className="bullet-list" aria-label="Fun facts">
               <li>{funFact}</li>
             </ul>
@@ -803,8 +742,8 @@ export default function PlayerProfile() {
         ) : null}
 
         {hasQuizClues && (
-          <article className="info-card player-study player-section player-section--quiz">
-            <PlayerSectionHead icon="?" title="Quiz clues" />
+          <article className="profile-editorial__block player-study player-section player-section--quiz">
+            <PlayerSectionHead editorial title="Quiz clues" />
             <p className="player-study__note">Short hints for recall — not full answers.</p>
             <ul className="tag-list tag-list--stack player-tag-list" aria-label="Quiz clues">
               {quizHints.map((hint, index) => (
@@ -816,7 +755,8 @@ export default function PlayerProfile() {
           </article>
         )}
 
-      </section>
+        </div>
+      </div>
 
       <DataTrustNotice compact />
 

@@ -16026,3 +16026,312 @@ section.empty-state,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* ============================================================
+   Sports editorial pass — NHL-inspired hierarchy & compactness
+   ============================================================ */
+
+.profile-stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid rgba(167, 243, 208, 0.12);
+  border-radius: var(--radius-sm);
+  background: rgba(14, 26, 22, 0.35);
+  overflow: hidden;
+}
+
+.profile-stat-strip--compact {
+  margin-top: 0.45rem;
+}
+
+.profile-stat-strip__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+  min-width: 0;
+  flex: 1 1 5.5rem;
+  padding: 0.45rem 0.65rem;
+  border-right: 1px solid rgba(167, 243, 208, 0.08);
+}
+
+.profile-stat-strip__item:last-child {
+  border-right: none;
+}
+
+.profile-stat-strip__item dt {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.58rem;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.profile-stat-strip__item dd {
+  margin: 0;
+  color: var(--color-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.profile-stat-strip__item dd a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile-stat-strip__item dd a:hover,
+.profile-stat-strip__item dd a:focus-visible {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.player-profile__hero--sports {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 0.85rem 1.1rem;
+  padding: 0.9rem 1rem;
+}
+
+.player-profile__hero-body {
+  min-width: 0;
+}
+
+.player-profile__hero-toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+  min-width: min(100%, 8.5rem);
+}
+
+.player-profile__hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.65rem;
+  margin-top: 0.55rem;
+  padding: 0;
+}
+
+.player-profile__hero-links a:not(.btn) {
+  font-size: 0.78rem;
+  font-weight: 750;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.player-profile__hero-links a:not(.btn):hover,
+.player-profile__hero-links a:not(.btn):focus-visible {
+  text-decoration: underline;
+}
+
+.profile-editorial-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: var(--space-md);
+  border: 1px solid rgba(167, 243, 208, 0.11);
+  border-radius: var(--radius-md);
+  background: rgba(22, 38, 34, 0.42);
+  overflow: hidden;
+}
+
+.profile-editorial__block {
+  padding: 0.75rem 0.95rem;
+  border-top: 1px solid rgba(167, 243, 208, 0.08);
+  background: none;
+  box-shadow: none;
+}
+
+.profile-editorial-stack > .profile-editorial__block:first-child,
+.profile-editorial-stack > .team-club-hub__panel:first-child,
+.profile-editorial-stack > section:first-child {
+  border-top: none;
+}
+
+.profile-editorial__block--flush {
+  padding: 0.65rem 0.75rem 0.75rem;
+}
+
+.profile-editorial__heading {
+  margin: 0 0 0.45rem;
+  color: var(--color-soft);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.player-profile__editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (min-width: 768px) {
+  .player-profile__editorial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .player-profile__editorial-grid .player-section--playstyle,
+  .player-profile__editorial-grid .player-section--strengths,
+  .player-profile__editorial-grid .player-section--facts,
+  .player-profile__editorial-grid .player-section--quiz {
+    grid-column: 1 / -1;
+  }
+}
+
+.club-hero--sports,
+.national-hero--sports {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 0.85rem 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.club-hero__main,
+.national-hero__main {
+  min-width: 0;
+}
+
+.club-hero--sports .club-hero__lede,
+.national-hero--sports .national-team-profile__lede--hero {
+  margin-top: 0.35rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  max-width: 52rem;
+}
+
+.team-profile__actions--compact .btn:nth-child(n + 4) {
+  display: none;
+}
+
+.team-key-players__header--inline h2 {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-soft);
+}
+
+.team-key-players__header--inline {
+  margin-bottom: 0.45rem;
+}
+
+.team-key-players__grid--rail {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.15rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.team-key-players__grid--rail > li {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.team-key-players__grid--rail .team-key-players__card {
+  min-width: 11.5rem;
+  max-width: 14rem;
+}
+
+.team-club-hub__panel.profile-editorial__block,
+.national-team-hub .profile-editorial__block {
+  border: none;
+  border-top: 1px solid rgba(167, 243, 208, 0.08);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.team-club-hub.profile-editorial-stack {
+  margin-top: 0;
+}
+
+.team-club-hub__card-title {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero.hero--home.hero--sports {
+  min-height: 0;
+  padding-top: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.hero.hero--home.hero--sports .hero__subcopy--lead {
+  max-width: 36rem;
+  font-size: 0.92rem;
+}
+
+.home--sports .home-popular-now {
+  margin-top: 0.35rem;
+}
+
+.home--sports .home-spotlight {
+  margin-bottom: 0.65rem;
+}
+
+.collection-detail-header--compact {
+  margin-bottom: var(--space-md);
+}
+
+.collection-detail-header--compact h1 {
+  margin-bottom: 0.35rem;
+}
+
+.collection-detail-header--compact p {
+  margin-bottom: 0.45rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.collection-detail-header--compact .collection-detail-header__stats {
+  gap: 0.65rem 1rem;
+  font-size: 0.82rem;
+}
+
+.collection-detail-header--compact .collection-detail-header__xp-hint {
+  margin-bottom: 0.55rem;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 720px) {
+  .player-profile__hero--sports {
+    grid-template-columns: 1fr;
+  }
+
+  .player-profile__hero-toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+
+  .club-hero--sports,
+  .national-hero--sports {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-stat-strip__item {
+    flex: 1 1 42%;
+  }
+
+  .profile-stat-strip__item:nth-child(2n) {
+    border-right: none;
+  }
+}

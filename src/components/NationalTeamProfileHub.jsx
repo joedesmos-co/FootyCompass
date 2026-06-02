@@ -28,7 +28,7 @@ export default function NationalTeamProfileHub({
   const showSquadIdentity = Boolean(profile.squadIdentity) && !compact;
   const showCulture = Boolean(profile.footballCulture) && !nationalTeam.fanGuide;
   const showCultureDetails = Boolean(nationalTeam.fanGuide);
-  const showRivalry = Boolean(profile.rivalry);
+  const showRivalry = Boolean(profile.rivalry) && !compact;
   const showTournament = Boolean(profile.tournament);
 
   if (
@@ -43,24 +43,21 @@ export default function NationalTeamProfileHub({
   }
 
   return (
-    <div className="national-team-hub">
+    <div className="national-team-hub profile-editorial-stack">
       {showHistory ? (
-        <section className="info-card profile__section" aria-labelledby="nt-history-title">
-          <h2 id="nt-history-title">National team overview</h2>
+        <section className="profile-editorial__block profile__section" aria-labelledby="nt-history-title">
+          <h2 id="nt-history-title" className="profile-editorial__heading">
+            Overview
+          </h2>
           <p className="national-team-hub__prose">{profile.history}</p>
         </section>
       ) : null}
 
-      {showSquadIdentity ? (
-        <section className="info-card profile__section" aria-labelledby="nt-squad-id-title">
-          <h2 id="nt-squad-id-title">Squad identity</h2>
-          <p className="national-team-hub__prose">{profile.squadIdentity}</p>
-        </section>
-      ) : null}
-
       {showTournament ? (
-        <section className="info-card profile__section" aria-labelledby="nt-tournament-title">
-          <h2 id="nt-tournament-title">Tournament relevance</h2>
+        <section className="profile-editorial__block profile__section" aria-labelledby="nt-tournament-title">
+          <h2 id="nt-tournament-title" className="profile-editorial__heading">
+            Tournament
+          </h2>
           <p className="national-team-hub__prose">{profile.tournament}</p>
           {profile.isWorldCupFeatured ? (
             <p className="national-team-hub__meta">
@@ -73,22 +70,35 @@ export default function NationalTeamProfileHub({
       ) : null}
 
       {showCultureDetails ? (
-        <details className="profile__section national-team-profile__fan-guide info-card" open>
-          <summary>Football culture &amp; fan guide</summary>
+        <details className="profile-editorial__block profile__section national-team-profile__fan-guide" open>
+          <summary className="profile-editorial__heading">Fan culture</summary>
           <p className="national-team-hub__prose">{nationalTeam.fanGuide}</p>
         </details>
       ) : null}
 
+      {showSquadIdentity ? (
+        <section className="profile-editorial__block profile__section" aria-labelledby="nt-squad-id-title">
+          <h2 id="nt-squad-id-title" className="profile-editorial__heading">
+            Squad
+          </h2>
+          <p className="national-team-hub__prose">{profile.squadIdentity}</p>
+        </section>
+      ) : null}
+
       {showCulture ? (
-        <section className="info-card profile__section" aria-labelledby="nt-culture-title">
-          <h2 id="nt-culture-title">Football culture</h2>
+        <section className="profile-editorial__block profile__section" aria-labelledby="nt-culture-title">
+          <h2 id="nt-culture-title" className="profile-editorial__heading">
+            Identity
+          </h2>
           <p className="national-team-hub__prose">{profile.footballCulture}</p>
         </section>
       ) : null}
 
       {showRivalry ? (
-        <section className="info-card profile__section" aria-labelledby="nt-rivalry-title">
-          <h2 id="nt-rivalry-title">Rivalry context</h2>
+        <section className="profile-editorial__block profile__section" aria-labelledby="nt-rivalry-title">
+          <h2 id="nt-rivalry-title" className="profile-editorial__heading">
+            Rivalries
+          </h2>
           <p className="national-team-hub__prose">{profile.rivalry}</p>
         </section>
       ) : null}
