@@ -5,6 +5,80 @@
 
 export const learningPaths = [
   {
+    id: 'start-here-new-fan',
+    title: 'Start here: new fan',
+    description:
+      'One beginner collection, two club pages, one superstar profile, then a light Premier League quiz.',
+    difficulty: 'Beginner',
+    tags: ['Start here', 'Beginner'],
+    collectionId: 'start-here-new-fans',
+    steps: [
+      {
+        type: 'collection',
+        collectionId: 'start-here-new-fans',
+        title: 'Start here collection',
+        hint: 'Six items — mark each learned before moving on.',
+      },
+      {
+        type: 'profile',
+        entityType: 'team',
+        id: 'arsenal',
+        title: 'Arsenal club page',
+        hint: 'Rivals, fan guide, and current squad in one compact view.',
+      },
+      {
+        type: 'profile',
+        entityType: 'player',
+        id: 'haaland',
+        title: 'Spotlight: Erling Haaland',
+        hint: 'Quick fact, strengths chips, and career stops.',
+      },
+      {
+        type: 'quiz',
+        quizLaunch: { leagueId: 'premier-league' },
+        title: 'Premier League quiz warm-up',
+        hint: 'Short hint-based round scoped to the division.',
+      },
+    ],
+  },
+  {
+    id: 'learn-modern-superstars',
+    title: 'Learn modern superstars',
+    description:
+      'Superstar collection, compare two profiles, then a Madrid club quiz to lock in names.',
+    difficulty: 'Beginner',
+    tags: ['Stars', 'Players'],
+    collectionId: 'modern-superstars',
+    steps: [
+      {
+        type: 'collection',
+        collectionId: 'modern-superstars',
+        title: 'Modern superstars collection',
+        hint: 'Eight headline names — open at least three profiles.',
+      },
+      {
+        type: 'profile',
+        entityType: 'player',
+        id: 'bellingham',
+        title: 'Spotlight: Jude Bellingham',
+        hint: 'Madrid №5 — box-to-box goals and England caps.',
+      },
+      {
+        type: 'profile',
+        entityType: 'player',
+        id: 'vinicius',
+        title: 'Spotlight: Vinícius Júnior',
+        hint: 'Brazil winger — Bernabéu pace and big-game goals.',
+      },
+      {
+        type: 'quiz',
+        quizLaunch: { teamId: 'real-madrid' },
+        title: 'Real Madrid quiz',
+        hint: 'Reinforce Los Blancos names from editorial hints.',
+      },
+    ],
+  },
+  {
     id: 'learn-premier-league',
     title: 'Learn the Premier League',
     description:

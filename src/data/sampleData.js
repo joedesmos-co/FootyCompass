@@ -336,7 +336,7 @@ const baseTeams = [
       "Mohamed Salah — right wing; cutting inside on his left foot",
       "Virgil van Dijk — centre-back; organises the defensive line",
       "Alisson Becker — goalkeeper; saves and calm distribution",
-      "Trent Alexander-Arnold — right-back; set pieces and crossing",
+      "Dominik Szoboszlai — midfielder; long-range shooting and creativity",
     ],
     manager: "Arne Slot",
     identityTags: [
@@ -667,8 +667,10 @@ const baseTeams = [
       "Robert Lewandowski — goal machine before Bayern",
     ],
     currentKeyPlayers: [
-      "Jadon Sancho — winger on loan spells",
-      "Mats Hummels — returning defensive leader",
+      "Gregor Kobel — Switzerland goalkeeper; shot-stopping",
+      "Serhou Guirassy — Guinea striker; penalty-box threat",
+      "Julian Brandt — Germany playmaker; chance creation",
+      "Nico Schlotterbeck — centre-back; progressive passing",
     ],
     manager: "Nuri Şahin",
     identityTags: [
@@ -953,17 +955,19 @@ const baseTeams = [
       "Marseille",
       "Lyon",
     ],
-    shortHistory: "PSG grew from a young Paris club into France's dominant modern force, with the Qatari ownership era turning the Parc des Princes into a global football stage.",
-    fanGuide: "Dark blue, red, and Paris identity. Le Classique against Marseille is the fixture to learn first; European expectations shape every season.",
+    shortHistory: "PSG grew from a young Paris club into France's dominant modern force. The Qatari era brought star signings, domestic trophies, and a 2025 Champions League breakthrough — the Parc des Princes became a global stage.",
+    fanGuide: "Dark blue, red, and Paris pride. Le Classique vs Marseille is the rivalry every new fan learns first. Ultras in the Auteuil and Boulogne ends drive atmosphere; European nights raise the tempo every season.",
     legends: [
-      "Zlatan Ibrahimovic — striker who defined early QSI dominance",
-      "Kylian Mbappe — Paris-born superstar",
-      "Thiago Silva — defensive leader",
+      "Zlatan Ibrahimovic — swaggering striker of the early QSI years",
+      "Kylian Mbappé — Paris-born record goalscorer before Real Madrid",
+      "Marquinhos — captain and defensive leader through trophy eras",
+      "Thiago Silva — calm centre-back who organised the back line",
     ],
     currentKeyPlayers: [
-      "Ousmane Dembele — France forward",
-      "Achraf Hakimi — Morocco full-back",
-      "Vitinha — Portugal midfielder",
+      "Ousmane Dembélé — France forward; pace and finishing",
+      "Achraf Hakimi — Morocco right-back; overlapping runs",
+      "Khvicha Kvaratskhelia — Georgia winger; dribbling threat",
+      "Vitinha — Portugal midfielder; tempo and progression",
     ],
     manager: "Luis Enrique",
     identityTags: [
@@ -55170,7 +55174,11 @@ const basePlayers = [
     importanceScore: 96,
     quickFact: "Argentina’s 2022 World Cup-winning number 10 who moved to Inter Miami in 2023 and reshaped MLS attention overnight.",
     playingStyle: "Left-footed creator who drifts inside, threads through-balls, and finishes with placement rather than power.",
-    careerHistory: [],
+    careerHistory: [
+      { club: "Barcelona", years: "2004-2021" },
+      { club: "Paris Saint-Germain", years: "2021-2023" },
+      { club: "Inter Miami", years: "2023-present" },
+    ],
     quizHints: [
       "Won the World Cup with Argentina in Qatar while wearing number 10.",
       "Left European giants for pink-and-black Inter Miami after Paris Saint-Germain.",
@@ -57679,7 +57687,12 @@ const basePlayers = [
     importanceScore: 92,
     quickFact: "South Korea captain whose goals at Tottenham made him Asia’s most recognisable Premier League star before a move to MLS with Los Angeles FC.",
     playingStyle: "Inside forward who attacks space behind the defence, combines quickly, and finishes with both feet.",
-    careerHistory: [],
+    careerHistory: [
+      { club: "Hamburger SV", years: "2010-2013" },
+      { club: "Bayer Leverkusen", years: "2013-2015" },
+      { club: "Tottenham Hotspur", years: "2015-2025" },
+      { club: "Los Angeles FC", years: "2025-present" },
+    ],
     quizHints: [
       "South Korea captain in red who plays for Los Angeles FC in MLS.",
       "Left-footed forward — not Kang-in Lee the creative midfielder.",
@@ -83694,7 +83707,12 @@ const basePlayers = [
     importanceScore: 95,
     quickFact: "Brazil icon who developed at Santos before global stardom and a homecoming to the club in this dataset.",
     playingStyle: "Skillful forward who dribbles from deep, draws fouls, and creates with flair and vision.",
-    careerHistory: [],
+    careerHistory: [
+      { club: "Santos", years: "2009-2013" },
+      { club: "Barcelona", years: "2013-2017" },
+      { club: "Paris Saint-Germain", years: "2017-2023" },
+      { club: "Santos", years: "2025-present" },
+    ],
     quizHints: [
       "Brazil’s generational no. 10 who won Olympic gold in 2016.",
       "Santos academy graduate famous for skill, flair, and samba style.",

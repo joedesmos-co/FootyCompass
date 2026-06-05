@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "description": "Hand-curated premium player chips for top-importance profiles. Merged into playerEditorialOverlays.json by apply-premium-player-pass.js — fact-locked, no quiz eligibility changes.",
+  "updatedAt": "2026-06-05",
+  "players": {
+    "haaland": {
+      "strengths": ["Finishing", "Penalty-box movement", "Pace", "Aerial threat"],
+      "knownFor": ["Meditation celebration", "Norway striker", "Record Premier League goals", "Dortmund → City arc"]
+    },
+    "bellingham": {
+      "strengths": ["Late runs", "Pressing", "Leadership", "Box-to-box goals"],
+      "knownFor": ["Knee-slide celebration", "Birmingham → Dortmund → Madrid", "England midfield star", "Bernabéu №5"]
+    },
+    "salah": {
+      "strengths": ["Left-foot curlers", "Counter-attacking", "Cut-inside runs", "Volume scoring"],
+      "knownFor": ["Egyptian King at Anfield", "Premier League Golden Boots", "Roma before Liverpool", "Near-post finishes"]
+    },
+    "vinicius": {
+      "strengths": ["1v1 dribbling", "Pace", "Big-game goals", "Drawing fouls"],
+      "knownFor": ["Bernabéu №7", "2022 Champions League final goal", "Flamengo youth product", "Anti-racism advocacy"]
+    },
+    "kane": {
+      "strengths": ["Link play", "Both-foot finishing", "Set pieces", "Aerial threat"],
+      "knownFor": ["England captain", "2018 World Cup Golden Boot", "Nine-and-a-half striker", "Tottenham → Bayern"]
+    },
+    "musiala": {
+      "strengths": ["1v1 dribbling", "Close control", "Half-space runs", "Composure"],
+      "knownFor": ["Bambi nickname", "Germany over England choice", "Bayern red №42", "Chelsea academy roots"]
+    },
+    "modric": {
+      "strengths": ["Outside-foot passes", "Press resistance", "Tempo control", "Stamina"],
+      "knownFor": ["2018 Ballon d'Or", "Croatia 2018 World Cup run", "Madrid metronome", "White Hart Lane years"]
+    },
+    "rodri": {
+      "strengths": ["Screening", "Progressive passing", "Late-box arrivals", "Composure"],
+      "knownFor": ["El tractor nickname", "2023 treble pivot", "City №16", "Euro 2024 with Spain"]
+    },
+    "van-dijk": {
+      "strengths": ["Aerial duels", "Organising the line", "Calm distribution", "1v1 defending"],
+      "knownFor": ["2019 PFA Player of the Year", "Liverpool №4", "2019 Champions League", "Netherlands captain"]
+    },
+    "saka": {
+      "strengths": ["Cut-inside shooting", "Crossing", "Defensive work rate", "Ball-striking"],
+      "knownFor": ["Arsenal №7", "Hale End graduate", "Euro 2020 final penalty", "England right wing"]
+    },
+    "de-bruyne": {
+      "strengths": ["Through balls", "Whipped crosses", "Long-range shooting", "Set pieces"],
+      "knownFor": ["Premier League assist record", "Genk → Wolfsburg → City", "Ginger beard", "Belgium playmaker"]
+    },
+    "foden": {
+      "strengths": ["Both feet", "Tight-space dribbling", "Between-the-lines runs", "Final-third craft"],
+      "knownFor": ["City №47", "Stockport one-club story", "England creator", "Pep's Iniesta comparison"]
+    },
+    "pedri": {
+      "strengths": ["Press resistance", "Body feints", "Progressive passing", "Low centre of gravity"],
+      "knownFor": ["La Masia technician", "Euro 2020 Young Player", "Spain midfield compass", "Pedri–Gavi pairing"]
+    },
+    "gavi": {
+      "strengths": ["Ball-winning", "Aggressive pressing", "Flair dribbles", "Intensity"],
+      "knownFor": ["La Masia firebrand", "Long hair look", "Spain teen debut", "Beside Pedri in midfield"]
+    },
+    "lewandowski": {
+      "strengths": ["Movement", "Both-foot finishing", "Link play", "Penalty-box timing"],
+      "knownFor": ["Five goals in nine minutes", "Poland record scorer", "Dortmund → Bayern → Barça", "Volleyball youth background"]
+    },
+    "lautaro": {
+      "strengths": ["Pressing forward play", "Link-up", "Power finishing", "Off-the-shoulder runs"],
+      "knownFor": ["Bull celebration", "Inter captain", "2022 World Cup co-top scorer", "Racing → Inter"]
+    },
+    "alisson": {
+      "strengths": ["Reflex saves", "1v1 defending", "Distribution", "Composure"],
+      "knownFor": ["95th-minute header goal", "2019 Champions League", "Brazil №1", "Roma before Liverpool"]
+    },
+    "tm-28003": {
+      "strengths": ["Left-foot dribbling", "Through balls", "Free kicks", "Playmaking vision"],
+      "knownFor": ["2022 World Cup winner", "Inter Miami era", "Barcelona legend", "Argentina №10"]
+    },
+    "tm-68290": {
+      "strengths": ["Flair dribbling", "Drawing fouls", "Creative vision", "Set-piece threat"],
+      "knownFor": ["Santos homecoming", "Brazil Olympic gold 2016", "Neymar Jr skill moves", "Seleção icon"]
+    },
+    "tm-91845": {
+      "strengths": ["Both-foot finishing", "Cut-inside runs", "Off-the-ball runs", "Quick combinations"],
+      "knownFor": ["Tottenham → LAFC", "South Korea captain", "Premier League Golden Boot race", "Asia's PL face"]
+    },
+    "tm-288230": {
+      "strengths": ["Pace", "1v1 dribbling", "Finishing variety", "Direct running"],
+      "knownFor": ["PSG forward", "France World Cup winner 2018", "Dortmund breakout", "Barça before Paris"]
+    },
+    "tm-85288": {
+      "strengths": ["Flair passing", "Tight-space control", "Creativity", "Set pieces"],
+      "knownFor": ["2010 World Cup winner", "Spain golden generation", "Betis return", "Malagueña nickname era"]
+    },
+    "tm-502670": {
+      "strengths": ["1v1 dribbling", "Cut-inside threat", "Direct running", "Composure in duels"],
+      "knownFor": ["Georgia star at PSG", "Napoli breakout", "Left-wing flair", "Les Bleus rival watch"]
+    },
+    "tm-181767": {
+      "strengths": ["Defensive reading", "Passing from deep", "Leadership", "Aerial presence"],
+      "knownFor": ["PSG captain", "Brazil centre-back", "São Paulo youth", "Paris defensive anchor"]
+    },
+    "tm-257814": {
+      "strengths": ["Shot-stopping", "Reflexes", "Sweeper actions", "Distribution"],
+      "knownFor": ["Dortmund №1", "Switzerland international", "Stuttgart roots", "Yellow Wall nights"]
+    },
+    "tm-270541": {
+      "strengths": ["Hold-up play", "Penalty-box finishing", "Movement", "Physical presence"],
+      "knownFor": ["Guinea striker", "Stuttgart → Dortmund", "Bundesliga goals", "Der Klassiker threat"]
+    },
+    "tm-187492": {
+      "strengths": ["Chance creation", "Half-space runs", "Through balls", "Work rate"],
+      "knownFor": ["Dortmund №10", "Leverkusen roots", "Germany playmaker", "Yellow-black creator"]
+    }
+  }
+}

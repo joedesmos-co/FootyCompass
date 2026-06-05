@@ -10,7 +10,7 @@
         "Finishing",
         "Penalty-box movement",
         "Pace",
-        "Positioning"
+        "Aerial threat"
       ],
       "quizHints": [
         "Rose through Molde and Salzburg before a prolific spell in Dortmund yellow.",
@@ -18,11 +18,10 @@
         "Norwegian striker who wears sky blue and often scores with his head."
       ],
       "knownFor": [
-        "Finishing",
-        "Penalty-box movement",
-        "Pace",
-        "Positioning",
-        "Relentless finisher with explosive runs and ruthless positioning in the box."
+        "Meditation celebration",
+        "Norway striker",
+        "Record Premier League goals",
+        "Dortmund → City arc"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": "Career path: Red Bull Salzburg → Borussia Dortmund → Manchester City."
@@ -31,8 +30,10 @@
       "quickFact": "Became Birmingham City’s youngest-ever first-team player at 16 years and 38 days.",
       "playStyleSummary": "Complete midfielder who arrives in the box, presses aggressively, and leads with charisma.",
       "strengths": [
-        "Penalty-box movement",
-        "Pressing"
+        "Late runs",
+        "Pressing",
+        "Leadership",
+        "Box-to-box goals"
       ],
       "quizHints": [
         "Midlands-born England star who left for Germany before crossing to Spain.",
@@ -40,11 +41,10 @@
         "Wore Dortmund’s number 22 before starring in Madrid’s number 5 shirt."
       ],
       "knownFor": [
-        "Penalty-box movement",
-        "Pressing",
-        "Complete midfielder who arrives in the box",
-        "presses aggressively",
-        "and leads with charisma."
+        "Knee-slide celebration",
+        "Birmingham → Dortmund → Madrid",
+        "England midfield star",
+        "Bernabéu №5"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Career path: Birmingham City → Borussia Dortmund → Real Madrid."
@@ -53,9 +53,10 @@
       "quickFact": "Argentina’s 2022 World Cup-winning number 10 who moved to Inter Miami in 2023 and reshaped MLS attention overnight.",
       "playStyleSummary": "Left-footed creator who drifts inside, threads through-balls, and finishes with placement rather than power.",
       "strengths": [
-        "Left-footed creator who drifts inside",
-        "Threads through-balls",
-        "And finishes with placement rather than power."
+        "Left-foot dribbling",
+        "Through balls",
+        "Free kicks",
+        "Playmaking vision"
       ],
       "quizHints": [
         "Won the World Cup with Argentina in Qatar while wearing number 10.",
@@ -63,11 +64,10 @@
         "Left-footed Argentina creator famous for dribbling, free kicks, and playmaking."
       ],
       "knownFor": [
-        "Left-footed creator who drifts inside",
-        "Threads through-balls",
-        "And finishes with placement rather than power.",
-        "Attack - Right Winger · Inter Miami CF",
-        "Argentina · Major League Soccer"
+        "2022 World Cup winner",
+        "Inter Miami era",
+        "Barcelona legend",
+        "Argentina №10"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": null
@@ -76,7 +76,10 @@
       "quickFact": "Worked in a café during a rough patch after Chelsea — before becoming Liverpool’s defining goal scorer of a generation.",
       "playStyleSummary": "Left-footed inverted winger who cuts inside for curlers and thrives on counterattacks.",
       "strengths": [
-        "Transition threat"
+        "Left-foot curlers",
+        "Counter-attacking",
+        "Cut-inside runs",
+        "Volume scoring"
       ],
       "quizHints": [
         "African nation whose flag inspires his “Egyptian King” nickname at Anfield.",
@@ -84,10 +87,10 @@
         "Roma’s “Pharaoh” before Merseyside records and Premier League Golden Boots."
       ],
       "knownFor": [
-        "Transition threat",
-        "Left-footed inverted winger who cuts inside for curlers and thrives on counterattacks.",
-        "Right Winger · Liverpool",
-        "Egypt · Premier League"
+        "Egyptian King at Anfield",
+        "Premier League Golden Boots",
+        "Roma before Liverpool",
+        "Near-post finishes"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": "Career path: Fiorentina → Roma → Liverpool."
@@ -96,8 +99,10 @@
       "quickFact": "Flamengo sold him to Madrid as a teenager — he later scored the decisive goal in a Paris Champions League final.",
       "playStyleSummary": "Explosive dribbler who terrorizes full-backs, draws fouls, and finishes in clutch moments.",
       "strengths": [
+        "1v1 dribbling",
         "Pace",
-        "1v1 dribbling"
+        "Big-game goals",
+        "Drawing fouls"
       ],
       "quizHints": [
         "Brazilian left winger who wears the famous number 7 in white at the Bernabéu.",
@@ -105,11 +110,10 @@
         "2022 final winner against the club in all-red from Merseyside."
       ],
       "knownFor": [
-        "Pace",
-        "1v1 dribbling",
-        "Explosive dribbler who terrorizes full-backs",
-        "draws fouls",
-        "and finishes in clutch moments."
+        "Bernabéu №7",
+        "2022 Champions League final goal",
+        "Flamengo youth product",
+        "Anti-racism advocacy"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": "Previously at Flamengo (2017-2018), now Real Madrid."
@@ -118,7 +122,10 @@
       "quickFact": "Brazil icon who developed at Santos before global stardom and a homecoming to the club in this dataset.",
       "playStyleSummary": "Skillful forward who dribbles from deep, draws fouls, and creates with flair and vision.",
       "strengths": [
-        "1v1 dribbling"
+        "Flair dribbling",
+        "Drawing fouls",
+        "Creative vision",
+        "Set-piece threat"
       ],
       "quizHints": [
         "Brazil’s generational no. 10 who won Olympic gold in 2016.",
@@ -126,11 +133,10 @@
         "Neymar at Santos in FootyCompass — not Neymar’s PSG era club in hints."
       ],
       "knownFor": [
-        "1v1 dribbling",
-        "Skillful forward who dribbles from deep",
-        "draws fouls",
-        "and creates with flair and vision.",
-        "Midfield - Attacking Midfield · Santos"
+        "Santos homecoming",
+        "Brazil Olympic gold 2016",
+        "Neymar Jr skill moves",
+        "Seleção icon"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": null
@@ -139,7 +145,10 @@
       "quickFact": "Set the Premier League single-season assists record in 2019–20 — a benchmark for modern playmakers.",
       "playStyleSummary": "World-class passer who dictates tempo with vision, whipped crosses, and long-range shooting.",
       "strengths": [
-        "Crossing"
+        "Through balls",
+        "Whipped crosses",
+        "Long-range shooting",
+        "Set pieces"
       ],
       "quizHints": [
         "Belgian international who rebuilt his reputation in the Bundesliga after a brief London spell.",
@@ -147,11 +156,10 @@
         "Whips crosses from the right half-space — ginger beard, supreme vision, and a cannon of a right foot."
       ],
       "knownFor": [
-        "Crossing",
-        "World-class passer who dictates tempo with vision",
-        "whipped crosses",
-        "and long-range shooting.",
-        "Attacking Midfielder · Napoli"
+        "Premier League assist record",
+        "Genk → Wolfsburg → City",
+        "Ginger beard",
+        "Belgium playmaker"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Career path: VfL Wolfsburg → Manchester City → Napoli."
@@ -160,8 +168,10 @@
       "quickFact": "England’s men’s all-time leading goalscorer — he passed Wayne Rooney’s record during Euro 2024 qualifying.",
       "playStyleSummary": "Classic number 9 who drops deep to create, finishes with both feet, and dominates aerial duels.",
       "strengths": [
-        "Aerial threat",
-        "Duels"
+        "Link play",
+        "Both-foot finishing",
+        "Set pieces",
+        "Aerial threat"
       ],
       "quizHints": [
         "Striker who wore white for a north London club for over a decade before Bavaria.",
@@ -169,11 +179,10 @@
         "2018 World Cup Golden Boot winner in Russia — England captain."
       ],
       "knownFor": [
-        "Aerial threat",
-        "Duels",
-        "Classic number 9 who drops deep to create",
-        "finishes with both feet",
-        "and dominates aerial duels."
+        "England captain",
+        "2018 World Cup Golden Boot",
+        "Nine-and-a-half striker",
+        "Tottenham → Bayern"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": "Previously at Tottenham Hotspur (2009-2023), now Bayern Munich."
@@ -182,7 +191,9 @@
       "quickFact": "Spain fans nicknamed him “El tractor” for how he shields the back line and never stops running.",
       "playStyleSummary": "Calm pivot who shields the defense, recycles possession, and occasionally arrives late in the box.",
       "strengths": [
-        "Penalty-box movement",
+        "Screening",
+        "Progressive passing",
+        "Late-box arrivals",
         "Composure"
       ],
       "quizHints": [
@@ -191,11 +202,10 @@
         "Often wears number 16 in sky blue — Euro 2024 winner with La Roja."
       ],
       "knownFor": [
-        "Penalty-box movement",
-        "Composure",
-        "Calm pivot who shields the defense",
-        "recycles possession",
-        "and occasionally arrives late in the box."
+        "El tractor nickname",
+        "2023 treble pivot",
+        "City №16",
+        "Euro 2024 with Spain"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Career path: Villarreal → Atlético Madrid → Manchester City."
@@ -204,9 +214,10 @@
       "quickFact": "PFA Player of the Year in 2019 — one of the few defenders to win England’s top individual prize.",
       "playStyleSummary": "Dominant aerial defender with calm distribution and game-reading that organizes the back line.",
       "strengths": [
-        "Aerial threat",
-        "Composure",
-        "Distribution"
+        "Aerial duels",
+        "Organising the line",
+        "Calm distribution",
+        "1v1 defending"
       ],
       "quizHints": [
         "Dutch defender who wore Celtic hoops and Southampton red-and-white before Anfield.",
@@ -214,11 +225,10 @@
         "Wears number 4, leads Liverpool’s high line — recovered from a serious knee injury."
       ],
       "knownFor": [
-        "Aerial threat",
-        "Composure",
-        "Distribution",
-        "Dominant aerial defender with calm distribution and game-reading that organizes the back line.",
-        "Centre-Back · Liverpool"
+        "2019 PFA Player of the Year",
+        "Liverpool №4",
+        "2019 Champions League",
+        "Netherlands captain"
       ],
       "roleSummary": "Defensive work, duels, and build-up from the back.",
       "careerContext": "Career path: Celtic → Southampton → Liverpool."
@@ -227,8 +237,10 @@
       "quickFact": "Chose Germany over England at senior level despite captaining England youth sides and growing up in London.",
       "playStyleSummary": "Slippery dribbler with close control, nutmegs, and intelligent cuts from the left half-space.",
       "strengths": [
-        "Pace",
-        "1v1 dribbling"
+        "1v1 dribbling",
+        "Close control",
+        "Half-space runs",
+        "Composure"
       ],
       "quizHints": [
         "Bayern’s slippery dribbler born in Fulham with Nigerian and German heritage.",
@@ -236,11 +248,10 @@
         "Opponents dub him “Bambi” for how he glides past challenges."
       ],
       "knownFor": [
-        "Pace",
-        "1v1 dribbling",
-        "Slippery dribbler with close control",
-        "nutmegs",
-        "and intelligent cuts from the left half-space."
+        "Bambi nickname",
+        "Germany over England choice",
+        "Bayern red №42",
+        "Chelsea academy roots"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Previously at Chelsea (2011-2019), now Bayern Munich."
@@ -249,9 +260,10 @@
       "quickFact": "His parents reportedly named him after finding “Bukayo” on a second-hand shopping site.",
       "playStyleSummary": "Direct winger with elite ball-striking, cut-inside threat, and tireless defensive work rate.",
       "strengths": [
-        "Direct winger with elite ball-striking",
-        "Cut-inside threat",
-        "And tireless defensive work rate."
+        "Cut-inside shooting",
+        "Crossing",
+        "Defensive work rate",
+        "Ball-striking"
       ],
       "quizHints": [
         "England international who took the decisive spot-kick at Euro 2020’s final.",
@@ -259,11 +271,10 @@
         "Left-footed curls from the right — Arsenal’s number 7 in red and white."
       ],
       "knownFor": [
-        "Direct winger with elite ball-striking",
-        "Cut-inside threat",
-        "And tireless defensive work rate.",
-        "Right Winger · Arsenal",
-        "England · Premier League"
+        "Arsenal №7",
+        "Hale End graduate",
+        "Euro 2020 final penalty",
+        "England right wing"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": "Listed with Arsenal (2018-present)."
@@ -272,7 +283,10 @@
       "quickFact": "His bull celebration — hands on hips, charging — became one of Argentina’s most copied goal rituals after 2022.",
       "playStyleSummary": "Pressing forward who links play, drops deep, and finishes with power and movement off the shoulder.",
       "strengths": [
-        "Pressing"
+        "Pressing forward play",
+        "Link-up",
+        "Power finishing",
+        "Off-the-shoulder runs"
       ],
       "quizHints": [
         "Argentine striker who left Racing’s light blue and white for Nerazzurri black and blue.",
@@ -280,11 +294,10 @@
         "Inter captain who leads the line in Serie A — bull celebration after goals."
       ],
       "knownFor": [
-        "Pressing",
-        "Pressing forward who links play",
-        "drops deep",
-        "and finishes with power and movement off the shoulder.",
-        "Striker · Inter Milan"
+        "Bull celebration",
+        "Inter captain",
+        "2022 World Cup co-top scorer",
+        "Racing → Inter"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": "Previously at Racing Club (2015-2018), now Inter Milan."
@@ -293,7 +306,10 @@
       "quickFact": "South Korea captain whose goals at Tottenham made him Asia’s most recognisable Premier League star before a move to MLS with Los Angeles FC.",
       "playStyleSummary": "Inside forward who attacks space behind the defence, combines quickly, and finishes with both feet.",
       "strengths": [
-        "Pace"
+        "Both-foot finishing",
+        "Cut-inside runs",
+        "Off-the-ball runs",
+        "Quick combinations"
       ],
       "quizHints": [
         "South Korea captain in red who plays for Los Angeles FC in MLS.",
@@ -301,11 +317,10 @@
         "Heung-min Son known for cut-ins from the left to shoot."
       ],
       "knownFor": [
-        "Pace",
-        "Inside forward who attacks space behind the defence",
-        "combines quickly",
-        "and finishes with both feet.",
-        "Attack - Left Winger · Los Angeles FC"
+        "Tottenham → LAFC",
+        "South Korea captain",
+        "Premier League Golden Boot race",
+        "Asia's PL face"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": null
@@ -358,7 +373,10 @@
       "quickFact": "Wears number 47 at City — a tribute to his grandparents’ house in Moss Side.",
       "playStyleSummary": "Silky dribbler who links play between the lines with both feet and clever movement.",
       "strengths": [
-        "1v1 dribbling"
+        "Both feet",
+        "Tight-space dribbling",
+        "Between-the-lines runs",
+        "Final-third craft"
       ],
       "quizHints": [
         "One-club Premier League attacker raised in Stockport, not Spain.",
@@ -366,10 +384,10 @@
         "England international in sky blue who plays wide or as a number 10."
       ],
       "knownFor": [
-        "1v1 dribbling",
-        "Silky dribbler who links play between the lines with both feet and clever movement.",
-        "Attacking Midfielder · Manchester City",
-        "England · Premier League"
+        "City №47",
+        "Stockport one-club story",
+        "England creator",
+        "Pep's Iniesta comparison"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Listed with Manchester City (2017-present)."
@@ -421,7 +439,10 @@
       "quickFact": "Five goals in nine minutes vs Wolfsburg in 2015 remains one of the Bundesliga’s most famous individual explosions.",
       "playStyleSummary": "Complete number 9 with elite movement, link play, and both-footed finishing.",
       "strengths": [
-        "Finishing"
+        "Movement",
+        "Both-foot finishing",
+        "Link play",
+        "Penalty-box timing"
       ],
       "quizHints": [
         "Poland’s all-time leading men’s international goalscorer.",
@@ -429,11 +450,10 @@
         "Also played volleyball competitively as a teenager before committing to football."
       ],
       "knownFor": [
-        "Finishing",
-        "Complete number 9 with elite movement",
-        "link play",
-        "and both-footed finishing.",
-        "Striker · Barcelona"
+        "Five goals in nine minutes",
+        "Poland record scorer",
+        "Dortmund → Bayern → Barça",
+        "Volleyball youth background"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": "Career path: Borussia Dortmund → Bayern Munich → Barcelona."
@@ -573,8 +593,10 @@
       "quickFact": "Scored a 95th-minute header from a corner in May 2021 — one of only a handful of Premier League goals by a keeper.",
       "playStyleSummary": "Shot-stopper with quick reflexes and calm one-on-one defending in big moments.",
       "strengths": [
-        "Composure",
-        "Shot-stopping"
+        "Reflex saves",
+        "1v1 defending",
+        "Distribution",
+        "Composure"
       ],
       "quizHints": [
         "Brazilian shot-stopper whose brother also keeps professionally in Portugal.",
@@ -582,11 +604,10 @@
         "Famous late winning header against a Midlands club in green and white stripes."
       ],
       "knownFor": [
-        "Composure",
-        "Shot-stopping",
-        "Shot-stopper with quick reflexes and calm one-on-one defending in big moments.",
-        "Goalkeeper · Liverpool",
-        "Brazil · Premier League"
+        "95th-minute header goal",
+        "2019 Champions League",
+        "Brazil №1",
+        "Roma before Liverpool"
       ],
       "roleSummary": "Shot-stopping and command of the box define this role.",
       "careerContext": "Career path: Internacional → Roma → Liverpool."
@@ -595,7 +616,10 @@
       "quickFact": "Ballon d’Or winner in 2018 — the first player outside Messi or Ronaldo to win it in over a decade.",
       "playStyleSummary": "Metronome midfielder with outside-foot passes, press resistance, and legendary stamina.",
       "strengths": [
-        "Pressing"
+        "Outside-foot passes",
+        "Press resistance",
+        "Tempo control",
+        "Stamina"
       ],
       "quizHints": [
         "Croatian midfielder who fled war as a child and grew up in a hotel as a refugee.",
@@ -603,11 +627,10 @@
         "Outside-of-the-foot passes and metronome tempo — number 10 for La Roja’s neighbors."
       ],
       "knownFor": [
-        "Pressing",
-        "Metronome midfielder with outside-foot passes",
-        "press resistance",
-        "and legendary stamina.",
-        "Central Midfielder · AC Milan"
+        "2018 Ballon d'Or",
+        "Croatia 2018 World Cup run",
+        "Madrid metronome",
+        "White Hart Lane years"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Career path: Tottenham Hotspur → Real Madrid → AC Milan."
@@ -616,8 +639,10 @@
       "quickFact": "Stacked club, national team, and Olympics minutes as a teenager in 2021 — sparking talk about burnout before he turned 19.",
       "playStyleSummary": "La Masia technician who glides past presses with body feints and progressive passing.",
       "strengths": [
-        "Pressing",
-        "Progressive passing"
+        "Press resistance",
+        "Body feints",
+        "Progressive passing",
+        "Low centre of gravity"
       ],
       "quizHints": [
         "Canary Islands-born La Masia midfielder with a low center of gravity.",
@@ -625,11 +650,10 @@
         "Often paired in midfield with a younger teammate known for fiery tackles."
       ],
       "knownFor": [
-        "Pressing",
-        "Progressive passing",
-        "La Masia technician who glides past presses with body feints and progressive passing.",
-        "Central Midfielder · Barcelona",
-        "Spain · La Liga"
+        "La Masia technician",
+        "Euro 2020 Young Player",
+        "Spain midfield compass",
+        "Pedri–Gavi pairing"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Previously at Las Palmas (2019-2020), now Barcelona."
@@ -1050,7 +1074,10 @@
       "quickFact": "Georgia winger whose dribbling and left-footed shooting made him a star in Italy before becoming a Paris Saint-Germain wide creator.",
       "playStyleSummary": "Unpredictable winger who beats defenders one-on-one, attacks the half-space, and finishes with whipped left-foot strikes.",
       "strengths": [
-        "Pace"
+        "1v1 dribbling",
+        "Cut-inside threat",
+        "Direct running",
+        "Composure in duels"
       ],
       "quizHints": [
         "Georgia international known as Kvaratskhelia with elite dribbling.",
@@ -1058,11 +1085,10 @@
         "Wide attacker whose surname is Kvaratskhelia and nickname often shortened to Kvara."
       ],
       "knownFor": [
-        "Pace",
-        "Unpredictable winger who beats defenders one-on-one",
-        "attacks the half-space",
-        "and finishes with whipped left-foot strikes.",
-        "Attack - Left Winger · Paris Saint-Germain"
+        "Georgia star at PSG",
+        "Napoli breakout",
+        "Left-wing flair",
+        "Les Bleus rival watch"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": null
@@ -1071,7 +1097,10 @@
       "quickFact": "Two-footed France forward known for unpredictable dribbling after major spells with Dortmund, Barcelona, and PSG.",
       "playStyleSummary": "Ambidextrous attacker who beats defenders with acceleration, feints, and early crosses or cutbacks.",
       "strengths": [
-        "Crossing"
+        "Pace",
+        "1v1 dribbling",
+        "Finishing variety",
+        "Direct running"
       ],
       "quizHints": [
         "Broke out at Rennes before a high-profile move to Borussia Dortmund.",
@@ -1079,11 +1108,10 @@
         "France winger listed with Paris Saint-Germain in FootyCompass."
       ],
       "knownFor": [
-        "Crossing",
-        "Ambidextrous attacker who beats defenders with acceleration",
-        "feints",
-        "and early crosses or cutbacks.",
-        "Attack - Centre-Forward · Paris Saint-Germain"
+        "PSG forward",
+        "France World Cup winner 2018",
+        "Dortmund breakout",
+        "Barça before Paris"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": null
@@ -1160,7 +1188,10 @@
       "quickFact": "Made his Spain senior debut at 17 — among the youngest in the men’s team in the modern era.",
       "playStyleSummary": "Fiery ball-winner with flair dribbles and aggressive personality on the pitch.",
       "strengths": [
-        "1v1 dribbling"
+        "Ball-winning",
+        "Aggressive pressing",
+        "Flair dribbles",
+        "Intensity"
       ],
       "quizHints": [
         "La Masia graduate whose first name is Pablo but everyone uses a four-letter nickname.",
@@ -1168,10 +1199,10 @@
         "Serious knee surgery interrupted his rapid rise in blaugrana stripes."
       ],
       "knownFor": [
-        "1v1 dribbling",
-        "Fiery ball-winner with flair dribbles and aggressive personality on the pitch.",
-        "Central Midfielder · Barcelona",
-        "Spain · La Liga"
+        "La Masia firebrand",
+        "Long hair look",
+        "Spain teen debut",
+        "Beside Pedri in midfield"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": "Listed with Barcelona (2021-present)."
@@ -1921,9 +1952,10 @@
       "quickFact": "Switzerland goalkeeper whose shot-stopping helped Borussia Dortmund compete at the top of the Bundesliga.",
       "playStyleSummary": "Modern goalkeeper who sweeps behind the line, reacts sharply in one-on-ones, and starts build-up with confident passing.",
       "strengths": [
-        "Modern goalkeeper who sweeps behind the line",
-        "Reacts sharply in one-on-ones",
-        "And starts build-up with confident passing."
+        "Shot-stopping",
+        "Reflexes",
+        "Sweeper actions",
+        "Distribution"
       ],
       "quizHints": [
         "Switzerland international keeper who became Dortmund’s first choice.",
@@ -1931,11 +1963,10 @@
         "Borussia Dortmund goalkeeper whose first name is Gregor."
       ],
       "knownFor": [
-        "Modern goalkeeper who sweeps behind the line",
-        "Reacts sharply in one-on-ones",
-        "And starts build-up with confident passing.",
-        "Goalkeeper · Borussia Dortmund",
-        "Switzerland · Bundesliga"
+        "Dortmund №1",
+        "Switzerland international",
+        "Stuttgart roots",
+        "Yellow Wall nights"
       ],
       "roleSummary": "Shot-stopping and command of the box define this role.",
       "careerContext": null
@@ -2930,7 +2961,10 @@
       "quickFact": "Long-serving PSG and Brazil defender trusted for leadership, recovery pace, and calm passing from the back.",
       "playStyleSummary": "Composed centre-back who reads danger early, covers space behind the line, and starts attacks simply.",
       "strengths": [
-        "Pace"
+        "Defensive reading",
+        "Passing from deep",
+        "Leadership",
+        "Aerial presence"
       ],
       "quizHints": [
         "Brazilian centre-back who became a Paris Saint-Germain defensive leader.",
@@ -2938,11 +2972,10 @@
         "Often associated with PSG's captaincy and central defence."
       ],
       "knownFor": [
-        "Pace",
-        "Composed centre-back who reads danger early",
-        "covers space behind the line",
-        "and starts attacks simply.",
-        "Defender - Centre-Back · Paris Saint-Germain"
+        "PSG captain",
+        "Brazil centre-back",
+        "São Paulo youth",
+        "Paris defensive anchor"
       ],
       "roleSummary": "Defensive work, duels, and build-up from the back.",
       "careerContext": null
@@ -2951,9 +2984,10 @@
       "quickFact": "Spain’s silky playmaker and 2010 World Cup winner who lit up Real Madrid before a Betis renaissance in La Liga.",
       "playStyleSummary": "Creative attacking midfielder who dribbles in tight spaces, plays one-twos, and shoots from range.",
       "strengths": [
-        "Pace",
-        "1v1 dribbling",
-        "Chance creation"
+        "Flair passing",
+        "Tight-space control",
+        "Creativity",
+        "Set pieces"
       ],
       "quizHints": [
         "Spain magician who won the 2010 World Cup in South Africa.",
@@ -2961,11 +2995,10 @@
         "Mononym Isco at Real Betis — not Iniesta but same golden generation era."
       ],
       "knownFor": [
-        "Pace",
-        "1v1 dribbling",
-        "Chance creation",
-        "Creative attacking midfielder who dribbles in tight spaces",
-        "plays one-twos"
+        "2010 World Cup winner",
+        "Spain golden generation",
+        "Betis return",
+        "Malagueña nickname era"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": null
@@ -11463,13 +11496,16 @@
       "quickFact": "German attacking midfielder known for smooth touches and creative passing in Borussia Dortmund’s midfield.",
       "playStyleSummary": "Fluid attacking midfielder who carries the ball through midfield and slips passes into runners.",
       "strengths": [
-        "Ball carrying"
+        "Chance creation",
+        "Half-space runs",
+        "Through balls",
+        "Work rate"
       ],
       "knownFor": [
-        "Ball carrying",
-        "Fluid attacking midfielder who carries the ball through midfield and slips passes into runners.",
-        "Midfield - Attacking Midfield · Borussia Dortmund",
-        "Germany · Bundesliga"
+        "Dortmund №10",
+        "Leverkusen roots",
+        "Germany playmaker",
+        "Yellow-black creator"
       ],
       "roleSummary": "Links defence and attack — tempo, passing, and ball-winning.",
       "careerContext": null,
@@ -67080,10 +67116,17 @@
     "tm-270541": {
       "quickFact": "Serhou Guirassy is a 30-year-old attack - centre-forward at Borussia Dortmund (Bundesliga) · Guinea.",
       "playStyleSummary": "Goal threat, movement, and finishing in the final third.",
-      "strengths": [],
+      "strengths": [
+        "Hold-up play",
+        "Penalty-box finishing",
+        "Movement",
+        "Physical presence"
+      ],
       "knownFor": [
-        "Attack - Centre-Forward · Borussia Dortmund",
-        "Guinea · Bundesliga"
+        "Guinea striker",
+        "Stuttgart → Dortmund",
+        "Bundesliga goals",
+        "Der Klassiker threat"
       ],
       "roleSummary": "Goal threat, movement, and finishing in the final third.",
       "careerContext": null,
@@ -73641,5 +73684,6 @@
     "added": 3462,
     "updated": 440
   },
-  "polishedAt": "2026-05-31T16:46:42.243Z"
+  "polishedAt": "2026-05-31T16:46:42.243Z",
+  "premiumPassAt": "2026-06-05T02:23:21.691Z"
 }

@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-05-31T16:46:20.666Z",
+  "generatedAt": "2026-06-05T02:23:22.032Z",
   "overlayCount": 164,
-  "thinClubPass": {
-    "added": 0,
-    "updated": 0,
-    "targeted": 0
+  "premiumClubPass": {
+    "updated": 17,
+    "targeted": 17
   },
   "overlays": {
     "arsenal": {
@@ -23,7 +22,7 @@
       "stadiumContext": "Liverpool play home matches at Anfield. Founded in 1892. Head coach: Arne Slot.",
       "rivalsSummary": "The Merseyside derby vs Everton is about city pride; matches vs Manchester United carry extra history.",
       "legendsSummary": "Club legends include Steven Gerrard, Kenny Dalglish, Ian Rush, and Jamie Carragher — notably Steven Gerrard (one-club captain; Istanbul 2005 and famous long-range goals).",
-      "playersToKnowIntro": "Look out for Mohamed Salah, Virgil van Dijk, Alisson Becker, and Trent Alexander-Arnold in the squad below.",
+      "playersToKnowIntro": "Look out for Mohamed Salah, Virgil van Dijk, Alisson Becker, and Dominik Szoboszlai in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Liverpool player quiz — derby names like Everton often come up.",
       "leagueContext": "Liverpool compete in Premier League. Often end-to-end: quick transitions, pressing, and athletic midfield battles. Top teams mix that with modern positional play; smaller clubs may sit deeper and…"
     },
@@ -113,7 +112,7 @@
       "stadiumContext": "Borussia Dortmund play home matches at Signal Iduna Park. Founded in 1909. Head coach: Nuri Şahin.",
       "rivalsSummary": "Der Klassiker vs Bayern is the national headline.",
       "legendsSummary": "Club legends include Marco Reus, Mats Hummels, and Robert Lewandowski — notably Marco Reus (one-club winger and captain).",
-      "playersToKnowIntro": "Look out for Jadon Sancho and Mats Hummels in the squad below.",
+      "playersToKnowIntro": "Look out for Gregor Kobel, Serhou Guirassy, Julian Brandt, and Nico Schlotterbeck in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Borussia Dortmund player quiz — derby names like Bayern Munich often come up.",
       "leagueContext": "Borussia Dortmund compete in Bundesliga. Direct and vertical: win the ball, attack fast, use wingers and overlapping full-backs. Pressing is common; transitions matter. Many clubs trust academy…"
     },
@@ -158,12 +157,12 @@
       "leagueContext": "Napoli compete in Serie A. Organised defending and midfield blocks; wing-backs and three-at-the-back systems appear often. Teams protect shape first, then explode with individual skill.…"
     },
     "paris-saint-germain": {
-      "metaDescription": "Paris Saint-Germain: Dark blue, red, and Paris identity. Le Classique against Marseille is the fixture to learn first;…",
+      "metaDescription": "Paris Saint-Germain: Dark blue, red, and Paris pride. Le Classique vs Marseille is the rivalry every new fan learns…",
       "tacticalIdentity": "Paris Saint-Germain play with possession-oriented build-up, title-chasing expectations, and long trophy pedigree. Head coach: Luis Enrique.",
       "stadiumContext": "Paris Saint-Germain play home matches at Parc des Princes. Founded in 1970. Head coach: Luis Enrique.",
-      "rivalsSummary": "Le Classique against Marseille is the fixture to learn first; European expectations shape every season.",
-      "legendsSummary": "Club legends include Zlatan Ibrahimovic, Kylian Mbappe, and Thiago Silva — notably Zlatan Ibrahimovic (striker who defined early QSI dominance).",
-      "playersToKnowIntro": "Look out for Ousmane Dembele, Achraf Hakimi, and Vitinha in the squad below.",
+      "rivalsSummary": "Le Classique vs Marseille is the rivalry every new fan learns first.",
+      "legendsSummary": "Club legends include Zlatan Ibrahimovic, Kylian Mbappé, Marquinhos, and Thiago Silva — notably Zlatan Ibrahimovic (swaggering striker of the early QSI years).",
+      "playersToKnowIntro": "Look out for Ousmane Dembélé, Achraf Hakimi, Khvicha Kvaratskhelia, and Vitinha in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Paris Saint-Germain player quiz — derby names like Marseille often come up.",
       "leagueContext": "Paris Saint-Germain compete in Ligue 1. Athletic, fast, and development-heavy. Ligue 1 often gives young players real minutes, while top clubs blend direct transitions with technical attacking…"
     },
@@ -1847,11 +1846,5 @@
       "playersToKnowIntro": "Look out for Memphis Depay, Yuri Alberto, Gustavo Henrique, and Matheuzinho in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Corinthians player quiz — derby names like Palmeiras often come up."
     }
-  },
-  "polishedAt": "2026-05-31T16:46:20.924Z",
-  "allMajorClubsPass": {
-    "added": 47,
-    "updated": 117,
-    "targeted": 164
   }
 }

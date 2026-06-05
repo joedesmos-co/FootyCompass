@@ -2,6 +2,118 @@
 
 export const collections = [
   {
+    id: 'start-here-new-fans',
+    title: 'Start here',
+    description:
+      'New to football? Six names, three clubs, and one league page — short notes you can finish in one sitting.',
+    difficulty: 'Beginner',
+    tags: ['Start here', 'Beginner', 'Path'],
+    quizLaunch: { leagueId: 'premier-league' },
+    items: [
+      { type: 'league', id: 'premier-league', note: 'England’s top division — 20 clubs, fast pace, global stars.' },
+      { type: 'team', id: 'arsenal', note: 'North London reds — Saka, Ødegaard, pressing football.' },
+      { type: 'team', id: 'real-madrid', note: 'European royalty — Vinícius, Bellingham, white shirts.' },
+      { type: 'team', id: 'barcelona', note: 'La Masia, possession, El Clásico vs Madrid.' },
+      { type: 'player', id: 'haaland', note: 'Man City striker — goals, pace, Norway.' },
+      { type: 'player', id: 'bellingham', note: 'Madrid midfielder — box-to-box goals and leadership.' },
+      { type: 'player', id: 'salah', note: 'Liverpool winger — left foot from the right channel.' },
+    ],
+  },
+  {
+    id: 'modern-superstars',
+    title: 'Modern superstars',
+    description:
+      'Eight headline quiz-ready names every casual fan should recognise — clubs, countries, and one-line roles.',
+    difficulty: 'Beginner',
+    tags: ['Stars', 'Players', 'Popular'],
+    quizLaunch: null,
+    items: [
+      { type: 'player', id: 'haaland', note: 'Norway striker — Manchester City goal machine.' },
+      { type: 'player', id: 'bellingham', note: 'England — Real Madrid goals from midfield.' },
+      { type: 'player', id: 'vinicius', note: 'Brazil winger — Madrid pace and big-game moments.' },
+      { type: 'player', id: 'salah', note: 'Egypt — Liverpool’s inverted right winger.' },
+      { type: 'player', id: 'kane', note: 'England captain — Bayern striker after Tottenham.' },
+      { type: 'player', id: 'musiala', note: 'Germany — Bayern dribbler from the half-space.' },
+      { type: 'player', id: 'tm-28003', note: 'Lionel Messi — Argentina 2022 World Cup winner.' },
+      { type: 'player', id: 'tm-68290', note: 'Neymar — Brazil flair forward at Santos in this dataset.' },
+    ],
+  },
+  {
+    id: 'young-stars-to-watch',
+    title: 'Young stars to watch',
+    description:
+      'Seven rising quiz-ready talents — learn club and country before they dominate highlight reels.',
+    difficulty: 'Beginner',
+    tags: ['Youth', 'Future', 'Players'],
+    quizLaunch: null,
+    items: [
+      { type: 'player', id: 'bellingham', note: '22 — Madrid leader from Birmingham and Dortmund.' },
+      { type: 'player', id: 'pedri', note: 'Barcelona — Spain’s press-resistant link.' },
+      { type: 'player', id: 'gavi', note: 'Barcelona — fiery La Masia midfielder.' },
+      { type: 'player', id: 'foden', note: 'Man City №47 — one-club England creator.' },
+      { type: 'player', id: 'tm-962110', note: 'Pau Cubarsí — teenage Barcelona centre-back.' },
+      { type: 'player', id: 'tm-640428', note: 'Eduardo Camavinga — France & Madrid carrier.' },
+      { type: 'player', id: 'tm-504215', note: 'Giovanni Reyna — USMNT attacking midfielder.' },
+    ],
+  },
+  {
+    id: 'premier-league-starters',
+    title: 'Premier League starters',
+    description:
+      'Nine quiz-ready names to survive pub quiz chat — each tied to a current Big Six or headline club.',
+    difficulty: 'Beginner',
+    tags: ['Premier League', 'England', 'Players'],
+    quizLaunch: { leagueId: 'premier-league' },
+    items: [
+      { type: 'player', id: 'haaland', note: 'Manchester City — main striker.' },
+      { type: 'player', id: 'saka', note: 'Arsenal — right wing and England star.' },
+      { type: 'player', id: 'salah', note: 'Liverpool — cutting inside on the left foot.' },
+      { type: 'player', id: 'rice', note: 'Arsenal — defensive midfield shield.' },
+      { type: 'player', id: 'rodri', note: 'Man City — tempo pivot and screening.' },
+      { type: 'player', id: 'van-dijk', note: 'Liverpool — organises the back line.' },
+      { type: 'player', id: 'tm-568177', note: 'Cole Palmer — Chelsea creator, penalties and vision.' },
+      { type: 'player', id: 'tm-475959', note: 'Josko Gvardiol — Man City progressive defender.' },
+      { type: 'player', id: 'tm-349066', note: 'Alexander Isak — Liverpool striker after Newcastle.' },
+    ],
+  },
+  {
+    id: 'elite-defenders-study',
+    title: 'Elite defenders',
+    description:
+      'Seven centre-backs and full-backs in the quiz pool — duels, build-up, and national-team links.',
+    difficulty: 'Intermediate',
+    tags: ['Defenders', 'Tactics', 'Players'],
+    quizLaunch: { teamId: 'arsenal' },
+    items: [
+      { type: 'player', id: 'saliba', note: 'Arsenal — calm French centre-back duo half.' },
+      { type: 'player', id: 'van-dijk', note: 'Liverpool — aerial leader and Netherlands captain.' },
+      { type: 'player', id: 'bastoni', note: 'Inter — left-sided centre-back in a back three.' },
+      { type: 'player', id: 'tm-475959', note: 'Josko Gvardiol — Man City — left-footed carrier.' },
+      { type: 'player', id: 'tm-401530', note: 'Éder Militão — Real Madrid — Brazil centre-back.' },
+      { type: 'player', id: 'tm-86202', note: 'Antonio Rüdiger — Madrid — aggressive duels.' },
+      { type: 'player', id: 'tm-420243', note: 'Jurriën Timber — Arsenal right-back from Ajax.' },
+    ],
+  },
+  {
+    id: 'club-legends-study',
+    title: 'Club legends',
+    description:
+      'Six iconic clubs plus one legend-era player each — history, rivals, and why supporters still chant their names.',
+    difficulty: 'Intermediate',
+    tags: ['Clubs', 'History', 'Culture'],
+    quizLaunch: { teamId: 'liverpool' },
+    items: [
+      { type: 'team', id: 'liverpool', note: 'Anfield, You’ll Never Walk Alone, European nights.' },
+      { type: 'player', id: 'salah', note: 'Modern Liverpool icon — goals from the right.' },
+      { type: 'team', id: 'real-madrid', note: 'Record European Cups — Bernabéu pressure football.' },
+      { type: 'player', id: 'modric', note: 'Madrid metronome — 2018 Ballon d’Or.' },
+      { type: 'team', id: 'bayern-munich', note: 'Bundesliga standard — Allianz Arena red glow.' },
+      { type: 'player', id: 'kane', note: 'Bayern striker — Germany’s headline signing.' },
+      { type: 'team', id: 'ac-milan', note: 'Rossoneri — San Siro shared with Inter.' },
+      { type: 'player', id: 'leao', note: 'Milan left wing — Serie A title-winning pace.' },
+    ],
+  },
+  {
     id: 'learn-premier-league',
     title: 'Learn the Premier League',
     description:
@@ -51,7 +163,7 @@ export const collections = [
     id: 'wonderkids',
     title: 'Wonderkids',
     description:
-      'Eight young quiz-ready stars (age 23 or under) — learn who they play for before they become household names.',
+      'Eight young quiz-ready stars — clubs, countries, and playing roles before they become household names.',
     difficulty: 'Beginner',
     tags: ['Youth', 'Future', 'Players'],
     quizLaunch: null,
@@ -676,9 +788,9 @@ export const collections = [
   },
   {
     id: 'elite-playmakers',
-    title: 'Elite playmakers',
+    title: 'Great playmakers',
     description:
-      'Eight №10s and creators in the quiz pool — tie names to clubs before hint-based guessing.',
+      'Eight №10s and creators — through balls, vision, and club links before hint-based quizzes.',
     difficulty: 'Advanced',
     tags: ['Tactics', 'Creators', 'Players'],
     quizLaunch: { leagueId: 'premier-league' },

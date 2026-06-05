@@ -34,6 +34,9 @@ const CLUB_NAME_THEMES = [
   { pattern: /inter milan|inter\b/i, theme: { from: '#0f172a', to: '#1e3a8a', accent: '#38bdf8' } },
   { pattern: /ac milan|milan\b/i, theme: { from: '#dc2626', to: '#450a0a', accent: '#f8fafc' } },
   { pattern: /psg|paris saint/i, theme: { from: '#1e3a8a', to: '#0f172a', accent: '#dc2626' } },
+  { pattern: /santos/i, theme: { from: '#f8fafc', to: '#1e293b', accent: '#0f172a' } },
+  { pattern: /lafc|los angeles fc/i, theme: { from: '#1e1b4b', to: '#0f172a', accent: '#c084fc' } },
+  { pattern: /inter miami/i, theme: { from: '#fce7f3', to: '#1e3a8a', accent: '#f472b6' } },
 ];
 
 const DEFAULT_CLUB_THEME = {
