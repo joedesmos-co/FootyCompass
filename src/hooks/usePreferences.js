@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
+import { DEFAULT_APPEARANCE_THEME } from '../data/appearanceThemes';
 import { KNOWLEDGE_LEVELS, LEARNING_GOALS } from '../data/preferencesOptions';
+import { applyAppearanceTheme, resolveAppearanceTheme } from '../utils/appearanceTheme';
 
 const STORAGE_KEY = 'footybrain:preferences';
 const CHANGE_EVENT = 'footybrain:preferences-changed';
@@ -12,6 +14,7 @@ export const EMPTY_PREFERENCES = {
   favoriteClubIds: [],
   knowledgeLevel: null,
   learningGoals: [],
+  appearanceTheme: DEFAULT_APPEARANCE_THEME,
   completed: false,
 };
 
@@ -30,6 +33,7 @@ function sanitize(raw) {
     learningGoals: Array.isArray(raw?.learningGoals)
       ? raw.learningGoals.filter((id) => VALID_GOALS.has(id))
       : [],
+    appearanceTheme: resolveAppearanceTheme(raw?.appearanceTheme),
     completed: raw?.completed === true,
   };
 }
@@ -51,6 +55,7 @@ function persist(state) {
   } catch {
     // ignore
   }
+  applyAppearanceTheme(state.appearanceTheme);
   window.dispatchEvent(new CustomEvent(CHANGE_EVENT, { detail: state }));
 }
 
@@ -60,6 +65,10 @@ export function hasPreferences(prefs) {
 
 export function usePreferences() {
   const [preferences, setPreferences] = useState(readStorage);
+
+  useEffect(() => {
+    applyAppearanceTheme(preferences.appearanceTheme);
+  }, [preferences.appearanceTheme]);
 
   useEffect(() => {
     const onSync = (event) => {
@@ -75,6 +84,15 @@ export function usePreferences() {
       window.removeEventListener('storage', onSync);
       window.removeEventListener(CHANGE_EVENT, onSync);
     };
+  }, []);
+
+  const setAppearanceTheme = useCallback((themeId) => {
+    const theme = resolveAppearanceTheme(themeId);
+    setPreferences((prev) => {
+      const next = sanitize({ ...prev, appearanceTheme: theme });
+      persist(next);
+      return next;
+    });
   }, []);
 
   const savePreferences = useCallback((next) => {
@@ -95,5 +113,6 @@ export function usePreferences() {
     hasPreferences: hasPreferences(preferences),
     savePreferences,
     clearPreferences,
+    setAppearanceTheme,
   };
 }

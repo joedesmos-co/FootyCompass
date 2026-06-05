@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { APPEARANCE_THEMES, DEFAULT_APPEARANCE_THEME } from '../data/appearanceThemes';
 import { KNOWLEDGE_LEVELS, LEARNING_GOALS } from '../data/preferencesOptions';
 import { getManifestLeagues } from '../data/contentManifest';
+import { usePreferences } from '../hooks/usePreferences';
 import { useSearchIndex } from '../hooks/useSearchIndex';
 import { getRecentViews } from '../utils/recentlyViewed';
 import LeagueBadge from './LeagueBadge';
@@ -78,7 +80,11 @@ export default function PreferencesForm({
   submitLabel = 'Save preferences',
   showSkip = true,
 }) {
+  const { setAppearanceTheme } = usePreferences();
   const { index, status: indexStatus } = useSearchIndex();
+  const [appearanceTheme, setAppearanceThemeState] = useState(
+    () => initial?.appearanceTheme ?? DEFAULT_APPEARANCE_THEME,
+  );
   const [favoriteLeagueIds, setFavoriteLeagueIds] = useState(
     () => initial?.favoriteLeagueIds ?? [],
   );
@@ -107,7 +113,13 @@ export default function PreferencesForm({
       favoriteClubIds,
       knowledgeLevel,
       learningGoals,
+      appearanceTheme,
     });
+  };
+
+  const handleAppearanceThemeSelect = (themeId) => {
+    setAppearanceThemeState(themeId);
+    setAppearanceTheme(themeId);
   };
 
   const leagueById = useState(() => new Map(leagues.map((l) => [l.id, l])))[0];
@@ -350,14 +362,42 @@ export default function PreferencesForm({
         </p>
       </details>
 
-      <details className="prefs-section prefs-section--future">
+      <details className="prefs-section" open>
         <summary className="prefs-section__summary">
           <span>
             <strong>Appearance</strong>
-            <small className="ui-badge ui-badge--soon">Soon</small>
+            <small>Theme for this device — applies instantly.</small>
           </span>
         </summary>
-        <p className="prefs-future-note">Future options like themes and display density will live here.</p>
+
+        <div
+          className="prefs-theme-grid"
+          role="radiogroup"
+          aria-label="App theme"
+        >
+          {APPEARANCE_THEMES.map((theme) => {
+            const isSelected = appearanceTheme === theme.id;
+            return (
+              <button
+                key={theme.id}
+                type="button"
+                role="radio"
+                aria-checked={isSelected}
+                className={`prefs-theme-card${isSelected ? ' prefs-theme-card--on' : ''}`}
+                onClick={() => handleAppearanceThemeSelect(theme.id)}
+              >
+                <span
+                  className={`prefs-theme-card__swatch prefs-theme-card__swatch--${theme.id}`}
+                  aria-hidden="true"
+                />
+                <span className="prefs-theme-card__text">
+                  <span className="prefs-theme-card__label">{theme.label}</span>
+                  <span className="prefs-theme-card__hint">{theme.hint}</span>
+                </span>
+              </button>
+            );
+          })}
+        </div>
       </details>
 
       <div className="prefs-form__actions">
