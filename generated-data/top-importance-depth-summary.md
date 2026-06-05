@@ -1,6 +1,6 @@
 # Top-importance depth audit
 
-Generated: 2026-05-31T16:46:24.206Z
+Generated: 2026-06-05T02:21:40.346Z
 
 ## Scope
 

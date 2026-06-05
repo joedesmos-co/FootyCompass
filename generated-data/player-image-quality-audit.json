@@ -1,95 +1,48 @@
 {
-  "generatedAt": "2026-05-31T16:46:51.582Z",
+  "generatedAt": "2026-06-05T02:21:28.849Z",
   "thresholds": {
-    "minApprovalScore": 62,
-    "minAutoApproveScore": 72
+    "minApprovalScore": 65,
+    "minAutoApproveScore": 74
   },
   "totals": {
-    "approved": 260,
-    "passing": 260,
+    "approved": 254,
+    "passing": 254,
     "failing": 0,
     "denylisted": 0
   },
   "failing": [],
   "borderline": [
     {
-      "playerId": "lewandowski",
-      "name": "Robert Lewandowski",
-      "importance": 91,
-      "commonsFile": "Robert Lewandowski 2011 (3) (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Robert_Lewandowski_2011_%283%29_%28cropped%29.jpg",
-      "width": 816,
-      "height": 900,
-      "qualityScore": 70,
-      "qualityGrade": "good",
-      "flags": [
-        "square",
-        "name_in_filename",
-        "portrait_hint",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "square framing",
-        "player name in filename",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 70
-    }
-  ],
-  "all": [
-    {
-      "playerId": "lewandowski",
-      "name": "Robert Lewandowski",
-      "importance": 91,
-      "commonsFile": "Robert Lewandowski 2011 (3) (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Robert_Lewandowski_2011_%283%29_%28cropped%29.jpg",
-      "width": 816,
-      "height": 900,
-      "qualityScore": 70,
-      "qualityGrade": "good",
-      "flags": [
-        "square",
-        "name_in_filename",
-        "portrait_hint",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "square framing",
-        "player name in filename",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 70
-    },
-    {
-      "playerId": "valverde",
-      "name": "Federico Valverde",
-      "importance": 91,
-      "commonsFile": "Federico Valverde 2021 (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Federico_Valverde_2021_%28cropped%29.jpg",
-      "width": 895,
-      "height": 680,
+      "playerId": "tm-503733",
+      "name": "Anthony Gordon",
+      "importance": 51,
+      "commonsFile": "Anthony Gordon (cropped).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Anthony_Gordon_%28cropped%29.jpg",
+      "width": 305,
+      "height": 591,
       "qualityScore": 72,
       "qualityGrade": "good",
       "flags": [
-        "screenshot_like",
+        "low_resolution",
+        "portrait",
+        "tall_portrait",
         "name_in_filename",
-        "portrait_hint"
+        "portrait_hint",
+        "head_shoulder_candidate"
       ],
       "reasons": [
-        "screenshot or frame-grab pattern",
-        "high resolution",
-        "player name in filename"
+        "resolution too small",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate"
       ],
       "pass": true,
       "denylisted": false,
       "storedScore": 72
-    },
+    }
+  ],
+  "all": [
     {
       "playerId": "tm-503733",
       "name": "Anthony Gordon",
@@ -135,6 +88,32 @@
       "reasons": [
         "square framing",
         "surname in filename"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 74
+    },
+    {
+      "playerId": "tm-326330",
+      "name": "Frenkie de Jong",
+      "importance": 88,
+      "commonsFile": "Frenkie De Jong (2025) (cropped).png",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Frenkie_De_Jong_%282025%29_%28cropped%29.png",
+      "width": 706,
+      "height": 720,
+      "qualityScore": 74,
+      "qualityGrade": "good",
+      "flags": [
+        "square",
+        "name_in_filename",
+        "portrait_hint",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "square framing",
+        "player name in filename",
+        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -200,6 +179,34 @@
         "portrait orientation",
         "tall portrait frame",
         "player named in description only (likely context shot)"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 76
+    },
+    {
+      "playerId": "trent",
+      "name": "Trent Alexander-Arnold",
+      "importance": 89,
+      "commonsFile": "Trent Alexander-Arnold 2018.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Trent_Alexander-Arnold_2018.jpg",
+      "width": 400,
+      "height": 520,
+      "qualityScore": 76,
+      "qualityGrade": "good",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -294,30 +301,116 @@
       "storedScore": 76
     },
     {
-      "playerId": "tm-326330",
-      "name": "Frenkie de Jong",
-      "importance": 88,
-      "commonsFile": "Frenkie De Jong (2025) (cropped).png",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Frenkie_De_Jong_%282025%29_%28cropped%29.png",
-      "width": 706,
-      "height": 720,
-      "qualityScore": 80,
-      "qualityGrade": "excellent",
+      "playerId": "tm-448705",
+      "name": "Diant Ramaj",
+      "importance": 74,
+      "commonsFile": "Diant Ramaj 2023.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Diant_Ramaj_2023.jpg",
+      "width": 340,
+      "height": 515,
+      "qualityScore": 76,
+      "qualityGrade": "good",
       "flags": [
-        "square",
+        "portrait",
+        "tall_portrait",
         "name_in_filename",
-        "portrait_hint",
+        "head_shoulder_candidate",
         "group_or_team"
       ],
       "reasons": [
-        "high resolution",
-        "square framing",
+        "portrait orientation",
+        "tall portrait frame",
         "player name in filename",
+        "head-and-shoulders portrait candidate",
         "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
-      "storedScore": 80
+      "storedScore": 76
+    },
+    {
+      "playerId": "tm-973085",
+      "name": "Carlos Baleba",
+      "importance": 52,
+      "commonsFile": "Carlos Baleba 2026.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Carlos_Baleba_2026.jpg",
+      "width": 412,
+      "height": 840,
+      "qualityScore": 76,
+      "qualityGrade": "good",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 76
+    },
+    {
+      "playerId": "pedri",
+      "name": "Pedri",
+      "importance": 90,
+      "commonsFile": "Pedri.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pedri.jpg/960px-Pedri.jpg",
+      "width": 1227,
+      "height": 1788,
+      "qualityScore": 78,
+      "qualityGrade": "good",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "surname in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 78
+    },
+    {
+      "playerId": "tm-342229",
+      "name": "Kylian Mbappé",
+      "importance": 50,
+      "commonsFile": "Kylian Mbappe 2017.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kylian_Mbappe_2017.jpg/960px-Kylian_Mbappe_2017.jpg",
+      "width": 1188,
+      "height": 1929,
+      "qualityScore": 78,
+      "qualityGrade": "good",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "surname in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 78
     },
     {
       "playerId": "sommer",
@@ -426,13 +519,41 @@
       "storedScore": 82
     },
     {
-      "playerId": "trent",
-      "name": "Trent Alexander-Arnold",
-      "importance": 89,
-      "commonsFile": "Trent Alexander-Arnold 2018.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Trent_Alexander-Arnold_2018.jpg",
-      "width": 400,
-      "height": 520,
+      "playerId": "tm-687626",
+      "name": "Moisés Caicedo",
+      "importance": 88,
+      "commonsFile": "Moises Caicedo 2022.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Moises_Caicedo_2022.jpg/960px-Moises_Caicedo_2022.jpg",
+      "width": 2250,
+      "height": 2783,
+      "qualityScore": 82,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "surname in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 82
+    },
+    {
+      "playerId": "tm-249565",
+      "name": "Youri Tielemans",
+      "importance": 86,
+      "commonsFile": "Youri Tielemans 2018.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Youri_Tielemans_2018.jpg",
+      "width": 500,
+      "height": 990,
       "qualityScore": 82,
       "qualityGrade": "excellent",
       "flags": [
@@ -443,6 +564,7 @@
         "group_or_team"
       ],
       "reasons": [
+        "adequate resolution",
         "portrait orientation",
         "tall portrait frame",
         "player name in filename",
@@ -475,6 +597,37 @@
       "storedScore": 82
     },
     {
+      "playerId": "tm-557149",
+      "name": "Kang-in Lee",
+      "importance": 86,
+      "commonsFile": "Lee Kang-in - 2022 (52551771501) (cropped).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Lee_Kang-in_-_2022_%2852551771501%29_%28cropped%29.jpg/960px-Lee_Kang-in_-_2022_%2852551771501%29_%28cropped%29.jpg",
+      "width": 1088,
+      "height": 1632,
+      "qualityScore": 82,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "portrait_hint",
+        "head_shoulder_candidate",
+        "bad_crop",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 82
+    },
+    {
       "playerId": "tm-177847",
       "name": "Adnan Januzaj",
       "importance": 83,
@@ -490,34 +643,6 @@
       "reasons": [
         "high resolution",
         "player name in filename"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 82
-    },
-    {
-      "playerId": "tm-448705",
-      "name": "Diant Ramaj",
-      "importance": 74,
-      "commonsFile": "Diant Ramaj 2023.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Diant_Ramaj_2023.jpg",
-      "width": 340,
-      "height": 515,
-      "qualityScore": 82,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -552,46 +677,19 @@
       "storedScore": 82
     },
     {
-      "playerId": "tm-973085",
-      "name": "Carlos Baleba",
-      "importance": 52,
-      "commonsFile": "Carlos Baleba 2026.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Carlos_Baleba_2026.jpg",
-      "width": 412,
-      "height": 840,
-      "qualityScore": 82,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 82
-    },
-    {
-      "playerId": "pedri",
-      "name": "Pedri",
-      "importance": 90,
-      "commonsFile": "Pedri.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pedri.jpg/960px-Pedri.jpg",
-      "width": 1227,
-      "height": 1788,
+      "playerId": "tm-68290",
+      "name": "Neymar",
+      "importance": 95,
+      "commonsFile": "Neymar visiting Red Bull Arena (cropped).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Neymar_visiting_Red_Bull_Arena_%28cropped%29.jpg/960px-Neymar_visiting_Red_Bull_Arena_%28cropped%29.jpg",
+      "width": 2104,
+      "height": 2802,
       "qualityScore": 84,
       "qualityGrade": "excellent",
       "flags": [
         "portrait",
         "tall_portrait",
+        "portrait_hint",
         "head_shoulder_candidate",
         "group_or_team"
       ],
@@ -627,6 +725,267 @@
       "storedScore": 84
     },
     {
+      "playerId": "tm-40433",
+      "name": "Alexis Sánchez",
+      "importance": 88,
+      "commonsFile": "Alexis Sánchez.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Alexis_S%C3%A1nchez.jpg",
+      "width": 646,
+      "height": 800,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-206040",
+      "name": "Raúl Jiménez",
+      "importance": 86,
+      "commonsFile": "Raúl Jiménez.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ra%C3%BAl_Jim%C3%A9nez.jpg",
+      "width": 800,
+      "height": 1200,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-543499",
+      "name": "Mohammed Kudus",
+      "importance": 86,
+      "commonsFile": "GAE - Ajax - 52788309814 (Mohammed Kudus).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/GAE_-_Ajax_-_52788309814_%28Mohammed_Kudus%29.jpg",
+      "width": 917,
+      "height": 1275,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-420243",
+      "name": "Jurriën Timber",
+      "importance": 85,
+      "commonsFile": "GAE - Ajax - 52788075131 (Jurriën Timber).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/GAE_-_Ajax_-_52788075131_%28Jurri%C3%ABn_Timber%29.jpg/960px-GAE_-_Ajax_-_52788075131_%28Jurri%C3%ABn_Timber%29.jpg",
+      "width": 1781,
+      "height": 2516,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-429983",
+      "name": "Jørgen Strand Larsen",
+      "importance": 85,
+      "commonsFile": "Jørgen Strand Larsen 01112025 (2).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/J%C3%B8rgen_Strand_Larsen_01112025_%282%29.jpg/960px-J%C3%B8rgen_Strand_Larsen_01112025_%282%29.jpg",
+      "width": 1214,
+      "height": 2316,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-82442",
+      "name": "Olivier Giroud",
+      "importance": 85,
+      "commonsFile": "Olivier Giroud in 2017.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Olivier_Giroud_in_2017.jpg/960px-Olivier_Giroud_in_2017.jpg",
+      "width": 3439,
+      "height": 5127,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-962110",
+      "name": "Pau Cubarsí",
+      "importance": 85,
+      "commonsFile": "Pau Cubarsí.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Pau_Cubars%C3%AD.jpg/960px-Pau_Cubars%C3%AD.jpg",
+      "width": 1291,
+      "height": 2188,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-776890",
+      "name": "Nicolas Jackson",
+      "importance": 85,
+      "commonsFile": "Nicolas Jackson 20042025 (1).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Nicolas_Jackson_20042025_%281%29.jpg/960px-Nicolas_Jackson_20042025_%281%29.jpg",
+      "width": 1245,
+      "height": 1766,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-279455",
+      "name": "Harry Wilson",
+      "importance": 84,
+      "commonsFile": "Harry Wilson 2014.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Harry_Wilson_2014.jpg/960px-Harry_Wilson_2014.jpg",
+      "width": 968,
+      "height": 1392,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
       "playerId": "tm-381950",
       "name": "Alexis Saelemaekers",
       "importance": 84,
@@ -646,18 +1005,19 @@
       "storedScore": 84
     },
     {
-      "playerId": "tm-342229",
-      "name": "Kylian Mbappé",
-      "importance": 50,
-      "commonsFile": "Kylian Mbappe 2017.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kylian_Mbappe_2017.jpg/960px-Kylian_Mbappe_2017.jpg",
-      "width": 1188,
-      "height": 1929,
+      "playerId": "tm-257474",
+      "name": "Vanja Milinković-Savić",
+      "importance": 84,
+      "commonsFile": "Vanja Milinković Savić na utakmici protiv CG 3.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Vanja_Milinkovi%C4%87_Savi%C4%87_na_utakmici_protiv_CG_3.jpg/960px-Vanja_Milinkovi%C4%87_Savi%C4%87_na_utakmici_protiv_CG_3.jpg",
+      "width": 3024,
+      "height": 4032,
       "qualityScore": 84,
       "qualityGrade": "excellent",
       "flags": [
         "portrait",
         "tall_portrait",
+        "name_in_filename",
         "head_shoulder_candidate",
         "group_or_team"
       ],
@@ -665,7 +1025,94 @@
         "high resolution",
         "portrait orientation",
         "tall portrait frame",
-        "surname in filename",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-848509",
+      "name": "Jackson Tchatchoua",
+      "importance": 83,
+      "commonsFile": "Jackson Tchatchoua 01112025 (1).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Jackson_Tchatchoua_01112025_%281%29.jpg/960px-Jackson_Tchatchoua_01112025_%281%29.jpg",
+      "width": 1613,
+      "height": 2204,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-292246",
+      "name": "Hee-chan Hwang",
+      "importance": 82,
+      "commonsFile": "Hwang Hee-chan 01112025 (2).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hwang_Hee-chan_01112025_%282%29.jpg/960px-Hwang_Hee-chan_01112025_%282%29.jpg",
+      "width": 1862,
+      "height": 2238,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 84
+    },
+    {
+      "playerId": "tm-134425",
+      "name": "Raheem Sterling",
+      "importance": 52,
+      "commonsFile": "Raheem Sterling in Boston.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Raheem_Sterling_in_Boston.jpg/960px-Raheem_Sterling_in_Boston.jpg",
+      "width": 992,
+      "height": 1576,
+      "qualityScore": 84,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
         "head-and-shoulders portrait candidate",
         "group/team photo pattern"
       ],
@@ -894,41 +1341,13 @@
       "storedScore": 88
     },
     {
-      "playerId": "tm-687626",
-      "name": "Moisés Caicedo",
-      "importance": 88,
-      "commonsFile": "Moises Caicedo 2022.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Moises_Caicedo_2022.jpg/960px-Moises_Caicedo_2022.jpg",
-      "width": 2250,
-      "height": 2783,
-      "qualityScore": 88,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "surname in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 88
-    },
-    {
-      "playerId": "tm-249565",
-      "name": "Youri Tielemans",
-      "importance": 86,
-      "commonsFile": "Youri Tielemans 2018.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Youri_Tielemans_2018.jpg",
-      "width": 500,
-      "height": 990,
+      "playerId": "tm-230784",
+      "name": "Thomas Partey",
+      "importance": 87,
+      "commonsFile": "Thomas Partey 2019.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Thomas_Partey_2019.jpg",
+      "width": 839,
+      "height": 1200,
       "qualityScore": 88,
       "qualityGrade": "excellent",
       "flags": [
@@ -936,37 +1355,6 @@
         "tall_portrait",
         "name_in_filename",
         "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "adequate resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 88
-    },
-    {
-      "playerId": "tm-557149",
-      "name": "Kang-in Lee",
-      "importance": 86,
-      "commonsFile": "Lee Kang-in - 2022 (52551771501) (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Lee_Kang-in_-_2022_%2852551771501%29_%28cropped%29.jpg/960px-Lee_Kang-in_-_2022_%2852551771501%29_%28cropped%29.jpg",
-      "width": 1088,
-      "height": 1632,
-      "qualityScore": 88,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "portrait_hint",
-        "head_shoulder_candidate",
-        "bad_crop",
         "group_or_team"
       ],
       "reasons": [
@@ -982,19 +1370,19 @@
       "storedScore": 88
     },
     {
-      "playerId": "tm-68290",
-      "name": "Neymar",
-      "importance": 95,
-      "commonsFile": "Neymar visiting Red Bull Arena (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Neymar_visiting_Red_Bull_Arena_%28cropped%29.jpg/960px-Neymar_visiting_Red_Bull_Arena_%28cropped%29.jpg",
-      "width": 2104,
-      "height": 2802,
-      "qualityScore": 90,
+      "playerId": "tm-179184",
+      "name": "Michy Batshuayi",
+      "importance": 84,
+      "commonsFile": "Michy Batshuayi 2019.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Michy_Batshuayi_2019.jpg",
+      "width": 700,
+      "height": 960,
+      "qualityScore": 88,
       "qualityGrade": "excellent",
       "flags": [
         "portrait",
         "tall_portrait",
-        "portrait_hint",
+        "name_in_filename",
         "head_shoulder_candidate",
         "group_or_team"
       ],
@@ -1002,13 +1390,71 @@
         "high resolution",
         "portrait orientation",
         "tall portrait frame",
-        "surname in filename",
+        "player name in filename",
         "head-and-shoulders portrait candidate",
         "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
-      "storedScore": 90
+      "storedScore": 88
+    },
+    {
+      "playerId": "tm-212847",
+      "name": "Adam Webster",
+      "importance": 84,
+      "commonsFile": "Adam Webster 2022.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Adam_Webster_2022.jpg/960px-Adam_Webster_2022.jpg",
+      "width": 2341,
+      "height": 2929,
+      "qualityScore": 88,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 88
+    },
+    {
+      "playerId": "tm-565009",
+      "name": "Rodrigo Garro",
+      "importance": 76,
+      "commonsFile": "Botafogo-SP 1x4 Corinthians - 14-02-2024 01 - Rodrigo Garro.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Botafogo-SP_1x4_Corinthians_-_14-02-2024_01_-_Rodrigo_Garro.jpg/960px-Botafogo-SP_1x4_Corinthians_-_14-02-2024_01_-_Rodrigo_Garro.jpg",
+      "width": 1521,
+      "height": 2347,
+      "qualityScore": 88,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 88
     },
     {
       "playerId": "rodri",
@@ -1040,6 +1486,36 @@
       "storedScore": 90
     },
     {
+      "playerId": "lautaro",
+      "name": "Lautaro Martínez",
+      "importance": 92,
+      "commonsFile": "Lautaro Martínez (cropped).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lautaro_Mart%C3%ADnez_%28cropped%29.jpg/960px-Lautaro_Mart%C3%ADnez_%28cropped%29.jpg",
+      "width": 1381,
+      "height": 2168,
+      "qualityScore": 90,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "portrait_hint",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 90
+    },
+    {
       "playerId": "leao",
       "name": "Rafael Leão",
       "importance": 91,
@@ -1063,64 +1539,6 @@
       "storedScore": 90
     },
     {
-      "playerId": "tm-40433",
-      "name": "Alexis Sánchez",
-      "importance": 88,
-      "commonsFile": "Alexis Sánchez.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Alexis_S%C3%A1nchez.jpg",
-      "width": 646,
-      "height": 800,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-106987",
-      "name": "Marcel Sabitzer",
-      "importance": 87,
-      "commonsFile": "2014-05-30 Austria - Iceland football match, Marcel Sabitzer 0591.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/2014-05-30_Austria_-_Iceland_football_match%2C_Marcel_Sabitzer_0591.jpg/960px-2014-05-30_Austria_-_Iceland_football_match%2C_Marcel_Sabitzer_0591.jpg",
-      "width": 2122,
-      "height": 3485,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
       "playerId": "tm-111873",
       "name": "Emiliano Martínez",
       "importance": 87,
@@ -1136,6 +1554,36 @@
       "reasons": [
         "high resolution",
         "player name in filename"
+      ],
+      "pass": true,
+      "denylisted": false,
+      "storedScore": 90
+    },
+    {
+      "playerId": "tm-576028",
+      "name": "Thiago Almada",
+      "importance": 87,
+      "commonsFile": "Thiago Almada (53062996583) (cropped).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Thiago_Almada_%2853062996583%29_%28cropped%29.jpg/960px-Thiago_Almada_%2853062996583%29_%28cropped%29.jpg",
+      "width": 1087,
+      "height": 1875,
+      "qualityScore": 90,
+      "qualityGrade": "excellent",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "portrait_hint",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ],
+      "reasons": [
+        "high resolution",
+        "portrait orientation",
+        "tall portrait frame",
+        "player name in filename",
+        "head-and-shoulders portrait candidate",
+        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -1185,180 +1633,6 @@
       "storedScore": 90
     },
     {
-      "playerId": "tm-206040",
-      "name": "Raúl Jiménez",
-      "importance": 86,
-      "commonsFile": "Raúl Jiménez.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ra%C3%BAl_Jim%C3%A9nez.jpg",
-      "width": 800,
-      "height": 1200,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-543499",
-      "name": "Mohammed Kudus",
-      "importance": 86,
-      "commonsFile": "GAE - Ajax - 52788309814 (Mohammed Kudus).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/GAE_-_Ajax_-_52788309814_%28Mohammed_Kudus%29.jpg",
-      "width": 917,
-      "height": 1275,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-420243",
-      "name": "Jurriën Timber",
-      "importance": 85,
-      "commonsFile": "GAE - Ajax - 52788075131 (Jurriën Timber).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/GAE_-_Ajax_-_52788075131_%28Jurri%C3%ABn_Timber%29.jpg/960px-GAE_-_Ajax_-_52788075131_%28Jurri%C3%ABn_Timber%29.jpg",
-      "width": 1781,
-      "height": 2516,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-429983",
-      "name": "Jørgen Strand Larsen",
-      "importance": 85,
-      "commonsFile": "Jørgen Strand Larsen 01112025 (2).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/J%C3%B8rgen_Strand_Larsen_01112025_%282%29.jpg/960px-J%C3%B8rgen_Strand_Larsen_01112025_%282%29.jpg",
-      "width": 1214,
-      "height": 2316,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-82442",
-      "name": "Olivier Giroud",
-      "importance": 85,
-      "commonsFile": "Olivier Giroud in 2017.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Olivier_Giroud_in_2017.jpg/960px-Olivier_Giroud_in_2017.jpg",
-      "width": 3439,
-      "height": 5127,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-962110",
-      "name": "Pau Cubarsí",
-      "importance": 85,
-      "commonsFile": "Pau Cubarsí.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Pau_Cubars%C3%AD.jpg/960px-Pau_Cubars%C3%AD.jpg",
-      "width": 1291,
-      "height": 2188,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
       "playerId": "tm-43228",
       "name": "Albert Rusnák",
       "importance": 85,
@@ -1380,135 +1654,20 @@
       "storedScore": 90
     },
     {
-      "playerId": "tm-776890",
-      "name": "Nicolas Jackson",
-      "importance": 85,
-      "commonsFile": "Nicolas Jackson 20042025 (1).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Nicolas_Jackson_20042025_%281%29.jpg/960px-Nicolas_Jackson_20042025_%281%29.jpg",
-      "width": 1245,
-      "height": 1766,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-279455",
-      "name": "Harry Wilson",
+      "playerId": "tm-400536",
+      "name": "Mads Hermansen",
       "importance": 84,
-      "commonsFile": "Harry Wilson 2014.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Harry_Wilson_2014.jpg/960px-Harry_Wilson_2014.jpg",
-      "width": 968,
-      "height": 1392,
+      "commonsFile": "Mads Hermansen 24082024 (2) (cropped).jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mads_Hermansen_24082024_%282%29_%28cropped%29.jpg/960px-Mads_Hermansen_24082024_%282%29_%28cropped%29.jpg",
+      "width": 1826,
+      "height": 2446,
       "qualityScore": 90,
       "qualityGrade": "excellent",
       "flags": [
         "portrait",
         "tall_portrait",
         "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-257474",
-      "name": "Vanja Milinković-Savić",
-      "importance": 84,
-      "commonsFile": "Vanja Milinković Savić na utakmici protiv CG 3.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Vanja_Milinkovi%C4%87_Savi%C4%87_na_utakmici_protiv_CG_3.jpg/960px-Vanja_Milinkovi%C4%87_Savi%C4%87_na_utakmici_protiv_CG_3.jpg",
-      "width": 3024,
-      "height": 4032,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-848509",
-      "name": "Jackson Tchatchoua",
-      "importance": 83,
-      "commonsFile": "Jackson Tchatchoua 01112025 (1).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Jackson_Tchatchoua_01112025_%281%29.jpg/960px-Jackson_Tchatchoua_01112025_%281%29.jpg",
-      "width": 1613,
-      "height": 2204,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-292246",
-      "name": "Hee-chan Hwang",
-      "importance": 82,
-      "commonsFile": "Hwang Hee-chan 01112025 (2).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hwang_Hee-chan_01112025_%282%29.jpg/960px-Hwang_Hee-chan_01112025_%282%29.jpg",
-      "width": 1862,
-      "height": 2238,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
+        "portrait_hint",
         "head_shoulder_candidate",
         "group_or_team"
       ],
@@ -1562,35 +1721,6 @@
         "high resolution",
         "square framing",
         "surname in filename"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 90
-    },
-    {
-      "playerId": "tm-134425",
-      "name": "Raheem Sterling",
-      "importance": 52,
-      "commonsFile": "Raheem Sterling in Boston.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Raheem_Sterling_in_Boston.jpg/960px-Raheem_Sterling_in_Boston.jpg",
-      "width": 992,
-      "height": 1576,
-      "qualityScore": 90,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -2002,35 +2132,6 @@
       "storedScore": 94
     },
     {
-      "playerId": "tm-230784",
-      "name": "Thomas Partey",
-      "importance": 87,
-      "commonsFile": "Thomas Partey 2019.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Thomas_Partey_2019.jpg",
-      "width": 839,
-      "height": 1200,
-      "qualityScore": 94,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 94
-    },
-    {
       "playerId": "tm-353108",
       "name": "Bruno Henrique",
       "importance": 87,
@@ -2114,64 +2215,6 @@
       "storedScore": 94
     },
     {
-      "playerId": "tm-179184",
-      "name": "Michy Batshuayi",
-      "importance": 84,
-      "commonsFile": "Michy Batshuayi 2019.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Michy_Batshuayi_2019.jpg",
-      "width": 700,
-      "height": 960,
-      "qualityScore": 94,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 94
-    },
-    {
-      "playerId": "tm-212847",
-      "name": "Adam Webster",
-      "importance": 84,
-      "commonsFile": "Adam Webster 2022.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Adam_Webster_2022.jpg/960px-Adam_Webster_2022.jpg",
-      "width": 2341,
-      "height": 2929,
-      "qualityScore": 94,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 94
-    },
-    {
       "playerId": "tm-361914",
       "name": "Nayef Aguerd",
       "importance": 84,
@@ -2224,35 +2267,6 @@
         "player name in filename",
         "head-and-shoulders portrait candidate",
         "event/stadium/generic match id"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 94
-    },
-    {
-      "playerId": "tm-565009",
-      "name": "Rodrigo Garro",
-      "importance": 76,
-      "commonsFile": "Botafogo-SP 1x4 Corinthians - 14-02-2024 01 - Rodrigo Garro.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Botafogo-SP_1x4_Corinthians_-_14-02-2024_01_-_Rodrigo_Garro.jpg/960px-Botafogo-SP_1x4_Corinthians_-_14-02-2024_01_-_Rodrigo_Garro.jpg",
-      "width": 1521,
-      "height": 2347,
-      "qualityScore": 94,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -2342,36 +2356,6 @@
       "storedScore": 94
     },
     {
-      "playerId": "lautaro",
-      "name": "Lautaro Martínez",
-      "importance": 92,
-      "commonsFile": "Lautaro Martínez (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lautaro_Mart%C3%ADnez_%28cropped%29.jpg/960px-Lautaro_Mart%C3%ADnez_%28cropped%29.jpg",
-      "width": 1381,
-      "height": 2168,
-      "qualityScore": 96,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "portrait_hint",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 96
-    },
-    {
       "playerId": "tm-502670",
       "name": "Khvicha Kvaratskhelia",
       "importance": 89,
@@ -2419,36 +2403,6 @@
         "player name in filename",
         "head-and-shoulders portrait candidate",
         "match/fixture filename (vs/opponent)"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 96
-    },
-    {
-      "playerId": "tm-576028",
-      "name": "Thiago Almada",
-      "importance": 87,
-      "commonsFile": "Thiago Almada (53062996583) (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Thiago_Almada_%2853062996583%29_%28cropped%29.jpg/960px-Thiago_Almada_%2853062996583%29_%28cropped%29.jpg",
-      "width": 1087,
-      "height": 1875,
-      "qualityScore": 96,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "portrait_hint",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -2525,36 +2479,6 @@
         "high resolution",
         "square framing",
         "player name in filename"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 96
-    },
-    {
-      "playerId": "tm-400536",
-      "name": "Mads Hermansen",
-      "importance": 84,
-      "commonsFile": "Mads Hermansen 24082024 (2) (cropped).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mads_Hermansen_24082024_%282%29_%28cropped%29.jpg/960px-Mads_Hermansen_24082024_%282%29_%28cropped%29.jpg",
-      "width": 1826,
-      "height": 2446,
-      "qualityScore": 96,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "portrait_hint",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate",
-        "group/team photo pattern"
       ],
       "pass": true,
       "denylisted": false,
@@ -3185,33 +3109,6 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Thibaut_Courtois_-_02.jpg/960px-Thibaut_Courtois_-_02.jpg",
       "width": 1728,
       "height": 2592,
-      "qualityScore": 100,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 100
-    },
-    {
-      "playerId": "neuer",
-      "name": "Manuel Neuer",
-      "importance": 89,
-      "commonsFile": "Manuel Neuer, Germany national football team (01).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Manuel_Neuer%2C_Germany_national_football_team_%2801%29.jpg/960px-Manuel_Neuer%2C_Germany_national_football_team_%2801%29.jpg",
-      "width": 1200,
-      "height": 1800,
       "qualityScore": 100,
       "qualityGrade": "excellent",
       "flags": [
@@ -4868,33 +4765,6 @@
       "storedScore": 100
     },
     {
-      "playerId": "tm-148367",
-      "name": "Christian Nørgaard",
-      "importance": 84,
-      "commonsFile": "Christian Nørgaard, Brentford F.C. footballer, May 2022.jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christian_N%C3%B8rgaard%2C_Brentford_F.C._footballer%2C_May_2022.jpg/960px-Christian_N%C3%B8rgaard%2C_Brentford_F.C._footballer%2C_May_2022.jpg",
-      "width": 1139,
-      "height": 1661,
-      "qualityScore": 100,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate"
-      ],
-      "reasons": [
-        "high resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 100
-    },
-    {
       "playerId": "tm-255450",
       "name": "Aleksey Miranchuk",
       "importance": 84,
@@ -5692,33 +5562,6 @@
       ],
       "reasons": [
         "adequate resolution",
-        "portrait orientation",
-        "tall portrait frame",
-        "player name in filename",
-        "head-and-shoulders portrait candidate"
-      ],
-      "pass": true,
-      "denylisted": false,
-      "storedScore": 100
-    },
-    {
-      "playerId": "tm-74842",
-      "name": "Mario Götze",
-      "importance": 82,
-      "commonsFile": "Mario Götze, Germany national football team (01).jpg",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Mario_G%C3%B6tze%2C_Germany_national_football_team_%2801%29.jpg/960px-Mario_G%C3%B6tze%2C_Germany_national_football_team_%2801%29.jpg",
-      "width": 1200,
-      "height": 1800,
-      "qualityScore": 100,
-      "qualityGrade": "excellent",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate"
-      ],
-      "reasons": [
-        "high resolution",
         "portrait orientation",
         "tall portrait frame",
         "player name in filename",
@@ -6919,7 +6762,7 @@
     {
       "playerId": "tm-68290",
       "name": "Neymar",
-      "score": 90,
+      "score": 84,
       "grade": "excellent",
       "pass": true,
       "commonsFile": "Neymar visiting Red Bull Arena (cropped).jpg",
@@ -7030,7 +6873,7 @@
     {
       "playerId": "lautaro",
       "name": "Lautaro Martínez",
-      "score": 96,
+      "score": 90,
       "grade": "excellent",
       "pass": true,
       "commonsFile": "Lautaro Martínez (cropped).jpg",
@@ -7069,33 +6912,6 @@
         "tall_portrait",
         "name_in_filename",
         "head_shoulder_candidate"
-      ]
-    },
-    {
-      "playerId": "lewandowski",
-      "name": "Robert Lewandowski",
-      "score": 70,
-      "grade": "good",
-      "pass": true,
-      "commonsFile": "Robert Lewandowski 2011 (3) (cropped).jpg",
-      "flags": [
-        "square",
-        "name_in_filename",
-        "portrait_hint",
-        "group_or_team"
-      ]
-    },
-    {
-      "playerId": "valverde",
-      "name": "Federico Valverde",
-      "score": 72,
-      "grade": "good",
-      "pass": true,
-      "commonsFile": "Federico Valverde 2021 (cropped).jpg",
-      "flags": [
-        "screenshot_like",
-        "name_in_filename",
-        "portrait_hint"
       ]
     },
     {
@@ -7195,6 +7011,20 @@
       ]
     },
     {
+      "playerId": "pedri",
+      "name": "Pedri",
+      "score": 78,
+      "grade": "good",
+      "pass": true,
+      "commonsFile": "Pedri.jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ]
+    },
+    {
       "playerId": "tm-44352",
       "name": "Luis Suárez",
       "score": 82,
@@ -7203,20 +7033,6 @@
       "commonsFile": "Festejo Luis Suárez.jpg",
       "flags": [
         "name_in_filename"
-      ]
-    },
-    {
-      "playerId": "pedri",
-      "name": "Pedri",
-      "score": 84,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Pedri.jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "head_shoulder_candidate",
-        "group_or_team"
       ]
     },
     {
@@ -7371,21 +7187,10 @@
       ]
     },
     {
-      "playerId": "tm-138927",
-      "name": "Daniel Carvajal",
-      "score": 82,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Daniel Carvajal entrenando.JPG",
-      "flags": [
-        "name_in_filename"
-      ]
-    },
-    {
       "playerId": "trent",
       "name": "Trent Alexander-Arnold",
-      "score": 82,
-      "grade": "excellent",
+      "score": 76,
+      "grade": "good",
       "pass": true,
       "commonsFile": "Trent Alexander-Arnold 2018.jpg",
       "flags": [
@@ -7394,6 +7199,17 @@
         "name_in_filename",
         "head_shoulder_candidate",
         "group_or_team"
+      ]
+    },
+    {
+      "playerId": "tm-138927",
+      "name": "Daniel Carvajal",
+      "score": 82,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Daniel Carvajal entrenando.JPG",
+      "flags": [
+        "name_in_filename"
       ]
     },
     {
@@ -7444,20 +7260,6 @@
       ]
     },
     {
-      "playerId": "neuer",
-      "name": "Manuel Neuer",
-      "score": 100,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Manuel Neuer, Germany national football team (01).jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate"
-      ]
-    },
-    {
       "playerId": "tm-479999",
       "name": "Eberechi Eze",
       "score": 100,
@@ -7486,6 +7288,20 @@
       ]
     },
     {
+      "playerId": "tm-326330",
+      "name": "Frenkie de Jong",
+      "score": 74,
+      "grade": "good",
+      "pass": true,
+      "commonsFile": "Frenkie De Jong (2025) (cropped).png",
+      "flags": [
+        "square",
+        "name_in_filename",
+        "portrait_hint",
+        "group_or_team"
+      ]
+    },
+    {
       "playerId": "ter-stegen",
       "name": "Marc-André ter Stegen",
       "score": 76,
@@ -7511,16 +7327,31 @@
       ]
     },
     {
-      "playerId": "tm-326330",
-      "name": "Frenkie de Jong",
-      "score": 80,
+      "playerId": "tm-687626",
+      "name": "Moisés Caicedo",
+      "score": 82,
       "grade": "excellent",
       "pass": true,
-      "commonsFile": "Frenkie De Jong (2025) (cropped).png",
+      "commonsFile": "Moises Caicedo 2022.jpg",
       "flags": [
-        "square",
+        "portrait",
+        "tall_portrait",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ]
+    },
+    {
+      "playerId": "tm-40433",
+      "name": "Alexis Sánchez",
+      "score": 84,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Alexis Sánchez.jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
         "name_in_filename",
-        "portrait_hint",
+        "head_shoulder_candidate",
         "group_or_team"
       ]
     },
@@ -7551,35 +7382,6 @@
         "tall_portrait",
         "head_shoulder_candidate",
         "event_stadium"
-      ]
-    },
-    {
-      "playerId": "tm-687626",
-      "name": "Moisés Caicedo",
-      "score": 88,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Moises Caicedo 2022.jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ]
-    },
-    {
-      "playerId": "tm-40433",
-      "name": "Alexis Sánchez",
-      "score": 90,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Alexis Sánchez.jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
       ]
     },
     {
@@ -7828,12 +7630,12 @@
       ]
     },
     {
-      "playerId": "tm-106987",
-      "name": "Marcel Sabitzer",
-      "score": 90,
+      "playerId": "tm-230784",
+      "name": "Thomas Partey",
+      "score": 88,
       "grade": "excellent",
       "pass": true,
-      "commonsFile": "2014-05-30 Austria - Iceland football match, Marcel Sabitzer 0591.jpg",
+      "commonsFile": "Thomas Partey 2019.jpg",
       "flags": [
         "portrait",
         "tall_portrait",
@@ -7851,6 +7653,22 @@
       "commonsFile": "Sheikh Hasina presents souvenir gift to Emiliano Martínez 2023-07-03 (PID-0015060).jpg",
       "flags": [
         "name_in_filename"
+      ]
+    },
+    {
+      "playerId": "tm-576028",
+      "name": "Thiago Almada",
+      "score": 90,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Thiago Almada (53062996583) (cropped).jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "portrait_hint",
+        "head_shoulder_candidate",
+        "group_or_team"
       ]
     },
     {
@@ -7888,21 +7706,6 @@
       ]
     },
     {
-      "playerId": "tm-230784",
-      "name": "Thomas Partey",
-      "score": 94,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Thomas Partey 2019.jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ]
-    },
-    {
       "playerId": "tm-353108",
       "name": "Bruno Henrique",
       "score": 94,
@@ -7915,22 +7718,6 @@
         "name_in_filename",
         "head_shoulder_candidate",
         "event_stadium"
-      ]
-    },
-    {
-      "playerId": "tm-576028",
-      "name": "Thiago Almada",
-      "score": 96,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Thiago Almada (53062996583) (cropped).jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "portrait_hint",
-        "head_shoulder_candidate",
-        "group_or_team"
       ]
     },
     {
@@ -8081,6 +7868,21 @@
       "flags": []
     },
     {
+      "playerId": "tm-249565",
+      "name": "Youri Tielemans",
+      "score": 82,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Youri Tielemans 2018.jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ]
+    },
+    {
       "playerId": "tm-46580",
       "name": "Andrej Kramaric",
       "score": 82,
@@ -8089,6 +7891,53 @@
       "commonsFile": "Andrej Kramaric.jpg",
       "flags": [
         "name_in_filename"
+      ]
+    },
+    {
+      "playerId": "tm-557149",
+      "name": "Kang-in Lee",
+      "score": 82,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Lee Kang-in - 2022 (52551771501) (cropped).jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "portrait_hint",
+        "head_shoulder_candidate",
+        "bad_crop",
+        "group_or_team"
+      ]
+    },
+    {
+      "playerId": "tm-206040",
+      "name": "Raúl Jiménez",
+      "score": 84,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Raúl Jiménez.jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
+      ]
+    },
+    {
+      "playerId": "tm-543499",
+      "name": "Mohammed Kudus",
+      "score": 84,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "GAE - Ajax - 52788309814 (Mohammed Kudus).jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate",
+        "group_or_team"
       ]
     },
     {
@@ -8128,68 +7977,6 @@
         "portrait_hint",
         "head_shoulder_candidate",
         "match_filename"
-      ]
-    },
-    {
-      "playerId": "tm-249565",
-      "name": "Youri Tielemans",
-      "score": 88,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Youri Tielemans 2018.jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ]
-    },
-    {
-      "playerId": "tm-557149",
-      "name": "Kang-in Lee",
-      "score": 88,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Lee Kang-in - 2022 (52551771501) (cropped).jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "portrait_hint",
-        "head_shoulder_candidate",
-        "bad_crop",
-        "group_or_team"
-      ]
-    },
-    {
-      "playerId": "tm-206040",
-      "name": "Raúl Jiménez",
-      "score": 90,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "Raúl Jiménez.jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
-      ]
-    },
-    {
-      "playerId": "tm-543499",
-      "name": "Mohammed Kudus",
-      "score": 90,
-      "grade": "excellent",
-      "pass": true,
-      "commonsFile": "GAE - Ajax - 52788309814 (Mohammed Kudus).jpg",
-      "flags": [
-        "portrait",
-        "tall_portrait",
-        "name_in_filename",
-        "head_shoulder_candidate",
-        "group_or_team"
       ]
     },
     {
@@ -8243,6 +8030,61 @@
         "tall_portrait",
         "name_in_filename",
         "portrait_hint",
+        "head_shoulder_candidate"
+      ]
+    },
+    {
+      "playerId": "tm-255508",
+      "name": "Iñaki Williams",
+      "score": 100,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Iñaki Williams.png",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate"
+      ]
+    },
+    {
+      "playerId": "tm-294057",
+      "name": "James Maddison",
+      "score": 100,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "James Maddison pre-match training.jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate"
+      ]
+    },
+    {
+      "playerId": "tm-406040",
+      "name": "Ademola Lookman",
+      "score": 100,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Ademola Lookman (2019).jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
+        "name_in_filename",
+        "head_shoulder_candidate"
+      ]
+    },
+    {
+      "playerId": "tm-460939",
+      "name": "Tijjani Reijnders",
+      "score": 100,
+      "grade": "excellent",
+      "pass": true,
+      "commonsFile": "Reijnders arriva in albergo.jpg",
+      "flags": [
+        "portrait",
+        "tall_portrait",
         "head_shoulder_candidate"
       ]
     }
