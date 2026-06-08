@@ -457,11 +457,13 @@ export default function PlayerProfile() {
 
   const honors = toStringList(player.honors ?? player.honours ?? player.trophies, 12);
   const showHonors = honors.length > 0;
-  const hasPlayStyleSection = playStyleTags.length > 0 || Boolean(playStyleSummary);
+  const howTheyPlaySentence = playStyleSummary
+    || (profileEditorial.showPlayStyleBlurb ? profileEditorial.playStyleBlurb : '');
+  const showHowTheyPlay = playStyleTags.length > 0 || Boolean(howTheyPlaySentence);
   const hasStrengthsSection = strengths.length > 0;
   const showKnownForSection =
     profileEditorial.showKnownFor &&
-    (profileEditorial.isThin || (!hasPlayStyleSection && !hasStrengthsSection));
+    (profileEditorial.isThin || (!showHowTheyPlay && !hasStrengthsSection));
 
   const funFact = normalizeLabel(player.quickFact || '');
   const showFunFact =
@@ -655,32 +657,28 @@ export default function PlayerProfile() {
           </section>
         ) : null}
 
-        {profileEditorial.showPlayStyleBlurb ? (
-          <section className="profile-editorial__block player-section player-section--playstyle-blurb" aria-labelledby="player-playstyle-blurb-title">
-            <PlayerSectionHead editorial title="How they play" id="player-playstyle-blurb-title" />
-            <p className="player-profile__about">{profileEditorial.playStyleBlurb}</p>
-          </section>
-        ) : null}
-
-        <div className="player-profile__editorial-grid">
-        {(playStyleTags.length > 0 || playStyleSummary) &&
-        !(profileEditorial.topTier && profileEditorial.showPlayStyleBlurb) ? (
-          <article className="profile-editorial__block player-section player-section--playstyle">
-            <PlayerSectionHead editorial title="Play style" />
-            {playStyleTags.length > 0 && (
-              <ul className="tag-list player-tag-list" aria-label="Play style tags">
+        {showHowTheyPlay ? (
+          <section
+            className="profile-editorial__block player-section player-section--how-they-play"
+            aria-labelledby="player-how-they-play-title"
+          >
+            <PlayerSectionHead editorial title="How they play" id="player-how-they-play-title" />
+            {playStyleTags.length > 0 ? (
+              <ul className="tag-list player-tag-list" aria-label="Playing style tags">
                 {playStyleTags.map((tag) => (
                   <li key={tag} className="tag tag--playstyle">
                     {tag}
                   </li>
                 ))}
               </ul>
-            )}
-            {playStyleSummary ? (
-              <p className="card-note">{playStyleSummary}</p>
             ) : null}
-          </article>
+            {howTheyPlaySentence ? (
+              <p className="card-note">{howTheyPlaySentence}</p>
+            ) : null}
+          </section>
         ) : null}
+
+        <div className="player-profile__editorial-grid">
 
         {strengths.length > 0 && (
           <article className="profile-editorial__block player-section player-section--strengths">

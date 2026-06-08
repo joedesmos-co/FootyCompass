@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
-import { players, teams } from '../data/sampleData';
 import {
   QUIZ_THEME_CATALOG,
   QUIZ_THEME_CATEGORIES,
@@ -9,8 +8,14 @@ import {
 } from '../data/quizThemes';
 import { DATASET_META } from '../data/datasetMeta';
 import { canonicalUrlForPath, pageTitle } from '../utils/brand';
+import { useQuizRegistry } from '../hooks/useQuizRegistry';
 import { buildThemedQuizPool } from '../utils/quizThemePools';
+import {
+  getQuizThemeDisplayCounts,
+  isQuizThemePlayableById,
+} from '../utils/quizThemeAvailability';
 import { QUIZ_MIN_SESSION_POOL } from '../utils/quizSession';
+import QuizRegistryLoadState from './QuizRegistryLoadState';
 import BreadcrumbNav from './BreadcrumbNav';
 import { useEffect } from 'react';
 import { applyPageSeo, truncateMetaDescription } from '../utils/seoCtr.js';
@@ -31,20 +36,19 @@ function useThemeLandingSeo({ title, description, canonical, faqs, itemList }) {
 
 export function SeoQuizThemesHub() {
   const { pathname } = useLocation();
+  const { status: registryStatus, registry } = useQuizRegistry();
+  const players = useMemo(() => registry?.players ?? [], [registry]);
+  const teams = useMemo(() => registry?.teams ?? [], [registry]);
   const canonical = canonicalUrlForPath(pathname);
   const title = pageTitle('Themed football quizzes');
   const description = truncateMetaDescription(
     'Themed football player quizzes: wonderkids, legends, Premier League stars, World Cup squads, and more. See pool sizes and play free on FootyCompass.',
   );
 
-  const poolContext = useMemo(() => ({ teams }), []);
-  const counts = useMemo(() => {
-    const out = {};
-    for (const theme of QUIZ_THEME_CATALOG) {
-      out[theme.id] = buildThemedQuizPool(players, theme.id, poolContext).length;
-    }
-    return out;
-  }, [poolContext]);
+  const counts = useMemo(
+    () => getQuizThemeDisplayCounts(players, { teams }),
+    [players, teams],
+  );
 
   useThemeLandingSeo({
     title,
@@ -84,49 +88,53 @@ export function SeoQuizThemesHub() {
         </p>
       </header>
 
-      {QUIZ_THEME_CATEGORIES.map((category) => (
-        <section key={category.id} className="collections-page__section" aria-label={category.label}>
-          <h2 className="collections-section-title">{category.label}</h2>
-          <ul className="card-grid quiz-theme-grid" aria-label={category.label}>
-            {QUIZ_THEME_CATALOG.filter((t) => t.category === category.id).map((theme) => {
-              const count = counts[theme.id] ?? 0;
-              const viable = count >= QUIZ_MIN_SESSION_POOL;
-              return (
-                <li key={theme.id} className="player-card quiz-theme-card">
-                  <span className="quiz-theme-card__icon" aria-hidden="true">
-                    {theme.icon}
-                  </span>
-                  <h3>{theme.label}</h3>
-                  <p>{theme.description}</p>
-                  <p className="quiz-theme-card__meta">
-                    {viable ? `${count} quiz-ready players` : `${count} players — needs more clues`}
-                  </p>
-                  <div className="quiz-theme-card__actions">
-                    <Link
-                      to={`/hubs/quizzes/theme/${theme.id}`}
-                      className="btn btn--secondary btn--small"
-                    >
-                      Theme guide
-                    </Link>
-                    {viable ? (
+      {registryStatus !== 'ready' ? (
+        <QuizRegistryLoadState status={registryStatus} loadingLabel="Loading themed quiz pools…" />
+      ) : null}
+
+      {QUIZ_THEME_CATEGORIES.map((category) => {
+        const categoryThemes = QUIZ_THEME_CATALOG.filter(
+          (t) =>
+            t.category === category.id &&
+            isQuizThemePlayableById(t.id, counts, QUIZ_MIN_SESSION_POOL),
+        );
+        if (categoryThemes.length === 0) return null;
+
+        return (
+          <section key={category.id} className="collections-page__section" aria-label={category.label}>
+            <h2 className="collections-section-title">{category.label}</h2>
+            <ul className="card-grid quiz-theme-grid" aria-label={category.label}>
+              {categoryThemes.map((theme) => {
+                const count = counts[theme.id] ?? 0;
+                return (
+                  <li key={theme.id} className="player-card quiz-theme-card">
+                    <span className="quiz-theme-card__icon" aria-hidden="true">
+                      {theme.icon}
+                    </span>
+                    <h3>{theme.label}</h3>
+                    <p>{theme.description}</p>
+                    <p className="quiz-theme-card__meta">{count} quiz-ready players</p>
+                    <div className="quiz-theme-card__actions">
+                      <Link
+                        to={`/hubs/quizzes/theme/${theme.id}`}
+                        className="btn btn--secondary btn--small"
+                      >
+                        Theme guide
+                      </Link>
                       <Link
                         to={getQuizThemePlayHref(theme.id)}
                         className="btn btn--primary btn--small"
                       >
                         Play now
                       </Link>
-                    ) : (
-                      <Link to="/quiz" className="btn btn--secondary btn--small">
-                        Custom quiz
-                      </Link>
-                    )}
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      ))}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        );
+      })}
     </div>
   );
 }
@@ -136,11 +144,19 @@ export function SeoQuizThemeHub() {
   const theme = getQuizThemeById(themeId);
   const { pathname } = useLocation();
   const canonical = canonicalUrlForPath(pathname);
+  const { status: registryStatus, registry } = useQuizRegistry();
+  const players = useMemo(() => registry?.players ?? [], [registry]);
+  const teams = useMemo(() => registry?.teams ?? [], [registry]);
 
-  const poolContext = useMemo(() => ({ teams }), []);
   const pool = useMemo(
-    () => (theme ? buildThemedQuizPool(players, theme.id, poolContext) : []),
-    [theme, poolContext],
+    () =>
+      theme
+        ? buildThemedQuizPool(players, theme.id, {
+            teams,
+            difficulty: theme.defaultDifficulty ?? 'medium',
+          })
+        : [],
+    [theme, players, teams],
   );
   const topPlayers = useMemo(() => pool.slice(0, 12), [pool]);
 
@@ -187,6 +203,14 @@ export function SeoQuizThemeHub() {
   }
 
   const viable = pool.length >= QUIZ_MIN_SESSION_POOL;
+
+  if (registryStatus !== 'ready' && theme) {
+    return (
+      <div className="page collections-page">
+        <QuizRegistryLoadState status={registryStatus} loadingLabel="Loading theme pool…" />
+      </div>
+    );
+  }
 
   return (
     <div className="page collections-page">

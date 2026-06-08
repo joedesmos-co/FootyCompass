@@ -253,11 +253,19 @@ export function countThemedQuizPool(allPlayers, themeId, context = {}) {
   return buildThemedQuizPool(allPlayers, themeId, context).length;
 }
 
+/**
+ * @deprecated Prefer getQuizThemeDisplayCounts from quizThemeAvailability.js for UI.
+ */
 export function getAllThemePoolCounts(allPlayers, context = {}) {
   /** @type {Record<string, number>} */
   const counts = {};
   for (const theme of QUIZ_THEME_CATALOG) {
-    counts[theme.id] = buildThemedQuizPool(allPlayers, theme.id, context).length;
+    const difficulty =
+      context.difficulty ?? theme.defaultDifficulty ?? 'medium';
+    counts[theme.id] = buildThemedQuizPool(allPlayers, theme.id, {
+      ...context,
+      difficulty,
+    }).length;
   }
   return counts;
 }

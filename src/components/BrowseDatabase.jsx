@@ -188,6 +188,7 @@ export default function BrowseDatabase() {
 
   const hubExpandedKey = hubExpandLocked ? manualHubExpandedKey : filterHubExpandedKey;
 
+  const browseLibraryOpen = searchParams.get('browse') === 'players';
   const hasPlayerQuery = search.trim().length > 0 || Boolean(leagueFilter || teamFilter);
 
   const featuredPickPool = useMemo(() => {
@@ -283,11 +284,7 @@ export default function BrowseDatabase() {
     searchIndexStatus === 'ready' || Boolean(bundled) || usesExternalShard;
   const showPlayerResults =
     showPlayersTab &&
-    (hasPlayerQuery ||
-      skipClubPicker ||
-      leagueFilter ||
-      teamFilter ||
-      (!leagueFilter && !teamFilter && playersListReady));
+    (hasPlayerQuery || skipClubPicker || browseLibraryOpen || Boolean(leagueFilter || teamFilter));
 
   const totalFilteredPlayers = filteredPlayers.length;
   const totalPlayerPages = Math.max(1, Math.ceil(totalFilteredPlayers / BROWSE_PAGE_SIZE));
@@ -322,6 +319,7 @@ export default function BrowseDatabase() {
     setHubExpandLocked(false);
     setManualHubExpandedKey(null);
     updateBrowseParams((next) => {
+      next.delete('browse');
       if (!value) {
         next.delete('league');
         next.delete('region');
@@ -346,6 +344,11 @@ export default function BrowseDatabase() {
   const handleSearchChange = (value) => {
     setSearch(value);
     setPlayerPage(1);
+    if (value.trim()) {
+      updateBrowseParams((next) => {
+        next.delete('browse');
+      });
+    }
   };
 
   const handleHubExpandedChange = (key) => {
@@ -360,9 +363,17 @@ export default function BrowseDatabase() {
     setSkipClubPicker(true);
     updateBrowseParams((next) => {
       next.delete('tab');
+      next.delete('browse');
       next.set('league', leagueId);
       if (regionId) next.set('region', regionId);
       else next.delete('region');
+    });
+  };
+
+  const handleOpenPlayerLibrary = () => {
+    setPlayerPage(1);
+    updateBrowseParams((next) => {
+      next.set('browse', 'players');
     });
   };
 
@@ -506,24 +517,34 @@ export default function BrowseDatabase() {
             ? `Loading ${activeScopeLabel}…`
             : browseDataLoading
               ? 'Loading players…'
-              : hasPlayerQuery
-                ? searchResultCapped
-                  ? `Showing top ${BROWSE_SEARCH_RESULT_CAP} matches — narrow league or club to see more`
-                  : totalFilteredPlayers === 0
-                    ? '0 players found'
-                    : `Showing ${playerPageStart + 1}–${playerPageEnd} of ${totalFilteredPlayers.toLocaleString()}`
-                : leagueFilter || teamFilter
-                  ? totalFilteredPlayers === 0
-                    ? '0 players match these filters'
-                    : `Showing ${playerPageStart + 1}–${playerPageEnd} of ${totalFilteredPlayers.toLocaleString()}`
-                  : playersListReady
+              : showPlayerResults
+                ? hasPlayerQuery
+                  ? searchResultCapped
+                    ? `Showing top ${BROWSE_SEARCH_RESULT_CAP} matches — narrow league or club to see more`
+                    : totalFilteredPlayers === 0
+                      ? '0 players found'
+                      : `Showing ${playerPageStart + 1}–${playerPageEnd} of ${totalFilteredPlayers.toLocaleString()}`
+                  : leagueFilter || teamFilter || browseLibraryOpen
                     ? totalFilteredPlayers === 0
-                      ? '0 players'
-                      : `Showing ${playerPageStart + 1}–${playerPageEnd} of ${totalFilteredPlayers.toLocaleString()} — search or pick a league or club`
-                    : 'Players could not load. Try again in a moment.'}
+                      ? '0 players match these filters'
+                      : `Showing ${playerPageStart + 1}–${playerPageEnd} of ${totalFilteredPlayers.toLocaleString()}`
+                    : 'Players could not load. Try again in a moment.'
+                : 'Search or pick a league or club — or browse the full player library when you are ready.'}
         </p>
       </section>
       )}
+
+      {showPlayersTab && !showPlayerResults && playersListReady && !browseDataLoading ? (
+        <section className="browse-discover-cta" aria-label="Browse players">
+          <p className="browse-discover-cta__lede">
+            Start with search or filters above. Open the full library only when you want every player
+            ranked by importance.
+          </p>
+          <button type="button" className="btn btn--secondary" onClick={handleOpenPlayerLibrary}>
+            Browse all players
+          </button>
+        </section>
+      ) : null}
 
       {showPlayersTab && (showPicks ? (
         <TodaysPicksSection

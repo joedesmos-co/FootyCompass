@@ -9,6 +9,7 @@ const THEME_COLOR_META = {
   'dark-pitch': '#07110d',
   'oled-dark': '#020403',
   emerald: '#0a1812',
+  'matchday-light': '#e8f0ec',
 };
 
 export function resolveAppearanceTheme(themeId) {

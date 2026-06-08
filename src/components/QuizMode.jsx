@@ -6,10 +6,13 @@ import { getQuizThemeById, QUIZ_THEME_CATALOG } from '../data/quizThemes';
 import { getRecommendedNextQuizzes } from '../utils/quizRecommendations';
 import {
   buildThemedQuizPool,
-  getAllThemePoolCounts,
   getPlayerRarity,
   pickWeightedQuizPlayer,
 } from '../utils/quizThemePools';
+import {
+  getQuizThemeDisplayCounts,
+  isQuizThemePlayableById,
+} from '../utils/quizThemeAvailability';
 import { useQuizRegistry } from '../hooks/useQuizRegistry';
 import { useProgression } from '../hooks/useProgression';
 import {
@@ -250,9 +253,41 @@ function QuizModeLoaded({ registry, teamById, leagueById }) {
 
   const themePoolContext = useMemo(() => ({ teams, difficulty }), [teams, difficulty]);
   const themePoolCounts = useMemo(
-    () => getAllThemePoolCounts(players, themePoolContext),
-    [players, themePoolContext],
+    () => getQuizThemeDisplayCounts(players, { teams }),
+    [players, teams],
   );
+  const playableQuizThemes = useMemo(
+    () =>
+      QUIZ_THEME_CATALOG.filter((theme) =>
+        isQuizThemePlayableById(theme.id, themePoolCounts, QUIZ_MIN_SESSION_POOL),
+      ),
+    [themePoolCounts],
+  );
+
+  useEffect(() => {
+    if (!requestedThemeId) return;
+    if (!getQuizThemeById(requestedThemeId)) {
+      setSearchParams(
+        (prev) => {
+          const next = new URLSearchParams(prev);
+          next.delete('theme');
+          return next;
+        },
+        { replace: true },
+      );
+      return;
+    }
+    if (!isQuizThemePlayableById(requestedThemeId, themePoolCounts, QUIZ_MIN_SESSION_POOL)) {
+      setSearchParams(
+        (prev) => {
+          const next = new URLSearchParams(prev);
+          next.delete('theme');
+          return next;
+        },
+        { replace: true },
+      );
+    }
+  }, [requestedThemeId, themePoolCounts, setSearchParams]);
 
   const viableCountryQuizMetas = useMemo(
     () => {
@@ -599,6 +634,7 @@ function QuizModeLoaded({ registry, teamById, leagueById }) {
 
   const handleSelectTheme = useCallback(
     (themeId) => {
+      if (!isQuizThemePlayableById(themeId, themePoolCounts, QUIZ_MIN_SESSION_POOL)) return;
       resetCurrentQuestion();
       resetSessionStats();
       const theme = getQuizThemeById(themeId);
@@ -629,7 +665,7 @@ function QuizModeLoaded({ registry, teamById, leagueById }) {
       if (preset?.worldCup) params.set('worldCup', 'prep');
       setSearchParams(params, { replace: true });
     },
-    [resetCurrentQuestion, resetSessionStats, setSearchParams],
+    [resetCurrentQuestion, resetSessionStats, setSearchParams, themePoolCounts],
   );
 
   const maxQuizHints = getMaxVisibleQuizHints(difficulty);
@@ -817,7 +853,9 @@ function QuizModeLoaded({ registry, teamById, leagueById }) {
         </p>
       </header>
 
-      {activeTheme ? (
+      {activeTheme &&
+      themedSourcePool &&
+      themedSourcePool.length >= QUIZ_MIN_SESSION_POOL ? (
         <aside className="quiz-active-theme" aria-label="Active themed quiz">
           <p className="quiz-active-theme__title">
             <span aria-hidden="true">{activeTheme.icon}</span> {activeTheme.label}
@@ -843,38 +881,37 @@ function QuizModeLoaded({ registry, teamById, leagueById }) {
         </aside>
       )}
 
-      <section className="quiz-themes-picker" aria-label="Themed quizzes">
-        <div className="quiz-themes-picker__head">
-          <h2 className="quiz-themes-picker__title">Themed quizzes</h2>
-          <Link to="/hubs/quizzes/themes" className="collections-page__section-link">
-            Browse all themes
-          </Link>
-        </div>
-        <div className="quiz-theme-grid quiz-theme-grid--compact">
-          {QUIZ_THEME_CATALOG.map((theme) => {
-            const count = themePoolCounts[theme.id] ?? 0;
-            const viable = count >= QUIZ_MIN_SESSION_POOL;
-            const isActive = requestedThemeId === theme.id;
-            return (
-              <button
-                key={theme.id}
-                type="button"
-                className={`quiz-theme-card quiz-theme-card--btn${isActive ? ' quiz-theme-card--active' : ''}${!viable ? ' quiz-theme-card--thin' : ''}`}
-                onClick={() => handleSelectTheme(theme.id)}
-                aria-pressed={isActive}
-              >
-                <span className="quiz-theme-card__icon" aria-hidden="true">
-                  {theme.icon}
-                </span>
-                <span className="quiz-theme-card__title">{theme.label}</span>
-                <span className="quiz-theme-card__meta">
-                  {viable ? `${count} ready` : `${count} players`}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </section>
+      {playableQuizThemes.length > 0 ? (
+        <section className="quiz-themes-picker" aria-label="Themed quizzes">
+          <div className="quiz-themes-picker__head">
+            <h2 className="quiz-themes-picker__title">Themed quizzes</h2>
+            <Link to="/hubs/quizzes/themes" className="collections-page__section-link">
+              Browse all themes
+            </Link>
+          </div>
+          <div className="quiz-theme-grid quiz-theme-grid--compact">
+            {playableQuizThemes.map((theme) => {
+              const count = themePoolCounts[theme.id] ?? 0;
+              const isActive = requestedThemeId === theme.id;
+              return (
+                <button
+                  key={theme.id}
+                  type="button"
+                  className={`quiz-theme-card quiz-theme-card--btn${isActive ? ' quiz-theme-card--active' : ''}`}
+                  onClick={() => handleSelectTheme(theme.id)}
+                  aria-pressed={isActive}
+                >
+                  <span className="quiz-theme-card__icon" aria-hidden="true">
+                    {theme.icon}
+                  </span>
+                  <span className="quiz-theme-card__title">{theme.label}</span>
+                  <span className="quiz-theme-card__meta">{count} ready</span>
+                </button>
+              );
+            })}
+          </div>
+        </section>
+      ) : null}
 
       <details className="quiz-filters-details">
         <summary className="quiz-filters-details__summary">

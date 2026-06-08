@@ -1,6 +1,5 @@
 import { getQuizThemeById, getQuizThemePlayHref, QUIZ_THEME_CATALOG } from '../data/quizThemes';
-import { countThemedQuizPool } from './quizThemePools';
-import { QUIZ_MIN_SESSION_POOL } from './quizSession';
+import { isQuizThemePlayable } from './quizThemeAvailability';
 
 /**
  * @param {{
@@ -30,11 +29,13 @@ export function getRecommendedNextQuizzes(ctx) {
     teams = [],
   } = ctx;
 
-  const poolContext = { teams, difficulty };
   const viable = QUIZ_THEME_CATALOG.filter(
     (theme) =>
       theme.id !== themeId &&
-      countThemedQuizPool(players, theme.id, poolContext) >= QUIZ_MIN_SESSION_POOL,
+      isQuizThemePlayable(players, theme.id, {
+        teams,
+        difficulty: theme.defaultDifficulty ?? 'medium',
+      }),
   );
 
   /** @type {Array<{ id: string, label: string, href: string, reason: string }>} */

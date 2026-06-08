@@ -14,6 +14,11 @@ export const APPEARANCE_THEMES = [
     label: 'Emerald',
     hint: 'Brighter pitch greens with a livelier feel.',
   },
+  {
+    id: 'matchday-light',
+    label: 'Matchday Light',
+    hint: 'Bright pitch-day look — readable cards and crisp contrast.',
+  },
 ];
 
 export const DEFAULT_APPEARANCE_THEME = 'dark-pitch';
