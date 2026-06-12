@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-12T20:27:10.630Z",
+  "generatedAt": "2026-06-12T20:39:38.820Z",
   "overlayCount": 164,
   "premiumClubPass": {
-    "updated": 29,
-    "targeted": 29
+    "updated": 32,
+    "targeted": 32
   },
   "overlays": {
     "arsenal": {
@@ -261,14 +261,14 @@
       "fanGuide": "Matchday focus: Estádio Municipal José María de Campos Maia — use the squad list to learn current names. Supporters often associate the side with vocal supporter culture and technical ball retention. Other Série A clubs profiled nearby include Flamengo and Palmeiras.…"
     },
     "botafogo": {
-      "metaDescription": "Botafogo: Matchday focus: Estádio Olímpico Nilton Santos — use the squad list to learn current names.…",
+      "metaDescription": "Botafogo: Start with the Fla-Flu and Clássico da Lagoa rivalries; General Severiano atmosphere matters as…",
       "tacticalIdentity": "Botafogo play with vocal supporter culture and technical ball retention.",
       "stadiumContext": "Botafogo play home matches at Estádio Olímpico Nilton Santos. Founded in 1900.",
       "leagueContext": "Botafogo compete in Série A. Technical, creative, and transition-heavy; wing play and 1v1 skill are central to how fans describe the league.",
-      "rivalsSummary": null,
-      "legendsSummary": null,
-      "playersToKnowIntro": "Look out for Alex Telles, Caio Roque, Joaquín Correa, and Mateo Ponte in the squad below.",
-      "quizDiscoveryLead": "Learn the squad on this page, then test yourself with the Botafogo player quiz.",
+      "rivalsSummary": "Supporters mark games against Flamengo, Fluminense, and Vasco da Gama as the fixtures that matter most.",
+      "legendsSummary": "Club legends include Garrincha, Jairzinho, and Túlio Maravilha.",
+      "playersToKnowIntro": "Look out for Alex Telles, Joaquín Correa, and Jefferson Savarino in the squad below.",
+      "quizDiscoveryLead": "Learn the squad here, then try the Botafogo player quiz — derby names like Flamengo often come up.",
       "shortHistory": "Botafogo are listed in Série A (Brazil). Founded in 1900. Home ground: Estádio Olímpico Nilton Santos.: vocal supporter culture and technical ball retention. Technical, creative, and transition-heavy; wing play and 1v1 skill are central to how fans describe the league. 32 squad…",
       "fanGuide": "Matchday focus: Estádio Olímpico Nilton Santos — use the squad list to learn current names. Supporters often associate the side with vocal supporter culture and technical ball retention. Other Série A clubs profiled nearby include Flamengo and Palmeiras. League-wide derbies…"
     },
@@ -957,14 +957,14 @@
       "fanGuide": "BMO Field is the home ground — start with the squad list to learn current names. Fans associate the side with vocal supporter culture."
     },
     "portland-timbers": {
-      "metaDescription": "Portland Timbers (Major League Soccer) · Providence Park. Portland Timbers play in Major League Soccer (United States). Founded…",
+      "metaDescription": "Portland Timbers (Major League Soccer) · Providence Park · rivals include Seattle Sounders FC and Vancouver Whitecaps FC. Portland Timbers turned Pacific…",
       "tacticalIdentity": "Portland Timbers play with vocal supporter culture.",
       "stadiumContext": "Portland Timbers play home matches at Providence Park. Founded in 1900.",
       "leagueContext": "Portland Timbers compete in Major League Soccer. Athletic and direct, with squad-building rules that mix homegrown players, MLS veterans, and star imports.",
-      "rivalsSummary": null,
-      "legendsSummary": null,
-      "playersToKnowIntro": "Look out for Felipe Mora, Alex Bonetig, Diego Chará, and James Pantemis in the squad below.",
-      "quizDiscoveryLead": "Learn the squad on this page, then test yourself with the Portland Timbers player quiz.",
+      "rivalsSummary": "Supporters mark games against Seattle Sounders FC and Vancouver Whitecaps FC as the fixtures that matter most.",
+      "legendsSummary": "Club legends include Diego Valeri, Darlington Nagbe, and Fanendo Adi.",
+      "playersToKnowIntro": "Look out for Evander, Felipe Mora, and Claudio Bravo in the squad below.",
+      "quizDiscoveryLead": "Learn the squad here, then try the Portland Timbers player quiz — derby names like Seattle Sounders FC often come up.",
       "shortHistory": "Portland Timbers play in Major League Soccer (United States). Founded in 1900. Home ground: Providence Park. Known for vocal supporter culture. Athletic and direct, with squad-building rules that mix homegrown players, MLS veterans, and star imports.",
       "fanGuide": "Providence Park is the home ground — start with the squad list to learn current names. Fans associate the side with vocal supporter culture."
     },

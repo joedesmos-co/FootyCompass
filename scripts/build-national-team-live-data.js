@@ -284,9 +284,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['die mannschaft', 'ger', 'deutschland', 'german national team', 'germany nt'],
     badgeTheme: { from: '#1f2937', to: '#030712', accent: '#fbbf24' },
     fanGuide:
-      'Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree.',
+      'Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree. Style: organized pressing, vertical transitions, and goalkeeper-led build-up.',
     shortHistory:
-      'Men’s senior team of Germany (DFB). Squads combine Transfermarkt senior links with club players whose nationality matches in the FootyBrain registry.',
+      'Men’s senior team of Germany (DFB). Linked squads draw from Bundesliga and European club exports already in FootyBrain.',
   },
   netherlands: {
     displayName: 'Netherlands',
@@ -362,9 +362,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['sui', 'swiss national team', 'switzerland nt', 'schweiz'],
     badgeTheme: { from: '#dc2626', to: '#7f1d1d', accent: '#fecaca' },
     fanGuide:
-      'Organized tournament regulars in red — goalkeeper stability, disciplined defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study.',
+      'Organized tournament regulars in red — Sommer-era goalkeeper stability, compact defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study. Style: disciplined block, quick wide switches, and set-piece threat.',
     shortHistory:
-      'Men’s senior team of Switzerland (SFV/ASF). Squads link to club players already present in FootyBrain.',
+      'Men’s senior team of Switzerland (SFV/ASF). Linked players come from Bundesliga, Serie A, and Premier League clubs in FootyBrain.',
   },
   denmark: {
     displayName: 'Denmark',
@@ -414,9 +414,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['usa', 'usmnt', 'us soccer', 'united states', 'us national team'],
     badgeTheme: { from: '#1d4ed8', to: '#991b1b', accent: '#dbeafe' },
     fanGuide:
-      '2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story.',
+      '2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story. Style: high pressing, pace on the wings, and MLS-to-Europe player paths.',
     shortHistory:
-      'Men’s senior team of the United States (US Soccer). Squads link FootyBrain club players to USA memberships.',
+      'Men’s senior team of the United States (US Soccer). Linked squads mix MLS regulars and European-based exports in FootyBrain.',
   },
   mexico: {
     displayName: 'Mexico',
@@ -427,9 +427,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['mex', 'el tri', 'mexico national team', 'mexico nt'],
     badgeTheme: { from: '#16a34a', to: '#7f1d1d', accent: '#bbf7d0' },
     fanGuide:
-      'El Tri are defined by regional rivalry, technical attackers, and tournament regularity. Mexico is central to CONCACAF storylines and 2026 host context.',
+      'El Tri are defined by regional rivalry, technical attackers, and tournament regularity. Mexico is central to CONCACAF storylines and 2026 host context. Style: quick combinations in the final third, creative number 10s, and passionate Azteca atmosphere.',
     shortHistory:
-      'Men’s senior team of Mexico (FMF). Memberships link existing club players only; coverage depends on club imports.',
+      'Men’s senior team of Mexico (FMF). Linked squads draw from Liga MX and European club exports in FootyBrain.',
   },
   uruguay: {
     displayName: 'Uruguay',
@@ -791,9 +791,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['qat', 'qatar national team', 'qatar nt', 'al annabi'],
     badgeTheme: { from: '#7f1d1d', to: '#f8fafc', accent: '#fecaca' },
     fanGuide:
-      'Al-Annabi blend Gulf technical football with a growing European pipeline. Learn Qatar through AFC rivalries and the 2022 host generation — study names from the national pool, not a locked tournament squad.',
+      'Al-Annabi blend Gulf technical football with a growing European pipeline. Qatar’s 2022 host story matters, but the modern identity is patient possession, quick wide switches, and AFC rivalry with Saudi Arabia and Iran. Key names in FootyBrain come from the linked national pool.',
     shortHistory:
-      'Men’s senior team of Qatar (QFA). FootyBrain lists a broad national player pool from existing registry players — not an official World Cup 2026 roster.',
+      'Men’s senior team of Qatar (QFA). FootyBrain links existing registry players to the national pool for browsing and learning.',
   },
   'saudi-arabia': {
     displayName: 'Saudi Arabia',
@@ -804,9 +804,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['ksa', 'green falcons', 'saudi national team', 'saudi nt', 'saudi arabia'],
     badgeTheme: { from: '#16a34a', to: '#14532d', accent: '#bbf7d0' },
     fanGuide:
-      'The Green Falcons carry Gulf pride with pace, pressing, and a strong domestic league export path. Learn Saudi Arabia through AFC rivalries and players linked from club football on FootyCompass.',
+      'The Green Falcons carry Gulf pride with pace, pressing, and a strong domestic league export path. Style: direct wide attacks, aggressive pressing, and AFC rivalry with Iran and Qatar. Quiz-ready names come from in-league players already linked in FootyBrain.',
     shortHistory:
-      'Men’s senior team of Saudi Arabia (SAFF). Squad lists linked club players on FootyCompass — not an official World Cup 2026 roster.',
+      'Men’s senior team of Saudi Arabia (SAFF). Linked squads draw from existing club players in the FootyBrain registry.',
   },
   iran: {
     displayName: 'Iran',
@@ -817,9 +817,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['ir iran', 'team melli', 'iran national team', 'iran nt', 'persian'],
     badgeTheme: { from: '#16a34a', to: '#dc2626', accent: '#fef08a' },
     fanGuide:
-      'Team Melli combine disciplined defending with technical midfielders and a long World Cup qualification tradition. Learn Iran through AFC rivalries and players linked from club football on FootyCompass.',
+      'Team Melli combine disciplined defending with technical midfielders and a long World Cup qualification tradition. Style: compact defensive shape, fast counters, and set-piece discipline. Browse the linked national pool — most squad names sit on external clubs outside current league imports.',
     shortHistory:
-      'Men’s senior team of Iran (FFIRI). Squad lists linked club players on FootyCompass — not an official World Cup 2026 roster.',
+      'Men’s senior team of Iran (FFIRI). FootyBrain links registry players to the national pool; quiz depth depends on in-league coverage.',
   },
   'south-africa': {
     displayName: 'South Africa',
@@ -856,9 +856,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['irq', 'lions of mesopotamia', 'iraq national team', 'iraq nt'],
     badgeTheme: { from: '#16a34a', to: '#111827', accent: '#dc2626' },
     fanGuide:
-      'The Lions of Mesopotamia mix technical midfielders with passionate tournament football. Learn Iraq through AFC qualifying stories and names you can browse on FootyCompass.',
+      'The Lions of Mesopotamia mix technical midfielders with passionate tournament football. Style: organized defending, quick transitions, and AFC rivalry with Iran and Jordan. Key linked names help you learn the current pool.',
     shortHistory:
-      'Men’s senior team of Iraq (IFA). Squad lists linked club players on FootyCompass — not an official World Cup 2026 roster.',
+      'Men’s senior team of Iraq (IFA). Linked squads draw from existing club players in the FootyBrain registry.',
   },
   jordan: {
     displayName: 'Jordan',
@@ -869,9 +869,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['jor', 'nashama', 'jordan national team', 'jordan nt'],
     badgeTheme: { from: '#111827', to: '#dc2626', accent: '#f8fafc' },
     fanGuide:
-      'Al-Nashama are a rising AFC side built on organized defending and European-based talent. Learn Jordan through West Asian rivalries and players linked from club football on FootyCompass.',
+      'Al-Nashama are a rising AFC side built on organized defending and European-based talent. Style: compact block, disciplined pressing, and rivalry with Iraq and Saudi Arabia in West Asian qualifying.',
     shortHistory:
-      'Men’s senior team of Jordan (JFA). Squad lists linked club players on FootyCompass — not an official World Cup 2026 roster.',
+      'Men’s senior team of Jordan (JFA). Linked squads draw from existing club players in the FootyBrain registry.',
   },
   uzbekistan: {
     displayName: 'Uzbekistan',
@@ -895,9 +895,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['nzl', 'all whites', 'new zealand national team', 'new zealand nt'],
     badgeTheme: { from: '#111827', to: '#1d4ed8', accent: '#f8fafc' },
     fanGuide:
-      'The All Whites carry Oceania pride with physical defending and a strong diaspora in Australia and Europe. Learn New Zealand through OFC tradition and players linked from club football on FootyCompass.',
+      'The All Whites carry Oceania pride with physical defending and a strong diaspora in Australia and Europe. Style: direct play, aerial strength, and rivalry with Australia across OFC and inter-confederation play-offs.',
     shortHistory:
-      'Men’s senior team of New Zealand (NZF). Squad lists linked club players on FootyCompass — not an official World Cup 2026 roster.',
+      'Men’s senior team of New Zealand (NZF). Linked squads draw from existing club players in the FootyBrain registry.',
   },
   'cape-verde': {
     displayName: 'Cabo Verde',
@@ -908,9 +908,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['cape verde', 'cabo verde', 'cape verde national team', 'cape verde nt'],
     badgeTheme: { from: '#1d4ed8', to: '#fbbf24', accent: '#dc2626' },
     fanGuide:
-      'Cabo Verde blend Atlantic island identity with a wide European diaspora — especially Portugal and France. Learn them through CAF tournament football and players you can browse on FootyCompass.',
+      'Cabo Verde blend Atlantic island identity with a wide European diaspora — especially Portugal and France. Style: technical midfielders, organized defending, and fast wide transitions in CAF qualifying.',
     shortHistory:
-      'Men’s senior team of Cabo Verde. Squad lists linked club players on FootyCompass — not an official World Cup 2026 roster.',
+      'Men’s senior team of Cabo Verde. Linked squads draw from European and domestic club players in FootyBrain.',
   },
   curacao: {
     displayName: 'Curaçao',
@@ -921,9 +921,9 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['curacao', 'curaçao', 'curacao national team', 'curacao nt'],
     badgeTheme: { from: '#1d4ed8', to: '#fbbf24', accent: '#dc2626' },
     fanGuide:
-      'Curaçao carry Dutch Caribbean football culture with technical midfielders and a deep Netherlands connection. Learn them through CONCACAF qualifying stories and players linked from club football on FootyCompass.',
+      'Curaçao carry Dutch Caribbean football culture with technical midfielders and a deep Netherlands connection. Style: possession in midfield, quick wide play, and CONCACAF qualifying grit against regional rivals.',
     shortHistory:
-      'Men’s senior team of Curaçao. Squad lists linked club players on FootyCompass — not an official World Cup 2026 roster.',
+      'Men’s senior team of Curaçao. Linked squads draw from Eredivisie and regional club players in FootyBrain.',
   },
 };
 

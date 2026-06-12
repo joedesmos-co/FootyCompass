@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-02T00:12:56.271Z",
+  "updatedAt": "2026-06-12T20:39:30.809Z",
   "resolved": {
     "tm-28003": {
       "meta": {
@@ -4065,6 +4065,102 @@
         "description": "Kyle Duncan during New York Red Bulls vs Atlanta United May 31 2025"
       },
       "at": "2026-05-30T20:50:27.530Z"
+    },
+    "neuer": {
+      "meta": {
+        "commonsFile": "Manuel Neuer, Germany national football team (02) (cropped).jpg",
+        "pageTitle": "File:Manuel Neuer, Germany national football team (02) (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AManuel_Neuer%2C_Germany_national_football_team_(02)_(cropped).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Manuel_Neuer%2C_Germany_national_football_team_%2802%29_%28cropped%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Manuel_Neuer%2C_Germany_national_football_team_%2802%29_%28cropped%29.jpg",
+        "width": 929,
+        "height": 1778,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 3.0",
+        "artist": "Steindy ( talk ) 10:35, 27 June 2011 (UTC)",
+        "description": "Manuel Neuer ( FC Schalke 04 / FC Bayern München ), german national football team"
+      },
+      "at": "2026-06-12T20:34:41.680Z"
+    },
+    "bellingham": {
+      "meta": {
+        "commonsFile": "Jude Bellingham Birmingham 2019.jpg",
+        "pageTitle": "File:Jude Bellingham Birmingham 2019.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AJude_Bellingham_Birmingham_2019.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Jude_Bellingham_Birmingham_2019.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Jude_Bellingham_Birmingham_2019.jpg",
+        "width": 805,
+        "height": 1089,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Struway2",
+        "description": "Jude Bellingham warms up before Birmingham City 's EFL Championship match against Brentford at Griffin Park on 3 August 2019"
+      },
+      "at": "2026-06-12T20:39:25.226Z"
+    },
+    "tm-59016": {
+      "meta": {
+        "commonsFile": "David Alaba Training 2019-04-10 FC Bayern Muenchen-4 (cropped).jpg",
+        "pageTitle": "File:David Alaba Training 2019-04-10 FC Bayern Muenchen-4 (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ADavid_Alaba_Training_2019-04-10_FC_Bayern_Muenchen-4_(cropped).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/David_Alaba_Training_2019-04-10_FC_Bayern_Muenchen-4_%28cropped%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/David_Alaba_Training_2019-04-10_FC_Bayern_Muenchen-4_%28cropped%29.jpg",
+        "width": 547,
+        "height": 715,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 3.0",
+        "artist": "Rufus46",
+        "description": "David Alaba, am 10. April 2019 beim Training auf dem Gelände des FC Bayern München"
+      },
+      "at": "2026-06-12T20:39:26.657Z"
+    },
+    "lewandowski": {
+      "meta": {
+        "commonsFile": "Robert Lewandowski 2011.jpg",
+        "pageTitle": "File:Robert Lewandowski 2011.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ARobert_Lewandowski_2011.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Robert_Lewandowski_2011.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Robert_Lewandowski_2011.jpg",
+        "width": 506,
+        "height": 676,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 2.0",
+        "artist": "Slawek",
+        "description": "Polish football player Robert Lewandowski"
+      },
+      "at": "2026-06-12T20:39:28.034Z"
+    },
+    "valverde": {
+      "meta": {
+        "commonsFile": "Federico Valverde Real Madrid 2018.jpg",
+        "pageTitle": "File:Federico Valverde Real Madrid 2018.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AFederico_Valverde_Real_Madrid_2018.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Federico_Valverde_Real_Madrid_2018.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Federico_Valverde_Real_Madrid_2018.jpg",
+        "width": 453,
+        "height": 593,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 2.0",
+        "artist": "All-Pro Reels from District of Columbia, USA",
+        "description": "All-Pro Reels"
+      },
+      "at": "2026-06-12T20:39:29.426Z"
+    },
+    "saliba": {
+      "meta": {
+        "commonsFile": "1 william saliba arsenal 2025 (cropped).jpg",
+        "pageTitle": "File:1 william saliba arsenal 2025 (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3A1_william_saliba_arsenal_2025_(cropped).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/1_william_saliba_arsenal_2025_%28cropped%29.jpg/960px-1_william_saliba_arsenal_2025_%28cropped%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/1_william_saliba_arsenal_2025_%28cropped%29.jpg",
+        "width": 1892,
+        "height": 2842,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Chensiyuan",
+        "description": "William Saliba"
+      },
+      "at": "2026-06-12T20:39:30.806Z"
     }
   },
   "skipped": {
@@ -4240,17 +4336,13 @@
       "reason": "no_safe_match",
       "at": "2026-05-30T20:35:15.544Z"
     },
-    "bellingham": {
-      "reason": "no_safe_match",
-      "at": "2026-05-30T20:35:27.266Z"
-    },
     "tm-640428": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:35:30.849Z"
+      "at": "2026-06-12T20:34:35.146Z"
     },
     "alisson": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:35:34.528Z"
+      "at": "2026-06-12T20:34:38.539Z"
     },
     "tm-503482": {
       "reason": "no_safe_match",

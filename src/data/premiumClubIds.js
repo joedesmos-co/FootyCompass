@@ -28,12 +28,15 @@ export const PREMIUM_EDITORIAL_CLUB_IDS = [
   'sao-paulo',
   'gremio',
   'internacional',
+  'corinthians',
+  'botafogo',
   // Major MLS clubs
   'inter-miami',
   'lafc',
   'seattle-sounders',
   'atlanta-united',
   'la-galaxy',
+  'portland-timbers',
 ];
 
 export const PREMIUM_EDITORIAL_CLUB_ID_SET = new Set(PREMIUM_EDITORIAL_CLUB_IDS);

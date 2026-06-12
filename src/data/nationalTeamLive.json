@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-12T20:27:09.090Z",
+    "generatedAt": "2026-06-12T20:39:37.243Z",
     "wave": "2+3-batch1+2",
     "liveNationalTeamIds": [
       "england",
@@ -246,7 +246,7 @@
       "france": 11,
       "spain": 12,
       "brazil": 10,
-      "argentina": 24,
+      "argentina": 25,
       "germany": 10,
       "portugal": 16,
       "italy": 10,
@@ -265,7 +265,7 @@
       "morocco": 5,
       "senegal": 6,
       "nigeria": 5,
-      "japan": 8,
+      "japan": 9,
       "korea-republic": 6,
       "norway": 6,
       "ghana": 6,
@@ -459,7 +459,7 @@
         "to": "#030712",
         "accent": "#fbbf24"
       },
-      "fanGuide": "Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree.",
+      "fanGuide": "Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree. Style: organized pressing, vertical transitions, and goalkeeper-led build-up.",
       "shortHistory": "Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree.",
       "fifaRanking": 10,
       "tmCode": "germany",
@@ -625,8 +625,8 @@
         "to": "#7f1d1d",
         "accent": "#fecaca"
       },
-      "fanGuide": "Organized tournament regulars in red — goalkeeper stability, disciplined defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study.",
-      "shortHistory": "Organized tournament regulars in red — goalkeeper stability, disciplined defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study.",
+      "fanGuide": "Organized tournament regulars in red — Sommer-era goalkeeper stability, compact defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study. Style: disciplined block, quick wide switches, and set-piece threat.",
+      "shortHistory": "Organized tournament regulars in red — Sommer-era goalkeeper stability, compact defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study.",
       "fifaRanking": 19,
       "tmCode": "switzerland",
       "crestPolicy": "text-only"
@@ -731,7 +731,7 @@
         "to": "#991b1b",
         "accent": "#dbeafe"
       },
-      "fanGuide": "2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story.",
+      "fanGuide": "2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story. Style: high pressing, pace on the wings, and MLS-to-Europe player paths.",
       "shortHistory": "2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story.",
       "fifaRanking": 16,
       "tmCode": "united-states",
@@ -757,7 +757,7 @@
         "to": "#7f1d1d",
         "accent": "#bbf7d0"
       },
-      "fanGuide": "El Tri are defined by regional rivalry, technical attackers, and tournament regularity. Mexico is central to CONCACAF storylines and 2026 host context.",
+      "fanGuide": "El Tri are defined by regional rivalry, technical attackers, and tournament regularity. Mexico is central to CONCACAF storylines and 2026 host context. Style: quick combinations in the final third, creative number 10s, and passionate Azteca atmosphere.",
       "shortHistory": "El Tri are defined by regional rivalry, technical attackers, and tournament regularity.",
       "fifaRanking": 15,
       "tmCode": "mexico",
@@ -1513,7 +1513,7 @@
         "to": "#f8fafc",
         "accent": "#fecaca"
       },
-      "fanGuide": "Al-Annabi blend Gulf technical football with a growing European pipeline. Learn Qatar through AFC rivalries and the 2022 host generation — study names from the national pool, not a locked tournament squad.",
+      "fanGuide": "Al-Annabi blend Gulf technical football with a growing European pipeline. Qatar’s 2022 host story matters, but the modern identity is patient possession, quick wide switches, and AFC rivalry with Saudi Arabia and Iran. Key names in FootyBrain come from the linked national pool.",
       "shortHistory": "Al-Annabi blend Gulf technical football with a growing European pipeline.",
       "fifaRanking": 55,
       "tmCode": "qatar",
@@ -1541,7 +1541,7 @@
         "to": "#14532d",
         "accent": "#bbf7d0"
       },
-      "fanGuide": "The Green Falcons carry Gulf pride with pace, pressing, and a strong domestic league export path. Learn Saudi Arabia through AFC rivalries and players linked from club football on FootyCompass.",
+      "fanGuide": "The Green Falcons carry Gulf pride with pace, pressing, and a strong domestic league export path. Style: direct wide attacks, aggressive pressing, and AFC rivalry with Iran and Qatar. Quiz-ready names come from in-league players already linked in FootyBrain.",
       "shortHistory": "The Green Falcons carry Gulf pride with pace, pressing, and a strong domestic league export path.",
       "fifaRanking": 61,
       "tmCode": "saudi-arabia",
@@ -1569,7 +1569,7 @@
         "to": "#dc2626",
         "accent": "#fef08a"
       },
-      "fanGuide": "Team Melli combine disciplined defending with technical midfielders and a long World Cup qualification tradition. Learn Iran through AFC rivalries and players linked from club football on FootyCompass.",
+      "fanGuide": "Team Melli combine disciplined defending with technical midfielders and a long World Cup qualification tradition. Style: compact defensive shape, fast counters, and set-piece discipline. Browse the linked national pool — most squad names sit on external clubs outside current league imports.",
       "shortHistory": "Team Melli combine disciplined defending with technical midfielders and a long World Cup qualification tradition.",
       "fifaRanking": 21,
       "tmCode": "iran",
@@ -1650,7 +1650,7 @@
         "to": "#111827",
         "accent": "#dc2626"
       },
-      "fanGuide": "The Lions of Mesopotamia mix technical midfielders with passionate tournament football. Learn Iraq through AFC qualifying stories and names you can browse on FootyCompass.",
+      "fanGuide": "The Lions of Mesopotamia mix technical midfielders with passionate tournament football. Style: organized defending, quick transitions, and AFC rivalry with Iran and Jordan. Key linked names help you learn the current pool.",
       "shortHistory": "The Lions of Mesopotamia mix technical midfielders with passionate tournament football.",
       "fifaRanking": 57,
       "tmCode": "iraq",
@@ -1677,7 +1677,7 @@
         "to": "#dc2626",
         "accent": "#f8fafc"
       },
-      "fanGuide": "Al-Nashama are a rising AFC side built on organized defending and European-based talent. Learn Jordan through West Asian rivalries and players linked from club football on FootyCompass.",
+      "fanGuide": "Al-Nashama are a rising AFC side built on organized defending and European-based talent. Style: compact block, disciplined pressing, and rivalry with Iraq and Saudi Arabia in West Asian qualifying.",
       "shortHistory": "Al-Nashama are a rising AFC side built on organized defending and European-based talent.",
       "fifaRanking": 63,
       "tmCode": "jordan",
@@ -1730,7 +1730,7 @@
         "to": "#1d4ed8",
         "accent": "#f8fafc"
       },
-      "fanGuide": "The All Whites carry Oceania pride with physical defending and a strong diaspora in Australia and Europe. Learn New Zealand through OFC tradition and players linked from club football on FootyCompass.",
+      "fanGuide": "The All Whites carry Oceania pride with physical defending and a strong diaspora in Australia and Europe. Style: direct play, aerial strength, and rivalry with Australia across OFC and inter-confederation play-offs.",
       "shortHistory": "The All Whites carry Oceania pride with physical defending and a strong diaspora in Australia and Europe.",
       "fifaRanking": 85,
       "tmCode": "new-zealand",
@@ -1757,7 +1757,7 @@
         "to": "#fbbf24",
         "accent": "#dc2626"
       },
-      "fanGuide": "Cabo Verde blend Atlantic island identity with a wide European diaspora — especially Portugal and France. Learn them through CAF tournament football and players you can browse on FootyCompass.",
+      "fanGuide": "Cabo Verde blend Atlantic island identity with a wide European diaspora — especially Portugal and France. Style: technical midfielders, organized defending, and fast wide transitions in CAF qualifying.",
       "shortHistory": "Cabo Verde blend Atlantic island identity with a wide European diaspora — especially Portugal and France.",
       "fifaRanking": null,
       "tmCode": "cape-verde",
@@ -1784,7 +1784,7 @@
         "to": "#fbbf24",
         "accent": "#dc2626"
       },
-      "fanGuide": "Curaçao carry Dutch Caribbean football culture with technical midfielders and a deep Netherlands connection. Learn them through CONCACAF qualifying stories and players linked from club football on FootyCompass.",
+      "fanGuide": "Curaçao carry Dutch Caribbean football culture with technical midfielders and a deep Netherlands connection. Style: possession in midfield, quick wide play, and CONCACAF qualifying grit against regional rivals.",
       "shortHistory": "Curaçao carry Dutch Caribbean football culture with technical midfielders and a deep Netherlands connection.",
       "fifaRanking": null,
       "tmCode": "curacao",
@@ -15191,6 +15191,20 @@
       "tmSourceId": null
     },
     {
+      "playerId": "tm-227081",
+      "nationalTeamId": "argentina",
+      "role": "senior",
+      "status": "active",
+      "isPrimary": true,
+      "membershipTags": [
+        "nationalPool"
+      ],
+      "source": "registry_nationality",
+      "membershipSource": "registry_nationality",
+      "asOf": null,
+      "tmSourceId": null
+    },
+    {
       "playerId": "tm-565009",
       "nationalTeamId": "argentina",
       "role": "senior",
@@ -15304,20 +15318,6 @@
     },
     {
       "playerId": "tm-1000675",
-      "nationalTeamId": "argentina",
-      "role": "senior",
-      "status": "active",
-      "isPrimary": true,
-      "membershipTags": [
-        "nationalPool"
-      ],
-      "source": "registry_nationality",
-      "membershipSource": "registry_nationality",
-      "asOf": null,
-      "tmSourceId": null
-    },
-    {
-      "playerId": "tm-227081",
       "nationalTeamId": "argentina",
       "role": "senior",
       "status": "active",
