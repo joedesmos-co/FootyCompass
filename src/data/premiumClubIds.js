@@ -20,6 +20,20 @@ export const PREMIUM_EDITORIAL_CLUB_IDS = [
   'napoli',
   'paris-saint-germain',
   'ajax',
+  // Major Brazilian clubs
+  'flamengo',
+  'palmeiras',
+  'santos',
+  'corinthians',
+  'sao-paulo',
+  'gremio',
+  'internacional',
+  // Major MLS clubs
+  'inter-miami',
+  'lafc',
+  'seattle-sounders',
+  'atlanta-united',
+  'la-galaxy',
 ];
 
 export const PREMIUM_EDITORIAL_CLUB_ID_SET = new Set(PREMIUM_EDITORIAL_CLUB_IDS);

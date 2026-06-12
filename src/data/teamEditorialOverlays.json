@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-12T19:21:20.201Z",
+  "generatedAt": "2026-06-12T20:27:10.630Z",
   "overlayCount": 164,
   "premiumClubPass": {
-    "updated": 17,
-    "targeted": 17
+    "updated": 29,
+    "targeted": 29
   },
   "overlays": {
     "arsenal": {
@@ -110,9 +110,9 @@
       "metaDescription": "Borussia Dortmund (Bundesliga): Dortmund’s Yellow Wall and youth development made them Germany’s romantic alternative to Bayern — Klopp’s pressing team and…",
       "tacticalIdentity": "Borussia Dortmund play with coordinated high press, youth in the first team, and quick transitions. Head coach: Nuri Şahin.",
       "stadiumContext": "Borussia Dortmund play home matches at Signal Iduna Park. Founded in 1909. Head coach: Nuri Şahin.",
-      "rivalsSummary": "Der Klassiker vs Bayern is the national headline — learn the Revierderby vs Schalke for local hate.",
+      "rivalsSummary": "Der Klassiker vs Bayern is the national headline.",
       "legendsSummary": "Club legends include Marco Reus, Mats Hummels, and Robert Lewandowski — notably Marco Reus (one-club winger and captain).",
-      "playersToKnowIntro": "Look out for Gregor Kobel, Serhou Guirassy, Julian Brandt, and Nico Schlotterbeck in the squad below.",
+      "playersToKnowIntro": "Look out for Jadon Sancho and Mats Hummels in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Borussia Dortmund player quiz — derby names like Bayern Munich often come up.",
       "leagueContext": "Borussia Dortmund compete in Bundesliga. Direct and vertical: win the ball, attack fast, use wingers and overlapping full-backs. Pressing is common; transitions matter. Many clubs trust academy…"
     },
@@ -137,10 +137,10 @@
       "leagueContext": "Inter Milan compete in Serie A. Organised defending and midfield blocks; wing-backs and three-at-the-back systems appear often. Teams protect shape first, then explode with individual skill.…"
     },
     "juventus": {
-      "metaDescription": "Juventus: Black and white stripes; the Derby d’Italia vs Inter is the national grudge. Turin’s Derby della…",
+      "metaDescription": "Juventus: Black and white stripes; the Derby d’Italia vs Inter is a national grudge. Turin’s Derby della…",
       "tacticalIdentity": "Juventus play with compact defensive block, long trophy pedigree, and title-chasing expectations. Head coach: Thiago Motta.",
       "stadiumContext": "Juventus play home matches at Allianz Stadium. Founded in 1897. Head coach: Thiago Motta.",
-      "rivalsSummary": "Black and white stripes; the Derby d’Italia vs Inter is the national grudge.",
+      "rivalsSummary": "Black and white stripes; the Derby d’Italia vs Inter is a national grudge.",
       "legendsSummary": "Club legends include Alessandro Del Piero, Gianluigi Buffon, and Michel Platini — notably Alessandro Del Piero (one-club symbol and free-kick artist).",
       "playersToKnowIntro": "Look out for Dusan Vlahović and Federico Chiesa in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Juventus player quiz — derby names like Inter Milan often come up.",
@@ -150,19 +150,19 @@
       "metaDescription": "Napoli (Serie A) · Diego Armando Maradona Stadium · rivals include Roma and Juventus. Napoli’s story is southern pride and Maradona’s 1987 scudetto — modern…",
       "tacticalIdentity": "Napoli play with compact defensive block, quick transitions, and vocal supporter culture. Head coach: Antonio Conte.",
       "stadiumContext": "Napoli play home matches at Diego Armando Maradona Stadium. Founded in 1926. Head coach: Antonio Conte.",
-      "rivalsSummary": "Maradona’s name comes first — the club is Naples on the pitch, with the Juventus rivalry framing Serie A tension.",
+      "rivalsSummary": "Supporters mark games against Roma and Juventus as the fixtures that matter most.",
       "legendsSummary": "Club legends include Diego Maradona, Ciro Ferrara, and Gonzalo Higuaín — notably Diego Maradona (icon of the 1987 title).",
       "playersToKnowIntro": "Look out for Victor Osimhen and Khvicha Kvaratskhelia in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Napoli player quiz — derby names like Roma often come up.",
       "leagueContext": "Napoli compete in Serie A. Organised defending and midfield blocks; wing-backs and three-at-the-back systems appear often. Teams protect shape first, then explode with individual skill.…"
     },
     "paris-saint-germain": {
-      "metaDescription": "Paris Saint-Germain: Dark blue, red, and Paris pride. Le Classique vs Marseille is the rivalry every new fan learns…",
+      "metaDescription": "Paris Saint-Germain: Dark blue, red, and Paris identity. Le Classique against Marseille is the fixture to learn first;…",
       "tacticalIdentity": "Paris Saint-Germain play with possession-oriented build-up, title-chasing expectations, and long trophy pedigree. Head coach: Luis Enrique.",
       "stadiumContext": "Paris Saint-Germain play home matches at Parc des Princes. Founded in 1970. Head coach: Luis Enrique.",
-      "rivalsSummary": "Le Classique vs Marseille is the rivalry every new fan learns first.",
-      "legendsSummary": "Club legends include Zlatan Ibrahimovic, Kylian Mbappé, Marquinhos, and Thiago Silva — notably Zlatan Ibrahimovic (swaggering striker of the early QSI years).",
-      "playersToKnowIntro": "Look out for Ousmane Dembélé, Achraf Hakimi, Khvicha Kvaratskhelia, and Vitinha in the squad below.",
+      "rivalsSummary": "Le Classique against Marseille is the fixture to learn first; European expectations shape every season.",
+      "legendsSummary": "Club legends include Zlatan Ibrahimovic, Kylian Mbappe, and Thiago Silva — notably Zlatan Ibrahimovic (striker who defined early QSI dominance).",
+      "playersToKnowIntro": "Look out for Ousmane Dembele, Achraf Hakimi, and Vitinha in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Paris Saint-Germain player quiz — derby names like Marseille often come up.",
       "leagueContext": "Paris Saint-Germain compete in Ligue 1. Athletic, fast, and development-heavy. Ligue 1 often gives young players real minutes, while top clubs blend direct transitions with technical attacking…"
     },
@@ -170,7 +170,7 @@
       "metaDescription": "Ajax (Eredivisie): Ajax are the academy and ideas club: Total Football, European Cups, and a conveyor belt of players who shape bigger leagues.",
       "tacticalIdentity": "Ajax play with possession-oriented build-up, academy-led identity, and youth in the first team. Head coach: John van 't Schip.",
       "stadiumContext": "Ajax play home matches at Johan Cruijff ArenA. Founded in 1900. Head coach: John van 't Schip.",
-      "rivalsSummary": "De Klassieker vs Feyenoord is essential — youth sales and possession football define the modern identity.",
+      "rivalsSummary": "De Klassieker against Feyenoord is essential.",
       "legendsSummary": "Club legends include Johan Cruyff, Marco van Basten, and Frank Rijkaard — notably Johan Cruyff (club and football philosophy icon).",
       "playersToKnowIntro": "Look out for Steven Berghuis, Davy Klaassen, and Wout Weghorst in the squad below.",
       "quizDiscoveryLead": "Learn the squad here, then try the Ajax player quiz — derby names like Feyenoord often come up.",
@@ -322,13 +322,13 @@
     },
     "internacional": {
       "metaDescription": "Internacional: Matchday focus: Estádio Beira-Rio — use the squad list to learn current names. Supporters often…",
-      "tacticalIdentity": "Internacional play with vocal supporter culture and technical ball retention.",
-      "stadiumContext": "Internacional play home matches at Estádio Beira-Rio. Founded in 1900.",
+      "tacticalIdentity": "Internacional play with vocal supporter culture, technical ball retention, and long trophy pedigree.",
+      "stadiumContext": "Internacional play home matches at Estádio Beira-Rio. Founded in 1909.",
       "leagueContext": "Internacional compete in Série A. Technical, creative, and transition-heavy; wing play and 1v1 skill are central to how fans describe the league.",
-      "rivalsSummary": null,
-      "legendsSummary": null,
+      "rivalsSummary": "Fixtures against Grêmio carry extra edge for supporters.",
+      "legendsSummary": "Club legends include Falcão and D'Alessandro.",
       "playersToKnowIntro": "Look out for Rafael Borré, Alan Patrick, Braian Aguirre, and Gabriel Mercado in the squad below.",
-      "quizDiscoveryLead": "Learn the squad on this page, then test yourself with the Internacional player quiz.",
+      "quizDiscoveryLead": "Learn the squad here, then try the Internacional player quiz — derby names like Grêmio often come up.",
       "shortHistory": "Internacional are listed in Série A (Brazil). Founded in 1900. Home ground: Estádio Beira-Rio.: vocal supporter culture and technical ball retention. Technical, creative, and transition-heavy; wing play and 1v1 skill are central to how fans describe the league. 30 squad players…",
       "fanGuide": "Matchday focus: Estádio Beira-Rio — use the squad list to learn current names. Supporters often associate the side with vocal supporter culture and technical ball retention. Other Série A clubs profiled nearby include Flamengo and Palmeiras. League-wide derbies noted in the…"
     },
@@ -718,13 +718,13 @@
     },
     "gremio": {
       "metaDescription": "Grêmio: Matchday focus: Arena do Grêmio — use the squad list to learn current names. Supporters often…",
-      "tacticalIdentity": "Grêmio play with vocal supporter culture and technical ball retention.",
-      "stadiumContext": "Grêmio play home matches at Arena do Grêmio. Founded in 1900.",
+      "tacticalIdentity": "Grêmio play with vocal supporter culture, technical ball retention, and long trophy pedigree.",
+      "stadiumContext": "Grêmio play home matches at Arena do Grêmio. Founded in 1903.",
       "leagueContext": "Grêmio compete in Série A. Technical, creative, and transition-heavy; wing play and 1v1 skill are central to how fans describe the league.",
-      "rivalsSummary": null,
-      "legendsSummary": null,
+      "rivalsSummary": "Fixtures against Internacional carry extra edge for supporters.",
+      "legendsSummary": "Club legends include Ronaldinho and Renato Portaluppi.",
       "playersToKnowIntro": "Look out for André Henrique, Fabián Balbuena, Leonel Pérez, and Tetê in the squad below.",
-      "quizDiscoveryLead": "Learn the squad on this page, then test yourself with the Grêmio player quiz.",
+      "quizDiscoveryLead": "Learn the squad here, then try the Grêmio player quiz — derby names like Internacional often come up.",
       "shortHistory": "Grêmio are listed in Série A (Brazil). Founded in 1900. Home ground: Arena do Grêmio.: vocal supporter culture and technical ball retention. Technical, creative, and transition-heavy; wing play and 1v1 skill are central to how fans describe the league. 28 squad players on this…",
       "fanGuide": "Matchday focus: Arena do Grêmio — use the squad list to learn current names. Supporters often associate the side with vocal supporter culture and technical ball retention. Other Série A clubs profiled nearby include Flamengo and Palmeiras. League-wide derbies noted in the…"
     },
@@ -766,13 +766,13 @@
     },
     "atlanta-united": {
       "metaDescription": "Atlanta United FC: Matchday focus: Mercedes-Benz Stadium — use the squad list to learn current names. Supporters…",
-      "tacticalIdentity": "Atlanta United FC play with vocal supporter culture.",
-      "stadiumContext": "Atlanta United FC play home matches at Mercedes-Benz Stadium. Founded in 1900.",
+      "tacticalIdentity": "Atlanta United FC play with vocal supporter culture and title-chasing expectations.",
+      "stadiumContext": "Atlanta United FC play home matches at Mercedes-Benz Stadium. Founded in 2017.",
       "leagueContext": "Atlanta United FC compete in Major League Soccer. Athletic and direct, with squad-building rules that mix homegrown players, MLS veterans, and star imports.",
-      "rivalsSummary": null,
-      "legendsSummary": null,
+      "rivalsSummary": "Supporters mark games against Orlando City SC and New York City FC as the fixtures that matter most.",
+      "legendsSummary": "Club legends include Miguel Almirón and Josef Martínez.",
       "playersToKnowIntro": "Look out for Miguel Almirón, Aleksey Miranchuk, Saba Lobjanidze, and Ajani Fortune in the squad below.",
-      "quizDiscoveryLead": "Learn the squad on this page, then test yourself with the Atlanta United FC player quiz.",
+      "quizDiscoveryLead": "Learn the squad here, then try the Atlanta United FC player quiz — derby names like Orlando City SC often come up.",
       "shortHistory": "Atlanta United FC are listed in Major League Soccer (United States). Founded in 1900. Home ground: Mercedes-Benz Stadium.: vocal supporter culture. Athletic and direct, with squad-building rules that mix homegrown players, MLS veterans, and star imports. 24 squad players on this…",
       "fanGuide": "Matchday focus: Mercedes-Benz Stadium — use the squad list to learn current names. Supporters often associate the side with vocal supporter culture. Other Major League Soccer clubs profiled nearby include LA Galaxy and Inter Miami CF. League-wide derbies noted:…"
     },
