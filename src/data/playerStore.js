@@ -1,5 +1,5 @@
 import { loadEntityIndex } from './entityIndex';
-import { mergePlayerOverlay } from './editorialOverlayAccess.js';
+import { ensureEditorialOverlays, mergePlayerOverlay } from './editorialOverlayAccess.js';
 import { loadLeagueShard } from './contentManifest';
 
 const playerCache = new Map();
@@ -20,6 +20,7 @@ export async function loadPlayerById(playerId) {
 
   const promise = (async () => {
     try {
+      await ensureEditorialOverlays();
       const idx = await loadEntityIndex();
       const row = idx.playerById.get(playerId);
       const leagueId = row?.leagueId;

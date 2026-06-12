@@ -10,7 +10,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { DATASET_META } from '../src/data/datasetMeta.js';
 import { getLeagueById, getPlayersForLeague, teams } from '../src/data/sampleData.js';
-import { mergePlayerOverlay, mergeTeamOverlay } from '../src/data/editorialOverlayAccess.js';
+import { mergePlayerOverlay, mergeTeamOverlay } from '../src/data/editorialOverlayAccess.node.js';
 
 const leagueId = process.argv[2];
 if (!leagueId) {

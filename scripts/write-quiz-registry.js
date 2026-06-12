@@ -10,7 +10,8 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { players, teams, leagues } from '../src/data/sampleData.js';
+import { teams, leagues } from '../src/data/sampleData.js';
+import { getMergedSamplePlayers } from './lib/merged-sample-players.mjs';
 import { DATASET_META } from '../src/data/datasetMeta.js';
 import { isQuizEligiblePlayer } from '../src/utils/quizPlayerRules.js';
 import { buildQuizRegistryPayload } from '../src/utils/quizRegistryBuild.js';
@@ -23,6 +24,7 @@ const OUT_PATH = path.join(OUT_DIR, 'quiz-registry.json');
 const liveNtRaw = fs.readFileSync(path.join(ROOT, 'src/data/nationalTeamLive.json'), 'utf8');
 const liveNt = JSON.parse(liveNtRaw);
 
+const players = getMergedSamplePlayers();
 const editorialCount = players.filter(isQuizEligiblePlayer).length;
 
 if (typeof DATASET_META?.quizEligibleCount === 'number') {

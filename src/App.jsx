@@ -114,11 +114,24 @@ function CrawlShellDismiss() {
   return null;
 }
 
+function EditorialOverlayPrefetch() {
+  useEffect(() => {
+    import('./data/editorialOverlayAccess.js')
+      .then((mod) => mod.ensureEditorialOverlays())
+      .catch(() => {
+        // Rich copy loads on demand if prefetch fails (offline/CDN).
+      });
+  }, []);
+
+  return null;
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <ErrorBoundary>
         <ScrollToTop />
+        <EditorialOverlayPrefetch />
         <CrawlShellDismiss />
         <Seo />
         <div className="app">

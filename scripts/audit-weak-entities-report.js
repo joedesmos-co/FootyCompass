@@ -29,7 +29,7 @@ import {
   isThinPlayer,
   isThinTeam,
 } from '../src/utils/entityDepthAudit.js';
-import { mergePlayerOverlay, mergeTeamOverlay } from '../src/data/editorialOverlayAccess.js';
+import { mergePlayerOverlay, mergeTeamOverlay } from '../src/data/editorialOverlayAccess.node.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');

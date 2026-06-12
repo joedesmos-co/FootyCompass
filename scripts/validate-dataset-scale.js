@@ -11,6 +11,7 @@ import { gzipSync } from 'zlib';
 import { players } from '../src/data/sampleData.js';
 import { DATASET_META } from '../src/data/datasetMeta.js';
 import { isInQuizEcosystem, isQuizEligiblePlayer } from '../src/utils/quizPlayerRules.js';
+import { mergePlayerOverlay } from '../src/data/editorialOverlayAccess.node.js';
 import { EXPANSION_LIMITS } from './phase1-curation.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -19,6 +20,8 @@ const QUIZ_REGISTRY_PATH = path.join(ROOT, 'public/data/quiz-registry.json');
 
 const SAMPLE_DATA_GZIP_WARN_KB = 230;
 const SAMPLE_DATA_GZIP_FAIL_KB = 280;
+const EDITORIAL_OVERLAY_GZIP_WARN_KB = 260;
+const EDITORIAL_OVERLAY_GZIP_FAIL_KB = 360;
 const QUIZ_REGISTRY_GZIP_WARN_KB = 900;
 const QUIZ_REGISTRY_GZIP_FAIL_KB = 1400;
 
@@ -64,8 +67,13 @@ function validatePlayerCount() {
   }
 }
 
+function getMergedPlayers() {
+  return players.map((player) => mergePlayerOverlay(player));
+}
+
 function validateQuizRegistry() {
-  const liveEditorial = players.filter(isQuizEligiblePlayer);
+  const mergedPlayers = getMergedPlayers();
+  const liveEditorial = mergedPlayers.filter(isQuizEligiblePlayer);
   const liveEcosystem = players.filter(isInQuizEcosystem);
   const editorialCount = liveEditorial.length;
   const ecosystemCount = liveEcosystem.length;
@@ -183,15 +191,42 @@ function validateSampleDataSource() {
     return;
   }
   const { gzipKb } = measureGzipKb(samplePath);
-  console.log(`\nsampleData.js source gzip (approx): ${gzipKb.toFixed(1)} KB`);
+  console.log(`\nsampleData.js core source gzip: ${gzipKb.toFixed(1)} KB`);
   if (gzipKb >= SAMPLE_DATA_GZIP_FAIL_KB) {
     fail(
-      `sampleData.js gzip ${gzipKb.toFixed(1)} KB >= fail threshold ${SAMPLE_DATA_GZIP_FAIL_KB} KB`,
+      `sampleData.js core gzip ${gzipKb.toFixed(1)} KB >= fail threshold ${SAMPLE_DATA_GZIP_FAIL_KB} KB`,
     );
   } else if (gzipKb >= SAMPLE_DATA_GZIP_WARN_KB) {
     warn(
-      `sampleData.js gzip ${gzipKb.toFixed(1)} KB >= warn threshold ${SAMPLE_DATA_GZIP_WARN_KB} KB`,
+      `sampleData.js core gzip ${gzipKb.toFixed(1)} KB >= warn threshold ${SAMPLE_DATA_GZIP_WARN_KB} KB`,
     );
+  }
+
+  const overlayPaths = [
+    path.join(ROOT, 'public/data/editorial/player-overlays.json'),
+    path.join(ROOT, 'public/data/editorial/team-overlays.json'),
+  ];
+  let overlayGzipTotal = 0;
+  for (const overlayPath of overlayPaths) {
+    if (!fs.existsSync(overlayPath)) {
+      warn(`Missing ${path.relative(ROOT, overlayPath)} — run npm run write:editorial-overlays`);
+      continue;
+    }
+    const { gzipKb: overlayGzipKb } = measureGzipKb(overlayPath);
+    overlayGzipTotal += overlayGzipKb;
+    console.log(`  ${path.basename(overlayPath)} gzip: ${overlayGzipKb.toFixed(1)} KB`);
+  }
+  if (overlayGzipTotal > 0) {
+    console.log(`  editorial overlays total gzip: ${overlayGzipTotal.toFixed(1)} KB (lazy-loaded)`);
+    if (overlayGzipTotal >= EDITORIAL_OVERLAY_GZIP_FAIL_KB) {
+      fail(
+        `editorial overlays gzip ${overlayGzipTotal.toFixed(1)} KB >= fail threshold ${EDITORIAL_OVERLAY_GZIP_FAIL_KB} KB`,
+      );
+    } else if (overlayGzipTotal >= EDITORIAL_OVERLAY_GZIP_WARN_KB) {
+      warn(
+        `editorial overlays gzip ${overlayGzipTotal.toFixed(1)} KB >= warn threshold ${EDITORIAL_OVERLAY_GZIP_WARN_KB} KB`,
+      );
+    }
   }
 }
 
@@ -207,11 +242,11 @@ function validateDistChunk(distDir) {
 
   if (gzipKb >= SAMPLE_DATA_GZIP_FAIL_KB) {
     fail(
-      `sample-data chunk gzip ${gzipKb.toFixed(1)} KB >= fail threshold ${SAMPLE_DATA_GZIP_FAIL_KB} KB`,
+      `sample-data core chunk gzip ${gzipKb.toFixed(1)} KB >= fail threshold ${SAMPLE_DATA_GZIP_FAIL_KB} KB`,
     );
   } else if (gzipKb >= SAMPLE_DATA_GZIP_WARN_KB) {
     warn(
-      `sample-data chunk gzip ${gzipKb.toFixed(1)} KB >= warn threshold ${SAMPLE_DATA_GZIP_WARN_KB} KB`,
+      `sample-data core chunk gzip ${gzipKb.toFixed(1)} KB >= warn threshold ${SAMPLE_DATA_GZIP_WARN_KB} KB`,
     );
   }
 }

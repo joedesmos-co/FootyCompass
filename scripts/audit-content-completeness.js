@@ -35,7 +35,7 @@ import {
   isThinPlayer,
   isThinTeam,
 } from '../src/utils/entityDepthAudit.js';
-import { mergePlayerOverlay, mergeTeamOverlay } from '../src/data/editorialOverlayAccess.js';
+import { mergePlayerOverlay, mergeTeamOverlay } from '../src/data/editorialOverlayAccess.node.js';
 import { isBrowseOnlyPlayer } from './lib/playerOverlayBuilders.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

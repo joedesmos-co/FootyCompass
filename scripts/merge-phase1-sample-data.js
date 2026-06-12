@@ -33,6 +33,8 @@ import {
   getPlayerHardCap,
 } from './lib/player-cap-policy.js';
 import { checkMergePlayerIntegrity } from './lib/merge-player-integrity.js';
+import { slimPlayerRecord, slimTeamRecord, stripPlayerEditorialFields } from './lib/slim-sample-records.mjs';
+import { mergePlayerOverlay } from '../src/data/editorialOverlayAccess.node.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -103,7 +105,7 @@ function buildGeneratedBasePlayer(row, clubIndex, teamName, leagueName) {
       ? row.careerHistory
       : [];
 
-  return {
+  return slimPlayerRecord({
     id: row.id,
     name: row.name,
     dateOfBirth: row.dateOfBirth ?? null,
@@ -114,16 +116,12 @@ function buildGeneratedBasePlayer(row, clubIndex, teamName, leagueName) {
     nationalTeam: row.nationalTeam ?? row.nationality ?? '—',
     nationality: row.nationality ?? '—',
     importanceScore: hasApprovedEditorial ? row.importanceScore : fallbackImportanceScore,
-    // Browse-only rows stay out of quiz by default; keep content fields empty to
-    // reduce `sampleData` size on mobile until an editorial pass promotes them.
-    quickFact: hasApprovedEditorial ? row.quickFact : '',
-    playingStyle: hasApprovedEditorial ? row.playingStyle : '',
-    careerHistory,
-    quizHints: hasApprovedEditorial ? row.quizHints : [],
+    sourceId: row.sourceId ?? null,
     quizEligible: hasApprovedEditorial ? true : false,
     rosterTier: hasApprovedEditorial ? 'featured' : 'squad',
-    dataStatus: row.dataStatus ?? 'generated-needs-editorial',
-  };
+    dataStatus: hasApprovedEditorial ? 'generated-editorial-approved' : 'generated-needs-editorial',
+    careerHistory,
+  });
 }
 
 /** Brasileirão merge policy: browse/search/compare unless explicitly editorial-approved. */
@@ -355,10 +353,12 @@ function main() {
     .map((player) => {
       const base = stripRuntimeFields(player);
       const ov = overlayById.get(player.id);
-      return {
+      return stripPlayerEditorialFields({
         ...base,
         quizEligible: ov?.quizEligible !== false,
-      };
+        dataStatus: 'generated-editorial-approved',
+        rosterTier: 'featured',
+      });
     });
 
   // Block generated players whose display name exactly matches an MVP player.
@@ -393,9 +393,9 @@ function main() {
   );
 
   const expansionIdentityStubs = loadExpansionIdentityStubs();
-  const baseTeams = expansionClubs.map((club) =>
-    buildTeamFromConfig(club, mvpTeamById, previewTeamById, expansionIdentityStubs),
-  );
+  const baseTeams = expansionClubs
+    .map((club) => buildTeamFromConfig(club, mvpTeamById, previewTeamById, expansionIdentityStubs))
+    .map((team) => slimTeamRecord(team));
 
   const externalStubs = loadExternalClubStubs();
   const baseLeagues = buildLeagues(expansionLeagues);
@@ -527,16 +527,16 @@ export const teams = baseTeams.map((team, index) => ({
     playerThemes,
     serializeObjectArray('basePlayers', allBasePlayers),
     '',
-    `// Player images: see PLAYER_IMAGE_POLICY.md — set imageUrl + attribution on basePlayers when licensed.
-export const players = basePlayers.map((player, index) => ({
-  ...player,
-  imageUrl: player.imageUrl ?? null,
-  imageAlt: player.imageAlt ?? null,
-  imageCredit: player.imageCredit ?? null,
-  imageSource: player.imageSource ?? null,
-  imageLicense: player.imageLicense ?? null,
-  visualTheme: playerVisualThemes[index % playerVisualThemes.length],
-}));`,
+    `function visualThemeForPlayerId(playerId) {
+  let hash = 0;
+  for (let i = 0; i < playerId.length; i += 1) {
+    hash = (hash * 31 + playerId.charCodeAt(i)) | 0;
+  }
+  return playerVisualThemes[Math.abs(hash) % playerVisualThemes.length];
+}
+
+// Core player rows only — rich editorial merges from /data/editorial/player-overlays.json.
+export const players = basePlayers;`,
     '',
     `// Indexed lookups for ~2k+ row datasets (rebuilt on each merge).
 const playerById = new Map(players.map((p) => [p.id, p]));
@@ -557,7 +557,11 @@ for (const player of players) {
 // Helpers for local data — swap implementations when API/Firebase is wired up.
 export function getPlayerById(id) {
   const player = playerById.get(id);
-  return player ? mergePlayerOverlay(player) : undefined;
+  if (!player) return undefined;
+  return mergePlayerOverlay({
+    ...player,
+    visualTheme: visualThemeForPlayerId(player.id),
+  });
 }
 
 export function getTeamById(id) {
@@ -569,14 +573,21 @@ export function getLeagueById(id) {
   return leagueById.get(id);
 }
 
+function withPlayerPresentation(player) {
+  return mergePlayerOverlay({
+    ...player,
+    visualTheme: visualThemeForPlayerId(player.id),
+  });
+}
+
 export function getPlayersForTeam(teamId) {
   const roster = playersByTeamId.get(teamId) ?? [];
-  return roster.map((p) => mergePlayerOverlay(p));
+  return roster.map(withPlayerPresentation);
 }
 
 export function getPlayersForLeague(leagueId) {
   const roster = playersByLeagueId.get(leagueId) ?? [];
-  return roster.map((p) => mergePlayerOverlay(p));
+  return roster.map(withPlayerPresentation);
 }
 
 export function getTeamName(teamId) {
@@ -596,7 +607,9 @@ export function getLeagueName(leagueId) {
 
   fs.writeFileSync(SAMPLE_PATH, `${body}\n`, 'utf8');
 
-  const editorialQuizCount = allBasePlayers.filter(isQuizEligiblePlayer).length;
+  const editorialQuizCount = allBasePlayers
+    .map((player) => mergePlayerOverlay(player))
+    .filter(isQuizEligiblePlayer).length;
   const ecosystemCount = allBasePlayers.filter(isInQuizEcosystem).length;
   writeDatasetMeta({
     dataAsOf: DATA_AS_OF,
