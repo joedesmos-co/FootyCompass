@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-05-30T21:11:48.999Z",
+    "generatedAt": "2026-06-12T19:21:20.491Z",
     "wave": "2+3-batch1+2",
     "liveNationalTeamIds": [
       "england",
@@ -321,8 +321,8 @@
         "to": "#172554",
         "accent": "#e0e7ff"
       },
-      "fanGuide": "The Three Lions carry the weight of 1966 and a nation that lives through the Premier League. England means Wembley, white shirts, and endless “football’s coming home” debate.",
-      "shortHistory": "The Three Lions carry the weight of 1966 and a nation that lives through the Premier League.",
+      "fanGuide": "1966 winners still cast a long shadow — white shirts at Wembley, Premier League-fed talent, and Euro 2024 final heartbreak shape the modern Three Lions.",
+      "shortHistory": "1966 winners still cast a long shadow — white shirts at Wembley, Premier League-fed talent, and Euro 2024 final heartbreak shape the modern Three Lions.",
       "fifaRanking": 4,
       "tmCode": "england",
       "crestPolicy": "text-only"
@@ -349,8 +349,8 @@
         "to": "#1e3a8a",
         "accent": "#dbeafe"
       },
-      "fanGuide": "Les Bleus blend academy depth with star power. France won the 2018 World Cup and remain a benchmark for modern athletic, tactical football.",
-      "shortHistory": "Les Bleus blend academy depth with star power.",
+      "fanGuide": "2018 World Cup champions with a 2022 final run — Les Bleus blend academy depth, athletic power, and star forwards. Blue shirts and Paris-to-Africa talent pipelines define modern France.",
+      "shortHistory": "2018 World Cup champions with a 2022 final run — Les Bleus blend academy depth, athletic power, and star forwards.",
       "fifaRanking": 1,
       "tmCode": "france",
       "crestPolicy": "text-only"
@@ -377,8 +377,8 @@
         "to": "#991b1b",
         "accent": "#fecaca"
       },
-      "fanGuide": "La Roja won Euro 2008, 2012, and the 2010 World Cup with tiki-taka possession. Spain means red shirts, technical midfielders, and Iberian pride.",
-      "shortHistory": "La Roja won Euro 2008, 2012, and the 2010 World Cup with tiki-taka possession.",
+      "fanGuide": "2010 World Cup and Euro 2008/12 tiki-taka — La Roja means technical midfield control, red shirts, and Iberian pride renewed at Euro 2024.",
+      "shortHistory": "2010 World Cup and Euro 2008/12 tiki-taka — La Roja means technical midfield control, red shirts, and Iberian pride renewed at Euro 2024.",
       "fifaRanking": 2,
       "tmCode": "spain",
       "crestPolicy": "text-only"
@@ -404,8 +404,8 @@
         "to": "#14532d",
         "accent": "#bbf7d0"
       },
-      "fanGuide": "The Seleção are five-time World Cup winners and the reference point for flair in men’s football. Learning Brazil means knowing samba style, yellow shirts, and the rivalry with Argentina.",
-      "shortHistory": "The Seleção are five-time World Cup winners and the reference point for flair in men’s football.",
+      "fanGuide": "Five World Cups, yellow shirts, and jogo bonito flair — the Seleção are football’s reference for creative attackers. The Argentina rivalry is the first fixture every fan should learn.",
+      "shortHistory": "Five World Cups, yellow shirts, and jogo bonito flair — the Seleção are football’s reference for creative attackers.",
       "fifaRanking": 6,
       "tmCode": "brazil",
       "crestPolicy": "text-only"
@@ -430,8 +430,8 @@
         "to": "#1e3a8a",
         "accent": "#e0f2fe"
       },
-      "fanGuide": "La Albiceleste are 2022 World Cup winners built around generational talent and Buenos Aires passion. Argentina means blue and white stripes and the Clásico with Brazil.",
-      "shortHistory": "La Albiceleste are 2022 World Cup winners built around generational talent and Buenos Aires passion.",
+      "fanGuide": "Qatar 2022 champions behind Messi and a street-smart squad — blue and white stripes, Buenos Aires passion, and the eternal Brazil rivalry define Argentina first.",
+      "shortHistory": "Qatar 2022 champions behind Messi and a street-smart squad — blue and white stripes, Buenos Aires passion, and the eternal Brazil rivalry define Argentina first.",
       "fifaRanking": 3,
       "tmCode": "argentina",
       "crestPolicy": "text-only"
@@ -459,8 +459,8 @@
         "to": "#030712",
         "accent": "#fbbf24"
       },
-      "fanGuide": "Die Mannschaft are four-time World Cup winners known for pressing, organization, and tournament pedigree. Germany means efficiency, big-match experience, and Bundesliga-fed talent.",
-      "shortHistory": "Die Mannschaft are four-time World Cup winners known for pressing, organization, and tournament pedigree.",
+      "fanGuide": "Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree.",
+      "shortHistory": "Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree.",
       "fifaRanking": 10,
       "tmCode": "germany",
       "crestPolicy": "text-only"
@@ -487,8 +487,8 @@
         "to": "#14532d",
         "accent": "#fecaca"
       },
-      "fanGuide": "Portugal blend technical midfielders with elite forwards. Modern Portugal means Cristiano Ronaldo’s era, Euro 2016 pride, and a deep pipeline from Lisbon and Porto.",
-      "shortHistory": "Portugal blend technical midfielders with elite forwards.",
+      "fanGuide": "Euro 2016 triumph and a Ronaldo-led era — Portugal blend technical midfielders, elite wingers, and Lisbon/Porto academy pipelines into red-green shirts.",
+      "shortHistory": "Euro 2016 triumph and a Ronaldo-led era — Portugal blend technical midfielders, elite wingers, and Lisbon/Porto academy pipelines into red-green shirts.",
       "fifaRanking": 5,
       "tmCode": "portugal",
       "crestPolicy": "text-only"
@@ -515,8 +515,8 @@
         "to": "#1e3a8a",
         "accent": "#dbeafe"
       },
-      "fanGuide": "The Azzurri are defined by tactical identity and tournament moments: defensive mastery, ruthless set pieces, and famous European Championship runs.",
-      "shortHistory": "The Azzurri are defined by tactical identity and tournament moments: defensive mastery, ruthless set pieces, and famous European Championship runs.",
+      "fanGuide": "Four World Cups and tactical mastery — the Azzurri mean defensive organization, ruthless set pieces, and famous blue-shirt tournament runs.",
+      "shortHistory": "Four World Cups and tactical mastery — the Azzurri mean defensive organization, ruthless set pieces, and famous blue-shirt tournament runs.",
       "fifaRanking": 12,
       "tmCode": "italy",
       "crestPolicy": "text-only"
@@ -544,8 +544,8 @@
         "to": "#c2410c",
         "accent": "#ffedd5"
       },
-      "fanGuide": "Oranje invented Total Football and remain a benchmark for technical, attacking football. The Netherlands mean orange shirts, Ajax DNA, and World Cup near-misses turned into learning stories.",
-      "shortHistory": "Oranje invented Total Football and remain a benchmark for technical, attacking football.",
+      "fanGuide": "Total Football inventors in orange — technical attacking football, Ajax DNA, and famous World Cup near-misses that still shape how fans learn the game.",
+      "shortHistory": "Total Football inventors in orange — technical attacking football, Ajax DNA, and famous World Cup near-misses that still shape how fans learn the game.",
       "fifaRanking": 7,
       "tmCode": "netherlands",
       "crestPolicy": "text-only"
@@ -625,8 +625,8 @@
         "to": "#7f1d1d",
         "accent": "#fecaca"
       },
-      "fanGuide": "Switzerland are a disciplined tournament side with a strong diaspora talent base. Learn the spine: goalkeeper stability, organized defenders, and creative dual-nation midfielders.",
-      "shortHistory": "Switzerland are a disciplined tournament side with a strong diaspora talent base.",
+      "fanGuide": "Organized tournament regulars in red — goalkeeper stability, disciplined defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study.",
+      "shortHistory": "Organized tournament regulars in red — goalkeeper stability, disciplined defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study.",
       "fifaRanking": 19,
       "tmCode": "switzerland",
       "crestPolicy": "text-only"
@@ -731,8 +731,8 @@
         "to": "#991b1b",
         "accent": "#dbeafe"
       },
-      "fanGuide": "The USMNT are a rising CONCACAF power built on athleticism and a growing European player pipeline. Learn the core roles ahead of the 2026 host spotlight.",
-      "shortHistory": "The USMNT are a rising CONCACAF power built on athleticism and a growing European player pipeline.",
+      "fanGuide": "2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story.",
+      "shortHistory": "2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story.",
       "fifaRanking": 16,
       "tmCode": "united-states",
       "crestPolicy": "text-only"

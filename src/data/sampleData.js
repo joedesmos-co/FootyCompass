@@ -660,7 +660,7 @@ const baseTeams = [
       "Schalke 04",
     ],
     shortHistory: "Dortmund’s Yellow Wall and youth development made them Germany’s romantic alternative to Bayern — Klopp’s pressing team and a Champions League final run define modern memory.",
-    fanGuide: "Yellow and black; the Südtribüne is Europe’s most famous standing terrace. Der Klassiker vs Bayern is the national headline.",
+    fanGuide: "Yellow and black; the Südtribüne is Europe’s most famous standing terrace. Der Klassiker vs Bayern is the national headline — learn the Revierderby vs Schalke for local hate.",
     legends: [
       "Marco Reus — one-club winger and captain",
       "Mats Hummels — centre-back and academy graduate",
@@ -840,7 +840,7 @@ const baseTeams = [
       "Torino",
     ],
     shortHistory: "Juventus hold the record for Serie A titles — the Old Lady’s black and white stripes symbolise Italian dominance, scandal, and rebuilds across decades.",
-    fanGuide: "Black and white stripes; the Derby d’Italia vs Inter is a national grudge. Turin’s Derby della Mole vs Torino is the local fixture.",
+    fanGuide: "Black and white stripes; the Derby d’Italia vs Inter is the national grudge. Turin’s Derby della Mole vs Torino is the local fixture — defensive discipline and trophy expectation define the culture.",
     legends: [
       "Alessandro Del Piero — one-club symbol and free-kick artist",
       "Gianluigi Buffon — goalkeeper for a generation",
@@ -869,7 +869,7 @@ const baseTeams = [
       "Juventus",
     ],
     shortHistory: "Napoli’s story is southern pride and Maradona’s 1987 scudetto — modern titles under Spalletti brought the city celebrations back to the streets.",
-    fanGuide: "Sky blue shirts; Curva B is volcanic. The club is a symbol of Naples beyond football — learn Maradona’s name first.",
+    fanGuide: "Sky blue shirts; Curva B is volcanic. Maradona’s name comes first — the club is Naples on the pitch, with the Juventus rivalry framing Serie A tension.",
     legends: [
       "Diego Maradona — icon of the 1987 title",
       "Ciro Ferrara — local defender",
@@ -1108,7 +1108,7 @@ const baseTeams = [
       "PSV Eindhoven",
     ],
     shortHistory: "Ajax are the academy and ideas club: Total Football, European Cups, and a conveyor belt of players who shape bigger leagues.",
-    fanGuide: "White shirt with a red central stripe; Amsterdam confidence. De Klassieker against Feyenoord is essential.",
+    fanGuide: "White shirt with a red central stripe; Amsterdam confidence and Cruyff’s legacy. De Klassieker vs Feyenoord is essential — youth sales and possession football define the modern identity.",
     legends: [
       "Johan Cruyff — club and football philosophy icon",
       "Marco van Basten — elegant striker",

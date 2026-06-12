@@ -23,7 +23,7 @@ export const collections = [
     id: 'modern-superstars',
     title: 'Modern superstars',
     description:
-      'Eight headline quiz-ready names every casual fan should recognise — clubs, countries, and one-line roles.',
+      'Eight headline names every casual fan should recognise — club, country, and role in one sitting before profile deep-dives.',
     difficulty: 'Beginner',
     tags: ['Stars', 'Players', 'Popular'],
     quizLaunch: null,
@@ -42,7 +42,7 @@ export const collections = [
     id: 'young-stars-to-watch',
     title: 'Young stars to watch',
     description:
-      'Seven rising quiz-ready talents — learn club and country before they dominate highlight reels.',
+      'Seven rising talents in the quiz pool — learn club and country now, before they dominate highlight reels.',
     difficulty: 'Beginner',
     tags: ['Youth', 'Future', 'Players'],
     quizLaunch: null,
@@ -80,7 +80,7 @@ export const collections = [
     id: 'elite-defenders-study',
     title: 'Elite defenders',
     description:
-      'Seven centre-backs and full-backs in the quiz pool — duels, build-up, and national-team links.',
+      'Seven centre-backs and full-backs — duels, build-up, and national-team links before a club-scoped quiz.',
     difficulty: 'Intermediate',
     tags: ['Defenders', 'Tactics', 'Players'],
     quizLaunch: { teamId: 'arsenal' },
@@ -98,7 +98,7 @@ export const collections = [
     id: 'club-legends-study',
     title: 'Club legends',
     description:
-      'Six iconic clubs plus one legend-era player each — history, rivals, and why supporters still chant their names.',
+      'Six iconic clubs plus one legend-era player each — rivals, history, and why supporters still chant their names.',
     difficulty: 'Intermediate',
     tags: ['Clubs', 'History', 'Culture'],
     quizLaunch: { teamId: 'liverpool' },
@@ -560,9 +560,9 @@ export const collections = [
   },
   {
     id: 'world-cup-watchlist',
-    title: 'World Cup Watchlist',
+    title: 'World Cup watchlist',
     description:
-      'All five live FootyCompass national teams for 2026 prep — open each country page before knockout quizzes.',
+      'Five live national-team pages for 2026 prep — open each country profile before knockout quizzes.',
     difficulty: 'Beginner',
     tags: ['World Cup', 'National teams', '2026'],
     quizLaunch: { nationalTeamId: 'brazil' },
@@ -576,9 +576,9 @@ export const collections = [
   },
   {
     id: 'world-cup-2026-contenders',
-    title: 'World Cup 2026 Contenders',
+    title: 'World Cup 2026 contenders',
     description:
-      'One headline quiz-ready player per live contender — club form tied to national-team pages in the database.',
+      'One headline quiz-ready player per live contender — tie club form to national-team pages before 2026 prep.',
     difficulty: 'Intermediate',
     tags: ['World Cup', '2026', 'National teams'],
     quizLaunch: { nationalTeamId: 'france' },
@@ -788,9 +788,9 @@ export const collections = [
   },
   {
     id: 'elite-playmakers',
-    title: 'Great playmakers',
+    title: 'Elite playmakers',
     description:
-      'Eight №10s and creators — through balls, vision, and club links before hint-based quizzes.',
+      'Eight №10s and creators — through balls, vision, and club links before a Premier League quiz warm-up.',
     difficulty: 'Advanced',
     tags: ['Tactics', 'Creators', 'Players'],
     quizLaunch: { leagueId: 'premier-league' },
@@ -933,7 +933,7 @@ export const collections = [
     id: 'world-cup-stars',
     title: 'World Cup stars',
     description:
-      'Eight headline men’s World Cup names in the quiz pool — tournament pedigree, clubs, and national teams.',
+      'Eight headline World Cup names in the quiz pool — tournament pedigree, clubs, and national teams in compact notes.',
     difficulty: 'Advanced',
     tags: ['World Cup', 'History', 'Players'],
     quizLaunch: { nationalTeamId: 'argentina' },
@@ -1033,9 +1033,9 @@ export const collections = [
   },
   {
     id: 'world-cup-legends',
-    title: 'World Cup Legends',
+    title: 'World Cup legends',
     description:
-      'Seven quiz-ready men who defined recent World Cups — winners, Golden Boot, and Golden Glove stories across eras.',
+      'Seven quiz-ready names who defined recent World Cups — winners, Golden Boot, and Golden Glove stories across eras.',
     difficulty: 'Advanced',
     tags: ['World Cup', 'National teams', 'History'],
     quizLaunch: { nationalTeamId: 'argentina' },

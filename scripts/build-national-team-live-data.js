@@ -219,7 +219,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['brasil', 'selecao', 'seleção', 'bra', 'canarinho'],
     badgeTheme: { from: '#16a34a', to: '#14532d', accent: '#bbf7d0' },
     fanGuide:
-      'The Seleção are five-time World Cup winners and the reference point for flair in men’s football. Learning Brazil means knowing samba style, yellow shirts, and the rivalry with Argentina.',
+      'Five World Cups, yellow shirts, and jogo bonito flair — the Seleção are football’s reference for creative attackers. The Argentina rivalry is the first fixture every fan should learn.',
     shortHistory:
       'Men’s senior team of Brazil (CBF). FootyBrain squads link existing club players matched to Transfermarkt senior listings.',
   },
@@ -232,7 +232,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['les bleus', 'fra', 'french national team', 'france nt'],
     badgeTheme: { from: '#2563eb', to: '#1e3a8a', accent: '#dbeafe' },
     fanGuide:
-      'Les Bleus blend academy depth with star power. France won the 2018 World Cup and remain a benchmark for modern athletic, tactical football.',
+      '2018 World Cup champions with a 2022 final run — Les Bleus blend academy depth, athletic power, and star forwards. Blue shirts and Paris-to-Africa talent pipelines define modern France.',
     shortHistory:
       'Men’s senior team of France (FFF). Squad lists link FootyBrain club players on TM senior France listings.',
   },
@@ -245,7 +245,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['three lions', 'eng', 'england national team', 'england nt'],
     badgeTheme: { from: '#1d4ed8', to: '#172554', accent: '#e0e7ff' },
     fanGuide:
-      'The Three Lions carry the weight of 1966 and a nation that lives through the Premier League. England means Wembley, white shirts, and endless “football’s coming home” debate.',
+      '1966 winners still cast a long shadow — white shirts at Wembley, Premier League-fed talent, and Euro 2024 final heartbreak shape the modern Three Lions.',
     shortHistory:
       'Men’s senior team of England (FA). Linked players are already in the FootyBrain club database.',
   },
@@ -258,7 +258,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['la roja', 'esp', 'spanish national team', 'spain nt', 'seleccion española'],
     badgeTheme: { from: '#dc2626', to: '#991b1b', accent: '#fecaca' },
     fanGuide:
-      'La Roja won Euro 2008, 2012, and the 2010 World Cup with tiki-taka possession. Spain means red shirts, technical midfielders, and Iberian pride.',
+      '2010 World Cup and Euro 2008/12 tiki-taka — La Roja means technical midfield control, red shirts, and Iberian pride renewed at Euro 2024.',
     shortHistory:
       'Men’s senior team of Spain (RFEF). Squads link club players in FootyBrain who appear on TM Spain senior listings.',
   },
@@ -271,7 +271,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['albiceleste', 'arg', 'argentina national team', 'la albiceleste'],
     badgeTheme: { from: '#38bdf8', to: '#1e3a8a', accent: '#e0f2fe' },
     fanGuide:
-      'La Albiceleste are 2022 World Cup winners built around generational talent and Buenos Aires passion. Argentina means blue and white stripes and the Clásico with Brazil.',
+      'Qatar 2022 champions behind Messi and a street-smart squad — blue and white stripes, Buenos Aires passion, and the eternal Brazil rivalry define Argentina first.',
     shortHistory:
       'Men’s senior team of Argentina (AFA). Squad links use TM listings matched to existing FootyBrain players.',
   },
@@ -284,7 +284,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['die mannschaft', 'ger', 'deutschland', 'german national team', 'germany nt'],
     badgeTheme: { from: '#1f2937', to: '#030712', accent: '#fbbf24' },
     fanGuide:
-      'Die Mannschaft are four-time World Cup winners known for pressing, organization, and tournament pedigree. Germany means efficiency, big-match experience, and Bundesliga-fed talent.',
+      'Four World Cups and Die Mannschaft pressing identity — white shirts, big-match efficiency, and Bundesliga exports define Germany’s tournament pedigree.',
     shortHistory:
       'Men’s senior team of Germany (DFB). Squads combine Transfermarkt senior links with club players whose nationality matches in the FootyBrain registry.',
   },
@@ -297,7 +297,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['holland', 'ned', 'oranje', 'dutch national team', 'netherlands nt', 'knvb'],
     badgeTheme: { from: '#f97316', to: '#c2410c', accent: '#ffedd5' },
     fanGuide:
-      'Oranje invented Total Football and remain a benchmark for technical, attacking football. The Netherlands mean orange shirts, Ajax DNA, and World Cup near-misses turned into learning stories.',
+      'Total Football inventors in orange — technical attacking football, Ajax DNA, and famous World Cup near-misses that still shape how fans learn the game.',
     shortHistory:
       'Men’s senior team of the Netherlands (KNVB). Linked players are existing FootyBrain club players with Dutch nationality or TM senior listings.',
   },
@@ -310,7 +310,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['por', 'portugal national team', 'portugal nt', 'seleção portuguesa', 'selecao'],
     badgeTheme: { from: '#dc2626', to: '#14532d', accent: '#fecaca' },
     fanGuide:
-      'Portugal blend technical midfielders with elite forwards. Modern Portugal means Cristiano Ronaldo’s era, Euro 2016 pride, and a deep pipeline from Lisbon and Porto.',
+      'Euro 2016 triumph and a Ronaldo-led era — Portugal blend technical midfielders, elite wingers, and Lisbon/Porto academy pipelines into red-green shirts.',
     shortHistory:
       'Men’s senior team of Portugal (FPF). Squad links join existing FootyBrain club players to national-team memberships.',
   },
@@ -323,7 +323,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['ita', 'azzurri', 'gli azzurri', 'italy national team', 'italy nt'],
     badgeTheme: { from: '#2563eb', to: '#1e3a8a', accent: '#dbeafe' },
     fanGuide:
-      'The Azzurri are defined by tactical identity and tournament moments: defensive mastery, ruthless set pieces, and famous European Championship runs.',
+      'Four World Cups and tactical mastery — the Azzurri mean defensive organization, ruthless set pieces, and famous blue-shirt tournament runs.',
     shortHistory:
       'Men’s senior team of Italy (FIGC). FootyBrain squads link players already in the club database.',
   },
@@ -362,7 +362,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['sui', 'swiss national team', 'switzerland nt', 'schweiz'],
     badgeTheme: { from: '#dc2626', to: '#7f1d1d', accent: '#fecaca' },
     fanGuide:
-      'Switzerland are a disciplined tournament side with a strong diaspora talent base. Learn the spine: goalkeeper stability, organized defenders, and creative dual-nation midfielders.',
+      'Organized tournament regulars in red — goalkeeper stability, disciplined defending, and a diaspora-fed talent base make Switzerland a reliable World Cup study.',
     shortHistory:
       'Men’s senior team of Switzerland (SFV/ASF). Squads link to club players already present in FootyBrain.',
   },
@@ -414,7 +414,7 @@ const LIVE_NATION_EDITORIAL = {
     searchAliases: ['usa', 'usmnt', 'us soccer', 'united states', 'us national team'],
     badgeTheme: { from: '#1d4ed8', to: '#991b1b', accent: '#dbeafe' },
     fanGuide:
-      'The USMNT are a rising CONCACAF power built on athleticism and a growing European player pipeline. Learn the core roles ahead of the 2026 host spotlight.',
+      '2026 host spotlight — athletic USMNT with a growing European pipeline, stars-and-stripes shirts, and a Mexico rivalry that frames every CONCACAF story.',
     shortHistory:
       'Men’s senior team of the United States (US Soccer). Squads link FootyBrain club players to USA memberships.',
   },

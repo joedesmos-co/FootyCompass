@@ -45,7 +45,7 @@ export const learningPaths = [
     id: 'learn-modern-superstars',
     title: 'Learn modern superstars',
     description:
-      'Superstar collection, compare two profiles, then a Madrid club quiz to lock in names.',
+      'Superstar collection, Bellingham and Vinícius spotlights, then a Madrid quiz to lock names.',
     difficulty: 'Beginner',
     tags: ['Stars', 'Players'],
     collectionId: 'modern-superstars',
@@ -117,9 +117,9 @@ export const learningPaths = [
   },
   {
     id: 'learn-world-cup-stars',
-    title: 'Learn World Cup Stars',
+    title: 'Learn World Cup stars',
     description:
-      '2026 prep route — contender collection, two country pages, then a national-team quiz.',
+      '2026 prep — contenders collection, Brazil and Argentina pages, then a Seleção quiz to lock names.',
     difficulty: 'Intermediate',
     tags: ['World Cup', 'National teams', '2026'],
     collectionId: 'world-cup-2026-contenders',
@@ -304,7 +304,7 @@ export const learningPaths = [
     id: 'learn-argentina-national-team',
     title: 'Learn Argentina',
     description:
-      'Albiceleste — icons collection, country page, Lautaro spotlight, Argentina quiz.',
+      '2022 champions — icons collection, country page, Lautaro spotlight, then Argentina quiz.',
     difficulty: 'Intermediate',
     tags: ['Argentina', 'World Cup', 'National teams'],
     collectionId: 'argentina-icons',
@@ -476,7 +476,7 @@ export const learningPaths = [
     id: 'learn-united-states-national-team',
     title: 'Learn United States',
     description:
-      'USMNT — CONCACAF watchlist collection, country page, Reyna spotlight, USA quiz.',
+      '2026 hosts — CONCACAF watchlist collection, country page, Reyna spotlight, then USMNT quiz.',
     difficulty: 'Beginner',
     tags: ['USA', 'World Cup 2026', 'National teams'],
     collectionId: 'usmnt-concacaf-watchlist',
@@ -511,9 +511,9 @@ export const learningPaths = [
   },
   {
     id: 'learn-world-cup-legends',
-    title: 'Learn World Cup Legends',
+    title: 'Learn World Cup legends',
     description:
-      'Legends collection, Argentina page, Messi profile, then an Albiceleste quiz.',
+      'Legends collection, Argentina page, Messi spotlight, then an Albiceleste quiz.',
     difficulty: 'Advanced',
     tags: ['World Cup', 'National teams'],
     collectionId: 'world-cup-legends',

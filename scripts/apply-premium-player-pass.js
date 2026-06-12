@@ -33,6 +33,7 @@ function main() {
       ...prev,
       ...(strengths ? { strengths } : {}),
       ...(knownFor ? { knownFor } : {}),
+      ...(patch.quickFact ? { quickFact: String(patch.quickFact).trim() } : {}),
       ...(patch.playStyleSummary ? { playStyleSummary: patch.playStyleSummary } : {}),
       ...(patch.roleSummary ? { roleSummary: patch.roleSummary } : {}),
       ...(patch.careerContext ? { careerContext: patch.careerContext } : {}),
