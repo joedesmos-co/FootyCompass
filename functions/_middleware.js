@@ -1,6 +1,6 @@
 /**
  * Cloudflare Pages middleware — return HTTP 404 for unknown app routes.
- * Static assets, sitemap, robots.txt, and ads.txt pass through unchanged.
+ * Static assets under /images/, /assets/, /brand/, /data/ are served via ASSETS.fetch.
  *
  * Requires public/data/indexable-paths.json (npm run write:indexable-paths).
  */
@@ -19,6 +19,7 @@ const STATIC_EXACT = new Set([
   '/404.html',
 ]);
 
+/** Paths served from dist/ (Vite copies public/ → output root). */
 const STATIC_PREFIXES = ['/assets/', '/brand/', '/images/', '/data/', '/dev-data/'];
 
 function normalizePathname(pathname) {
@@ -32,6 +33,10 @@ function isPassthrough(pathname) {
   if (STATIC_PREFIXES.some((prefix) => pathname.startsWith(prefix))) return true;
   if (/\.[a-z0-9]{2,8}$/i.test(pathname) && !pathname.endsWith('.html')) return true;
   return false;
+}
+
+async function serveStaticAsset(context) {
+  return context.env.ASSETS.fetch(context.request);
 }
 
 async function notFoundResponse(context, url) {
@@ -48,7 +53,7 @@ export async function onRequest(context) {
   const pathname = normalizePathname(url.pathname);
 
   if (isPassthrough(pathname)) {
-    return context.next();
+    return serveStaticAsset(context);
   }
 
   if (pathname.startsWith('/dev/')) {

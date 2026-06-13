@@ -7,7 +7,7 @@
 
 import live from '../src/data/nationalTeamLive.json' with { type: 'json' };
 import manifest from '../src/data/countryFlagManifest.json' with { type: 'json' };
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -73,3 +73,21 @@ if (report.uiExpected.shieldInitials > 0) {
 }
 
 console.log('OK: all national teams resolve to flag image or emoji in UI');
+
+// Verify Vite copied public/images into dist (Cloudflare Pages output).
+const distFlagsDir = join(root, 'dist/images/flags');
+const distFrance = join(distFlagsDir, 'france.svg');
+if (!existsSync(distFrance)) {
+  console.error('FAIL: dist/images/flags/france.svg missing — run npm run build');
+  process.exit(1);
+}
+
+let distFlagCount = 0;
+try {
+  distFlagCount = readdirSync(distFlagsDir).filter((f) => !f.startsWith('.')).length;
+} catch {
+  console.error('FAIL: dist/images/flags/ not found');
+  process.exit(1);
+}
+
+console.log(`OK: dist/images/flags/ has ${distFlagCount} files (france.svg present)`);
