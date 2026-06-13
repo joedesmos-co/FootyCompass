@@ -50,7 +50,10 @@ export function setSeoMeta({
 
   if (title) document.title = title;
 
-  if (canonicalUrl) {
+  if (canonicalUrl === false) {
+    const canonical = document.querySelector("link[rel='canonical']");
+    if (canonical?.parentNode) canonical.parentNode.removeChild(canonical);
+  } else if (canonicalUrl) {
     const canonical = ensureLink('canonical');
     setIfPresent(canonical, 'href', canonicalUrl);
   }

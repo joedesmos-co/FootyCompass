@@ -106,6 +106,38 @@ if (!fs.existsSync(SITEMAP_PATH)) {
   const paths = locs.map(pathFromLoc);
 
   notes.push(`Sitemap URLs: ${locs.length}`);
+  const playerUrls = locs.filter((loc) => loc.includes('/player/')).length;
+  notes.push(`Sitemap player URLs: ${playerUrls}`);
+  if (playerUrls < 100) {
+    issues.push(`Sitemap has only ${playerUrls} player URLs — expected quiz-eligible player profiles`);
+  }
+
+  const indexablePath = path.join(ROOT, 'public/data/indexable-paths.json');
+  if (!fs.existsSync(indexablePath)) {
+    issues.push('public/data/indexable-paths.json missing — run npm run write:indexable-paths');
+  } else {
+    const indexable = JSON.parse(fs.readFileSync(indexablePath, 'utf8'));
+    if ((indexable.pathCount ?? 0) !== locs.length) {
+      issues.push(
+        `indexable-paths.json count (${indexable.pathCount}) != sitemap (${locs.length}) — regenerate artifacts`,
+      );
+    }
+  }
+
+  const adsTxt = path.join(ROOT, 'public/ads.txt');
+  const indexHtml = read('index.html');
+  if (fs.existsSync(adsTxt)) {
+    const adsLine = fs.readFileSync(adsTxt, 'utf8').trim();
+    const pubMatch = adsLine.match(/pub-\d+/);
+    const htmlPub = indexHtml.match(/ca-pub-\d+/);
+    if (pubMatch && htmlPub && pubMatch[0] !== htmlPub[0].replace('ca-', '')) {
+      issues.push(
+        `ads.txt publisher (${pubMatch[0]}) does not match AdSense script in index.html (${htmlPub[0]})`,
+      );
+    }
+  } else {
+    issues.push('public/ads.txt missing');
+  }
 
   for (const loc of locs) {
     if (!loc.startsWith(`${SITE_URL}/`) && loc !== `${SITE_URL}`) {
@@ -153,6 +185,18 @@ if (!fs.existsSync(ROBOTS_PATH)) {
   }
   if (!robots.includes('Disallow: /*?')) {
     issues.push('robots.txt missing Disallow: /*?');
+  }
+  if (!/Content-Signal:\s*search=yes/i.test(robots)) {
+    issues.push('robots.txt missing Content-Signal search=yes');
+  }
+  if (!/Content-Signal:.*ai-train=no/i.test(robots)) {
+    issues.push('robots.txt missing Content-Signal ai-train=no');
+  }
+  if (!/Content-Signal:.*ai-input=yes/i.test(robots)) {
+    issues.push('robots.txt missing Content-Signal ai-input=yes');
+  }
+  if (/Disallow:\s*\/\s*$/m.test(robots)) {
+    issues.push('robots.txt blocks entire site with Disallow: /');
   }
 }
 

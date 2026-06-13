@@ -1,6 +1,5 @@
 import { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { canonicalUrlForPath } from '../utils/brand.js';
 import { applyPageSeo } from '../utils/seoCtr.js';
 import BreadcrumbNav from './BreadcrumbNav';
 
@@ -10,7 +9,7 @@ export default function NotFoundPage() {
       title: 'Page not found · FootyCompass',
       description:
         'This page is not on FootyCompass. Browse players, clubs, leagues, national teams, or start from home.',
-      canonicalUrl: canonicalUrlForPath(window.location.pathname),
+      clearCanonical: true,
       robots: 'noindex,nofollow',
     });
   }, []);

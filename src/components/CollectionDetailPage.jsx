@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import {
   getCollectionById,
@@ -21,7 +21,7 @@ import TeamBadge from './TeamBadge';
 import LeagueBadge from './LeagueBadge';
 import { buildStudyProfileHref } from '../utils/collectionStudyContext';
 import { canonicalUrlForPath } from '../utils/brand.js';
-import { getCanonicalUrl } from '../utils/jsonLd';
+import { getCanonicalUrl, upsertJsonLdScript } from '../utils/jsonLd';
 import { applyEntityNotFoundSeo, applyPageSeo, truncateMetaDescription } from '../utils/seoCtr.js';
 import BreadcrumbNav from './BreadcrumbNav';
 import ActionRow from './ui/ActionRow';
@@ -146,11 +146,12 @@ export default function CollectionDetailPage() {
   const [xpToast, setXpToast] = useState('');
   const [showResetConfirm, setShowResetConfirm] = useState(false);
 
-  useEffect(() => {
-    if (!collection) return;
-    const canonical = getCanonicalUrl();
-    if (!canonical) return;
+  useLayoutEffect(() => {
+    if (!collection) return undefined;
+    const canonical =
+      getCanonicalUrl() ?? canonicalUrlForPath(`/collections/${collection.id}`);
     const itemCount = collection.items.length;
+    const resolvedItems = resolveCollectionItems(collection.items);
     const title = `${collection.title} — football study collection · FootyCompass`;
     const description = truncateMetaDescription(
       collection.description
@@ -168,6 +169,23 @@ export default function CollectionDetailPage() {
         { name: collection.title, item: canonical },
       ],
     });
+
+    upsertJsonLdScript('jsonld-collection', {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: collection.title,
+      description: collection.description || description,
+      url: canonical,
+      numberOfItems: itemCount,
+      itemListElement: resolvedItems.slice(0, 24).map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.label,
+        url: canonicalUrlForPath(getEntityProfilePath(item)),
+      })),
+    });
+
+    return () => upsertJsonLdScript('jsonld-collection', null);
   }, [collection]);
 
   useLayoutEffect(() => {

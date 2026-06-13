@@ -99,6 +99,7 @@ export function applyPageSeo({
   title,
   description,
   canonicalUrl,
+  clearCanonical = false,
   robots = 'index,follow',
   ogType = 'website',
   breadcrumbs = null,
@@ -111,7 +112,7 @@ export function applyPageSeo({
   setSeoMeta({
     title,
     description: desc,
-    canonicalUrl,
+    canonicalUrl: clearCanonical ? false : canonicalUrl,
     robots,
     og: {
       site_name: SITE_NAME,
