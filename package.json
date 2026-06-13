@@ -48,6 +48,7 @@
     "bootstrap:club-curated": "node scripts/bootstrap-club-curated.js",
     "expand:quiz-eligible-curated": "node scripts/expand-quiz-eligible-curated.js",
     "audit:visual-assets": "node scripts/audit-visual-assets.js",
+    "audit:national-team-flags": "node scripts/audit-national-team-flags.js",
     "audit:player-images": "node scripts/audit-player-images.js",
     "audit:player-image-quality": "node scripts/audit-player-image-quality.js",
     "apply:player-image-quality": "node scripts/apply-player-image-quality.js",

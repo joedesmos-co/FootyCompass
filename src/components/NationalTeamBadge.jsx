@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getCountryFlag } from '../utils/footballDisplay';
 import { resolveNationalTeamFlag } from '../utils/countryFlags';
 
 function getShortCode(name) {
@@ -31,8 +32,12 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
   const flag = resolveNationalTeamFlag(nationalTeam);
   const [imgFailed, setImgFailed] = useState(false);
 
+  const emojiFallback =
+    flag.emoji ??
+    getCountryFlag(nationalTeam?.country ?? nationalTeam?.displayName ?? '');
+
   const showFlagImage = flag.tier === 'flagAsset' && flag.url && !imgFailed;
-  const showFlagEmoji = !showFlagImage && flag.tier === 'flagEmoji' && flag.emoji;
+  const showFlagEmoji = !showFlagImage && Boolean(emojiFallback);
 
   if (showFlagImage) {
     return (
@@ -45,6 +50,7 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
           alt={flag.alt ?? `${nationalTeam.displayName} flag`}
           className="national-team-badge__flag-img"
           loading="lazy"
+          decoding="async"
           onError={() => setImgFailed(true)}
         />
         {showMeta ? (
@@ -65,7 +71,7 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
         aria-label={`${nationalTeam.displayName} national team`}
       >
         <span className="national-team-badge__flag-emoji" aria-hidden="true">
-          {flag.emoji}
+          {emojiFallback}
         </span>
         {showMeta ? (
           <span className="league-badge__country">
@@ -78,7 +84,7 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
 
   return (
     <div
-      className={`entity-crest-badge league-badge national-team-badge national-team-badge--${size}`}
+      className={`entity-crest-badge league-badge national-team-badge national-team-badge--${size} national-team-badge--initials`}
       style={style}
       role="img"
       aria-label={`${nationalTeam.displayName} national team`}

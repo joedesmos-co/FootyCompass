@@ -3814,6 +3814,24 @@ input:focus-visible {
   border-radius: 0.75rem;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  display: grid;
+  place-items: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.national-team-badge--flag.national-team-badge--card,
+.national-team-badge--flag-emoji.national-team-badge--card {
+  width: 4.5rem;
+  height: 5.1rem;
+}
+
+.national-team-badge--flag.national-team-badge--profile,
+.national-team-badge--flag-emoji.national-team-badge--profile {
+  width: 8.5rem;
+  height: 8.5rem;
 }
 
 .league-badge__logo-img,
