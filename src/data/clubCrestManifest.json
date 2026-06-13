@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-13T04:24:28.287Z",
-  "entryCount": 127,
+  "updatedAt": "2026-06-13T05:03:37.104Z",
+  "entryCount": 141,
   "entries": {
     "manchester-city": {
       "teamId": "manchester-city",
@@ -1271,6 +1271,146 @@
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Utrecht.png",
       "imageLicense": "Public domain",
+      "locked": false
+    },
+    "minnesota-united": {
+      "teamId": "minnesota-united",
+      "teamName": "Minnesota United FC",
+      "path": "/images/clubs/minnesota-united.svg",
+      "commonsFile": "MNUFC wordmark dark.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMNUFC_wordmark_dark.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "philadelphia-union": {
+      "teamId": "philadelphia-union",
+      "teamName": "Philadelphia Union",
+      "path": "/images/clubs/philadelphia-union.png",
+      "commonsFile": "Philadelphia Union footie flag.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3APhiladelphia_Union_footie_flag.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "portland-timbers": {
+      "teamId": "portland-timbers",
+      "teamName": "Portland Timbers",
+      "path": "/images/clubs/portland-timbers.svg",
+      "commonsFile": "PortlandTimbers.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3APortlandTimbers.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "chapecoense": {
+      "teamId": "chapecoense",
+      "teamName": "Chapecoense",
+      "path": "/images/clubs/chapecoense.svg",
+      "commonsFile": "Símbolo Chapecoense sem estrelas.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AS%C3%ADmbolo_Chapecoense_sem_estrelas.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "vasco-da-gama": {
+      "teamId": "vasco-da-gama",
+      "teamName": "Vasco da Gama",
+      "path": "/images/clubs/vasco-da-gama.svg",
+      "commonsFile": "Fundraising 2010 - Vasco da Gama banner.xcf",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFundraising_2010_-_Vasco_da_Gama_banner.xcf",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "atletico-mineiro": {
+      "teamId": "atletico-mineiro",
+      "teamName": "Atlético Mineiro",
+      "path": "/images/clubs/atletico-mineiro.png",
+      "commonsFile": "Atletico mineiro galo.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAtletico_mineiro_galo.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "athletico-paranaense": {
+      "teamId": "athletico-paranaense",
+      "teamName": "Athletico Paranaense",
+      "path": "/images/clubs/athletico-paranaense.svg",
+      "commonsFile": "CA Paranaense.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACA_Paranaense.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "remo": {
+      "teamId": "remo",
+      "teamName": "Clube do Remo",
+      "path": "/images/clubs/remo.svg",
+      "commonsFile": "Clube do Remo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AClube_do_Remo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "cruzeiro": {
+      "teamId": "cruzeiro",
+      "teamName": "Cruzeiro",
+      "path": "/images/clubs/cruzeiro.svg",
+      "commonsFile": "Cruzeirodosul-df.gif",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACruzeirodosul-df.gif",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "vitoria": {
+      "teamId": "vitoria",
+      "teamName": "Vitória",
+      "path": "/images/clubs/vitoria.svg",
+      "commonsFile": "Radio vitoria Spain.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ARadio_vitoria_Spain.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fluminense": {
+      "teamId": "fluminense",
+      "teamName": "Fluminense",
+      "path": "/images/clubs/fluminense.svg",
+      "commonsFile": "Logo UFF (blue).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_UFF_(blue).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "corinthians": {
+      "teamId": "corinthians",
+      "teamName": "Corinthians",
+      "path": "/images/clubs/corinthians.png",
+      "commonsFile": "Arena Corinthians (Fundo Transparente).png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AArena_Corinthians_(Fundo_Transparente).png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "ext-tm-club-3612": {
+      "teamId": "ext-tm-club-3612",
+      "teamName": "Al Ahli Sc",
+      "path": "/images/clubs/ext-tm-club-3612.svg",
+      "commonsFile": "Alahlilogo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAlahlilogo.svg",
+      "imageLicense": "CC0",
+      "locked": false
+    },
+    "ext-tm-club-27221": {
+      "teamId": "ext-tm-club-27221",
+      "teamName": "Al Fateh Sc",
+      "path": "/images/clubs/ext-tm-club-27221.svg",
+      "commonsFile": "Al Fateh SC Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAl_Fateh_SC_Logo.svg",
+      "imageLicense": "CC0",
       "locked": false
     }
   }

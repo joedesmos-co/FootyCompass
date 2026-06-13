@@ -49,6 +49,8 @@ function parseArgs(argv) {
     download: argv.includes('--download'),
     force: argv.includes('--force'),
     forceLarge: argv.includes('--force-large'),
+    allMissing: argv.includes('--all-missing'),
+    unattemptedOnly: argv.includes('--unattempted-only'),
     offset: 0,
     limit: DEFAULT_LIMIT,
     ids: null,
@@ -94,7 +96,34 @@ function saveCache(cache) {
   writeJson(CACHE_PATH, cache);
 }
 
-function buildQueue(playerById) {
+function autoPlayerSpec(player) {
+  const parts = String(player.name ?? '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  const verifyName = parts.length >= 2 ? parts[parts.length - 1] : parts[0] ?? 'Player';
+  return { searchName: player.name, verifyName };
+}
+
+function buildQueue(playerById, approvedEntries, cache, args) {
+  if (args.allMissing || args.unattemptedOnly) {
+    return players
+      .filter((p) => {
+        if (approvedEntries[p.id]?.imageUrl) return false;
+        if (args.unattemptedOnly) {
+          return !cache.skipped?.[p.id] && !cache.resolved?.[p.id];
+        }
+        return true;
+      })
+      .map((p) => ({
+        playerId: p.id,
+        spec: curated.entries?.[p.id] ?? autoPlayerSpec(p),
+        player: p,
+        importance: p.importanceScore ?? 0,
+      }))
+      .sort((a, b) => b.importance - a.importance || a.playerId.localeCompare(b.playerId));
+  }
+
   return Object.entries(curated.entries ?? {})
     .map(([playerId, spec]) => ({
       playerId,
@@ -115,13 +144,24 @@ function logProgress(index, total, playerId, name, status, detail = '') {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const playerById = new Map(players.map((p) => [p.id, p]));
-  const queue = buildQueue(playerById);
+  const approved = readJson(APPROVED_PATH, { schemaVersion: 1, entries: {} });
+  approved.entries ??= {};
+  const cache = loadCache();
+  cache.resolved ??= {};
+  cache.skipped ??= {};
+
+  const queue = buildQueue(playerById, approved.entries, cache, args);
   const batch = args.ids?.length
     ? queue.filter((row) => args.ids.includes(row.playerId))
     : queue.slice(args.offset, args.offset + args.limit);
 
   console.log('FootyCompass — Wikimedia player image batch');
-  console.log(`Queue: ${queue.length} curated | Batch: ${batch.length} (offset ${args.offset}, limit ${args.limit})`);
+  const queueLabel = args.unattemptedOnly
+    ? 'unattempted missing'
+    : args.allMissing
+      ? 'all missing'
+      : 'curated';
+  console.log(`Queue: ${queue.length} ${queueLabel} | Batch: ${batch.length} (offset ${args.offset}, limit ${args.limit})`);
   console.log(`Mode: ${args.dryRun ? 'dry-run' : 'write'}${args.download ? ' + download' : ''}${args.force ? ' + force' : ''}`);
   console.log('');
 
@@ -130,9 +170,6 @@ async function main() {
     return;
   }
 
-  const approved = readJson(APPROVED_PATH, { schemaVersion: 1, entries: {} });
-  approved.entries ??= {};
-  const cache = loadCache();
   cache.resolved ??= {};
   cache.skipped ??= {};
 

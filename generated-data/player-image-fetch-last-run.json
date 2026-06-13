@@ -1,107 +1,276 @@
 {
-  "startedAt": "2026-06-13T04:25:09.029Z",
+  "startedAt": "2026-06-13T04:46:21.468Z",
   "offset": 0,
-  "limit": 25,
-  "added": [],
+  "limit": 50,
+  "added": [
+    {
+      "playerId": "tm-34130",
+      "name": "Tom Heaton",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Tom Heaton 2021.jpg"
+    },
+    {
+      "playerId": "tm-342405",
+      "name": "Mattias Svanberg",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Mattias Svanberg.jpg"
+    },
+    {
+      "playerId": "tm-343974",
+      "name": "Mohamed Hany",
+      "license": "CC BY 4.0",
+      "commonsFile": "Mohamed Hany in 2021 FIFA Club World Cup.jpg"
+    },
+    {
+      "playerId": "tm-344596",
+      "name": "Malang Sarr",
+      "license": "CC BY-SA 3.0",
+      "commonsFile": "Malang Sarr 2021.jpg"
+    },
+    {
+      "playerId": "tm-352324",
+      "name": "Agustín Rossi",
+      "license": "CC BY-SA 2.0",
+      "commonsFile": "Peñarol 0-1 Benfica - Final Intercontinental Sub 20 - 220821-3130-jikatu-Pano (Nicolás Rossi).jpg"
+    },
+    {
+      "playerId": "tm-353432",
+      "name": "Aubrey Modiba",
+      "license": "CC0",
+      "commonsFile": "Aubrey Modiba (cropped).jpg"
+    },
+    {
+      "playerId": "tm-357658",
+      "name": "Mark Travers",
+      "license": "CC BY 3.0",
+      "commonsFile": "Mark Travers 2019.jpg"
+    },
+    {
+      "playerId": "tm-369552",
+      "name": "Luuk Brouwers",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Luuk brouwers-1442157129.jpg"
+    },
+    {
+      "playerId": "tm-371256",
+      "name": "Tetê",
+      "license": "CC BY-SA 3.0",
+      "commonsFile": "Tetê in 2021.jpg"
+    },
+    {
+      "playerId": "tm-374139",
+      "name": "Junior Firpo",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Junior Firpo 2021 (cropped).jpg"
+    },
+    {
+      "playerId": "tm-376514",
+      "name": "Mathías Olivera",
+      "license": "CC BY-SA 2.0",
+      "commonsFile": "Mathías Olivera 2017.jpg"
+    },
+    {
+      "playerId": "tm-392179",
+      "name": "Hjalmar Ekdal",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Hjalmar Ekdal (Sirius, 2020, cropped).jpg"
+    },
+    {
+      "playerId": "tm-392569",
+      "name": "Gabriele Zappa",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Gabriele Zappa, 2021.jpg"
+    },
+    {
+      "playerId": "tm-392771",
+      "name": "Ethan Ampadu",
+      "license": "CC BY 2.0",
+      "commonsFile": "Ethan Ampadu 2017.jpg"
+    },
+    {
+      "playerId": "tm-393238",
+      "name": "Zakaria Aboukhlal",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Aboukhlal.jpg"
+    },
+    {
+      "playerId": "tm-397033",
+      "name": "Sandro Tonali",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Tonali 2 Milan-Torino 2021-22.jpg"
+    },
+    {
+      "playerId": "tm-397458",
+      "name": "Nicolás de la Cruz",
+      "license": "CC BY-SA 3.0",
+      "commonsFile": "Nicolás de la Cruz.jpg"
+    },
+    {
+      "playerId": "tm-398402",
+      "name": "Sam Surridge",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Sam Surridge Revolution Nashville 6.25.25-033.jpg"
+    }
+  ],
   "skipped": [
     {
-      "playerId": "tm-640428",
-      "name": "Eduardo Camavinga",
+      "playerId": "tm-340394",
+      "name": "Abdelhamid Sabiri",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "alisson",
-      "name": "Alisson Becker",
+      "playerId": "tm-341263",
+      "name": "Adrián Dela",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-503482",
-      "name": "Min-jae Kim",
+      "playerId": "tm-341264",
+      "name": "Fran García",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-709726",
-      "name": "Hugo Ekitiké",
+      "playerId": "tm-341278",
+      "name": "Iván Martín",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-480267",
-      "name": "Ronald Araujo",
+      "playerId": "tm-341713",
+      "name": "Diego Conde",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-552955",
-      "name": "Santiago Giménez",
+      "playerId": "tm-343052",
+      "name": "Nicolas Pépé",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-177467",
-      "name": "Gerard Moreno",
+      "playerId": "tm-345095",
+      "name": "Almoez Ali",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-257814",
-      "name": "Gregor Kobel",
+      "playerId": "tm-345343",
+      "name": "James McGarry",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-451276",
-      "name": "Dominik Szoboszlai",
+      "playerId": "tm-345716",
+      "name": "Fidel Escobar",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-128223",
-      "name": "Álvaro Morata",
+      "playerId": "tm-346065",
+      "name": "Keno",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-181767",
-      "name": "Marquinhos",
+      "playerId": "tm-351892",
+      "name": "Matheus Fernandes",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-236045",
-      "name": "Denis Bouanga",
+      "playerId": "tm-353057",
+      "name": "Thamsanqa Masiya",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-237662",
-      "name": "Breel Embolo",
+      "playerId": "tm-354886",
+      "name": "Earl Edwards Jr.",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-283628",
-      "name": "Tomáš Souček",
+      "playerId": "tm-361082",
+      "name": "Jasper Schendelaar",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-324358",
-      "name": "Ollie Watkins",
+      "playerId": "tm-363901",
+      "name": "Nik Tzanev",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-44058",
-      "name": "Wojciech Szczesny",
+      "playerId": "tm-367436",
+      "name": "Greg Ranjitsingh",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-488362",
-      "name": "Conor Gallagher",
+      "playerId": "tm-370663",
+      "name": "Fortune Makaringe",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-503743",
-      "name": "Morgan Rogers",
+      "playerId": "tm-370683",
+      "name": "Andreas Hanche-Olsen",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-533738",
-      "name": "Jonathan David",
+      "playerId": "tm-371436",
+      "name": "Francisco Sierralta",
       "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-626724",
-      "name": "João Pedro",
+      "playerId": "tm-374040",
+      "name": "Vincent Marchetti",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-375744",
+      "name": "Abdullah Al-Ahrak",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-375885",
+      "name": "Ibrahim Sangaré",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-384129",
+      "name": "Adrián Zendejas",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-384593",
+      "name": "Alexis Claude-Maurice",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-387047",
+      "name": "Danilho Doekhi",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-387996",
+      "name": "Rui Mendes",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-392956",
+      "name": "Enrico Delprato",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-393239",
+      "name": "Mitchell van Bergen",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-395928",
+      "name": "Marco Pašalić",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-397676",
+      "name": "Dani Cárdenas",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-39918",
+      "name": "Régis Gurtner",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-400489",
+      "name": "Eljif Elmas",
       "reason": "no_safe_match"
     }
   ],
@@ -109,5 +278,5 @@
   "alreadyApproved": [],
   "apiErrors": 0,
   "stoppedEarly": false,
-  "finishedAt": "2026-06-13T04:25:46.041Z"
+  "finishedAt": "2026-06-13T04:48:14.039Z"
 }

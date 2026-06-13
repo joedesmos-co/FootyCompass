@@ -40,6 +40,7 @@
     "add:player-image": "node scripts/add-player-image.js",
     "fetch:wikimedia-player-images": "node scripts/fetch-wikimedia-player-images.js",
     "fetch:quiz-eligible-images": "node scripts/fetch-quiz-eligible-images.js",
+    "fetch:missing-player-images": "node scripts/fetch-missing-player-images.js",
     "fetch:country-flags": "node scripts/fetch-country-flags.js",
     "fetch:league-logos": "node scripts/fetch-league-logos.js",
     "fetch:wikimedia-club-crests": "node scripts/fetch-wikimedia-club-crests.js",

@@ -433,7 +433,7 @@
     "minnesota-united": {
       "status": "resolved",
       "commonsFile": "MNUFC wordmark dark.svg",
-      "at": "2026-06-13T04:09:25.040Z"
+      "at": "2026-06-13T04:33:14.263Z"
     },
     "cf-montreal": {
       "status": "resolved",
@@ -468,12 +468,12 @@
     "philadelphia-union": {
       "status": "resolved",
       "commonsFile": "Philadelphia Union footie flag.png",
-      "at": "2026-06-13T04:09:34.351Z"
+      "at": "2026-06-13T04:33:15.216Z"
     },
     "portland-timbers": {
       "status": "resolved",
       "commonsFile": "PortlandTimbers.svg",
-      "at": "2026-06-13T04:09:35.660Z"
+      "at": "2026-06-13T04:33:16.132Z"
     },
     "real-salt-lake": {
       "status": "resolved",
@@ -723,22 +723,22 @@
     "chapecoense": {
       "status": "resolved",
       "commonsFile": "Símbolo Chapecoense sem estrelas.svg",
-      "at": "2026-06-13T04:11:16.166Z"
+      "at": "2026-06-13T04:33:16.967Z"
     },
     "vasco-da-gama": {
       "status": "resolved",
       "commonsFile": "Fundraising 2010 - Vasco da Gama banner.xcf",
-      "at": "2026-06-13T04:11:19.218Z"
+      "at": "2026-06-13T04:33:22.000Z"
     },
     "atletico-mineiro": {
       "status": "resolved",
       "commonsFile": "Atletico mineiro galo.png",
-      "at": "2026-06-13T04:11:20.292Z"
+      "at": "2026-06-13T04:33:22.977Z"
     },
     "athletico-paranaense": {
       "status": "resolved",
       "commonsFile": "CA Paranaense.svg",
-      "at": "2026-06-13T04:11:21.415Z"
+      "at": "2026-06-13T04:33:23.890Z"
     },
     "flamengo": {
       "status": "resolved",
@@ -747,8 +747,8 @@
     },
     "remo": {
       "status": "resolved",
-      "commonsFile": "Flamengo-rowing-2018.png",
-      "at": "2026-06-13T04:11:23.562Z"
+      "commonsFile": "Clube do Remo.svg",
+      "at": "2026-06-13T04:33:24.732Z"
     },
     "coritiba": {
       "status": "resolved",
@@ -758,7 +758,7 @@
     "cruzeiro": {
       "status": "resolved",
       "commonsFile": "Cruzeirodosul-df.gif",
-      "at": "2026-06-13T04:11:25.934Z"
+      "at": "2026-06-13T04:33:25.630Z"
     },
     "bahia": {
       "status": "resolved",
@@ -768,12 +768,12 @@
     "vitoria": {
       "status": "resolved",
       "commonsFile": "Radio vitoria Spain.svg",
-      "at": "2026-06-13T04:11:28.469Z"
+      "at": "2026-06-13T04:33:26.674Z"
     },
     "fluminense": {
       "status": "resolved",
       "commonsFile": "Logo UFF (blue).svg",
-      "at": "2026-06-13T04:11:29.621Z"
+      "at": "2026-06-13T04:33:27.548Z"
     },
     "gremio": {
       "status": "resolved",
@@ -813,12 +813,97 @@
     "corinthians": {
       "status": "resolved",
       "commonsFile": "Arena Corinthians (Fundo Transparente).png",
-      "at": "2026-06-13T04:11:41.739Z"
+      "at": "2026-06-13T04:33:28.516Z"
     },
     "internacional": {
       "status": "resolved",
       "commonsFile": "Sport Club Internacional logo (1909-1957).svg",
       "at": "2026-06-13T04:11:42.853Z"
+    },
+    "ext-tm-club-45193": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:32.306Z"
+    },
+    "ext-tm-club-2156": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:36.145Z"
+    },
+    "ext-tm-club-3612": {
+      "status": "resolved",
+      "commonsFile": "Alahlilogo.svg",
+      "at": "2026-06-13T04:33:37.165Z"
+    },
+    "ext-tm-club-18487": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:40.942Z"
+    },
+    "ext-tm-club-7": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:44.741Z"
+    },
+    "ext-tm-club-2150": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:48.455Z"
+    },
+    "ext-tm-club-1230": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:52.105Z"
+    },
+    "ext-tm-club-78312": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:55.905Z"
+    },
+    "ext-tm-club-14456": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:59.521Z"
+    },
+    "ext-tm-club-26091": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:03.161Z"
+    },
+    "ext-tm-club-7732": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:06.754Z"
+    },
+    "ext-tm-club-46718": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:10.505Z"
+    },
+    "ext-tm-club-13592": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:14.149Z"
+    },
+    "ext-tm-club-27221": {
+      "status": "resolved",
+      "commonsFile": "Al Fateh SC Logo.svg",
+      "at": "2026-06-13T04:34:15.230Z"
+    },
+    "ext-tm-club-50531": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:18.823Z"
+    },
+    "ext-tm-club-6297": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:22.682Z"
+    },
+    "ext-tm-club-9131": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:26.508Z"
     }
   }
 }

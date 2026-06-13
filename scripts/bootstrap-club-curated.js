@@ -62,7 +62,7 @@ const lines = [
   '  entries: {',
 ];
 
-for (const team of teams.filter((t) => t.leagueId !== 'external')) {
+for (const team of teams) {
   const commons = KNOWN_COMMONS[team.id];
   const searchTerm = `${team.name} logo`;
   if (commons) {
@@ -77,4 +77,4 @@ for (const team of teams.filter((t) => t.leagueId !== 'external')) {
 lines.push('  },', '};', '');
 
 writeFileSync(OUT, lines.join('\n'), 'utf8');
-console.log(`Wrote ${OUT} (${teams.filter((t) => t.leagueId !== 'external').length} clubs)`);
+console.log(`Wrote ${OUT} (${teams.length} clubs)`);

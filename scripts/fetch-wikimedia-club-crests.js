@@ -150,7 +150,7 @@ async function main() {
       .map(([id]) => id),
   );
 
-  let queue = teams.filter((t) => t.leagueId !== 'external' && !locked.has(t.id));
+  let queue = teams.filter((t) => !locked.has(t.id));
   queue = queue.filter((t) => !manifest.entries?.[t.id]?.path || args.force);
 
   if (args.ids) {

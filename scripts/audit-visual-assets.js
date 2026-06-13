@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * Visual asset coverage report → generated-data/visual-asset-report.json + .md
+ * Comprehensive visual asset coverage report.
  *
  *   npm run audit:visual-assets
  */
 
-import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -21,9 +21,21 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
 const OUT_DIR = join(root, 'generated-data');
 
-function hasPlayerPhoto(player) {
-  const src = resolvePlayerImageSource(player);
-  return Boolean(src?.url);
+function readCache() {
+  try {
+    return JSON.parse(readFileSync(join(OUT_DIR, 'player-image-wikimedia-cache.json'), 'utf8'));
+  } catch {
+    return { skipped: {}, resolved: {} };
+  }
+}
+
+function hasRealClubCrest(team, clubEntries) {
+  if (team.crestUrl) return true;
+  return Boolean(clubEntries[team.id]?.path);
+}
+
+function hasRealPlayerPhoto(player) {
+  return Boolean(resolvePlayerImageSource(player).url);
 }
 
 function main() {
@@ -33,54 +45,74 @@ function main() {
   const clubEntries = clubManifest.entries ?? {};
   const leagueEntries = leagueManifest.entries ?? {};
   const flagEntries = flagManifest.entries ?? {};
-  const approvedEntries = approved.entries ?? approved;
+  const playerCache = readCache();
 
-  const clubsWithLogos = teams.filter((t) => {
-    if (t.crestUrl) return true;
-    const entry = clubEntries[t.id];
-    return Boolean(entry?.path);
-  });
+  const clubsWithRealCrests = teams.filter((t) => hasRealClubCrest(t, clubEntries));
+  const clubsWithGeneratedBadges = teams.filter((t) => !hasRealClubCrest(t, clubEntries) && t.badgeTheme?.from);
+  const clubsWithoutVisual = teams.filter((t) => !hasRealClubCrest(t, clubEntries) && !t.badgeTheme?.from);
 
   const leaguesWithLogos = leagues.filter((l) => {
-    if (l.logoUrl) return true;
     if (l.id === 'external') return false;
-    return Boolean(leagueEntries[l.id]?.path);
+    return Boolean(l.logoUrl || leagueEntries[l.id]?.path);
   });
 
   const flagsForNt = nationalTeams.filter((nt) => Boolean(flagEntries[nt.country]?.path));
 
-  const quizEligible = players.filter((p) => p.quizEligible === true);
-  const playersWithPhotos = players.filter(hasPlayerPhoto);
-  const quizWithPhotos = quizEligible.filter(hasPlayerPhoto);
+  const playersWithRealPhotos = players.filter(hasRealPlayerPhoto);
+  const playersWithGeneratedFallback = players.filter((p) => !hasRealPlayerPhoto(p));
+
+  const missingRealPhotos = playersWithGeneratedFallback.map((p) => {
+    const skip = playerCache.skipped?.[p.id];
+    return {
+      id: p.id,
+      name: p.name,
+      leagueId: p.leagueId,
+      importanceScore: p.importanceScore ?? 0,
+      reason: skip?.reason ?? 'not_attempted',
+    };
+  });
+
+  const missingRealCrests = teams
+    .filter((t) => !hasRealClubCrest(t, clubEntries))
+    .map((t) => ({
+      id: t.id,
+      name: t.name,
+      leagueId: t.leagueId,
+      hasGeneratedBadge: Boolean(t.badgeTheme?.from),
+    }));
+
+  const skipReasonCounts = {};
+  for (const row of missingRealPhotos) {
+    skipReasonCounts[row.reason] = (skipReasonCounts[row.reason] ?? 0) + 1;
+  }
 
   const report = {
     generatedAt: new Date().toISOString(),
     totals: {
+      players: players.length,
+      playersWithRealPhotos: playersWithRealPhotos.length,
+      playersWithGeneratedFallback: playersWithGeneratedFallback.length,
       clubs: teams.length,
-      clubsWithLogos: clubsWithLogos.length,
+      clubsWithRealCrests: clubsWithRealCrests.length,
+      clubsWithGeneratedBadges: clubsWithGeneratedBadges.length,
+      clubsWithoutVisual: clubsWithoutVisual.length,
+      clubVisualCoverage: clubsWithRealCrests.length + clubsWithGeneratedBadges.length,
       leagues: leagues.filter((l) => l.id !== 'external').length,
       leaguesWithLogos: leaguesWithLogos.length,
       nationalTeams: nationalTeams.length,
       nationalTeamsWithFlags: flagsForNt.length,
-      players: players.length,
-      playersWithPhotos: playersWithPhotos.length,
-      quizEligiblePlayers: quizEligible.length,
-      quizEligibleWithPhotos: quizWithPhotos.length,
-      approvedOverlayCount: Object.keys(approvedEntries).length,
     },
-    missing: {
-      clubsWithoutLogos: teams
-        .filter((t) => !clubsWithLogos.some((c) => c.id === t.id))
-        .map((t) => ({ id: t.id, name: t.name, leagueId: t.leagueId })),
-      leaguesWithoutLogos: leagues
-        .filter((l) => l.id !== 'external' && !leaguesWithLogos.some((x) => x.id === l.id))
-        .map((l) => ({ id: l.id, name: l.name })),
-      nationalTeamsWithoutFlags: nationalTeams
-        .filter((nt) => !flagEntries[nt.country]?.path)
-        .map((nt) => ({ id: nt.id, country: nt.country })),
-      quizEligibleWithoutPhotos: quizEligible
-        .filter((p) => !hasPlayerPhoto(p))
-        .map((p) => ({ id: p.id, name: p.name })),
+    skipReasonCounts,
+    examples: {
+      missingRealPhotos: missingRealPhotos
+        .sort((a, b) => b.importanceScore - a.importanceScore)
+        .slice(0, 15),
+      missingRealCrests: missingRealCrests.slice(0, 15),
+      clubsGeneratedOnly: clubsWithGeneratedBadges.slice(0, 10).map((t) => ({
+        id: t.id,
+        name: t.name,
+        leagueId: t.leagueId,
+      })),
     },
   };
 
@@ -89,22 +121,33 @@ function main() {
     '',
     `Generated: ${report.generatedAt}`,
     '',
-    '## Coverage',
+    '## Coverage summary',
     '',
-    `| Asset | With visual | Total | % |`,
-    `| --- | ---: | ---: | ---: |`,
-    `| Clubs (logos) | ${report.totals.clubsWithLogos} | ${report.totals.clubs} | ${pct(report.totals.clubsWithLogos, report.totals.clubs)} |`,
-    `| Leagues (logos) | ${report.totals.leaguesWithLogos} | ${report.totals.leagues} | ${pct(report.totals.leaguesWithLogos, report.totals.leagues)} |`,
-    `| National teams (flags) | ${report.totals.nationalTeamsWithFlags} | ${report.totals.nationalTeams} | ${pct(report.totals.nationalTeamsWithFlags, report.totals.nationalTeams)} |`,
-    `| Players (photos) | ${report.totals.playersWithPhotos} | ${report.totals.players} | ${pct(report.totals.playersWithPhotos, report.totals.players)} |`,
-    `| Quiz-eligible (photos) | ${report.totals.quizEligibleWithPhotos} | ${report.totals.quizEligiblePlayers} | ${pct(report.totals.quizEligibleWithPhotos, report.totals.quizEligiblePlayers)} |`,
+    '| Category | Real asset | Generated fallback | Total | Visual coverage |',
+    '| --- | ---: | ---: | ---: | ---: |',
+    `| Players | ${report.totals.playersWithRealPhotos} | ${report.totals.playersWithGeneratedFallback} | ${report.totals.players} | ${pct(report.totals.playersWithRealPhotos + report.totals.playersWithGeneratedFallback, report.totals.players)} |`,
+    `| Clubs | ${report.totals.clubsWithRealCrests} | ${report.totals.clubsWithGeneratedBadges} | ${report.totals.clubs} | ${pct(report.totals.clubVisualCoverage, report.totals.clubs)} |`,
+    `| Leagues (logos) | ${report.totals.leaguesWithLogos} | 0 | ${report.totals.leagues} | ${pct(report.totals.leaguesWithLogos, report.totals.leagues)} |`,
+    `| National teams (flags) | ${report.totals.nationalTeamsWithFlags} | 0 | ${report.totals.nationalTeams} | ${pct(report.totals.nationalTeamsWithFlags, report.totals.nationalTeams)} |`,
     '',
-    '## Remaining gaps',
+    '## Missing real assets — top reasons (players)',
     '',
-    `- Clubs missing logos: **${report.missing.clubsWithoutLogos.length}**`,
-    `- Leagues missing logos: **${report.missing.leaguesWithoutLogos.length}**`,
-    `- National teams missing flags: **${report.missing.nationalTeamsWithoutFlags.length}**`,
-    `- Quiz-eligible players missing photos: **${report.missing.quizEligibleWithoutPhotos.length}**`,
+    ...Object.entries(skipReasonCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 8)
+      .map(([reason, count]) => `- **${reason}**: ${count}`),
+    '',
+    '## Example gaps',
+    '',
+    '**Players without Commons photo (high importance):**',
+    ...report.examples.missingRealPhotos.slice(0, 8).map(
+      (p) => `- ${p.name} (\`${p.id}\`) — ${p.reason}`,
+    ),
+    '',
+    '**Clubs without Wikimedia crest (generated badge used):**',
+    ...report.examples.missingRealCrests.slice(0, 8).map(
+      (c) => `- ${c.name} (\`${c.id}\`, ${c.leagueId})`,
+    ),
     '',
   ].join('\n');
 
@@ -115,7 +158,7 @@ function main() {
 }
 
 function pct(n, d) {
-  if (!d) return '0';
+  if (!d) return '0%';
   return `${Math.round((n / d) * 1000) / 10}%`;
 }
 
