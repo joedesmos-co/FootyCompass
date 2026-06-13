@@ -1,6 +1,6 @@
 # FootyCompass visual asset report
 
-Generated: 2026-06-13T05:03:51.505Z
+Generated: 2026-06-13T05:17:47.867Z
 
 ## Coverage summary
 
@@ -10,6 +10,13 @@ Generated: 2026-06-13T05:03:51.505Z
 | Clubs | 141 | 194 | 335 | 100% |
 | Leagues (logos) | 8 | 0 | 8 | 100% |
 | National teams (flags) | 55 | 0 | 55 | 100% |
+
+## Generated fallback features
+
+**Players:** club/nation gradient, jersey silhouette, shirt number or initials, position badge, country flag, club code mark
+**Clubs:** per-club badgeTheme colors, initials shield, league monogram chip, country label
+
+All 4827 players and 335 clubs have an intentional visual (real asset or polished generated badge).
 
 ## Missing real assets — top reasons (players)
 

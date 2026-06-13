@@ -67,6 +67,25 @@ const DEFAULT_CLUB_THEME = {
   accent: '#d1fae5',
 };
 
+/** Compact league chip for generated club badges. */
+const LEAGUE_MONOGRAM = {
+  'premier-league': 'PL',
+  'la-liga': 'LL',
+  bundesliga: 'BL',
+  'serie-a': 'SA',
+  'ligue-1': 'L1',
+  eredivisie: 'NL',
+  mls: 'MLS',
+  brasileirao: 'BR',
+  external: 'INT',
+};
+
+export function getLeagueMonogram(leagueId) {
+  const id = String(leagueId ?? '').trim();
+  if (!id) return '';
+  return LEAGUE_MONOGRAM[id] ?? id.replace(/-/g, ' ').slice(0, 3).toUpperCase();
+}
+
 export function getPlayerInitials(name) {
   return String(name ?? '')
     .split(/\s+/)
@@ -162,6 +181,8 @@ export function resolvePlayerAvatarTheme(player, team) {
     to: club.to,
     accent: club.accent,
     flag: getCountryFlag(nationality),
+    clubCode: team?.name ? getClubShortCode(team.name) : '',
+    leagueMonogram: getLeagueMonogram(team?.leagueId),
   };
 }
 

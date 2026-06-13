@@ -3494,6 +3494,49 @@ input:focus-visible {
     linear-gradient(145deg, color-mix(in srgb, var(--visual-from) 78%, #07110d), color-mix(in srgb, var(--visual-to) 88%, #07110d));
 }
 
+.player-visual--generated.player-visual--card {
+  position: relative;
+  overflow: hidden;
+}
+
+.player-visual__jersey--card {
+  width: 3.4rem;
+  height: 4.1rem;
+  top: 22%;
+}
+
+.player-visual__jersey--initials .player-visual__jersey-num {
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.player-avatar__flag--card {
+  top: 0.35rem;
+  right: 0.35rem;
+  font-size: 0.85rem;
+}
+
+.player-avatar__position--card {
+  bottom: 0.35rem;
+  right: 0.35rem;
+  font-size: 0.58rem;
+}
+
+.player-avatar__club-mark {
+  position: absolute;
+  bottom: 0.35rem;
+  left: 0.35rem;
+  z-index: 2;
+  padding: 0.08rem 0.32rem;
+  border-radius: 999px;
+  background: rgba(7, 17, 13, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: color-mix(in srgb, var(--visual-accent) 88%, #f8fafc);
+  font-size: 0.58rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
 .player-avatar--card .player-avatar__initials {
   font-size: 1.35rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
@@ -3501,6 +3544,29 @@ input:focus-visible {
 
 .player-avatar--card .player-avatar__silhouette {
   opacity: 0.14;
+}
+
+.team-identity-badge__league-mark {
+  position: absolute;
+  top: 0.28rem;
+  left: 0.28rem;
+  z-index: 2;
+  padding: 0.08rem 0.28rem;
+  border-radius: 999px;
+  background: rgba(7, 17, 13, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--badge-accent);
+  font-size: 0.48rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.team-identity-badge--generated .team-identity-badge__code {
+  font-size: 1.05rem;
+}
+
+.team-identity-badge--thumb.team-identity-badge--generated .team-identity-badge__league-mark {
+  display: none;
 }
 
 .player-visual--profile {

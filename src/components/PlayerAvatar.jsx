@@ -2,6 +2,7 @@ import { memo, useEffect, useState } from 'react';
 import { peekTeamById } from '../data/teamStore';
 import { formatPosition } from '../utils/footballDisplay';
 import {
+  getClubShortCode,
   getPlayerAvatarStyle,
   getPlayerInitials,
   getPositionBadgeLabel,
@@ -29,12 +30,54 @@ function PlayerAvatarPlaceholder({
   const initials = getPlayerInitials(player?.name);
   const positionBadge = getPositionBadgeLabel(player?.position);
   const isThumb = size === 'thumb';
+  const isCard = size === 'card';
   const isCircle = isThumb || size === 'profile';
   const shirtLabel = shirtNumber ? String(shirtNumber) : null;
+  const clubCode = theme.clubCode || getClubShortCode(team?.name);
+
+  if (isCard) {
+    return (
+      <div
+        className={`player-avatar player-avatar--card player-avatar--placeholder player-visual player-visual--card player-visual--placeholder player-visual--generated${compact ? ' player-visual--compact' : ''}`}
+        style={style}
+        role="img"
+        aria-label={`${player?.name ?? 'Player'} avatar`}
+      >
+        <span className="player-visual__shine" aria-hidden="true" />
+        <span className="player-visual__pitch-line" aria-hidden="true" />
+        {shirtLabel ? (
+          <span className="player-visual__jersey player-visual__jersey--card" aria-hidden="true">
+            <span className="player-visual__jersey-num">{shirtLabel}</span>
+          </span>
+        ) : (
+          <span className="player-visual__jersey player-visual__jersey--card player-visual__jersey--initials" aria-hidden="true">
+            <span className="player-visual__jersey-num">{initials}</span>
+          </span>
+        )}
+        {theme.flag ? (
+          <span className="player-avatar__flag player-avatar__flag--card" aria-hidden="true">
+            {theme.flag}
+          </span>
+        ) : null}
+        {positionBadge ? (
+          <span className="player-avatar__position player-avatar__position--card">{positionBadge}</span>
+        ) : null}
+        {clubCode && clubCode !== '—' ? (
+          <span className="player-avatar__club-mark" aria-hidden="true">{clubCode}</span>
+        ) : null}
+        {!compact ? (
+          <span className="player-avatar__meta player-visual__meta">
+            <span>{formatPosition(player?.position)}</span>
+            {teamName && teamName !== 'Unknown' ? <strong>{teamName}</strong> : null}
+          </span>
+        ) : null}
+      </div>
+    );
+  }
 
   return (
     <div
-      className={`player-avatar player-avatar--${size} player-avatar--placeholder player-visual player-visual--${size} player-visual--placeholder${compact ? ' player-visual--compact' : ''}`}
+      className={`player-avatar player-avatar--${size} player-avatar--placeholder player-visual player-visual--${size} player-visual--placeholder player-visual--generated${compact ? ' player-visual--compact' : ''}`}
       style={style}
       role="img"
       aria-label={`${player?.name ?? 'Player'} avatar`}

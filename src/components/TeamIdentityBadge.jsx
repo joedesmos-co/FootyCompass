@@ -2,7 +2,7 @@ import { memo, useState } from 'react';
 import { getManifestLeague } from '../data/contentManifest';
 import { formatCountryLabel, getLeagueDisplayName } from '../utils/footballDisplay';
 import { resolveClubCrest } from '../utils/clubCrestManifest';
-import { getClubIdentityStyle, getClubShortCode } from '../utils/identityVisual';
+import { getClubIdentityStyle, getClubShortCode, getLeagueMonogram } from '../utils/identityVisual';
 
 function TeamIdentityBadgeComponent({
   team,
@@ -16,6 +16,7 @@ function TeamIdentityBadgeComponent({
   const leagueLabel =
     leagueNameProp ??
     (team?.leagueId ? getLeagueDisplayName(getManifestLeague(team.leagueId)) : '');
+  const leagueMonogram = getLeagueMonogram(team?.leagueId);
   const crest = resolveClubCrest(team);
   const [imgFailed, setImgFailed] = useState(false);
   const showCrest = crest.crestUrl && !imgFailed;
@@ -47,7 +48,7 @@ function TeamIdentityBadgeComponent({
 
   return (
     <div
-      className={`entity-crest-badge team-identity-badge team-identity-badge--${size} team-badge team-badge--${size}`}
+      className={`entity-crest-badge team-identity-badge team-identity-badge--generated team-identity-badge--${size} team-badge team-badge--${size}`}
       style={style}
       role="img"
       aria-label={`${team?.name ?? 'Club'} identity badge`}
@@ -58,6 +59,11 @@ function TeamIdentityBadgeComponent({
       <span className="team-identity-badge__code team-badge__initials entity-crest-badge__code">
         {shortCode}
       </span>
+      {leagueMonogram ? (
+        <span className="team-identity-badge__league-mark" title={leagueLabel || leagueMonogram}>
+          {leagueMonogram}
+        </span>
+      ) : null}
       {country && country !== '—' && size !== 'thumb' ? (
         <span className="team-identity-badge__country team-badge__country">{country}</span>
       ) : null}
