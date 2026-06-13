@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-13T04:49:35.932Z",
+  "updatedAt": "2026-06-13T23:41:45.827Z",
   "resolved": {
     "tm-28003": {
       "meta": {
@@ -7153,13 +7153,377 @@
         "description": "URUGUAY: Sergio Rochet (45' Fernando Muslera y 75' Sebastián Sosa), Damián Suárez (75' Guillermo Varela), Ronald Araújo (61' Martín Cáceres), Sebastián Coates, Mathías Olivera (37' Matías Viña), Lucas Torreira (61' Maximiliano Gómez), Matías Vecino (61' Manuel Ugarte), Federico Valverde (75' Fernando Gorriarán), Facundo Pellistri (61' Diego Rossi), Giorgian De Arrascaeta (45' Nicolás De La Cruz) y Edinson Cavani (75' Mauro Arambarri). DT: Diego Alonso. PANAMA: Alex Rodríguez (77' Eric Hughes), Iván Anderson (28' Ricardo Buitrago), Jorge Gutiérrez, Manuel Gamboa, Francisco Palacios, Rolando Botello (68' Jordan Girón), Cristian Quintero (46' José Murillo), Emmanuel Channis, Rodolfo Vega (46' Rodrigo Tello), Ronaldo Córdoba (68' Carlos Rivera) y Alfredo Stephens. DT: Ángel Sánchez Goles: 38' Edinson Cavani (U), 47' Edinson Cavani (U), 57' Nicolás De La Cruz (U), 67' Maximiliano Gómez (U), 76' Diego Rossi (U) Árbitros: Cristian Garay, Alejandro Molina y Claudio Urrutia (Terna de Chile). El presidente de la República, Luis Lacalle Pou, entregó el Pabellón Nacional a la delegación de Uruguay, como señal de reconocimiento. También participaron el secretario nacional del Deporte, Sebastián Bauzá, y el presidente de la Asociación Uruguaya de Fútbol, Ignacio Alonso. Hubo un espectáculo musical de Tabaré Cardozo, la murga Agarrate Catalina y el grupo argentino Los Auténticos Decadentes. Estadio: Centenario, Montevideo, Uruguay Camera: Canon EOS 5D Mark IV Lens: EF135mm f/2L USM +2x Focal Length: 270 mm Exposure: ¹⁄₇₅₀ sec at f/5.6 ISO: ISO 1600"
       },
       "at": "2026-06-13T04:49:35.931Z"
+    },
+    "alisson": {
+      "meta": {
+        "commonsFile": "EMELEC-INTERNACIONAL (16861342155) - Alisson Becker.jpg",
+        "pageTitle": "File:EMELEC-INTERNACIONAL (16861342155) - Alisson Becker.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AEMELEC-INTERNACIONAL_(16861342155)_-_Alisson_Becker.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/EMELEC-INTERNACIONAL_%2816861342155%29_-_Alisson_Becker.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/EMELEC-INTERNACIONAL_%2816861342155%29_-_Alisson_Becker.jpg",
+        "width": 827,
+        "height": 1992,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 2.0",
+        "artist": "Agencia de Noticias ANDES",
+        "description": "Guayaquil, Miércoles 18 de marzo del 2015 (ANDES).-Emelec se enfrenta a Internacional de Brasil por la Copa Libertadores Foto:César Muñoz/ANDES"
+      },
+      "at": "2026-06-13T22:43:06.350Z"
+    },
+    "tm-480267": {
+      "meta": {
+        "commonsFile": "Матч «Динамо» - «Барселона» 0-1. 2 листопада 2021 року — 1289463 (Ronald Araújo).jpg",
+        "pageTitle": "File:Матч «Динамо» - «Барселона» 0-1. 2 листопада 2021 року — 1289463 (Ronald Araújo).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3A%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%C2%BB_0-1._2_%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%B0%D0%B4%D0%B0_2021_%D1%80%D0%BE%D0%BA%D1%83_%E2%80%94_1289463_(Ronald_Ara%C3%BAjo).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%C2%BB_0-1._2_%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%B0%D0%B4%D0%B0_2021_%D1%80%D0%BE%D0%BA%D1%83_%E2%80%94_1289463_%28Ronald_Ara%C3%BAjo%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%C2%BB_0-1._2_%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%B0%D0%B4%D0%B0_2021_%D1%80%D0%BE%D0%BA%D1%83_%E2%80%94_1289463_%28Ronald_Ara%C3%BAjo%29.jpg",
+        "width": 713,
+        "height": 518,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Olga Shcherbytska",
+        "description": "Матч «Динамо» - «Барселона» 0-1. 2 листопада 2021 року"
+      },
+      "at": "2026-06-13T22:43:07.719Z"
+    },
+    "tm-552955": {
+      "meta": {
+        "commonsFile": "Santiago Giménez - 2023.jpg",
+        "pageTitle": "File:Santiago Giménez - 2023.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ASantiago_Gim%C3%A9nez_-_2023.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Santiago_Gim%C3%A9nez_-_2023.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Santiago_Gim%C3%A9nez_-_2023.jpg",
+        "width": 524,
+        "height": 722,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY 3.0",
+        "artist": "Selección Nacional de México",
+        "description": "Santiago Giménez in 2023."
+      },
+      "at": "2026-06-13T22:43:09.098Z"
+    },
+    "tm-257814": {
+      "meta": {
+        "commonsFile": "GregorKobel.jpg",
+        "pageTitle": "File:GregorKobel.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AGregorKobel.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/GregorKobel.jpg/960px-GregorKobel.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/GregorKobel.jpg",
+        "width": 1328,
+        "height": 1977,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Silesia711",
+        "description": "Der Fussballprofi Gregor Kobel im Trikot vom VfB Stuttgart beim Heimspiel gegen den VfL Bochum am 02.09.2019."
+      },
+      "at": "2026-06-13T22:43:10.465Z"
+    },
+    "tm-451276": {
+      "meta": {
+        "commonsFile": "Dominik Szoboszlai in 2020.jpg",
+        "pageTitle": "File:Dominik Szoboszlai in 2020.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ADominik_Szoboszlai_in_2020.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Dominik_Szoboszlai_in_2020.jpg/960px-Dominik_Szoboszlai_in_2020.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Dominik_Szoboszlai_in_2020.jpg",
+        "width": 2052,
+        "height": 2734,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Werner100359",
+        "description": "EL Sechzehntelfinale Rückspiel 2:2"
+      },
+      "at": "2026-06-13T22:43:11.858Z"
+    },
+    "tm-533738": {
+      "meta": {
+        "commonsFile": "Jonathan David asse losc 2425 (cropped).jpg",
+        "pageTitle": "File:Jonathan David asse losc 2425 (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AJonathan_David_asse_losc_2425_(cropped).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Jonathan_David_asse_losc_2425_%28cropped%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Jonathan_David_asse_losc_2425_%28cropped%29.jpg",
+        "width": 781,
+        "height": 952,
+        "mime": "image/jpeg",
+        "licenseShort": "CC0",
+        "artist": "Paté kroute",
+        "description": "Jonathan_David_asse_losc_2425"
+      },
+      "at": "2026-06-13T22:43:13.225Z"
+    },
+    "tm-709726": {
+      "meta": {
+        "commonsFile": "Hugo Ekitike (PSG 2023) (cropped2).jpg",
+        "pageTitle": "File:Hugo Ekitike (PSG 2023) (cropped2).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AHugo_Ekitike_(PSG_2023)_(cropped2).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hugo_Ekitike_%28PSG_2023%29_%28cropped2%29.jpg/960px-Hugo_Ekitike_%28PSG_2023%29_%28cropped2%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Hugo_Ekitike_%28PSG_2023%29_%28cropped2%29.jpg",
+        "width": 1042,
+        "height": 1479,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Liondartois",
+        "description": "Hugo Ekitike (PSG 2023)"
+      },
+      "at": "2026-06-13T22:44:44.145Z"
+    },
+    "tm-237662": {
+      "meta": {
+        "commonsFile": "Breel Embolo 2018.jpg",
+        "pageTitle": "File:Breel Embolo 2018.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ABreel_Embolo_2018.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Breel_Embolo_2018.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Breel_Embolo_2018.jpg",
+        "width": 536,
+        "height": 1000,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 3.0",
+        "artist": "Елена Рыбакова",
+        "description": "«Шальке» провел тренировку перед матчем с «Локомотивом»"
+      },
+      "at": "2026-06-13T22:44:45.518Z"
+    },
+    "tm-283628": {
+      "meta": {
+        "commonsFile": "Tomáš Souček 14092024.jpg",
+        "pageTitle": "File:Tomáš Souček 14092024.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ATom%C3%A1%C5%A1_Sou%C4%8Dek_14092024.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tom%C3%A1%C5%A1_Sou%C4%8Dek_14092024.jpg/960px-Tom%C3%A1%C5%A1_Sou%C4%8Dek_14092024.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tom%C3%A1%C5%A1_Sou%C4%8Dek_14092024.jpg",
+        "width": 2315,
+        "height": 3212,
+        "mime": "image/jpeg",
+        "licenseShort": "CC0",
+        "artist": "Timmy96",
+        "description": "Tomáš Souček arrives at the stadium prior to the Premier League match between Fulham FC and West Ham United FC at Craven Cottage"
+      },
+      "at": "2026-06-13T22:44:46.912Z"
+    },
+    "tm-44058": {
+      "meta": {
+        "commonsFile": "Wojciech Szczęsny.png",
+        "pageTitle": "File:Wojciech Szczęsny.png",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AWojciech_Szcz%C4%99sny.png",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Wojciech_Szcz%C4%99sny.png",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Wojciech_Szcz%C4%99sny.png",
+        "width": 666,
+        "height": 718,
+        "mime": "image/png",
+        "licenseShort": "CC BY 3.0",
+        "artist": "La Gazzetta dello Sport",
+        "description": "Wojciech Szczęsny in 2025"
+      },
+      "at": "2026-06-13T22:44:48.292Z"
+    },
+    "tm-488362": {
+      "meta": {
+        "commonsFile": "Conor Gallagher 2024.jpg",
+        "pageTitle": "File:Conor Gallagher 2024.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AConor_Gallagher_2024.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Conor_Gallagher_2024.jpg/960px-Conor_Gallagher_2024.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Conor_Gallagher_2024.jpg",
+        "width": 1776,
+        "height": 2663,
+        "mime": "image/jpeg",
+        "licenseShort": "Public domain",
+        "artist": "GrassShoots!",
+        "description": "Conor Gallagher"
+      },
+      "at": "2026-06-13T22:44:49.704Z"
+    },
+    "tm-339314": {
+      "meta": {
+        "commonsFile": "Deniz undav.jpg",
+        "pageTitle": "File:Deniz undav.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ADeniz_undav.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Deniz_undav.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Deniz_undav.jpg",
+        "width": 641,
+        "height": 800,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Jeollo von VfB-exklusiv.de",
+        "description": "Deniz Undav"
+      },
+      "at": "2026-06-13T22:44:51.075Z"
+    },
+    "tm-343537": {
+      "meta": {
+        "commonsFile": "Artem Dovbyk.jpg",
+        "pageTitle": "File:Artem Dovbyk.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AArtem_Dovbyk.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Artem_Dovbyk.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Artem_Dovbyk.jpg",
+        "width": 418,
+        "height": 695,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 3.0",
+        "artist": "СТАНИСЛАВ ВЕДМИДЬ",
+        "description": "Днепр 2:0 Заря"
+      },
+      "at": "2026-06-13T22:44:52.469Z"
+    },
+    "tm-451906": {
+      "meta": {
+        "commonsFile": "2025-04-23 - FC St Pauli - David Nemeth 1.jpg",
+        "pageTitle": "File:2025-04-23 - FC St Pauli - David Nemeth 1.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3A2025-04-23_-_FC_St_Pauli_-_David_Nemeth_1.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/2025-04-23_-_FC_St_Pauli_-_David_Nemeth_1.jpg/960px-2025-04-23_-_FC_St_Pauli_-_David_Nemeth_1.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/2025-04-23_-_FC_St_Pauli_-_David_Nemeth_1.jpg",
+        "width": 1010,
+        "height": 2074,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Lanthan2003",
+        "description": "David Nemeth of FC St. Pauli"
+      },
+      "at": "2026-06-13T23:35:45.481Z"
+    },
+    "tm-457533": {
+      "meta": {
+        "commonsFile": "Agustín Canobbio.jpg",
+        "pageTitle": "File:Agustín Canobbio.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AAgust%C3%ADn_Canobbio.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Agust%C3%ADn_Canobbio.jpg/960px-Agust%C3%ADn_Canobbio.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Agust%C3%ADn_Canobbio.jpg",
+        "width": 1204,
+        "height": 1821,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 3.0",
+        "artist": "Agencia de Noticias ANDES",
+        "description": "ECUADOR VS URUGUAY SUB 20"
+      },
+      "at": "2026-06-13T23:35:47.422Z"
+    },
+    "tm-537602": {
+      "meta": {
+        "commonsFile": "João Mário (1).jpg",
+        "pageTitle": "File:João Mário (1).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AJo%C3%A3o_M%C3%A1rio_(1).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Jo%C3%A3o_M%C3%A1rio_%281%29.jpg/960px-Jo%C3%A3o_M%C3%A1rio_%281%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Jo%C3%A3o_M%C3%A1rio_%281%29.jpg",
+        "width": 1873,
+        "height": 2811,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY 2.0",
+        "artist": "Catherine Kõrtsmik from Tallinn, Estonia",
+        "description": "U-19 Portugal vs Spain."
+      },
+      "at": "2026-06-13T23:36:17.096Z"
+    },
+    "tm-559979": {
+      "meta": {
+        "commonsFile": "Abdel Abqar 2.jpg",
+        "pageTitle": "File:Abdel Abqar 2.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AAbdel_Abqar_2.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Abdel_Abqar_2.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Abdel_Abqar_2.jpg",
+        "width": 887,
+        "height": 1996,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY 4.0",
+        "artist": "A.Nawfel",
+        "description": "Photo prise lors du match amical du 12 septembre 2023 entre le Maroc et le Burkina Faso à Lens."
+      },
+      "at": "2026-06-13T23:36:40.451Z"
+    },
+    "tm-610581": {
+      "meta": {
+        "commonsFile": "Ali Al-Hamadi.jpg",
+        "pageTitle": "File:Ali Al-Hamadi.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AAli_Al-Hamadi.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Ali_Al-Hamadi.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Ali_Al-Hamadi.jpg",
+        "width": 920,
+        "height": 920,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Xaneph",
+        "description": "Ipswich Town striker Ali Al-Hamadi"
+      },
+      "at": "2026-06-13T23:37:08.160Z"
+    },
+    "tm-664057": {
+      "meta": {
+        "commonsFile": "Ali Olwan.png",
+        "pageTitle": "File:Ali Olwan.png",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AAli_Olwan.png",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Ali_Olwan.png",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Ali_Olwan.png",
+        "width": 720,
+        "height": 1130,
+        "mime": "image/png",
+        "licenseShort": "CC BY 4.0",
+        "artist": "M.Sadegh Nikgostar",
+        "description": "Ali Olwan celebrating after the Jordanian national team's victory over South Korea."
+      },
+      "at": "2026-06-13T23:38:45.843Z"
+    },
+    "tm-698678": {
+      "meta": {
+        "commonsFile": "Hugo Bueno 01112025 (1).jpg",
+        "pageTitle": "File:Hugo Bueno 01112025 (1).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AHugo_Bueno_01112025_(1).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Hugo_Bueno_01112025_%281%29.jpg/960px-Hugo_Bueno_01112025_%281%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Hugo_Bueno_01112025_%281%29.jpg",
+        "width": 1621,
+        "height": 2592,
+        "mime": "image/jpeg",
+        "licenseShort": "CC0",
+        "artist": "Timmy96",
+        "description": "Hugo Bueno training prior to the match between Fulham and Wolverhampton Wanderers."
+      },
+      "at": "2026-06-13T23:39:03.739Z"
+    },
+    "tm-718034": {
+      "meta": {
+        "commonsFile": "Abde rebbach 2023.jpg",
+        "pageTitle": "File:Abde rebbach 2023.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AAbde_rebbach_2023.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Abde_rebbach_2023.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Abde_rebbach_2023.jpg",
+        "width": 529,
+        "height": 458,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Alberto Cabello Mayero",
+        "description": "La plantilla del Deportivo Alavés, subida en un autobús descapotable de dos pisos, celebran en la calle Reyes Católicos de Vitoria-Gasteiz el ascenso a la Primera división española de fútbol. En primera plana puede verse a Asier Villalibre, acompañado más atrás por el resto de sus compañeros, el dueño del Alavés (Josean Querejeta) y el director deportivo (Sergio Fernandez)."
+      },
+      "at": "2026-06-13T23:39:14.913Z"
+    },
+    "tm-724520": {
+      "meta": {
+        "commonsFile": "Abde Ezzalzouli (cropped).jpg",
+        "pageTitle": "File:Abde Ezzalzouli (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AAbde_Ezzalzouli_(cropped).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Abde_Ezzalzouli_%28cropped%29.jpg/960px-Abde_Ezzalzouli_%28cropped%29.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Abde_Ezzalzouli_%28cropped%29.jpg",
+        "width": 1158,
+        "height": 1697,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY 4.0",
+        "artist": "A.Nawfel",
+        "description": "Photo prise lors du match amical du 12 septembre 2023 entre le Maroc et le Burkina Faso à Lens."
+      },
+      "at": "2026-06-13T23:39:18.957Z"
+    },
+    "tm-890368": {
+      "meta": {
+        "commonsFile": "Djé D'Avilla Philadelphia Chicago 10.26.25-038.jpg",
+        "pageTitle": "File:Djé D'Avilla Philadelphia Chicago 10.26.25-038.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3ADj%C3%A9_D'Avilla_Philadelphia_Chicago_10.26.25-038.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Dj%C3%A9_D%27Avilla_Philadelphia_Chicago_10.26.25-038.jpg/960px-Dj%C3%A9_D%27Avilla_Philadelphia_Chicago_10.26.25-038.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Dj%C3%A9_D%27Avilla_Philadelphia_Chicago_10.26.25-038.jpg",
+        "width": 3333,
+        "height": 5000,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Bryan Berlin",
+        "description": "Djé D'Avilla during Philadelphia Union vs Chicago Fire Oct 26 2025"
+      },
+      "at": "2026-06-13T23:40:03.520Z"
     }
   },
   "skipped": {
-    "tm-709726": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:16.369Z"
-    },
     "tm-177467": {
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:22.023Z"
@@ -7168,21 +7532,9 @@
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:29.225Z"
     },
-    "tm-44058": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:38.316Z"
-    },
     "tm-626724": {
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:46.037Z"
-    },
-    "tm-237662": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:32.888Z"
-    },
-    "tm-488362": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:40.252Z"
     },
     "tm-503743": {
       "reason": "no_safe_match",
@@ -7332,21 +7684,9 @@
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:10.883Z"
     },
-    "alisson": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:12.777Z"
-    },
     "tm-503482": {
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:14.602Z"
-    },
-    "tm-552955": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:20.139Z"
-    },
-    "tm-451276": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:25.587Z"
     },
     "tm-571020": {
       "reason": "no_safe_match",
@@ -7455,14 +7795,6 @@
     "tm-795738": {
       "reason": "no_safe_match",
       "at": "2026-05-30T20:38:17.813Z"
-    },
-    "tm-257814": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:23.855Z"
-    },
-    "tm-283628": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:34.741Z"
     },
     "tm-503987": {
       "reason": "no_safe_match",
@@ -7728,10 +8060,6 @@
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:36.531Z"
     },
-    "tm-480267": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:18.274Z"
-    },
     "tm-128223": {
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:27.353Z"
@@ -7739,10 +8067,6 @@
     "tm-236045": {
       "reason": "no_safe_match",
       "at": "2026-06-13T04:25:30.996Z"
-    },
-    "tm-533738": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:25:44.128Z"
     },
     "tm-173504": {
       "reason": "commons_denylisted",
@@ -7763,14 +8087,6 @@
     "tm-331511": {
       "reason": "commons_denylisted",
       "at": "2026-06-13T04:23:47.784Z"
-    },
-    "tm-339314": {
-      "reason": "commons_denylisted",
-      "at": "2026-06-13T04:23:48.491Z"
-    },
-    "tm-343537": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:23:50.247Z"
     },
     "tm-344598": {
       "reason": "no_safe_match",
@@ -9051,6 +9367,366 @@
     "tm-441191": {
       "reason": "no_safe_match",
       "at": "2026-06-13T04:49:34.785Z"
+    },
+    "tm-448470": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:35:41.480Z"
+    },
+    "tm-451801": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:35:44.037Z"
+    },
+    "tm-458418": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:35:50.477Z"
+    },
+    "tm-464195": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:35:52.450Z"
+    },
+    "tm-480975": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:35:55.846Z"
+    },
+    "tm-480990": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:35:58.573Z"
+    },
+    "tm-485549": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:01.600Z"
+    },
+    "tm-493593": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:03.566Z"
+    },
+    "tm-500289": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:05.429Z"
+    },
+    "tm-502842": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:09.670Z"
+    },
+    "tm-507496": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:11.646Z"
+    },
+    "tm-509709": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:13.847Z"
+    },
+    "tm-527866": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:15.807Z"
+    },
+    "tm-538764": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:19.706Z"
+    },
+    "tm-539502": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:21.744Z"
+    },
+    "tm-542073": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:23.766Z"
+    },
+    "tm-542380": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:27.866Z"
+    },
+    "tm-543501": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:30.592Z"
+    },
+    "tm-54590": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:33.088Z"
+    },
+    "tm-553452": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:35.035Z"
+    },
+    "tm-553453": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:36.966Z"
+    },
+    "tm-556713": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:39.278Z"
+    },
+    "tm-560952": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:43.209Z"
+    },
+    "tm-560957": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:45.481Z"
+    },
+    "tm-561030": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:47.618Z"
+    },
+    "tm-561699": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:49.501Z"
+    },
+    "tm-570272": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:51.538Z"
+    },
+    "tm-574901": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:54.131Z"
+    },
+    "tm-576265": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:36:56.345Z"
+    },
+    "tm-584358": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:00.529Z"
+    },
+    "tm-585747": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:02.619Z"
+    },
+    "tm-604953": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:05.089Z"
+    },
+    "tm-605268": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:07.153Z"
+    },
+    "tm-62351": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:12.879Z"
+    },
+    "tm-645774": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:17.122Z"
+    },
+    "tm-651375": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:19.134Z"
+    },
+    "tm-658533": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:37:21.315Z"
+    },
+    "tm-617021": {
+      "reason": "identity_mismatch:matched Ben Foster, not Ben Old",
+      "at": "2026-06-13T23:38:18.713Z"
+    },
+    "tm-632246": {
+      "reason": "identity_mismatch:matched Alejandro Serrano Garcia, not Alejandro Garcia",
+      "at": "2026-06-13T23:38:18.713Z"
+    },
+    "tm-658805": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:38.097Z"
+    },
+    "tm-661080": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:40.107Z"
+    },
+    "tm-661094": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:42.843Z"
+    },
+    "tm-662131": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:44.901Z"
+    },
+    "tm-670105": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:48.768Z"
+    },
+    "tm-670659": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:50.798Z"
+    },
+    "tm-673514": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:52.857Z"
+    },
+    "tm-675178": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:55.220Z"
+    },
+    "tm-675844": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:57.266Z"
+    },
+    "tm-676042": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:38:59.254Z"
+    },
+    "tm-698415": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:02.189Z"
+    },
+    "tm-708989": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:11.511Z"
+    },
+    "tm-711976": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:13.902Z"
+    },
+    "tm-719673": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:17.889Z"
+    },
+    "tm-724547": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:22.093Z"
+    },
+    "tm-730484": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:24.153Z"
+    },
+    "tm-736043": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:26.283Z"
+    },
+    "tm-73794": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:28.936Z"
+    },
+    "tm-741097": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:30.945Z"
+    },
+    "tm-741098": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:33.008Z"
+    },
+    "tm-743864": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:35.484Z"
+    },
+    "tm-744137": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:37.388Z"
+    },
+    "tm-744857": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:40.382Z"
+    },
+    "tm-753817": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:42.604Z"
+    },
+    "tm-77163": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:44.828Z"
+    },
+    "tm-831589": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:46.850Z"
+    },
+    "tm-833886": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:48.879Z"
+    },
+    "tm-844350": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:50.895Z"
+    },
+    "tm-860998": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:52.959Z"
+    },
+    "tm-865104": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:55.532Z"
+    },
+    "tm-877945": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:39:57.999Z"
+    },
+    "tm-881506": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:00.346Z"
+    },
+    "tm-882197": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:02.342Z"
+    },
+    "tm-892174": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:06.351Z"
+    },
+    "tm-909860": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:08.376Z"
+    },
+    "tm-910541": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:10.654Z"
+    },
+    "tm-923177": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:12.884Z"
+    },
+    "tm-937710": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:15.026Z"
+    },
+    "tm-938146": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:16.939Z"
+    },
+    "tm-951628": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:19.117Z"
+    },
+    "tm-958473": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:21.012Z"
+    },
+    "tm-961022": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:23.308Z"
+    },
+    "tm-962555": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:25.551Z"
+    },
+    "tm-975347": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:27.572Z"
+    },
+    "tm-987291": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:29.655Z"
+    },
+    "tm-990146": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:31.700Z"
+    },
+    "tm-990585": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:34.722Z"
+    },
+    "tm-994536": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:36.650Z"
+    },
+    "tm-997180": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:38.747Z"
+    },
+    "tm-998664": {
+      "reason": "no_safe_match",
+      "at": "2026-06-13T23:40:40.899Z"
+    },
+    "tm-707447": {
+      "reason": "identity_mismatch:matched Argentina goalkeeper, not Palmeiras/Uruguay midfielder",
+      "at": "2026-06-13T23:41:45.827Z"
     }
   }
 }

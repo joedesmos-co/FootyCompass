@@ -98,12 +98,37 @@ function tokenInHay(token, hay) {
   return new RegExp(`\\b${escaped}\\b`, 'i').test(hay);
 }
 
-export function verifyIdentity(meta, verifyName, playerName, excludeTerms = []) {
+function hasExactFullName(meta, verifyName, playerName) {
+  const hay = `${meta.description} ${meta.commonsFile}`.toLowerCase();
+  const candidates = [verifyName, playerName]
+    .map((name) => String(name ?? '').toLowerCase().trim())
+    .filter((name) => name.split(/[\s-]+/).filter((part) => part.length > 2).length >= 2);
+
+  return candidates.some((name) => hay.includes(name));
+}
+
+function hasContextTerm(meta, terms = []) {
+  const hay = `${meta.description} ${meta.commonsFile}`.toLowerCase();
+  return terms
+    .map((term) => String(term ?? '').toLowerCase().trim())
+    .filter((term) => term.length >= 4)
+    .some((term) => hay.includes(term));
+}
+
+export function verifyIdentity(meta, verifyName, playerName, excludeTerms = [], options = {}) {
   const hay = `${meta.description} ${meta.commonsFile}`.toLowerCase();
   for (const pattern of NON_SOCCER_SPORT_PATTERNS) {
     if (pattern.test(hay)) return false;
   }
-  if (!hasFootballContext(meta)) return false;
+  if (!hasFootballContext(meta) && !(options.allowExactNameWithoutFootballContext && hasExactFullName(meta, verifyName, playerName))) {
+    return false;
+  }
+  if (options.requireExactName && !hasExactFullName(meta, verifyName, playerName)) {
+    return false;
+  }
+  if (options.requireContext && !hasContextTerm(meta, options.contextTerms)) {
+    return false;
+  }
   for (const term of excludeTerms) {
     if (term && hay.includes(String(term).toLowerCase())) return false;
   }
@@ -330,7 +355,14 @@ export async function resolvePlayerCommonsImage(spec, player, { onDelay = sleep 
     const filterCandidates = (results) =>
       results.filter((candidate) => {
         if (!isAllowedLicense(candidate.licenseShort)) return false;
-        if (!verifyIdentity(candidate, mergedSpec.verifyName, player.name, mergedSpec.excludeTerms)) {
+        if (
+          !verifyIdentity(candidate, mergedSpec.verifyName, player.name, mergedSpec.excludeTerms, {
+            allowExactNameWithoutFootballContext: mergedSpec.allowExactNameWithoutFootballContext,
+            requireExactName: mergedSpec.requireExactName,
+            requireContext: mergedSpec.requireContext,
+            contextTerms: mergedSpec.contextTerms,
+          })
+        ) {
           return false;
         }
         if (isDeniedCommonsFile(candidate.commonsFile)) return false;
@@ -372,7 +404,14 @@ export async function resolvePlayerCommonsImage(spec, player, { onDelay = sleep 
   if (!isAllowedLicense(meta.licenseShort)) {
     return { skip: true, reason: `unclear_license:${meta.licenseShort || 'unknown'}` };
   }
-  if (!verifyIdentity(meta, mergedSpec.verifyName, player.name, mergedSpec.excludeTerms)) {
+  if (
+    !verifyIdentity(meta, mergedSpec.verifyName, player.name, mergedSpec.excludeTerms, {
+      allowExactNameWithoutFootballContext: mergedSpec.allowExactNameWithoutFootballContext,
+      requireExactName: mergedSpec.requireExactName,
+      requireContext: mergedSpec.requireContext,
+      contextTerms: mergedSpec.contextTerms,
+    })
+  ) {
     return { skip: true, reason: 'identity_mismatch' };
   }
   if ((meta.width ?? 0) < 180 || (meta.height ?? 0) < 180) {

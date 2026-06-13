@@ -22,7 +22,7 @@ import { mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { players } from '../src/data/sampleData.js';
+import { getTeamName, players } from '../src/data/sampleData.js';
 import curated from './data/wikimedia-player-curated.mjs';
 import {
   API_DELAY_MS,
@@ -97,12 +97,14 @@ function saveCache(cache) {
 }
 
 function autoPlayerSpec(player) {
-  const parts = String(player.name ?? '')
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean);
-  const verifyName = parts.length >= 2 ? parts[parts.length - 1] : parts[0] ?? 'Player';
-  return { searchName: player.name, verifyName };
+  return {
+    searchName: player.name,
+    verifyName: player.name,
+    requireExactName: true,
+    requireContext: true,
+    contextTerms: [player.nationalTeam, player.nationality, getTeamName(player.teamId)]
+      .filter(Boolean),
+  };
 }
 
 function buildQueue(playerById, approvedEntries, cache, args) {
