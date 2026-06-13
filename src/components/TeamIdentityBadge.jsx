@@ -1,6 +1,7 @@
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import { getManifestLeague } from '../data/contentManifest';
 import { formatCountryLabel, getLeagueDisplayName } from '../utils/footballDisplay';
+import { resolveClubCrest } from '../utils/clubCrestManifest';
 import { getClubIdentityStyle, getClubShortCode } from '../utils/identityVisual';
 
 function TeamIdentityBadgeComponent({
@@ -15,6 +16,34 @@ function TeamIdentityBadgeComponent({
   const leagueLabel =
     leagueNameProp ??
     (team?.leagueId ? getLeagueDisplayName(getManifestLeague(team.leagueId)) : '');
+  const crest = resolveClubCrest(team);
+  const [imgFailed, setImgFailed] = useState(false);
+  const showCrest = crest.crestUrl && !imgFailed;
+
+  if (showCrest) {
+    return (
+      <div
+        className={`team-identity-badge team-identity-badge--${size} team-badge team-badge--${size} team-identity-badge--crest`}
+        style={style}
+      >
+        <img
+          src={crest.crestUrl}
+          alt={`${team?.name ?? 'Club'} crest`}
+          className="team-identity-badge__crest-img"
+          loading="lazy"
+          onError={() => setImgFailed(true)}
+        />
+        {country && country !== '—' && size !== 'thumb' ? (
+          <span className="team-identity-badge__country team-badge__country">{country}</span>
+        ) : null}
+        {showLeagueChip && leagueLabel ? (
+          <span className="team-identity-badge__league" title={leagueLabel}>
+            {leagueLabel}
+          </span>
+        ) : null}
+      </div>
+    );
+  }
 
   return (
     <div

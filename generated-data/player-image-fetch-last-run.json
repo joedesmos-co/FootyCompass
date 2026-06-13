@@ -1,43 +1,113 @@
 {
-  "startedAt": "2026-06-12T20:39:24.382Z",
+  "startedAt": "2026-06-13T04:25:09.029Z",
   "offset": 0,
-  "limit": 10,
-  "added": [
+  "limit": 25,
+  "added": [],
+  "skipped": [
     {
-      "playerId": "bellingham",
-      "name": "Jude Bellingham",
-      "license": "CC BY-SA 4.0",
-      "commonsFile": "Jude Bellingham Birmingham 2019.jpg"
+      "playerId": "tm-640428",
+      "name": "Eduardo Camavinga",
+      "reason": "no_safe_match"
     },
     {
-      "playerId": "tm-59016",
-      "name": "David Alaba",
-      "license": "CC BY-SA 3.0",
-      "commonsFile": "David Alaba Training 2019-04-10 FC Bayern Muenchen-4 (cropped).jpg"
+      "playerId": "alisson",
+      "name": "Alisson Becker",
+      "reason": "no_safe_match"
     },
     {
-      "playerId": "lewandowski",
-      "name": "Robert Lewandowski",
-      "license": "CC BY-SA 2.0",
-      "commonsFile": "Robert Lewandowski 2011.jpg"
+      "playerId": "tm-503482",
+      "name": "Min-jae Kim",
+      "reason": "no_safe_match"
     },
     {
-      "playerId": "valverde",
-      "name": "Federico Valverde",
-      "license": "CC BY-SA 2.0",
-      "commonsFile": "Federico Valverde Real Madrid 2018.jpg"
+      "playerId": "tm-709726",
+      "name": "Hugo Ekitiké",
+      "reason": "no_safe_match"
     },
     {
-      "playerId": "saliba",
-      "name": "William Saliba",
-      "license": "CC BY-SA 4.0",
-      "commonsFile": "1 william saliba arsenal 2025 (cropped).jpg"
+      "playerId": "tm-480267",
+      "name": "Ronald Araujo",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-552955",
+      "name": "Santiago Giménez",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-177467",
+      "name": "Gerard Moreno",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-257814",
+      "name": "Gregor Kobel",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-451276",
+      "name": "Dominik Szoboszlai",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-128223",
+      "name": "Álvaro Morata",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-181767",
+      "name": "Marquinhos",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-236045",
+      "name": "Denis Bouanga",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-237662",
+      "name": "Breel Embolo",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-283628",
+      "name": "Tomáš Souček",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-324358",
+      "name": "Ollie Watkins",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-44058",
+      "name": "Wojciech Szczesny",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-488362",
+      "name": "Conor Gallagher",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-503743",
+      "name": "Morgan Rogers",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-533738",
+      "name": "Jonathan David",
+      "reason": "no_safe_match"
+    },
+    {
+      "playerId": "tm-626724",
+      "name": "João Pedro",
+      "reason": "no_safe_match"
     }
   ],
-  "skipped": [],
   "cachedHits": [],
   "alreadyApproved": [],
   "apiErrors": 0,
   "stoppedEarly": false,
-  "finishedAt": "2026-06-12T20:39:31.462Z"
+  "finishedAt": "2026-06-13T04:25:46.041Z"
 }

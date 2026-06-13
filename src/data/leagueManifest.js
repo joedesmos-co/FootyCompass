@@ -27,7 +27,7 @@ export function getHubLeague(leagueId) {
     id: league.id,
     name: league.name,
     country: league.country,
-    logoUrl: null,
+    logoUrl: league.logoUrl ?? null,
     badgeTheme: league.badgeTheme,
     hubSubline: sublineFn ? sublineFn(league) : league.country,
     teamCount: league.teamCount,

@@ -3722,6 +3722,61 @@ input:focus-visible {
   padding: 0.5rem;
 }
 
+.league-badge--logo,
+.national-team-badge--flag,
+.national-team-badge--flag-emoji {
+  clip-path: none;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.league-badge__logo-img,
+.national-team-badge__flag-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.35rem;
+}
+
+.national-team-badge--flag-emoji {
+  display: grid;
+  place-items: center;
+}
+
+.national-team-badge__flag-emoji {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.national-team-badge--thumb .national-team-badge__flag-emoji {
+  font-size: 1.35rem;
+}
+
+.team-identity-badge--crest {
+  clip-path: none;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.team-identity-badge__crest-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.35rem;
+}
+
+.team-identity-badge--thumb.team-identity-badge--crest,
+.league-badge--thumb.league-badge--logo,
+.national-team-badge--thumb.national-team-badge--flag {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .league-badge--card,
 .national-team-badge--card {
   width: 4.5rem;

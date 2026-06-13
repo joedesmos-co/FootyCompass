@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-13T04:06:42.788Z",
+  "entryCount": 8,
+  "entries": {
+    "premier-league": {
+      "leagueId": "premier-league",
+      "path": "/images/leagues/premier-league.svg",
+      "commonsFile": "Logo of Canadian Premier League.svg",
+      "colors": {
+        "from": "#3d195b",
+        "to": "#00ff85",
+        "accent": "#e0ffe8"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_of_Canadian_Premier_League.svg",
+      "imageLicense": "Public domain"
+    },
+    "la-liga": {
+      "leagueId": "la-liga",
+      "path": "/images/leagues/la-liga.svg",
+      "commonsFile": "LaLiga logo 2023.svg",
+      "colors": {
+        "from": "#ff4b44",
+        "to": "#1a1a2e",
+        "accent": "#ffd4d2"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALaLiga_logo_2023.svg",
+      "imageLicense": "Public domain"
+    },
+    "bundesliga": {
+      "leagueId": "bundesliga",
+      "path": "/images/leagues/bundesliga.png",
+      "commonsFile": "Logo Sky Bundesliga HD8.png",
+      "colors": {
+        "from": "#d20515",
+        "to": "#111827",
+        "accent": "#fecaca"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_Sky_Bundesliga_HD8.png",
+      "imageLicense": "Public domain"
+    },
+    "serie-a": {
+      "leagueId": "serie-a",
+      "path": "/images/leagues/serie-a.svg",
+      "commonsFile": "WarnerTV SERIE HD Logo 2021.svg",
+      "colors": {
+        "from": "#008fd7",
+        "to": "#1e3a8a",
+        "accent": "#bae6fd"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AWarnerTV_SERIE_HD_Logo_2021.svg",
+      "imageLicense": "Public domain"
+    },
+    "ligue-1": {
+      "leagueId": "ligue-1",
+      "path": "/images/leagues/ligue-1.svg",
+      "commonsFile": "Ligue 1 Uber Eats logo.svg",
+      "colors": {
+        "from": "#091c3e",
+        "to": "#d4af37",
+        "accent": "#fef3c7"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALigue_1_Uber_Eats_logo.svg",
+      "imageLicense": "Public domain"
+    },
+    "eredivisie": {
+      "leagueId": "eredivisie",
+      "path": "/images/leagues/eredivisie.svg",
+      "commonsFile": "Eredivisie nieuw logo 2017-.svg",
+      "colors": {
+        "from": "#f59e0b",
+        "to": "#78350f",
+        "accent": "#fcd34d"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEredivisie_nieuw_logo_2017-.svg",
+      "imageLicense": "Public domain"
+    },
+    "mls": {
+      "leagueId": "mls",
+      "path": "/images/leagues/mls.svg",
+      "commonsFile": "Major League Soccer logo.svg",
+      "colors": {
+        "from": "#dc2626",
+        "to": "#1e3a8a",
+        "accent": "#93c5fd"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMajor_League_Soccer_logo.svg",
+      "imageLicense": "Public domain"
+    },
+    "brasileirao": {
+      "leagueId": "brasileirao",
+      "path": "/images/leagues/brasileirao.svg",
+      "commonsFile": "Campeonato Brasileiro Série A logo (2024).svg",
+      "colors": {
+        "from": "#16a34a",
+        "to": "#14532d",
+        "accent": "#bbf7d0"
+      },
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACampeonato_Brasileiro_S%C3%A9rie_A_logo_(2024).svg",
+      "imageLicense": "Public domain"
+    }
+  }
+}

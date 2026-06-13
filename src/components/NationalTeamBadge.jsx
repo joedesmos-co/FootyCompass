@@ -1,15 +1,14 @@
-function getInitials(name) {
-  return name
+import { useState } from 'react';
+import { resolveNationalTeamFlag } from '../utils/countryFlags';
+
+function getShortCode(name) {
+  const initials = String(name ?? '')
     .split(/\s+/)
     .filter(Boolean)
     .slice(0, 2)
     .map((part) => part[0])
     .join('')
     .toUpperCase();
-}
-
-function getShortCode(name) {
-  const initials = getInitials(name);
   if (initials.length >= 2) return initials;
   return String(name ?? '')
     .replace(/[^a-zA-Z]/g, '')
@@ -29,6 +28,53 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
     '--league-accent': theme.accent,
   };
   const showMeta = size !== 'thumb';
+  const flag = resolveNationalTeamFlag(nationalTeam);
+  const [imgFailed, setImgFailed] = useState(false);
+
+  const showFlagImage = flag.tier === 'flagAsset' && flag.url && !imgFailed;
+  const showFlagEmoji = !showFlagImage && flag.tier === 'flagEmoji' && flag.emoji;
+
+  if (showFlagImage) {
+    return (
+      <div
+        className={`national-team-badge national-team-badge--${size} national-team-badge--flag`}
+        style={style}
+      >
+        <img
+          src={flag.url}
+          alt={flag.alt ?? `${nationalTeam.displayName} flag`}
+          className="national-team-badge__flag-img"
+          loading="lazy"
+          onError={() => setImgFailed(true)}
+        />
+        {showMeta ? (
+          <span className="league-badge__country">
+            {nationalTeam.confederation ?? nationalTeam.country}
+          </span>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (showFlagEmoji) {
+    return (
+      <div
+        className={`national-team-badge national-team-badge--${size} national-team-badge--flag-emoji`}
+        style={style}
+        role="img"
+        aria-label={`${nationalTeam.displayName} national team`}
+      >
+        <span className="national-team-badge__flag-emoji" aria-hidden="true">
+          {flag.emoji}
+        </span>
+        {showMeta ? (
+          <span className="league-badge__country">
+            {nationalTeam.confederation ?? nationalTeam.country}
+          </span>
+        ) : null}
+      </div>
+    );
+  }
 
   return (
     <div

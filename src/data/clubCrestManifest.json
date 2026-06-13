@@ -1,0 +1,1277 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-13T04:24:28.287Z",
+  "entryCount": 127,
+  "entries": {
+    "manchester-city": {
+      "teamId": "manchester-city",
+      "teamName": "Manchester City",
+      "path": "/images/clubs/manchester-city.svg",
+      "commonsFile": "Manchester Velodrome logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AManchester_Velodrome_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "arsenal": {
+      "teamId": "arsenal",
+      "teamName": "Arsenal",
+      "path": "/images/clubs/arsenal.svg",
+      "commonsFile": "Arsenal Crest 1952.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AArsenal_Crest_1952.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "liverpool": {
+      "teamId": "liverpool",
+      "teamName": "Liverpool",
+      "path": "/images/clubs/liverpool.svg",
+      "commonsFile": "Royal Liverpool Philharmonic Orchestra Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ARoyal_Liverpool_Philharmonic_Orchestra_Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "chelsea": {
+      "teamId": "chelsea",
+      "teamName": "Chelsea",
+      "path": "/images/clubs/chelsea.svg",
+      "commonsFile": "Logo of the town of Chelsea, Vermont.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_of_the_town_of_Chelsea%2C_Vermont.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "tottenham": {
+      "teamId": "tottenham",
+      "teamName": "Tottenham Hotspur",
+      "path": "/images/clubs/tottenham.svg",
+      "commonsFile": "Tottenham Hotspur Stadium logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ATottenham_Hotspur_Stadium_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "newcastle": {
+      "teamId": "newcastle",
+      "teamName": "Newcastle United",
+      "path": "/images/clubs/newcastle.svg",
+      "commonsFile": "Scottish & Newcastle logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AScottish_%26_Newcastle_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "real-madrid": {
+      "teamId": "real-madrid",
+      "teamName": "Real Madrid",
+      "path": "/images/clubs/real-madrid.png",
+      "commonsFile": "Escudo Real Madrid 1908.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEscudo_Real_Madrid_1908.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "barcelona": {
+      "teamId": "barcelona",
+      "teamName": "Barcelona",
+      "path": "/images/clubs/barcelona.svg",
+      "commonsFile": "Barcelona Metro Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ABarcelona_Metro_Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "sevilla": {
+      "teamId": "sevilla",
+      "teamName": "Sevilla",
+      "path": "/images/clubs/sevilla.svg",
+      "commonsFile": "Logo de la Diputación de Sevilla.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_de_la_Diputaci%C3%B3n_de_Sevilla.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "bayern-munich": {
+      "teamId": "bayern-munich",
+      "teamName": "Bayern Munich",
+      "path": "/images/clubs/bayern-munich.svg",
+      "commonsFile": "Logo FC Bayern München (2002–2017).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_FC_Bayern_M%C3%BCnchen_(2002%E2%80%932017).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "borussia-dortmund": {
+      "teamId": "borussia-dortmund",
+      "teamName": "Borussia Dortmund",
+      "path": "/images/clubs/borussia-dortmund.svg",
+      "commonsFile": "Borussia Dortmund logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ABorussia_Dortmund_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "bayer-leverkusen": {
+      "teamId": "bayer-leverkusen",
+      "teamName": "Bayer Leverkusen",
+      "path": "/images/clubs/bayer-leverkusen.svg",
+      "commonsFile": "Logo TSV Bayer 04 Leverkusen.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_TSV_Bayer_04_Leverkusen.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "rb-leipzig": {
+      "teamId": "rb-leipzig",
+      "teamName": "RB Leipzig",
+      "path": "/images/clubs/rb-leipzig.svg",
+      "commonsFile": "VEREINFACHTES LOGO - RB Leipzig.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AVEREINFACHTES_LOGO_-_RB_Leipzig.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "ac-milan": {
+      "teamId": "ac-milan",
+      "teamName": "AC Milan",
+      "path": "/images/clubs/ac-milan.svg",
+      "commonsFile": "Logo of AC Milan.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_of_AC_Milan.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "inter-milan": {
+      "teamId": "inter-milan",
+      "teamName": "Inter Milan",
+      "path": "/images/clubs/inter-milan.svg",
+      "commonsFile": "Inter Old Logo (2007-2014).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AInter_Old_Logo_(2007-2014).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "juventus": {
+      "teamId": "juventus",
+      "teamName": "Juventus",
+      "path": "/images/clubs/juventus.svg",
+      "commonsFile": "Juventus FC - logo black (Italy, 2017).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AJuventus_FC_-_logo_black_(Italy%2C_2017).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "napoli": {
+      "teamId": "napoli",
+      "teamName": "Napoli",
+      "path": "/images/clubs/napoli.svg",
+      "commonsFile": "Logo Napoli del 1930-1960.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_Napoli_del_1930-1960.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "roma": {
+      "teamId": "roma",
+      "teamName": "AS Roma",
+      "path": "/images/clubs/roma.svg",
+      "commonsFile": "Logo AS Roma 1960s.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_AS_Roma_1960s.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "lazio": {
+      "teamId": "lazio",
+      "teamName": "Lazio",
+      "path": "/images/clubs/lazio.svg",
+      "commonsFile": "Logo of S.S. Lazio (1943).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_of_S.S._Lazio_(1943).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "marseille": {
+      "teamId": "marseille",
+      "teamName": "Marseille",
+      "path": "/images/clubs/marseille.svg",
+      "commonsFile": "Olympique Marseille logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AOlympique_Marseille_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "lyon": {
+      "teamId": "lyon",
+      "teamName": "Lyon",
+      "path": "/images/clubs/lyon.svg",
+      "commonsFile": "Logo aéroport Lyon S 00 illustrator copie2.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_a%C3%A9roport_Lyon_S_00_illustrator_copie2.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "monaco": {
+      "teamId": "monaco",
+      "teamName": "Monaco",
+      "path": "/images/clubs/monaco.svg",
+      "commonsFile": "Monaco Red Cross logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMonaco_Red_Cross_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "lille": {
+      "teamId": "lille",
+      "teamName": "Lille",
+      "path": "/images/clubs/lille.svg",
+      "commonsFile": "Lille Metro Logo 2017.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALille_Metro_Logo_2017.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "ajax": {
+      "teamId": "ajax",
+      "teamName": "Ajax",
+      "path": "/images/clubs/ajax.svg",
+      "commonsFile": "Ajax logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAjax_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "feyenoord": {
+      "teamId": "feyenoord",
+      "teamName": "Feyenoord",
+      "path": "/images/clubs/feyenoord.png",
+      "commonsFile": "Logo Sportclub Feyenoord.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_Sportclub_Feyenoord.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "everton": {
+      "teamId": "everton",
+      "teamName": "Everton",
+      "path": "/images/clubs/everton.svg",
+      "commonsFile": "Logo Everton FC 1976.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_Everton_FC_1976.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "athletic-bilbao": {
+      "teamId": "athletic-bilbao",
+      "teamName": "Athletic Club",
+      "path": "/images/clubs/athletic-bilbao.svg",
+      "commonsFile": "Mohawk Athletic Club logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMohawk_Athletic_Club_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "real-sociedad": {
+      "teamId": "real-sociedad",
+      "teamName": "Real Sociedad",
+      "path": "/images/clubs/real-sociedad.svg",
+      "commonsFile": "Escudo de la Real Sociedad de Tenis de La Magdalena (Santander).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEscudo_de_la_Real_Sociedad_de_Tenis_de_La_Magdalena_(Santander).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "real-betis": {
+      "teamId": "real-betis",
+      "teamName": "Real Betis",
+      "path": "/images/clubs/real-betis.svg",
+      "commonsFile": "Escudo del Betis Balompié entre 1931-1932.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEscudo_del_Betis_Balompi%C3%A9_entre_1931-1932.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "celta-vigo": {
+      "teamId": "celta-vigo",
+      "teamName": "Celta Vigo",
+      "path": "/images/clubs/celta-vigo.svg",
+      "commonsFile": "Escudo RC Celta de Vigo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEscudo_RC_Celta_de_Vigo.svg",
+      "imageLicense": "CC BY-SA 3.0",
+      "locked": false
+    },
+    "valencia": {
+      "teamId": "valencia",
+      "teamName": "Valencia",
+      "path": "/images/clubs/valencia.svg",
+      "commonsFile": "EMT Valencia logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEMT_Valencia_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "vfb-stuttgart": {
+      "teamId": "vfb-stuttgart",
+      "teamName": "VfB Stuttgart",
+      "path": "/images/clubs/vfb-stuttgart.svg",
+      "commonsFile": "VfB Stuttgart Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AVfB_Stuttgart_Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "wolfsburg": {
+      "teamId": "wolfsburg",
+      "teamName": "VfL Wolfsburg",
+      "path": "/images/clubs/wolfsburg.svg",
+      "commonsFile": "VfL Wolfsburg logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AVfL_Wolfsburg_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "werder-bremen": {
+      "teamId": "werder-bremen",
+      "teamName": "Werder Bremen",
+      "path": "/images/clubs/werder-bremen.svg",
+      "commonsFile": "SV-Werder-Bremen-Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ASV-Werder-Bremen-Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "levante": {
+      "teamId": "levante",
+      "teamName": "Levante",
+      "path": "/images/clubs/levante.svg",
+      "commonsFile": "Levante ferries logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALevante_ferries_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "mainz": {
+      "teamId": "mainz",
+      "teamName": "Mainz 05",
+      "path": "/images/clubs/mainz.jpg",
+      "commonsFile": "Altes Logo der Johannes-Gutenberg-Universität Mainz.jpg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAltes_Logo_der_Johannes-Gutenberg-Universit%C3%A4t_Mainz.jpg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "union-berlin": {
+      "teamId": "union-berlin",
+      "teamName": "Union Berlin",
+      "path": "/images/clubs/union-berlin.svg",
+      "commonsFile": "CDU LV Berlin Logo 2020.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACDU_LV_Berlin_Logo_2020.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-augsburg": {
+      "teamId": "fc-augsburg",
+      "teamName": "FC Augsburg",
+      "path": "/images/clubs/fc-augsburg.svg",
+      "commonsFile": "Wappen FC Augsburg bis 1997.gif",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AWappen_FC_Augsburg_bis_1997.gif",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "st-pauli": {
+      "teamId": "st-pauli",
+      "teamName": "FC St. Pauli",
+      "path": "/images/clubs/st-pauli.svg",
+      "commonsFile": "Fc st pauli logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFc_st_pauli_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "hoffenheim": {
+      "teamId": "hoffenheim",
+      "teamName": "TSG Hoffenheim",
+      "path": "/images/clubs/hoffenheim.png",
+      "commonsFile": "Logo TSG Hoffenheim.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_TSG_Hoffenheim.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-groningen": {
+      "teamId": "fc-groningen",
+      "teamName": "FC Groningen",
+      "path": "/images/clubs/fc-groningen.png",
+      "commonsFile": "FC Groningen logo.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Groningen_logo.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "nec-nijmegen": {
+      "teamId": "nec-nijmegen",
+      "teamName": "NEC Nijmegen",
+      "path": "/images/clubs/nec-nijmegen.svg",
+      "commonsFile": "SC NEC Nijmegen (logo, 70s).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ASC_NEC_Nijmegen_(logo%2C_70s).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "go-ahead-eagles": {
+      "teamId": "go-ahead-eagles",
+      "teamName": "Go Ahead Eagles",
+      "path": "/images/clubs/go-ahead-eagles.svg",
+      "commonsFile": "Go Ahead Eagles logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGo_Ahead_Eagles_logo.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "sc-telstar": {
+      "teamId": "sc-telstar",
+      "teamName": "Telstar",
+      "path": "/images/clubs/sc-telstar.jpg",
+      "commonsFile": "Telstar 18 Logo.jpg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ATelstar_18_Logo.jpg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "nac-breda": {
+      "teamId": "nac-breda",
+      "teamName": "NAC Breda",
+      "path": "/images/clubs/nac-breda.png",
+      "commonsFile": "Logo NAC Breda.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_NAC_Breda.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-volendam": {
+      "teamId": "fc-volendam",
+      "teamName": "FC Volendam",
+      "path": "/images/clubs/fc-volendam.png",
+      "commonsFile": "FC Volendam logo.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Volendam_logo.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "excelsior-rotterdam": {
+      "teamId": "excelsior-rotterdam",
+      "teamName": "Excelsior",
+      "path": "/images/clubs/excelsior-rotterdam.svg",
+      "commonsFile": "Excelsior Rotterdam logo 2002.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AExcelsior_Rotterdam_logo_2002.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "atlanta-united": {
+      "teamId": "atlanta-united",
+      "teamName": "Atlanta United FC",
+      "path": "/images/clubs/atlanta-united.svg",
+      "commonsFile": "Atlanta United wordmark red.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAtlanta_United_wordmark_red.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "austin-fc": {
+      "teamId": "austin-fc",
+      "teamName": "Austin FC",
+      "path": "/images/clubs/austin-fc.jpg",
+      "commonsFile": "USL Austin interim logo.jpg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AUSL_Austin_interim_logo.jpg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "charlotte-fc": {
+      "teamId": "charlotte-fc",
+      "teamName": "Charlotte FC",
+      "path": "/images/clubs/charlotte-fc.svg",
+      "commonsFile": "MLS crest logo RGB - Charlotte FC.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Charlotte_FC.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "chicago-fire": {
+      "teamId": "chicago-fire",
+      "teamName": "Chicago Fire FC",
+      "path": "/images/clubs/chicago-fire.svg",
+      "commonsFile": "MLS crest logo RGB - Chicago Fire 2020.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Chicago_Fire_2020.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-cincinnati": {
+      "teamId": "fc-cincinnati",
+      "teamName": "FC Cincinnati",
+      "path": "/images/clubs/fc-cincinnati.svg",
+      "commonsFile": "FC Cincinnati orange full text logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Cincinnati_orange_full_text_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "colorado-rapids": {
+      "teamId": "colorado-rapids",
+      "teamName": "Colorado Rapids",
+      "path": "/images/clubs/colorado-rapids.svg",
+      "commonsFile": "MLS crest logo RGB - Colorado Rapids.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Colorado_Rapids.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "columbus-crew": {
+      "teamId": "columbus-crew",
+      "teamName": "Columbus Crew",
+      "path": "/images/clubs/columbus-crew.svg",
+      "commonsFile": "MLS crest logo RGB - Columbus Crew.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Columbus_Crew.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "dc-united": {
+      "teamId": "dc-united",
+      "teamName": "D.C. United",
+      "path": "/images/clubs/dc-united.svg",
+      "commonsFile": "Logo of the United States Secret Service.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_of_the_United_States_Secret_Service.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-dallas": {
+      "teamId": "fc-dallas",
+      "teamName": "FC Dallas",
+      "path": "/images/clubs/fc-dallas.svg",
+      "commonsFile": "FC Dallas Stadium logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Dallas_Stadium_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "houston-dynamo": {
+      "teamId": "houston-dynamo",
+      "teamName": "Houston Dynamo FC",
+      "path": "/images/clubs/houston-dynamo.svg",
+      "commonsFile": "MLS crest logo RGB - Houston Dynamo 2015.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Houston_Dynamo_2015.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "inter-miami": {
+      "teamId": "inter-miami",
+      "teamName": "Inter Miami CF",
+      "path": "/images/clubs/inter-miami.svg",
+      "commonsFile": "Inter Miami CF wordmark pink.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AInter_Miami_CF_wordmark_pink.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "la-galaxy": {
+      "teamId": "la-galaxy",
+      "teamName": "LA Galaxy",
+      "path": "/images/clubs/la-galaxy.svg",
+      "commonsFile": "GalaxyS6 Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGalaxyS6_Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "lafc": {
+      "teamId": "lafc",
+      "teamName": "Los Angeles FC",
+      "path": "/images/clubs/lafc.svg",
+      "commonsFile": "MLS crest logo RGB - Los Angeles FC.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Los_Angeles_FC.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "san-diego-fc": {
+      "teamId": "san-diego-fc",
+      "teamName": "San Diego FC",
+      "path": "/images/clubs/san-diego-fc.svg",
+      "commonsFile": "San Diego Wave FC 2021 wordmark blue.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ASan_Diego_Wave_FC_2021_wordmark_blue.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "cf-montreal": {
+      "teamId": "cf-montreal",
+      "teamName": "CF Montréal",
+      "path": "/images/clubs/cf-montreal.svg",
+      "commonsFile": "MLS crest logo RGB - Montreal Impact 2015.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Montreal_Impact_2015.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "nashville-sc": {
+      "teamId": "nashville-sc",
+      "teamName": "Nashville SC",
+      "path": "/images/clubs/nashville-sc.svg",
+      "commonsFile": "Nashville SC logo, 2020.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ANashville_SC_logo%2C_2020.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "new-england-revolution": {
+      "teamId": "new-england-revolution",
+      "teamName": "New England Revolution",
+      "path": "/images/clubs/new-england-revolution.svg",
+      "commonsFile": "MLS crest logo RGB - New England Revolution.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_New_England_Revolution.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "new-york-city-fc": {
+      "teamId": "new-york-city-fc",
+      "teamName": "New York City FC",
+      "path": "/images/clubs/new-york-city-fc.svg",
+      "commonsFile": "MLS crest logo RGB - New York City FC 2015.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_New_York_City_FC_2015.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "new-york-red-bulls": {
+      "teamId": "new-york-red-bulls",
+      "teamName": "New York Red Bulls",
+      "path": "/images/clubs/new-york-red-bulls.svg",
+      "commonsFile": "MLS crest logo RGB - New York Red Bulls.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_New_York_Red_Bulls.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "orlando-city": {
+      "teamId": "orlando-city",
+      "teamName": "Orlando City SC",
+      "path": "/images/clubs/orlando-city.svg",
+      "commonsFile": "MLS crest logo RGB - Orlando City SC.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Orlando_City_SC.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "real-salt-lake": {
+      "teamId": "real-salt-lake",
+      "teamName": "Real Salt Lake",
+      "path": "/images/clubs/real-salt-lake.svg",
+      "commonsFile": "MLS crest logo RGB - Real Salt Lake.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Real_Salt_Lake.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "san-jose-earthquakes": {
+      "teamId": "san-jose-earthquakes",
+      "teamName": "San Jose Earthquakes",
+      "path": "/images/clubs/san-jose-earthquakes.svg",
+      "commonsFile": "MLS crest logo RGB - San Jose Earthquakes.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_San_Jose_Earthquakes.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "seattle-sounders": {
+      "teamId": "seattle-sounders",
+      "teamName": "Seattle Sounders FC",
+      "path": "/images/clubs/seattle-sounders.svg",
+      "commonsFile": "Seattle Sounders FC crest banner.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ASeattle_Sounders_FC_crest_banner.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "sporting-kansas-city": {
+      "teamId": "sporting-kansas-city",
+      "teamName": "Sporting Kansas City",
+      "path": "/images/clubs/sporting-kansas-city.svg",
+      "commonsFile": "MLS crest logo RGB - Sporting Kansas City.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Sporting_Kansas_City.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "st-louis-city": {
+      "teamId": "st-louis-city",
+      "teamName": "St. Louis City SC",
+      "path": "/images/clubs/st-louis-city.svg",
+      "commonsFile": "STLCity WordmarkStackedOutline Blue.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ASTLCity_WordmarkStackedOutline_Blue.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "nice": {
+      "teamId": "nice",
+      "teamName": "OGC Nice",
+      "path": "/images/clubs/nice.svg",
+      "commonsFile": "OGC Nice (simplified logo).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AOGC_Nice_(simplified_logo).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "rennes": {
+      "teamId": "rennes",
+      "teamName": "Stade Rennais",
+      "path": "/images/clubs/rennes.svg",
+      "commonsFile": "Stade Rennais (logo 1960).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AStade_Rennais_(logo_1960).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "strasbourg": {
+      "teamId": "strasbourg",
+      "teamName": "RC Strasbourg",
+      "path": "/images/clubs/strasbourg.svg",
+      "commonsFile": "Logo RC Strasbourg - 1987-88.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_RC_Strasbourg_-_1987-88.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "leeds": {
+      "teamId": "leeds",
+      "teamName": "Leeds United",
+      "path": "/images/clubs/leeds.png",
+      "commonsFile": "Leedsstudentlogo.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALeedsstudentlogo.png",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "burnley": {
+      "teamId": "burnley",
+      "teamName": "Burnley",
+      "path": "/images/clubs/burnley.svg",
+      "commonsFile": "Burnley Youth Theatre Logo 2012.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ABurnley_Youth_Theatre_Logo_2012.svg",
+      "imageLicense": "CC BY-SA 3.0",
+      "locked": false
+    },
+    "atalanta": {
+      "teamId": "atalanta",
+      "teamName": "Atalanta",
+      "path": "/images/clubs/atalanta.svg",
+      "commonsFile": "Atalanta Motors logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAtalanta_Motors_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "bologna": {
+      "teamId": "bologna",
+      "teamName": "Bologna",
+      "path": "/images/clubs/bologna.svg",
+      "commonsFile": "Bologna-Prozess-Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ABologna-Prozess-Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "genoa": {
+      "teamId": "genoa",
+      "teamName": "Genoa",
+      "path": "/images/clubs/genoa.jpg",
+      "commonsFile": "Genoa Systems logo.jpg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGenoa_Systems_logo.jpg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "torino": {
+      "teamId": "torino",
+      "teamName": "Torino",
+      "path": "/images/clubs/torino.svg",
+      "commonsFile": "Musei Reali Torino - logo (Italy, 2017).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMusei_Reali_Torino_-_logo_(Italy%2C_2017).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "cagliari": {
+      "teamId": "cagliari",
+      "teamName": "Cagliari",
+      "path": "/images/clubs/cagliari.png",
+      "commonsFile": "Logo of Sistema Bibliotecario Monte Claro, Cagliari.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_of_Sistema_Bibliotecario_Monte_Claro%2C_Cagliari.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "como": {
+      "teamId": "como",
+      "teamName": "Como",
+      "path": "/images/clubs/como.svg",
+      "commonsFile": "Calcio Como - logo (Italy, 1950-1970).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACalcio_Como_-_logo_(Italy%2C_1950-1970).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "cremonese": {
+      "teamId": "cremonese",
+      "teamName": "Cremonese",
+      "path": "/images/clubs/cremonese.svg",
+      "commonsFile": "Cremonese logo 1985-1997.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACremonese_logo_1985-1997.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "pisa": {
+      "teamId": "pisa",
+      "teamName": "Pisa",
+      "path": "/images/clubs/pisa.svg",
+      "commonsFile": "PISA Network Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3APISA_Network_Logo.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "fc-metz": {
+      "teamId": "fc-metz",
+      "teamName": "Metz",
+      "path": "/images/clubs/fc-metz.svg",
+      "commonsFile": "Metz Aerials Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMetz_Aerials_Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-toulouse": {
+      "teamId": "fc-toulouse",
+      "teamName": "Toulouse",
+      "path": "/images/clubs/fc-toulouse.svg",
+      "commonsFile": "Toulouse Business School Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AToulouse_Business_School_Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-nantes": {
+      "teamId": "fc-nantes",
+      "teamName": "Nantes",
+      "path": "/images/clubs/fc-nantes.jpg",
+      "commonsFile": "Université de nantes logo.jpg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AUniversit%C3%A9_de_nantes_logo.jpg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "getafe": {
+      "teamId": "getafe",
+      "teamName": "Getafe",
+      "path": "/images/clubs/getafe.png",
+      "commonsFile": "Getafe CF Logo.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGetafe_CF_Logo.png",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "mallorca": {
+      "teamId": "mallorca",
+      "teamName": "Mallorca",
+      "path": "/images/clubs/mallorca.svg",
+      "commonsFile": "Aena Mallorca logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAena_Mallorca_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "toronto-fc": {
+      "teamId": "toronto-fc",
+      "teamName": "Toronto FC",
+      "path": "/images/clubs/toronto-fc.svg",
+      "commonsFile": "MLS crest logo RGB - Toronto FC.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Toronto_FC.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "vancouver-whitecaps": {
+      "teamId": "vancouver-whitecaps",
+      "teamName": "Vancouver Whitecaps FC",
+      "path": "/images/clubs/vancouver-whitecaps.svg",
+      "commonsFile": "MLS crest logo RGB - Vancouver Whitecaps FC.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMLS_crest_logo_RGB_-_Vancouver_Whitecaps_FC.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "flamengo": {
+      "teamId": "flamengo",
+      "teamName": "Flamengo",
+      "path": "/images/clubs/flamengo.svg",
+      "commonsFile": "Clube de Regatas do Flamengo logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AClube_de_Regatas_do_Flamengo_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "coritiba": {
+      "teamId": "coritiba",
+      "teamName": "Coritiba",
+      "path": "/images/clubs/coritiba.svg",
+      "commonsFile": "Coritiba Foot Ball Club logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACoritiba_Foot_Ball_Club_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "bahia": {
+      "teamId": "bahia",
+      "teamName": "Bahia",
+      "path": "/images/clubs/bahia.svg",
+      "commonsFile": "Casas Bahia logo (2015).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACasas_Bahia_logo_(2015).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "gremio": {
+      "teamId": "gremio",
+      "teamName": "Grêmio",
+      "path": "/images/clubs/gremio.svg",
+      "commonsFile": "Gremio Prudente Emblem.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGremio_Prudente_Emblem.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "mirassol": {
+      "teamId": "mirassol",
+      "teamName": "Mirassol",
+      "path": "/images/clubs/mirassol.png",
+      "commonsFile": "Mirassol FC logo.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMirassol_FC_logo.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "botafogo": {
+      "teamId": "botafogo",
+      "teamName": "Botafogo",
+      "path": "/images/clubs/botafogo.svg",
+      "commonsFile": "Botafogo Futebol Clube (PB) logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ABotafogo_Futebol_Clube_(PB)_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "santos": {
+      "teamId": "santos",
+      "teamName": "Santos",
+      "path": "/images/clubs/santos.svg",
+      "commonsFile": "Grupo Silvio Santos logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGrupo_Silvio_Santos_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "sao-paulo": {
+      "teamId": "sao-paulo",
+      "teamName": "São Paulo",
+      "path": "/images/clubs/sao-paulo.svg",
+      "commonsFile": "Sao Paulo Metro Logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ASao_Paulo_Metro_Logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "palmeiras": {
+      "teamId": "palmeiras",
+      "teamName": "Palmeiras",
+      "path": "/images/clubs/palmeiras.svg",
+      "commonsFile": "Palmeiras logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3APalmeiras_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "internacional": {
+      "teamId": "internacional",
+      "teamName": "Internacional",
+      "path": "/images/clubs/internacional.svg",
+      "commonsFile": "Sport Club Internacional logo (1909-1957).svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ASport_Club_Internacional_logo_(1909-1957).svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "manchester-united": {
+      "teamId": "manchester-united",
+      "teamName": "Manchester United",
+      "path": "/images/clubs/manchester-united.svg",
+      "commonsFile": "Association of Greater Manchester Authorities.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAssociation_of_Greater_Manchester_Authorities.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "atletico-madrid": {
+      "teamId": "atletico-madrid",
+      "teamName": "Atlético Madrid",
+      "path": "/images/clubs/atletico-madrid.png",
+      "commonsFile": "Athletic Club crest 1903.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAthletic_Club_crest_1903.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "paris-saint-germain": {
+      "teamId": "paris-saint-germain",
+      "teamName": "Paris Saint-Germain",
+      "path": "/images/clubs/paris-saint-germain.svg",
+      "commonsFile": "Paris Saint-Germain (1992-1996).gif",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AParis_Saint-Germain_(1992-1996).gif",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "crystal-palace": {
+      "teamId": "crystal-palace",
+      "teamName": "Crystal Palace",
+      "path": "/images/clubs/crystal-palace.png",
+      "commonsFile": "Crystal Palace footie flag.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACrystal_Palace_footie_flag.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fulham": {
+      "teamId": "fulham",
+      "teamName": "Fulham",
+      "path": "/images/clubs/fulham.svg",
+      "commonsFile": "Coat of arms of the London Borough of Hammersmith and Fulham.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACoat_of_arms_of_the_London_Borough_of_Hammersmith_and_Fulham.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "borussia-monchengladbach": {
+      "teamId": "borussia-monchengladbach",
+      "teamName": "Borussia Mönchengladbach",
+      "path": "/images/clubs/borussia-monchengladbach.svg",
+      "commonsFile": "Bm gladbach wappen.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ABm_gladbach_wappen.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "az-alkmaar": {
+      "teamId": "az-alkmaar",
+      "teamName": "AZ Alkmaar",
+      "path": "/images/clubs/az-alkmaar.svg",
+      "commonsFile": "AZ Alkmaar.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAZ_Alkmaar.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "villarreal": {
+      "teamId": "villarreal",
+      "teamName": "Villarreal",
+      "path": "/images/clubs/villarreal.jpg",
+      "commonsFile": "Aven de l’Arquet 9a.jpg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAven_de_l%E2%80%99Arquet_9a.jpg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "sunderland": {
+      "teamId": "sunderland",
+      "teamName": "Sunderland",
+      "path": "/images/clubs/sunderland.svg",
+      "commonsFile": "Amherst and Sunderland Street Railway.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAmherst_and_Sunderland_Street_Railway.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fiorentina": {
+      "teamId": "fiorentina",
+      "teamName": "Fiorentina",
+      "path": "/images/clubs/fiorentina.svg",
+      "commonsFile": "ACF Fiorentina.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AACF_Fiorentina.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "udinese": {
+      "teamId": "udinese",
+      "teamName": "Udinese",
+      "path": "/images/clubs/udinese.svg",
+      "commonsFile": "Udinese Calcio 2010.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AUdinese_Calcio_2010.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "lecce": {
+      "teamId": "lecce",
+      "teamName": "Lecce",
+      "path": "/images/clubs/lecce.svg",
+      "commonsFile": "Blason Ecu Marie Enghien 3D.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ABlason_Ecu_Marie_Enghien_3D.svg",
+      "imageLicense": "CC BY-SA 3.0",
+      "locked": false
+    },
+    "sassuolo": {
+      "teamId": "sassuolo",
+      "teamName": "Sassuolo",
+      "path": "/images/clubs/sassuolo.svg",
+      "commonsFile": "Stemma US Sassuolo Calcio 2008.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AStemma_US_Sassuolo_Calcio_2008.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "parma": {
+      "teamId": "parma",
+      "teamName": "Parma",
+      "path": "/images/clubs/parma.svg",
+      "commonsFile": "FC Parma.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Parma.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "aj-auxerre": {
+      "teamId": "aj-auxerre",
+      "teamName": "Auxerre",
+      "path": "/images/clubs/aj-auxerre.svg",
+      "commonsFile": "Ici Auxerre.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AIci_Auxerre.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "ac-le-havre": {
+      "teamId": "ac-le-havre",
+      "teamName": "Le Havre",
+      "path": "/images/clubs/ac-le-havre.png",
+      "commonsFile": "Université Le Havre Normandie.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AUniversit%C3%A9_Le_Havre_Normandie.png",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "sco-angers": {
+      "teamId": "sco-angers",
+      "teamName": "Angers",
+      "path": "/images/clubs/sco-angers.svg",
+      "commonsFile": "Intrépide Angers.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AIntr%C3%A9pide_Angers.svg",
+      "imageLicense": "CC BY-SA 3.0",
+      "locked": false
+    },
+    "stade-brest": {
+      "teamId": "stade-brest",
+      "teamName": "Brest",
+      "path": "/images/clubs/stade-brest.svg",
+      "commonsFile": "RegioWikiCamp Brest 2011.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ARegioWikiCamp_Brest_2011.svg",
+      "imageLicense": "CC BY-SA 3.0",
+      "locked": false
+    },
+    "paris-fc": {
+      "teamId": "paris-fc",
+      "teamName": "Paris FC",
+      "path": "/images/clubs/paris-fc.png",
+      "commonsFile": "RedStarParis93.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ARedStarParis93.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "elche": {
+      "teamId": "elche",
+      "teamName": "Elche",
+      "path": "/images/clubs/elche.svg",
+      "commonsFile": "Aena Alicante logo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAena_Alicante_logo.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "girona": {
+      "teamId": "girona",
+      "teamName": "Girona",
+      "path": "/images/clubs/girona.svg",
+      "commonsFile": "Hospital Universitari de Girona Doctor Josep Trueta.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AHospital_Universitari_de_Girona_Doctor_Josep_Trueta.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "real-oviedo": {
+      "teamId": "real-oviedo",
+      "teamName": "Real Oviedo",
+      "path": "/images/clubs/real-oviedo.svg",
+      "commonsFile": "Escudo de Las Regueras.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEscudo_de_Las_Regueras.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "heidenheim": {
+      "teamId": "heidenheim",
+      "teamName": "1. FC Heidenheim",
+      "path": "/images/clubs/heidenheim.svg",
+      "commonsFile": "1. FC Heidenheim 1846.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3A1._FC_Heidenheim_1846.svg",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "hamburger-sv": {
+      "teamId": "hamburger-sv",
+      "teamName": "Hamburger SV",
+      "path": "/images/clubs/hamburger-sv.png",
+      "commonsFile": "600px Azzurro con Rombi bianco nero e bianco.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3A600px_Azzurro_con_Rombi_bianco_nero_e_bianco.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    },
+    "fc-utrecht": {
+      "teamId": "fc-utrecht",
+      "teamName": "FC Utrecht",
+      "path": "/images/clubs/fc-utrecht.png",
+      "commonsFile": "FC Utrecht.png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Utrecht.png",
+      "imageLicense": "Public domain",
+      "locked": false
+    }
+  }
+}
