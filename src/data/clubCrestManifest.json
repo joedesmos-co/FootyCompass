@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-13T05:03:37.104Z",
-  "entryCount": 141,
+  "updatedAt": "2026-06-13T23:13:14Z",
+  "entryCount": 143,
   "entries": {
     "manchester-city": {
       "teamId": "manchester-city",
@@ -1066,7 +1066,7 @@
     "fulham": {
       "teamId": "fulham",
       "teamName": "Fulham",
-      "path": "/images/clubs/fulham.svg",
+      "path": "/images/clubs/fulham.png",
       "commonsFile": "Coat of arms of the London Borough of Hammersmith and Fulham.svg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACoat_of_arms_of_the_London_Borough_of_Hammersmith_and_Fulham.svg",
@@ -1106,7 +1106,7 @@
     "sunderland": {
       "teamId": "sunderland",
       "teamName": "Sunderland",
-      "path": "/images/clubs/sunderland.svg",
+      "path": "/images/clubs/sunderland.png",
       "commonsFile": "Amherst and Sunderland Street Railway.svg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAmherst_and_Sunderland_Street_Railway.svg",
@@ -1213,6 +1213,16 @@
       "imageLicense": "Public domain",
       "locked": false
     },
+    "osasuna": {
+      "teamId": "osasuna",
+      "teamName": "Osasuna",
+      "path": "/images/clubs/osasuna.jpg",
+      "commonsFile": "OSASUNA.jpg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AOSASUNA.jpg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
     "elche": {
       "teamId": "elche",
       "teamName": "Elche",
@@ -1240,6 +1250,16 @@
       "commonsFile": "Escudo de Las Regueras.svg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEscudo_de_Las_Regueras.svg",
+      "imageLicense": "CC BY-SA 4.0",
+      "locked": false
+    },
+    "fc-koln": {
+      "teamId": "fc-koln",
+      "teamName": "1. FC Köln",
+      "path": "/images/clubs/fc-koln.svg",
+      "commonsFile": "1. FC Koeln Logo 2014–.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3A1._FC_Koeln_Logo_2014%E2%80%93.svg",
       "imageLicense": "CC BY-SA 4.0",
       "locked": false
     },

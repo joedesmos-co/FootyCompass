@@ -61,6 +61,46 @@ const CLUB_NAME_THEMES = [
   { pattern: /leverkusen|leipzig|frankfurt/i, theme: { from: '#dc2626', to: '#111827', accent: '#f8fafc' } },
 ];
 
+const CLUB_ID_THEMES = {
+  'aston-villa': { from: '#7a003c', to: '#95c5e8', accent: '#fbbf24' },
+  brighton: { from: '#0057b8', to: '#f8fafc', accent: '#fbbf24' },
+  'eintracht-frankfurt': { from: '#111827', to: '#dc2626', accent: '#f8fafc' },
+  wolves: { from: '#fdb913', to: '#111827', accent: '#f8fafc' },
+  lens: { from: '#dc2626', to: '#facc15', accent: '#111827' },
+  brentford: { from: '#dc2626', to: '#f8fafc', accent: '#111827' },
+  'west-ham': { from: '#7f1d1d', to: '#93c5fd', accent: '#fbbf24' },
+  freiburg: { from: '#dc2626', to: '#111827', accent: '#f8fafc' },
+  'fc-koln': { from: '#dc2626', to: '#f8fafc', accent: '#111827' },
+  alaves: { from: '#1d4ed8', to: '#f8fafc', accent: '#111827' },
+  espanyol: { from: '#1d4ed8', to: '#f8fafc', accent: '#dc2626' },
+  bournemouth: { from: '#dc2626', to: '#111827', accent: '#fbbf24' },
+  'rayo-vallecano': { from: '#f8fafc', to: '#dc2626', accent: '#fbbf24' },
+  osasuna: { from: '#dc2626', to: '#1e3a8a', accent: '#fbbf24' },
+  'nottingham-forest': { from: '#dc2626', to: '#f8fafc', accent: '#111827' },
+  'fc-lorient': { from: '#f97316', to: '#111827', accent: '#f8fafc' },
+  verona: { from: '#facc15', to: '#1e3a8a', accent: '#f8fafc' },
+};
+
+const CLUB_ID_CODES = {
+  'aston-villa': 'AVL',
+  brighton: 'BHA',
+  'eintracht-frankfurt': 'SGE',
+  wolves: 'WOL',
+  lens: 'RCL',
+  brentford: 'BRE',
+  'west-ham': 'WHU',
+  freiburg: 'SCF',
+  'fc-koln': 'KOE',
+  alaves: 'ALA',
+  espanyol: 'ESP',
+  bournemouth: 'BOU',
+  'rayo-vallecano': 'RAY',
+  osasuna: 'OSA',
+  'nottingham-forest': 'NFO',
+  'fc-lorient': 'FCL',
+  verona: 'HEL',
+};
+
 const DEFAULT_CLUB_THEME = {
   from: '#0f9f6e',
   to: '#14532d',
@@ -100,8 +140,11 @@ export function getPlayerInitials(name) {
  * Short club code for generated badges (e.g. Arsenal → ARS).
  * @param {string} name
  * @param {number} [maxLen]
+ * @param {string} [clubId]
  */
-export function getClubShortCode(name, maxLen = 3) {
+export function getClubShortCode(name, maxLen = 3, clubId = null) {
+  if (clubId && CLUB_ID_CODES[clubId]) return CLUB_ID_CODES[clubId];
+
   const raw = String(name ?? '').trim();
   if (!raw) return '—';
 
@@ -132,6 +175,10 @@ export function getClubShortCode(name, maxLen = 3) {
  * @param {{ badgeTheme?: object, leagueId?: string, name?: string } | null | undefined} team
  */
 export function resolveClubIdentityTheme(team) {
+  if (team?.id && CLUB_ID_THEMES[team.id]) {
+    return CLUB_ID_THEMES[team.id];
+  }
+
   if (team?.badgeTheme?.from) {
     return {
       from: team.badgeTheme.from,

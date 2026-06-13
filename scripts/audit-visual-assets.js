@@ -40,6 +40,12 @@ function hasRealPlayerPhoto(player) {
 }
 
 function main() {
+  const clubAssetAudit = spawnSync(process.execPath, [join(__dirname, 'validate-club-crest-assets.js')], {
+    stdio: 'inherit',
+    cwd: root,
+  });
+  if (clubAssetAudit.status !== 0) process.exit(clubAssetAudit.status ?? 1);
+
   const sizeAudit = spawnSync(process.execPath, [join(__dirname, 'audit-deploy-asset-sizes.js')], {
     stdio: 'inherit',
     cwd: root,

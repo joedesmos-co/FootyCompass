@@ -11,7 +11,7 @@ function TeamIdentityBadgeComponent({
   showLeagueChip = false,
 }) {
   const style = getClubIdentityStyle(team);
-  const shortCode = getClubShortCode(team?.name);
+  const shortCode = getClubShortCode(team?.name, 3, team?.id);
   const country = formatCountryLabel(team?.country);
   const leagueLabel =
     leagueNameProp ??

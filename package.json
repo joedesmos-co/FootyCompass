@@ -46,6 +46,7 @@
     "fetch:wikimedia-club-crests": "node scripts/fetch-wikimedia-club-crests.js",
     "repair:club-crests": "node scripts/repair-club-crests.js",
     "bootstrap:club-curated": "node scripts/bootstrap-club-curated.js",
+    "validate:club-crests": "node scripts/validate-club-crest-assets.js",
     "expand:quiz-eligible-curated": "node scripts/expand-quiz-eligible-curated.js",
     "audit:visual-assets": "node scripts/audit-visual-assets.js",
     "audit:deploy-asset-sizes": "node scripts/audit-deploy-asset-sizes.js",

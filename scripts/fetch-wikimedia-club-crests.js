@@ -8,7 +8,7 @@
  *   npm run fetch:wikimedia-club-crests -- --download
  */
 
-import { mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync, existsSync, statSync, unlinkSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -31,6 +31,7 @@ const CRESTS_DIR = join(root, 'public/images/clubs');
 
 const DEFAULT_LIMIT = 25;
 const MAX_LIMIT = 50;
+const MAX_CLUB_ASSET_BYTES = 1024 * 1024;
 
 function parseArgs(argv) {
   const out = {
@@ -197,6 +198,18 @@ async function main() {
     if (!args.dryRun) {
       if (args.download || !existsSync(dest)) {
         await downloadBinary(result.originalUrl, dest, (path, buf) => writeFileSync(path, buf));
+      }
+      const assetBytes = statSync(dest).size;
+      if (assetBytes > MAX_CLUB_ASSET_BYTES) {
+        if (existsSync(dest)) unlinkSync(dest);
+        cache.entries[cacheKey] = {
+          status: 'skip',
+          reason: `asset_too_large:${assetBytes}`,
+          at: new Date().toISOString(),
+        };
+        skipped += 1;
+        console.log(`  skip ${team.name}: asset_too_large (${(assetBytes / 1024 / 1024).toFixed(2)} MiB)`);
+        continue;
       }
       manifest.entries = manifest.entries ?? {};
       manifest.entries[team.id] = buildManifestEntry(team, result, localPath);
