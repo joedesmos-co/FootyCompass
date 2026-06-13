@@ -1,6 +1,6 @@
 # FootyCompass visual asset report
 
-Generated: 2026-06-13T05:17:47.867Z
+Generated: 2026-06-13T22:16:52.948Z
 
 ## Coverage summary
 

@@ -8,6 +8,7 @@
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
 
 import { teams, leagues, players } from '../src/data/sampleData.js';
 import live from '../src/data/nationalTeamLive.json' with { type: 'json' };
@@ -39,6 +40,12 @@ function hasRealPlayerPhoto(player) {
 }
 
 function main() {
+  const sizeAudit = spawnSync(process.execPath, [join(__dirname, 'audit-deploy-asset-sizes.js')], {
+    stdio: 'inherit',
+    cwd: root,
+  });
+  if (sizeAudit.status !== 0) process.exit(sizeAudit.status ?? 1);
+
   mkdirSync(OUT_DIR, { recursive: true });
 
   const nationalTeams = live.nationalTeams ?? [];

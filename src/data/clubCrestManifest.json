@@ -1317,11 +1317,10 @@
       "teamId": "vasco-da-gama",
       "teamName": "Vasco da Gama",
       "path": "/images/clubs/vasco-da-gama.svg",
-      "commonsFile": "Fundraising 2010 - Vasco da Gama banner.xcf",
-      "imageSource": "Wikimedia Commons",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFundraising_2010_-_Vasco_da_Gama_banner.xcf",
-      "imageLicense": "Public domain",
-      "locked": false
+      "imageSource": "FootyCompass generated fallback",
+      "imageLicense": "Original generated badge (black/white diagonal sash motif)",
+      "generatedFallback": true,
+      "locked": true
     },
     "atletico-mineiro": {
       "teamId": "atletico-mineiro",
