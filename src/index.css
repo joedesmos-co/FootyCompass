@@ -3811,9 +3811,10 @@ input:focus-visible {
 .national-team-badge--flag,
 .national-team-badge--flag-emoji {
   clip-path: none;
-  border-radius: 0.75rem;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 0.45rem;
+  background: rgba(8, 16, 24, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
   display: grid;
   place-items: center;
   position: relative;
@@ -3824,36 +3825,60 @@ input:focus-visible {
 
 .national-team-badge--flag.national-team-badge--card,
 .national-team-badge--flag-emoji.national-team-badge--card {
-  width: 4.5rem;
-  height: 5.1rem;
+  width: 3.35rem;
+  height: 2.25rem;
 }
 
 .national-team-badge--flag.national-team-badge--profile,
 .national-team-badge--flag-emoji.national-team-badge--profile {
-  width: 8.5rem;
-  height: 8.5rem;
+  width: 6.5rem;
+  height: 4.35rem;
 }
 
-.league-badge__logo-img,
-.national-team-badge__flag-img {
+.league-badge__logo-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   padding: 0.35rem;
+  display: block;
+}
+
+.national-team-badge__flag-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  display: block;
 }
 
 .national-team-badge--flag-emoji {
   display: grid;
   place-items: center;
+  background: rgba(8, 16, 24, 0.2);
 }
 
 .national-team-badge__flag-emoji {
-  font-size: 2.25rem;
+  font-size: 1.65rem;
   line-height: 1;
 }
 
 .national-team-badge--thumb .national-team-badge__flag-emoji {
   font-size: 1.35rem;
+}
+
+.national-teams-page__card .national-team-badge--flag,
+.national-teams-page__card .national-team-badge--flag-emoji {
+  width: 3.1rem;
+  height: 2.1rem;
+  flex-shrink: 0;
+}
+
+.national-teams-page__card .national-team-badge__flag-img {
+  object-fit: cover;
+}
+
+.national-teams-page__card .league-badge__country {
+  display: none;
 }
 
 .team-identity-badge--crest {
@@ -11487,8 +11512,8 @@ p.browse-results-empty {
 }
 
 .today-picks-card--national-team .national-team-badge--card {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3.1rem;
+  height: 2.1rem;
 }
 
 .collections-page__section-desc,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-13T23:13:14Z",
+  "updatedAt": "2026-06-14T01:25:14.083Z",
   "entryCount": 143,
   "entries": {
     "manchester-city": {
@@ -66,7 +66,7 @@
     "real-madrid": {
       "teamId": "real-madrid",
       "teamName": "Real Madrid",
-      "path": "/images/clubs/real-madrid.png",
+      "path": "/images/clubs/real-madrid.svg",
       "commonsFile": "Escudo Real Madrid 1908.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AEscudo_Real_Madrid_1908.png",
@@ -246,7 +246,7 @@
     "feyenoord": {
       "teamId": "feyenoord",
       "teamName": "Feyenoord",
-      "path": "/images/clubs/feyenoord.png",
+      "path": "/images/clubs/feyenoord.svg",
       "commonsFile": "Logo Sportclub Feyenoord.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_Sportclub_Feyenoord.png",
@@ -356,7 +356,7 @@
     "mainz": {
       "teamId": "mainz",
       "teamName": "Mainz 05",
-      "path": "/images/clubs/mainz.jpg",
+      "path": "/images/clubs/mainz.svg",
       "commonsFile": "Altes Logo der Johannes-Gutenberg-Universität Mainz.jpg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAltes_Logo_der_Johannes-Gutenberg-Universit%C3%A4t_Mainz.jpg",
@@ -396,7 +396,7 @@
     "hoffenheim": {
       "teamId": "hoffenheim",
       "teamName": "TSG Hoffenheim",
-      "path": "/images/clubs/hoffenheim.png",
+      "path": "/images/clubs/hoffenheim.svg",
       "commonsFile": "Logo TSG Hoffenheim.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_TSG_Hoffenheim.png",
@@ -406,7 +406,7 @@
     "fc-groningen": {
       "teamId": "fc-groningen",
       "teamName": "FC Groningen",
-      "path": "/images/clubs/fc-groningen.png",
+      "path": "/images/clubs/fc-groningen.svg",
       "commonsFile": "FC Groningen logo.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Groningen_logo.png",
@@ -436,7 +436,7 @@
     "sc-telstar": {
       "teamId": "sc-telstar",
       "teamName": "Telstar",
-      "path": "/images/clubs/sc-telstar.jpg",
+      "path": "/images/clubs/sc-telstar.svg",
       "commonsFile": "Telstar 18 Logo.jpg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ATelstar_18_Logo.jpg",
@@ -446,7 +446,7 @@
     "nac-breda": {
       "teamId": "nac-breda",
       "teamName": "NAC Breda",
-      "path": "/images/clubs/nac-breda.png",
+      "path": "/images/clubs/nac-breda.svg",
       "commonsFile": "Logo NAC Breda.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_NAC_Breda.png",
@@ -456,7 +456,7 @@
     "fc-volendam": {
       "teamId": "fc-volendam",
       "teamName": "FC Volendam",
-      "path": "/images/clubs/fc-volendam.png",
+      "path": "/images/clubs/fc-volendam.svg",
       "commonsFile": "FC Volendam logo.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Volendam_logo.png",
@@ -486,7 +486,7 @@
     "austin-fc": {
       "teamId": "austin-fc",
       "teamName": "Austin FC",
-      "path": "/images/clubs/austin-fc.jpg",
+      "path": "/images/clubs/austin-fc.svg",
       "commonsFile": "USL Austin interim logo.jpg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AUSL_Austin_interim_logo.jpg",
@@ -756,7 +756,7 @@
     "leeds": {
       "teamId": "leeds",
       "teamName": "Leeds United",
-      "path": "/images/clubs/leeds.png",
+      "path": "/images/clubs/leeds.svg",
       "commonsFile": "Leedsstudentlogo.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALeedsstudentlogo.png",
@@ -796,7 +796,7 @@
     "genoa": {
       "teamId": "genoa",
       "teamName": "Genoa",
-      "path": "/images/clubs/genoa.jpg",
+      "path": "/images/clubs/genoa.svg",
       "commonsFile": "Genoa Systems logo.jpg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGenoa_Systems_logo.jpg",
@@ -816,7 +816,7 @@
     "cagliari": {
       "teamId": "cagliari",
       "teamName": "Cagliari",
-      "path": "/images/clubs/cagliari.png",
+      "path": "/images/clubs/cagliari.svg",
       "commonsFile": "Logo of Sistema Bibliotecario Monte Claro, Cagliari.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ALogo_of_Sistema_Bibliotecario_Monte_Claro%2C_Cagliari.png",
@@ -876,7 +876,7 @@
     "fc-nantes": {
       "teamId": "fc-nantes",
       "teamName": "Nantes",
-      "path": "/images/clubs/fc-nantes.jpg",
+      "path": "/images/clubs/fc-nantes.svg",
       "commonsFile": "Université de nantes logo.jpg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AUniversit%C3%A9_de_nantes_logo.jpg",
@@ -886,7 +886,7 @@
     "getafe": {
       "teamId": "getafe",
       "teamName": "Getafe",
-      "path": "/images/clubs/getafe.png",
+      "path": "/images/clubs/getafe.svg",
       "commonsFile": "Getafe CF Logo.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AGetafe_CF_Logo.png",
@@ -966,7 +966,7 @@
     "mirassol": {
       "teamId": "mirassol",
       "teamName": "Mirassol",
-      "path": "/images/clubs/mirassol.png",
+      "path": "/images/clubs/mirassol.svg",
       "commonsFile": "Mirassol FC logo.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMirassol_FC_logo.png",
@@ -1036,7 +1036,7 @@
     "atletico-madrid": {
       "teamId": "atletico-madrid",
       "teamName": "Atlético Madrid",
-      "path": "/images/clubs/atletico-madrid.png",
+      "path": "/images/clubs/atletico-madrid.svg",
       "commonsFile": "Athletic Club crest 1903.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAthletic_Club_crest_1903.png",
@@ -1056,7 +1056,7 @@
     "crystal-palace": {
       "teamId": "crystal-palace",
       "teamName": "Crystal Palace",
-      "path": "/images/clubs/crystal-palace.png",
+      "path": "/images/clubs/crystal-palace.svg",
       "commonsFile": "Crystal Palace footie flag.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACrystal_Palace_footie_flag.png",
@@ -1066,7 +1066,7 @@
     "fulham": {
       "teamId": "fulham",
       "teamName": "Fulham",
-      "path": "/images/clubs/fulham.png",
+      "path": "/images/clubs/fulham.svg",
       "commonsFile": "Coat of arms of the London Borough of Hammersmith and Fulham.svg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ACoat_of_arms_of_the_London_Borough_of_Hammersmith_and_Fulham.svg",
@@ -1096,7 +1096,7 @@
     "villarreal": {
       "teamId": "villarreal",
       "teamName": "Villarreal",
-      "path": "/images/clubs/villarreal.jpg",
+      "path": "/images/clubs/villarreal.svg",
       "commonsFile": "Aven de l’Arquet 9a.jpg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAven_de_l%E2%80%99Arquet_9a.jpg",
@@ -1106,7 +1106,7 @@
     "sunderland": {
       "teamId": "sunderland",
       "teamName": "Sunderland",
-      "path": "/images/clubs/sunderland.png",
+      "path": "/images/clubs/sunderland.svg",
       "commonsFile": "Amherst and Sunderland Street Railway.svg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAmherst_and_Sunderland_Street_Railway.svg",
@@ -1176,7 +1176,7 @@
     "ac-le-havre": {
       "teamId": "ac-le-havre",
       "teamName": "Le Havre",
-      "path": "/images/clubs/ac-le-havre.png",
+      "path": "/images/clubs/ac-le-havre.svg",
       "commonsFile": "Université Le Havre Normandie.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AUniversit%C3%A9_Le_Havre_Normandie.png",
@@ -1206,7 +1206,7 @@
     "paris-fc": {
       "teamId": "paris-fc",
       "teamName": "Paris FC",
-      "path": "/images/clubs/paris-fc.png",
+      "path": "/images/clubs/paris-fc.svg",
       "commonsFile": "RedStarParis93.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ARedStarParis93.png",
@@ -1216,7 +1216,7 @@
     "osasuna": {
       "teamId": "osasuna",
       "teamName": "Osasuna",
-      "path": "/images/clubs/osasuna.jpg",
+      "path": "/images/clubs/osasuna.svg",
       "commonsFile": "OSASUNA.jpg",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AOSASUNA.jpg",
@@ -1276,7 +1276,7 @@
     "hamburger-sv": {
       "teamId": "hamburger-sv",
       "teamName": "Hamburger SV",
-      "path": "/images/clubs/hamburger-sv.png",
+      "path": "/images/clubs/hamburger-sv.svg",
       "commonsFile": "600px Azzurro con Rombi bianco nero e bianco.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3A600px_Azzurro_con_Rombi_bianco_nero_e_bianco.png",
@@ -1286,7 +1286,7 @@
     "fc-utrecht": {
       "teamId": "fc-utrecht",
       "teamName": "FC Utrecht",
-      "path": "/images/clubs/fc-utrecht.png",
+      "path": "/images/clubs/fc-utrecht.svg",
       "commonsFile": "FC Utrecht.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFC_Utrecht.png",
@@ -1306,7 +1306,7 @@
     "philadelphia-union": {
       "teamId": "philadelphia-union",
       "teamName": "Philadelphia Union",
-      "path": "/images/clubs/philadelphia-union.png",
+      "path": "/images/clubs/philadelphia-union.svg",
       "commonsFile": "Philadelphia Union footie flag.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3APhiladelphia_Union_footie_flag.png",
@@ -1345,7 +1345,7 @@
     "atletico-mineiro": {
       "teamId": "atletico-mineiro",
       "teamName": "Atlético Mineiro",
-      "path": "/images/clubs/atletico-mineiro.png",
+      "path": "/images/clubs/atletico-mineiro.svg",
       "commonsFile": "Atletico mineiro galo.png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAtletico_mineiro_galo.png",
@@ -1405,7 +1405,7 @@
     "corinthians": {
       "teamId": "corinthians",
       "teamName": "Corinthians",
-      "path": "/images/clubs/corinthians.png",
+      "path": "/images/clubs/corinthians.svg",
       "commonsFile": "Arena Corinthians (Fundo Transparente).png",
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AArena_Corinthians_(Fundo_Transparente).png",

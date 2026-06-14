@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
 const MANIFEST_PATH = join(root, 'src/data/clubCrestManifest.json');
+const DIST_DIR = join(root, 'dist');
 const MAX_CLUB_ASSET_BYTES = 1024 * 1024;
 
 const manifest = JSON.parse(readFileSync(MANIFEST_PATH, 'utf8'));
@@ -43,6 +44,12 @@ for (const [teamId, entry] of entries) {
     continue;
   }
 
+  const expectedPath = `/images/clubs/${teamId}.svg`;
+  if (path !== expectedPath) {
+    errors.push(`${teamId}: manifest path must be ${expectedPath}, got ${path}`);
+    continue;
+  }
+
   const publicPath = join(root, 'public', path.replace(/^\//, ''));
   if (!existsSync(publicPath)) {
     errors.push(`${teamId}: missing public asset ${path}`);
@@ -50,6 +57,13 @@ for (const [teamId, entry] of entries) {
   }
 
   addCheckedAsset(teamId, path, publicPath);
+
+  if (existsSync(DIST_DIR)) {
+    const distPath = join(DIST_DIR, path.replace(/^\//, ''));
+    if (!existsSync(distPath)) {
+      errors.push(`${teamId}: missing dist asset ${path} (run npm run build)`);
+    }
+  }
 }
 
 try {
@@ -76,6 +90,9 @@ try {
 const checkedRows = [...checked.values()];
 const largest = checkedRows.sort((a, b) => b.bytes - a.bytes).slice(0, 5);
 console.log(`Club crest assets: ${entries.length} manifest entries checked, ${checkedRows.length} committed assets checked`);
+if (existsSync(DIST_DIR)) {
+  console.log('dist/: manifest crest paths verified when present');
+}
 for (const row of largest) {
   console.log(`  largest: ${row.teamId} ${row.path} (${(row.bytes / 1024).toFixed(1)} KiB)`);
 }
