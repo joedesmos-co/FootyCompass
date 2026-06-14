@@ -1,0 +1,520 @@
+{
+  "startedAt": "2026-06-14T01:40:12.654Z",
+  "offset": 0,
+  "limit": 100,
+  "added": 11,
+  "rejected": 0,
+  "no_safe_match": 89,
+  "wrong_player_blocked": 0,
+  "alreadyApproved": 0,
+  "cacheHits": 0,
+  "details": {
+    "added": [
+      {
+        "playerId": "tm-470038",
+        "name": "Ransford Königsdörffer",
+        "commonsFile": "2025-03-05 Ransford Königsdörffer HSV pic1.jpg"
+      },
+      {
+        "playerId": "tm-476701",
+        "name": "Manuel Ugarte",
+        "commonsFile": "MANUEL UGARTE - URUGUAY 5 – PANAMÁ 0 - 220611-7113-jikatu (cropped).jpg"
+      },
+      {
+        "playerId": "tm-494826",
+        "name": "Luca Petrasso",
+        "commonsFile": "Luca Petrasso CF Montreal NYCFC 6.28.25-055.jpg"
+      },
+      {
+        "playerId": "tm-541134",
+        "name": "Souffian El Karouani",
+        "commonsFile": "GAE - FC Utrecht - Souffian El Karouani).jpg"
+      },
+      {
+        "playerId": "tm-654766",
+        "name": "Santiago Moreno",
+        "commonsFile": "Santiago Moreno NY Red Bulls v FC Dallas 2 May 2026-61.jpg"
+      },
+      {
+        "playerId": "tm-661207",
+        "name": "Oscar Bobb",
+        "commonsFile": "Oscar Bobb 21032026 (1).jpg"
+      },
+      {
+        "playerId": "tm-674013",
+        "name": "Mohamed Farsi",
+        "commonsFile": "Hannes Wolf Mohamed Farsi NYCFC v Columbus 10 May 2026-216.jpg"
+      },
+      {
+        "playerId": "tm-849520",
+        "name": "Santiago Castro",
+        "commonsFile": "Santiago Castro.jpg"
+      },
+      {
+        "playerId": "tm-872184",
+        "name": "Tadeo Allende",
+        "commonsFile": "Tadeo Allende NYCFC Miami 24 Sep 2025-099.jpg"
+      },
+      {
+        "playerId": "tm-892175",
+        "name": "Rafael Mosquera",
+        "commonsFile": "Rafael Mosquera Red Bulls Revolution-08.jpg"
+      },
+      {
+        "playerId": "tm-948294",
+        "name": "Nico Paz",
+        "commonsFile": "Nico Paz Como 2025.jpg"
+      }
+    ],
+    "rejected": [],
+    "no_safe_match": [
+      {
+        "playerId": "tm-445610",
+        "name": "Siyabonga Ngezana",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-450806",
+        "name": "Khuliso Mudau",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-455356",
+        "name": "Mehdi Tikdari",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-459842",
+        "name": "Sébastian Breza",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-462348",
+        "name": "مصطفى محمد",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-465819",
+        "name": "Santiago Rodríguez",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-465966",
+        "name": "أحمد أبو الفتوح",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-467434",
+        "name": "Rocco Reitz",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-467616",
+        "name": "Luke Le Roux",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-469211",
+        "name": "Liberato Cacace",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-469909",
+        "name": "Majid Aliyari",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-478192",
+        "name": "Mehdi Ghayedi",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-496062",
+        "name": "Víctor Griffith",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-499859",
+        "name": "Kristoffer Velde",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-507345",
+        "name": "Leonidas Stergiou",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-507467",
+        "name": "Stéphane Cueni",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-518350",
+        "name": "عبدالعزيز البلعوطي",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-518942",
+        "name": "كريم العراقي",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-531835",
+        "name": "Zorhan Bassong",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-538416",
+        "name": "Terrence Mashego",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-54381",
+        "name": "Tommy Smith",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-555606",
+        "name": "Patrick Maswanganyi",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-560463",
+        "name": "Neo Maema",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-564489",
+        "name": "Kamal Sowah",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-568728",
+        "name": "Pape Sy",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-577405",
+        "name": "Mathías Laborda",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-581429",
+        "name": "Khusniddin Alikulov",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-585949",
+        "name": "Pierre Kalulu",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-589099",
+        "name": "Yusuf Abdurisag",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-589101",
+        "name": "Shehab Ellethy",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-591431",
+        "name": "Mohamed Al-Naser",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-599419",
+        "name": "Max Rosenfelder",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-610190",
+        "name": "Nediljko Labrovic",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-610795",
+        "name": "Tomoya Ando",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-616344",
+        "name": "Tiago Tomás",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-617018",
+        "name": "Marko Stamenić",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-617019",
+        "name": "Matthew Garbett",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-625569",
+        "name": "Nicolás Acevedo",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-636981",
+        "name": "Ndabayithethwa Ndlondlo",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-652054",
+        "name": "Martin Vitík",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-657940",
+        "name": "Lukas MacNaughton",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-658052",
+        "name": "Mohammad Abualnadi",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-658534",
+        "name": "Lasso Coulibaly",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-658536",
+        "name": "Simon Adingra",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-663153",
+        "name": "Marko Farji",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-677986",
+        "name": "Mohammad Faisal Yousef Abu Zrayq",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-684307",
+        "name": "Youssef Amyn",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-684315",
+        "name": "Nnamdi Collins",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-688707",
+        "name": "Salis Abdul Samed",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-704270",
+        "name": "Sambou Soumano",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-714581",
+        "name": "Mohammed Qasim",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-716687",
+        "name": "Kumel Al-Rekabe",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-724025",
+        "name": "Matej Sin",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-724129",
+        "name": "Matias Fernandez-Pardo",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-730581",
+        "name": "Loïc Badé",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-731667",
+        "name": "أحمد عيد محمد جاد الحق",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-733234",
+        "name": "Kees Sims",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-735984",
+        "name": "Lucas Shlimon",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-736005",
+        "name": "Mustafa Mashaal",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-745181",
+        "name": "Soungoutou Magassa",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-746535",
+        "name": "Ndamulelo Maphangule",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-789040",
+        "name": "Yehia Zakaria",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-800995",
+        "name": "Ro-Zangelo Daal",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-801989",
+        "name": "Tammer Bany",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-839031",
+        "name": "Leonel Pérez",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-845654",
+        "name": "Kenan Yıldız",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-850132",
+        "name": "Montader Madjed",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-856047",
+        "name": "Mateo Ponte",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-864306",
+        "name": "Rafik Belghali",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-866246",
+        "name": "Lucas Bergvall",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-877682",
+        "name": "Reziq Bani Hani",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-883732",
+        "name": "Mukhammadkodir Khamraliev",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-898352",
+        "name": "Sebastián Boselli",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-900540",
+        "name": "Kahiser Lenis",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-910457",
+        "name": "Nelson Quiñónes",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-916461",
+        "name": "Rhys Bozinovski",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-926690",
+        "name": "Reyniel Perdomo",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-930998",
+        "name": "Yannick Eduardo",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-950131",
+        "name": "Tomás Jacob",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-953901",
+        "name": "Santiago Mouriño",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-955448",
+        "name": "Tidiam Gomis",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-957544",
+        "name": "Kodai Sano",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-959330",
+        "name": "Mohammed Jawad",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-965991",
+        "name": "Mduduzi Shabalala",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-994604",
+        "name": "Matai Akinmboni",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-1009658",
+        "name": "Julio Soler",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-1012174",
+        "name": "Iago Teodoro",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-1020852",
+        "name": "Abdulmalik Al-Jaber",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-1020859",
+        "name": "Mohammed Sulaiman",
+        "reason": "no_safe_match"
+      }
+    ],
+    "wrong_player_blocked": []
+  },
+  "finishedAt": "2026-06-14T01:43:51.475Z"
+}

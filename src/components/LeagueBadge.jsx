@@ -1,16 +1,6 @@
 import { useState } from 'react';
 import { resolveLeagueLogo } from '../utils/leagueLogoManifest';
 
-function getInitials(name) {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0])
-    .join('')
-    .toUpperCase();
-}
-
 export default function LeagueBadge({ league, size = 'card' }) {
   const resolved = resolveLeagueLogo(league);
   const theme = resolved.badgeTheme ?? league?.badgeTheme ?? {
@@ -40,26 +30,19 @@ export default function LeagueBadge({ league, size = 'card' }) {
           loading="lazy"
           onError={() => setImgFailed(true)}
         />
-        {size !== 'thumb' ? (
-          <span className="league-badge__country">{league.country}</span>
-        ) : null}
       </div>
     );
   }
 
   return (
     <div
-      className={`entity-crest-badge league-badge league-badge--${size}`}
+      className={`entity-crest-badge league-badge league-badge--${size} league-badge--generated`}
       style={style}
       role="img"
       aria-label={`${league.name} league badge`}
     >
       <span className="entity-crest-badge__shield" aria-hidden="true" />
       <span className="league-badge__ring" aria-hidden="true" />
-      <span className="league-badge__initials entity-crest-badge__code">{getInitials(league.name)}</span>
-      {size !== 'thumb' ? (
-        <span className="league-badge__country">{league.country}</span>
-      ) : null}
     </div>
   );
 }

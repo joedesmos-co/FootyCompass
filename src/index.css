@@ -3881,6 +3881,24 @@ input:focus-visible {
   display: none;
 }
 
+/* Generated visuals: badge/flag/photo only — no in-image text overlays */
+.league-badge__country,
+.league-badge__initials,
+.team-identity-badge__code,
+.team-identity-badge__country,
+.team-identity-badge__league,
+.team-identity-badge__league-mark,
+.team-badge__country,
+.team-badge__initials,
+.player-avatar__position,
+.player-avatar__club-mark,
+.player-avatar__shirt,
+.player-visual__meta,
+.player-visual__jersey-num,
+.player-avatar__initials.player-visual__initials {
+  display: none !important;
+}
+
 .team-identity-badge--crest {
   clip-path: none;
   border-radius: 0.75rem;

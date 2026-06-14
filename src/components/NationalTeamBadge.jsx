@@ -2,21 +2,6 @@ import { useState } from 'react';
 import { getCountryFlag } from '../utils/footballDisplay';
 import { resolveNationalTeamFlag } from '../utils/countryFlags';
 
-function getShortCode(name) {
-  const initials = String(name ?? '')
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0])
-    .join('')
-    .toUpperCase();
-  if (initials.length >= 2) return initials;
-  return String(name ?? '')
-    .replace(/[^a-zA-Z]/g, '')
-    .slice(0, 3)
-    .toUpperCase();
-}
-
 export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
   const theme = nationalTeam.badgeTheme ?? {
     from: '#22c55e',
@@ -28,7 +13,6 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
     '--league-to': theme.to,
     '--league-accent': theme.accent,
   };
-  const showMeta = size !== 'thumb';
   const flag = resolveNationalTeamFlag(nationalTeam);
   const [imgFailed, setImgFailed] = useState(false);
 
@@ -53,11 +37,6 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
           decoding="async"
           onError={() => setImgFailed(true)}
         />
-        {showMeta ? (
-          <span className="league-badge__country">
-            {nationalTeam.confederation ?? nationalTeam.country}
-          </span>
-        ) : null}
       </div>
     );
   }
@@ -73,32 +52,19 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
         <span className="national-team-badge__flag-emoji" aria-hidden="true">
           {emojiFallback}
         </span>
-        {showMeta ? (
-          <span className="league-badge__country">
-            {nationalTeam.confederation ?? nationalTeam.country}
-          </span>
-        ) : null}
       </div>
     );
   }
 
   return (
     <div
-      className={`entity-crest-badge league-badge national-team-badge national-team-badge--${size} national-team-badge--initials`}
+      className={`entity-crest-badge league-badge national-team-badge national-team-badge--${size} national-team-badge--generated`}
       style={style}
       role="img"
       aria-label={`${nationalTeam.displayName} national team`}
     >
       <span className="entity-crest-badge__shield" aria-hidden="true" />
       <span className="league-badge__ring" aria-hidden="true" />
-      <span className="league-badge__initials entity-crest-badge__code">
-        {getShortCode(nationalTeam.displayName)}
-      </span>
-      {showMeta ? (
-        <span className="league-badge__country">
-          {nationalTeam.confederation ?? nationalTeam.country}
-        </span>
-      ) : null}
     </div>
   );
 }

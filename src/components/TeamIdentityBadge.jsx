@@ -1,22 +1,12 @@
 import { memo, useState } from 'react';
-import { getManifestLeague } from '../data/contentManifest';
-import { formatCountryLabel, getLeagueDisplayName } from '../utils/footballDisplay';
+import { getClubIdentityStyle } from '../utils/identityVisual';
 import { resolveClubCrest } from '../utils/clubCrestManifest';
-import { getClubIdentityStyle, getClubShortCode, getLeagueMonogram } from '../utils/identityVisual';
 
 function TeamIdentityBadgeComponent({
   team,
   size = 'card',
-  leagueName: leagueNameProp,
-  showLeagueChip = false,
 }) {
   const style = getClubIdentityStyle(team);
-  const shortCode = getClubShortCode(team?.name, 3, team?.id);
-  const country = formatCountryLabel(team?.country);
-  const leagueLabel =
-    leagueNameProp ??
-    (team?.leagueId ? getLeagueDisplayName(getManifestLeague(team.leagueId)) : '');
-  const leagueMonogram = getLeagueMonogram(team?.leagueId);
   const crest = resolveClubCrest(team);
   const [imgFailed, setImgFailed] = useState(false);
   const showCrest = crest.crestUrl && !imgFailed;
@@ -34,14 +24,6 @@ function TeamIdentityBadgeComponent({
           loading="lazy"
           onError={() => setImgFailed(true)}
         />
-        {country && country !== '—' && size !== 'thumb' ? (
-          <span className="team-identity-badge__country team-badge__country">{country}</span>
-        ) : null}
-        {showLeagueChip && leagueLabel ? (
-          <span className="team-identity-badge__league" title={leagueLabel}>
-            {leagueLabel}
-          </span>
-        ) : null}
       </div>
     );
   }
@@ -56,22 +38,6 @@ function TeamIdentityBadgeComponent({
       <span className="entity-crest-badge__shield" aria-hidden="true" />
       <span className="team-identity-badge__pattern" aria-hidden="true" />
       <span className="team-identity-badge__stripe" aria-hidden="true" />
-      <span className="team-identity-badge__code team-badge__initials entity-crest-badge__code">
-        {shortCode}
-      </span>
-      {leagueMonogram ? (
-        <span className="team-identity-badge__league-mark" title={leagueLabel || leagueMonogram}>
-          {leagueMonogram}
-        </span>
-      ) : null}
-      {country && country !== '—' && size !== 'thumb' ? (
-        <span className="team-identity-badge__country team-badge__country">{country}</span>
-      ) : null}
-      {showLeagueChip && leagueLabel ? (
-        <span className="team-identity-badge__league" title={leagueLabel}>
-          {leagueLabel}
-        </span>
-      ) : null}
       <span className="team-identity-badge__rim team-badge__rim" aria-hidden="true" />
     </div>
   );

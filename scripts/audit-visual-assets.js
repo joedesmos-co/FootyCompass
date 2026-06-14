@@ -117,8 +117,8 @@ function main() {
       nationalTeamsWithFlags: flagsForNt.length,
     },
     fallbackFeatures: {
-      players: ['club/nation gradient', 'jersey silhouette', 'shirt number or initials', 'position badge', 'country flag', 'club code mark'],
-      clubs: ['per-club badgeTheme colors', 'initials shield', 'league monogram chip', 'country label'],
+      players: ['club/nation gradient', 'jersey silhouette', 'country flag emoji'],
+      clubs: ['per-club badgeTheme colors', 'pattern shield (no text overlays)'],
     },
     skipReasonCounts,
     examples: {
