@@ -9,12 +9,14 @@ FootyBrain does **not** scrape or hotlink third-party player photos. Placeholder
 | **App-hosted files** | `/images/players/haaland.webp` | File in `public/images/players/` (or built asset). Preferred for production. |
 | **Your HTTPS CDN** | `https://cdn.example.com/footybrain/players/haaland.webp` | You control hosting and rights. HTTPS only. |
 | **Commons / CC** | `https://upload.wikimedia.org/...` | Set `imageCredit`, `imageSource`, and `imageLicense` (e.g. `CC BY-SA 4.0`). |
+| **Licensed stock (owner download)** | `/images/players/{id}.webp` | Must be genuinely purchased/downloaded — never hotlink previews or watermarked thumbnails. Register in `scripts/data/player-image-licensed.mjs`. |
 
 ## Disallowed sources
 
 - Transfermarkt (`image_url`, headshots, any TM URL)
 - Google Images / `googleusercontent` / random search results
-- FotMob, Getty, Shutterstock, iStock, Alamy, EA/FC official packs, or any URL you do not have rights to use
+- FotMob, Getty, Shutterstock, iStock, Alamy, Depositphotos previews, EA/FC official packs, or any URL you do not have rights to use
+- FootyRenders and similar render sites (non-commercial-only terms; no automated extraction)
 - Hotlinking club or league sites without a written license
 
 ## Why not to scrape

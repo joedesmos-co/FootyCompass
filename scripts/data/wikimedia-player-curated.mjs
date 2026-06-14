@@ -139,7 +139,13 @@ export default {
     'tm-51471': { searchName: 'Mateo Kovacic', verifyName: 'Kovacic' },
     'tm-487465': { searchName: 'Pedro Neto', verifyName: 'Neto' },
     'tm-324358': { searchName: 'Ollie Watkins', verifyName: 'Watkins' },
-    'tm-626724': { searchName: 'João Pedro Brighton Watford footballer', verifyName: 'João Pedro', excludeTerms: ['Calvo', 'Minnesota'] },
+    'tm-626724': {
+      commonsFile: 'Joao Pedro holder Chelsea drakt 2025.jpg',
+      verifyName: 'João Pedro',
+      requireExactName: true,
+      requireContext: true,
+      excludeTerms: ['Calvo', 'Minnesota'],
+    },
     'tm-44058': {
       commonsFile: 'Wojciech Szczęsny.png',
       verifyName: 'Wojciech Szczęsny',
@@ -174,7 +180,12 @@ export default {
 
     // Batch 3 — priority overlay targets (globally recognizable / quiz-heavy)
     'tm-353108': { searchName: 'Bruno Henrique Flamengo', verifyName: 'Bruno Henrique' },
-    'tm-503743': { searchName: 'Morgan Rogers Aston Villa', verifyName: 'Rogers' },
+    'tm-503743': {
+      commonsFile: 'Morgan Rogers April 2026.jpg',
+      verifyName: 'Morgan Rogers',
+      requireExactName: true,
+      requireContext: true,
+    },
     'tm-272999': { searchName: 'Miguel Almirón', verifyName: 'Almirón' },
     'tm-112515': { searchName: 'Marcos Alonso footballer', verifyName: 'Alonso' },
     'tm-126665': { searchName: 'Idrissa Gueye Senegal', verifyName: 'Gueye' },
@@ -274,11 +285,21 @@ export default {
     'tm-509022': { commonsFile: 'Frosinone Calcio - Federico Gatti - MS 1.jpg', verifyName: 'Gatti' },
     'tm-118534': { commonsFile: 'Michael Keane.jpg', verifyName: 'Keane' },
     'tm-173504': { commonsFile: 'James Tarkowski TomHeaton.jpg', verifyName: 'Tarkowski' },
-    'tm-398065': { commonsFile: 'Kieran Trippier, Alex Murphy and Harvey Barnes 24052026 (24).jpg', verifyName: 'Barnes' },
+    'tm-398065': {
+      commonsFile: 'Harvey Barnes 24052026 (1).jpg',
+      verifyName: 'Harvey Barnes',
+      requireExactName: true,
+      requireContext: true,
+    },
     'tm-255450': { commonsFile: 'Aleksei Miranchuk 2013.jpg', verifyName: 'Miranchuk' },
     'tm-148367': { commonsFile: 'Christian Nørgaard, Brentford F.C. footballer, May 2022.jpg', verifyName: 'Nørgaard' },
     'tm-381950': { commonsFile: 'Saelemaekers 2 Milan-Torino 2021-22.jpg', verifyName: 'Saelemaekers' },
-    'tm-485585': { commonsFile: 'St. Louis City vs Aston Villa (Jul 2025) 06 (Ian Maatsen).jpg', verifyName: 'Maatsen' },
+    'tm-485585': {
+      commonsFile: 'Ian Maatsen Aston Villa.jpg',
+      verifyName: 'Ian Maatsen',
+      requireExactName: true,
+      requireContext: true,
+    },
     'tm-339314': {
       commonsFile: 'Deniz undav.jpg',
       verifyName: 'Deniz Undav',
@@ -651,7 +672,12 @@ export default {
     // Quiz-eligible batch — 2026-06-13
     'tm-709187': { searchName: 'Nico Williams', verifyName: 'Williams' },
     'tm-111455': { searchName: 'Granit Xhaka', verifyName: 'Xhaka' },
-    'tm-128223': { searchName: 'Álvaro Morata', verifyName: 'Morata' },
+    'tm-128223': {
+      commonsFile: 'Álvaro Morata, Spain U-19, SBS Cup 2010 in Fujieda, Japan (cropped).jpg',
+      verifyName: 'Álvaro Morata',
+      requireExactName: true,
+      requireContext: true,
+    },
     'tm-159471': { searchName: 'Serge Gnabry', verifyName: 'Gnabry' },
     'tm-326031': { searchName: 'Matthijs de Ligt', verifyName: 'Ligt' },
     'tm-59377': { searchName: 'David de Gea', verifyName: 'Gea' },

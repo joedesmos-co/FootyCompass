@@ -1,28 +1,28 @@
 # FootyCompass visual asset report
 
-Generated: 2026-06-14T01:43:56.191Z
+Generated: 2026-06-14T01:52:49.993Z
 
 ## Coverage summary
 
 | Category | Real asset | Generated fallback | Total | Visual coverage |
 | --- | ---: | ---: | ---: | ---: |
-| Players | 481 | 4346 | 4827 | 100% |
+| Players | 489 | 4338 | 4827 | 100% |
 | Clubs | 143 | 192 | 335 | 100% |
 | Leagues (logos) | 8 | 0 | 8 | 100% |
 | National teams (flags) | 55 | 0 | 55 | 100% |
 
 ## Generated fallback features
 
-**Players:** club/nation gradient, jersey silhouette, shirt number or initials, position badge, country flag, club code mark
-**Clubs:** per-club badgeTheme colors, initials shield, league monogram chip, country label
+**Players:** club/nation gradient, jersey silhouette, country flag emoji
+**Clubs:** per-club badgeTheme colors, pattern shield (no text overlays)
 
 All 4827 players and 335 clubs have an intentional visual (real asset or polished generated badge).
 
 ## Missing real assets — top reasons (players)
 
 - **not_attempted**: 3706
-- **no_safe_match**: 624
-- **commons_denylisted**: 12
+- **no_safe_match**: 617
+- **commons_denylisted**: 11
 - **identity_mismatch:matched Alejandro Serrano Garcia, not Alejandro Garcia**: 1
 - **identity_mismatch**: 1
 - **identity_mismatch:matched Ben Foster, not Ben Old**: 1
@@ -34,11 +34,11 @@ All 4827 players and 335 clubs have an intentional visual (real asset or polishe
 - Eduardo Camavinga (`tm-640428`) — no_safe_match
 - Min-jae Kim (`tm-503482`) — no_safe_match
 - Gerard Moreno (`tm-177467`) — no_safe_match
-- Morgan Rogers (`tm-503743`) — no_safe_match
 - Ollie Watkins (`tm-324358`) — no_safe_match
-- João Pedro (`tm-626724`) — no_safe_match
-- Álvaro Morata (`tm-128223`) — no_safe_match
 - Denis Bouanga (`tm-236045`) — no_safe_match
+- Marquinhos (`tm-181767`) — no_safe_match
+- Strahinja Pavlović (`tm-574671`) — no_safe_match
+- Yuri Berchiche (`tm-61812`) — no_safe_match
 
 **Clubs without Wikimedia crest (generated badge used):**
 - Aston Villa (`aston-villa`, premier-league)

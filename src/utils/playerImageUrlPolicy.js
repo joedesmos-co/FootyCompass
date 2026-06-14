@@ -15,6 +15,8 @@ const DISALLOWED_URL_SUBSTRINGS = [
   'shutterstock',
   'dreamstime',
   'istockphoto',
+  'depositphotos',
+  'footyrenders',
 ];
 
 export function isDisallowedImageUrl(url) {
