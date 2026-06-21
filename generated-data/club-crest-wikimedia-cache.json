@@ -38,7 +38,7 @@
     "aston-villa": {
       "status": "skip",
       "reason": "no_match",
-      "at": "2026-06-13T04:06:57.310Z"
+      "at": "2026-06-21T23:30:56.768Z"
     },
     "real-madrid": {
       "status": "resolved",
@@ -168,17 +168,17 @@
     "west-ham": {
       "status": "skip",
       "reason": "no_match",
-      "at": "2026-06-13T04:07:36.776Z"
+      "at": "2026-06-21T23:31:01.640Z"
     },
     "brighton": {
       "status": "skip",
       "reason": "no_match",
-      "at": "2026-06-13T04:08:00.115Z"
+      "at": "2026-06-21T23:31:06.744Z"
     },
     "wolves": {
       "status": "skip",
       "reason": "no_match",
-      "at": "2026-06-13T04:08:04.282Z"
+      "at": "2026-06-21T23:31:11.257Z"
     },
     "crystal-palace": {
       "status": "resolved",
@@ -188,7 +188,7 @@
     "brentford": {
       "status": "skip",
       "reason": "no_match",
-      "at": "2026-06-13T04:08:09.439Z"
+      "at": "2026-06-21T23:31:16.183Z"
     },
     "everton": {
       "status": "resolved",
@@ -533,7 +533,7 @@
     "bournemouth": {
       "status": "skip",
       "reason": "no_match",
-      "at": "2026-06-13T04:10:06.256Z"
+      "at": "2026-06-21T23:31:20.850Z"
     },
     "sunderland": {
       "status": "resolved",
@@ -543,7 +543,7 @@
     "nottingham-forest": {
       "status": "skip",
       "reason": "no_match",
-      "at": "2026-06-13T04:10:12.223Z"
+      "at": "2026-06-21T23:31:25.294Z"
     },
     "burnley": {
       "status": "resolved",
@@ -596,9 +596,9 @@
       "at": "2026-06-13T04:24:14.389Z"
     },
     "verona": {
-      "status": "skip",
-      "reason": "no_match",
-      "at": "2026-06-13T04:10:30.233Z"
+      "status": "resolved",
+      "commonsFile": "Associazione Calcio Verona logo (1965-1984).png",
+      "at": "2026-06-21T23:39:36.226Z"
     },
     "parma": {
       "status": "resolved",

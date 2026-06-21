@@ -1,25 +1,61 @@
 {
-  "startedAt": "2026-06-21T15:49:31.950Z",
+  "startedAt": "2026-06-21T23:39:36.458Z",
   "offset": 0,
   "limit": 25,
   "added": [
     {
-      "playerId": "tm-284732",
-      "name": "Ramy Bensebaini",
-      "license": "CC BY-SA 4.0",
-      "commonsFile": "Bensebaini MHSC.jpg"
-    },
-    {
-      "playerId": "tm-369316",
-      "name": "Ferdi Kadıoğlu",
-      "license": "CC BY 3.0",
-      "commonsFile": "Ferdi Kadıoğlu 2024.jpg"
-    },
-    {
-      "playerId": "tm-211474",
-      "name": "Ali Abdi",
+      "playerId": "tm-388165",
+      "name": "Yoane Wissa",
       "license": "CC0",
-      "commonsFile": "Abdi asse ogcn 2425.png"
+      "commonsFile": "CAN 2023RD Congo 2-1 Guinée 9939 (cropped).jpg"
+    },
+    {
+      "playerId": "tm-648046",
+      "name": "Evan Ferguson",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Evan Ferguson YantsImages - Asatur Yesayants 626 (cropped).jpg"
+    },
+    {
+      "playerId": "tm-698164",
+      "name": "Freddie Potts",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Freddie Potts.jpeg"
+    },
+    {
+      "playerId": "tm-250426",
+      "name": "Adam Armstrong",
+      "license": "CC0",
+      "commonsFile": "Adam Armstrong 22112025 (4).jpg"
+    },
+    {
+      "playerId": "tm-484547",
+      "name": "Jeremie Frimpong",
+      "license": "CC0",
+      "commonsFile": "Jeremie Frimpong 04012026 (1).jpg"
+    },
+    {
+      "playerId": "tm-273132",
+      "name": "Robin Gosens",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Robin Gosens 01.jpg"
+    },
+    {
+      "playerId": "tm-532937",
+      "name": "Johan Vásquez",
+      "license": "CC BY 3.0",
+      "commonsFile": "Johan Vásquez.jpg"
+    },
+    {
+      "playerId": "tm-148252",
+      "name": "Remo Freuler",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Azione Lecce Atalanta - Remo Freuler (cropped).jpg"
+    },
+    {
+      "playerId": "tm-423744",
+      "name": "Billy Gilmour",
+      "license": "CC BY-SA 4.0",
+      "commonsFile": "Billy Gilmour 2021-08-07 1.jpg"
     }
   ],
   "skipped": [],
@@ -27,5 +63,5 @@
   "alreadyApproved": [],
   "apiErrors": 0,
   "stoppedEarly": false,
-  "finishedAt": "2026-06-21T15:49:36.378Z"
+  "finishedAt": "2026-06-21T23:39:49.615Z"
 }

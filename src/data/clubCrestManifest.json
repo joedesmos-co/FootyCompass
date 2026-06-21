@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-14T01:25:14.083Z",
-  "entryCount": 143,
+  "updatedAt": "2026-06-21T23:39:36.227Z",
+  "entryCount": 144,
   "entries": {
     "manchester-city": {
       "teamId": "manchester-city",
@@ -1430,6 +1430,16 @@
       "imageSource": "Wikimedia Commons",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAl_Fateh_SC_Logo.svg",
       "imageLicense": "CC0",
+      "locked": false
+    },
+    "verona": {
+      "teamId": "verona",
+      "teamName": "Hellas Verona",
+      "path": "/images/clubs/verona.svg",
+      "commonsFile": "Associazione Calcio Verona logo (1965-1984).png",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAssociazione_Calcio_Verona_logo_(1965-1984).png",
+      "imageLicense": "Public domain",
       "locked": false
     }
   }

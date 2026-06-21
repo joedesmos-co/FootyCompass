@@ -70,7 +70,10 @@ export default {
     'cagliari': { searchTerm: 'Cagliari logo' },
     'lecce': { searchTerm: 'Lecce logo' },
     'sassuolo': { searchTerm: 'Sassuolo logo' },
-    'verona': { searchTerm: 'Hellas Verona logo' },
+    'verona': {
+      searchTerm: 'Hellas Verona logo',
+      commonsFile: 'Associazione Calcio Verona logo (1965-1984).png',
+    },
     'parma': { searchTerm: 'Parma logo' },
     'como': { searchTerm: 'Como logo' },
     'cremonese': { searchTerm: 'Cremonese logo' },

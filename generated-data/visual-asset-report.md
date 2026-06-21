@@ -1,13 +1,13 @@
 # FootyCompass visual asset report
 
-Generated: 2026-06-21T23:22:20.921Z
+Generated: 2026-06-21T23:40:25.738Z
 
 ## Coverage summary
 
 | Category | Real asset | Generated fallback | Total | Visual coverage |
 | --- | ---: | ---: | ---: | ---: |
-| Players | 509 | 4318 | 4827 | 100% |
-| Clubs | 143 | 192 | 335 | 100% |
+| Players | 518 | 4309 | 4827 | 100% |
+| Clubs | 144 | 191 | 335 | 100% |
 | Leagues (logos) | 8 | 0 | 8 | 100% |
 | National teams (flags) | 55 | 0 | 55 | 100% |
 
@@ -29,10 +29,9 @@ All 4827 players and 335 clubs have an intentional visual (real asset or polishe
 ## Missing real assets — top reasons (players)
 
 - **not_attempted**: 3706
-- **no_safe_match**: 600
-- **commons_denylisted**: 8
+- **no_safe_match**: 593
+- **commons_denylisted**: 7
 - **identity_mismatch:matched Alejandro Serrano Garcia, not Alejandro Garcia**: 1
-- **identity_mismatch**: 1
 - **identity_mismatch:matched Ben Foster, not Ben Old**: 1
 - **identity_mismatch:matched Argentina goalkeeper, not Palmeiras/Uruguay midfielder**: 1
 
