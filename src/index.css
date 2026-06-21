@@ -1560,6 +1560,22 @@ input:focus-visible {
   height: 4.25rem;
   border-radius: var(--radius);
   background: rgba(7, 17, 13, 0.55);
+  overflow: hidden;
+}
+
+.home-spotlight__visual .player-visual--card {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: 4 / 5;
+}
+
+.home-spotlight__visual .team-badge,
+.home-spotlight__visual .league-badge {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .home-spotlight__visual--quiz {
@@ -2585,6 +2601,15 @@ input:focus-visible {
   white-space: nowrap;
 }
 
+.player-autocomplete__option .player-visual--thumb,
+.player-autocomplete__option .player-avatar--thumb {
+  flex-shrink: 0;
+}
+
+.team-autocomplete__option .team-badge--thumb {
+  flex-shrink: 0;
+}
+
 .filters__count {
   margin: 0.75rem 0 0;
   color: var(--color-muted);
@@ -3104,8 +3129,15 @@ input:focus-visible {
 
 .browse-club-chip--nation .national-team-badge {
   flex-shrink: 0;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 1.35rem;
+  min-width: 2rem;
+  min-height: 1.35rem;
+}
+
+.browse-club-chip--nation .national-team-badge--flag-emoji {
+  width: 1.65rem;
+  height: 1.65rem;
 }
 
 .browse-accordion__expand {
@@ -3389,12 +3421,12 @@ input:focus-visible {
   position: relative;
   z-index: 1;
   display: block;
-  width: auto;
-  height: min(68%, 4.75rem);
-  max-width: min(42%, 4.25rem);
+  width: clamp(2rem, 38%, 4.75rem);
+  height: auto;
+  max-height: 72%;
   aspect-ratio: 5 / 6;
   flex-shrink: 0;
-  fill: color-mix(in srgb, var(--visual-accent) 28%, rgba(255, 255, 255, 0.88));
+  color: color-mix(in srgb, var(--visual-accent) 28%, rgba(255, 255, 255, 0.88));
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.22));
 }
 
@@ -3407,18 +3439,18 @@ input:focus-visible {
 }
 
 .player-avatar--thumb .player-avatar__figure {
-  height: 58%;
-  max-width: 46%;
+  width: clamp(1.35rem, 58%, 1.85rem);
+  max-height: 68%;
 }
 
 .player-avatar--profile .player-avatar__figure {
-  height: min(72%, 9.5rem);
-  max-width: min(44%, 6.5rem);
+  width: clamp(3.5rem, 42%, 6.5rem);
+  max-height: 76%;
 }
 
 .player-avatar--card .player-avatar__figure {
-  height: min(70%, 6.25rem);
-  max-width: min(36%, 5rem);
+  width: clamp(2.35rem, 36%, 5rem);
+  max-height: 70%;
 }
 
 .player-avatar__disc {
@@ -3648,12 +3680,18 @@ input:focus-visible {
   display: none;
 }
 
-.player-avatar--profile {
+.player-avatar--profile,
+.player-visual--profile {
   width: min(100%, 12rem);
-  height: min(100%, 15rem);
   max-width: 12rem;
+  height: auto;
   aspect-ratio: 4 / 5;
   flex: 0 0 auto;
+}
+
+.player-avatar--profile.player-avatar--photo,
+.player-visual--profile.player-visual--photo {
+  min-height: 0;
 }
 
 .player-visual__shine {
@@ -8778,6 +8816,11 @@ p.browse-results-empty {
     height: 3.5rem;
   }
 
+  .home-spotlight__visual .player-visual--card {
+    height: 100%;
+    max-width: 100%;
+  }
+
   .hero-visual {
     min-height: 230px;
   }
@@ -8839,10 +8882,12 @@ p.browse-results-empty {
     font-size: 1.95rem;
   }
 
+  .player-avatar--profile,
   .player-visual--profile {
-    width: 100%;
+    width: min(100%, 12rem);
+    max-width: 12rem;
     height: auto;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 5;
   }
 
   .team-badge--profile {
@@ -8850,10 +8895,16 @@ p.browse-results-empty {
     height: 7.75rem;
   }
 
-  .league-badge--profile,
-  .national-team-badge--profile {
+  .league-badge--profile {
     width: 6.5rem;
     height: 6.5rem;
+  }
+
+  .national-team-badge--flag.national-team-badge--profile,
+  .national-team-badge--flag-emoji.national-team-badge--profile,
+  .national-team-badge--generated.national-team-badge--profile {
+    width: 6.5rem;
+    height: 4.35rem;
   }
 
   .national-teams-page__card {
@@ -11625,11 +11676,6 @@ p.browse-results-empty {
   text-decoration: underline;
 }
 
-.today-picks-card--national-team .national-team-badge--card {
-  width: 3.1rem;
-  height: 2.1rem;
-}
-
 .collections-page__section-desc,
 .learning-paths-page__section-desc {
   margin: -0.35rem 0 0.85rem;
@@ -11694,16 +11740,29 @@ p.browse-results-empty {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
 }
 
 .today-picks-card--player .player-visual--card {
-  width: 4.25rem;
+  width: 100%;
+  max-width: 4.25rem;
   aspect-ratio: 4 / 5;
 }
 
 .today-picks-card--team .team-badge {
-  width: 4rem;
-  height: 4rem;
+  width: 3.65rem;
+  height: 4.1rem;
+}
+
+.today-picks-card--league .league-badge {
+  width: 3.15rem;
+  height: 3.45rem;
+}
+
+.today-picks-card--national-team .national-team-badge,
+.today-picks-card--national-team .national-team-badge--card {
+  width: 3.1rem;
+  height: 2.1rem;
 }
 
 .today-picks-card__body {
@@ -11772,7 +11831,8 @@ p.browse-results-empty {
   }
 
   .today-picks-card {
-    grid-template-columns: 4rem minmax(0, 1fr);
+    grid-template-columns: minmax(3.65rem, 4.25rem) minmax(0, 1fr);
+    align-items: center;
   }
 }
 
@@ -16146,11 +16206,6 @@ section.empty-state,
   text-decoration: underline;
 }
 
-.home-spotlight__visual .player-visual--card {
-  width: 3.75rem;
-  aspect-ratio: 4 / 5;
-}
-
 .team-key-players__card .player-visual--card {
   width: 3.25rem;
   flex-shrink: 0;
@@ -16440,8 +16495,7 @@ section.empty-state,
   line-height: 1;
 }
 
-.team-key-players__card,
-.today-picks-card {
+.team-key-players__card {
   background: rgba(22, 38, 34, 0.55);
   padding: 0.55rem 0.65rem;
 }
@@ -16457,7 +16511,8 @@ section.empty-state,
   }
 
   .player-profile__hero-visual {
-    justify-self: start;
+    justify-self: center;
+    width: 100%;
   }
 
   .player-profile__hero-stats {

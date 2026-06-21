@@ -139,6 +139,11 @@ function main() {
         'text-free',
       ],
     },
+    responsiveFallbackNotes: [
+      'Profile heroes use 4:5 player frames on mobile and desktop',
+      'Homepage spotlight and daily-pick visuals scale inside fixed slots',
+      'Browse nation chips use flag proportions (not square crops)',
+    ],
     textFreeFallbacks: true,
     skipReasonCounts,
     examples: {
@@ -178,6 +183,8 @@ function main() {
     report.textFreeFallbacks
       ? 'All generated fallbacks are text-free: no initials, shirt numbers, position badges, club codes, or in-badge labels.'
       : '',
+    '',
+    ...(report.responsiveFallbackNotes ?? []).map((note) => `- ${note}`),
     '',
     `All ${report.totals.players} players and ${report.totals.clubVisualCoverage} clubs have an intentional visual (real asset or polished generated badge).`,
     '',

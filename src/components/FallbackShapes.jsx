@@ -3,8 +3,11 @@
 export function PlayerSilhouette({ className }) {
   return (
     <svg className={className} viewBox="0 0 100 120" aria-hidden="true" focusable="false">
-      <ellipse cx="50" cy="22" rx="15" ry="16" />
-      <path d="M50 36c-19 0-33 9-33 21v53c0 3.5 2.8 6.5 6.5 6.5h53c3.7 0 6.5-3 6.5-6.5V57c0-12-14-21-33-21z" />
+      <ellipse cx="50" cy="22" rx="15" ry="16" fill="currentColor" />
+      <path
+        d="M50 36c-19 0-33 9-33 21v53c0 3.5 2.8 6.5 6.5 6.5h53c3.7 0 6.5-3 6.5-6.5V57c0-12-14-21-33-21z"
+        fill="currentColor"
+      />
     </svg>
   );
 }

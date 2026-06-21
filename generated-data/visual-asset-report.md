@@ -1,6 +1,6 @@
 # FootyCompass visual asset report
 
-Generated: 2026-06-21T15:53:17.381Z
+Generated: 2026-06-21T23:22:20.921Z
 
 ## Coverage summary
 
@@ -19,6 +19,10 @@ Generated: 2026-06-21T15:53:17.381Z
 **National teams:** real flag asset when available, emoji fallback when asset missing, flag-shaped SVG placeholder as last resort, text-free
 
 All generated fallbacks are text-free: no initials, shirt numbers, position badges, club codes, or in-badge labels.
+
+- Profile heroes use 4:5 player frames on mobile and desktop
+- Homepage spotlight and daily-pick visuals scale inside fixed slots
+- Browse nation chips use flag proportions (not square crops)
 
 All 4827 players and 335 clubs have an intentional visual (real asset or polished generated badge).
 
