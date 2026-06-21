@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { LeagueEmblem } from './FallbackShapes';
 import { resolveLeagueLogo } from '../utils/leagueLogoManifest';
 
 export default function LeagueBadge({ league, size = 'card' }) {
@@ -42,7 +43,7 @@ export default function LeagueBadge({ league, size = 'card' }) {
       aria-label={`${league.name} league badge`}
     >
       <span className="entity-crest-badge__shield" aria-hidden="true" />
-      <span className="league-badge__ring" aria-hidden="true" />
+      <LeagueEmblem className="league-badge__emblem" />
     </div>
   );
 }

@@ -117,9 +117,29 @@ function main() {
       nationalTeamsWithFlags: flagsForNt.length,
     },
     fallbackFeatures: {
-      players: ['club/nation gradient', 'jersey silhouette', 'country flag emoji'],
-      clubs: ['per-club badgeTheme colors', 'pattern shield (no text overlays)'],
+      players: [
+        'soft club/nation gradient',
+        'centered person silhouette SVG',
+        'text-free (no initials, numbers, badges, or flag chips)',
+      ],
+      clubs: [
+        'club badgeTheme colors',
+        'abstract nested shield emblem',
+        'text-free (no initials or codes)',
+      ],
+      leagues: [
+        'league accent gradient shield',
+        'abstract star emblem',
+        'text-free',
+      ],
+      nationalTeams: [
+        'real flag asset when available',
+        'emoji fallback when asset missing',
+        'flag-shaped SVG placeholder as last resort',
+        'text-free',
+      ],
     },
+    textFreeFallbacks: true,
     skipReasonCounts,
     examples: {
       missingRealPhotos: missingRealPhotos
@@ -152,6 +172,12 @@ function main() {
     '',
     '**Players:** ' + report.fallbackFeatures.players.join(', '),
     '**Clubs:** ' + report.fallbackFeatures.clubs.join(', '),
+    '**Leagues:** ' + (report.fallbackFeatures.leagues ?? []).join(', '),
+    '**National teams:** ' + (report.fallbackFeatures.nationalTeams ?? []).join(', '),
+    '',
+    report.textFreeFallbacks
+      ? 'All generated fallbacks are text-free: no initials, shirt numbers, position badges, club codes, or in-badge labels.'
+      : '',
     '',
     `All ${report.totals.players} players and ${report.totals.clubVisualCoverage} clubs have an intentional visual (real asset or polished generated badge).`,
     '',

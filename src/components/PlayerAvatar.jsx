@@ -1,49 +1,16 @@
 import { memo, useEffect, useState } from 'react';
 import { peekTeamById } from '../data/teamStore';
-import {
-  getPlayerAvatarStyle,
-  resolvePlayerAvatarTheme,
-} from '../utils/identityVisual';
+import { getPlayerAvatarStyle } from '../utils/identityVisual';
 import {
   getPlayerImageAttribution,
   getPlayerImageAttributes,
   resolvePlayerImageSource,
   warnMissingImageAttribution,
 } from '../utils/playerImage';
+import { PlayerSilhouette } from './FallbackShapes';
 import PlayerImageCredit from './PlayerImageCredit';
 
-function PlayerAvatarPlaceholder({
-  player,
-  team,
-  size,
-  compact,
-  style,
-}) {
-  const theme = resolvePlayerAvatarTheme(player, team);
-  const isThumb = size === 'thumb';
-  const isCard = size === 'card';
-  const isCircle = isThumb || size === 'profile';
-
-  if (isCard) {
-    return (
-      <div
-        className={`player-avatar player-avatar--card player-avatar--placeholder player-visual player-visual--card player-visual--placeholder player-visual--generated${compact ? ' player-visual--compact' : ''}`}
-        style={style}
-        role="img"
-        aria-label={`${player?.name ?? 'Player'} avatar`}
-      >
-        <span className="player-visual__shine" aria-hidden="true" />
-        <span className="player-visual__pitch-line" aria-hidden="true" />
-        <span className="player-visual__jersey player-visual__jersey--card" aria-hidden="true" />
-        {theme.flag ? (
-          <span className="player-avatar__flag player-avatar__flag--card" aria-hidden="true">
-            {theme.flag}
-          </span>
-        ) : null}
-      </div>
-    );
-  }
-
+function PlayerAvatarPlaceholder({ player, size, compact, style }) {
   return (
     <div
       className={`player-avatar player-avatar--${size} player-avatar--placeholder player-visual player-visual--${size} player-visual--placeholder player-visual--generated${compact ? ' player-visual--compact' : ''}`}
@@ -51,15 +18,8 @@ function PlayerAvatarPlaceholder({
       role="img"
       aria-label={`${player?.name ?? 'Player'} avatar`}
     >
-      <span className={`player-avatar__disc${isCircle ? ' player-avatar__disc--circle' : ''}`}>
-        <span className="player-avatar__silhouette" aria-hidden="true" />
-        <span className="player-avatar__ring" aria-hidden="true" />
-        {theme.flag ? (
-          <span className="player-avatar__flag" aria-hidden="true">
-            {theme.flag}
-          </span>
-        ) : null}
-      </span>
+      <span className="player-avatar__glow" aria-hidden="true" />
+      <PlayerSilhouette className="player-avatar__figure" />
     </div>
   );
 }
@@ -110,7 +70,6 @@ function PlayerAvatarComponent({
   return (
     <PlayerAvatarPlaceholder
       player={player}
-      team={team}
       size={size}
       compact={compact}
       style={style}

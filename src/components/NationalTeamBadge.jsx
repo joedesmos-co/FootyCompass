@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FlagPlaceholderShape } from './FallbackShapes';
 import { getCountryFlag } from '../utils/footballDisplay';
 import { resolveNationalTeamFlag } from '../utils/countryFlags';
 
@@ -58,13 +59,12 @@ export default function NationalTeamBadge({ nationalTeam, size = 'card' }) {
 
   return (
     <div
-      className={`entity-crest-badge league-badge national-team-badge national-team-badge--${size} national-team-badge--generated`}
+      className={`national-team-badge national-team-badge--${size} national-team-badge--generated`}
       style={style}
       role="img"
       aria-label={`${nationalTeam.displayName} national team`}
     >
-      <span className="entity-crest-badge__shield" aria-hidden="true" />
-      <span className="league-badge__ring" aria-hidden="true" />
+      <FlagPlaceholderShape className="national-team-badge__flag-shape" />
     </div>
   );
 }

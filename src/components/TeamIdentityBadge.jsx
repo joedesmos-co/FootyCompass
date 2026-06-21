@@ -1,4 +1,5 @@
 import { memo, useState } from 'react';
+import { ClubShieldEmblem } from './FallbackShapes';
 import { getClubIdentityStyle } from '../utils/identityVisual';
 import { resolveClubCrest } from '../utils/clubCrestManifest';
 
@@ -37,7 +38,7 @@ function TeamIdentityBadgeComponent({
     >
       <span className="entity-crest-badge__shield" aria-hidden="true" />
       <span className="team-identity-badge__pattern" aria-hidden="true" />
-      <span className="team-identity-badge__stripe" aria-hidden="true" />
+      <ClubShieldEmblem className="team-identity-badge__emblem" />
       <span className="team-identity-badge__rim team-badge__rim" aria-hidden="true" />
     </div>
   );

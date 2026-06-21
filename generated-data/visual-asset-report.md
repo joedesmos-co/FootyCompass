@@ -1,6 +1,6 @@
 # FootyCompass visual asset report
 
-Generated: 2026-06-21T15:49:41.293Z
+Generated: 2026-06-21T15:53:17.381Z
 
 ## Coverage summary
 
@@ -13,8 +13,12 @@ Generated: 2026-06-21T15:49:41.293Z
 
 ## Generated fallback features
 
-**Players:** club/nation gradient, jersey silhouette, country flag emoji
-**Clubs:** per-club badgeTheme colors, pattern shield (no text overlays)
+**Players:** soft club/nation gradient, centered person silhouette SVG, text-free (no initials, numbers, badges, or flag chips)
+**Clubs:** club badgeTheme colors, abstract nested shield emblem, text-free (no initials or codes)
+**Leagues:** league accent gradient shield, abstract star emblem, text-free
+**National teams:** real flag asset when available, emoji fallback when asset missing, flag-shaped SVG placeholder as last resort, text-free
+
+All generated fallbacks are text-free: no initials, shirt numbers, position badges, club codes, or in-badge labels.
 
 All 4827 players and 335 clubs have an intentional visual (real asset or polished generated badge).
 
