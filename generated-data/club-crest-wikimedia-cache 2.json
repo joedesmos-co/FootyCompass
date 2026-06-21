@@ -1,0 +1,909 @@
+{
+  "entries": {
+    "manchester-city": {
+      "status": "resolved",
+      "commonsFile": "Manchester Velodrome logo.svg",
+      "at": "2026-06-13T04:06:46.379Z"
+    },
+    "arsenal": {
+      "status": "resolved",
+      "commonsFile": "Arsenal Crest 1952.svg",
+      "at": "2026-06-13T04:06:47.470Z"
+    },
+    "liverpool": {
+      "status": "resolved",
+      "commonsFile": "Royal Liverpool Philharmonic Orchestra Logo.svg",
+      "at": "2026-06-13T04:06:48.593Z"
+    },
+    "chelsea": {
+      "status": "resolved",
+      "commonsFile": "Logo of the town of Chelsea, Vermont.svg",
+      "at": "2026-06-13T04:06:50.234Z"
+    },
+    "manchester-united": {
+      "status": "resolved",
+      "commonsFile": "Association of Greater Manchester Authorities.svg",
+      "at": "2026-06-13T04:23:51.378Z"
+    },
+    "tottenham": {
+      "status": "resolved",
+      "commonsFile": "Tottenham Hotspur Stadium logo.svg",
+      "at": "2026-06-13T04:06:52.527Z"
+    },
+    "newcastle": {
+      "status": "resolved",
+      "commonsFile": "Scottish & Newcastle logo.svg",
+      "at": "2026-06-13T04:06:53.593Z"
+    },
+    "aston-villa": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:06:57.310Z"
+    },
+    "real-madrid": {
+      "status": "resolved",
+      "commonsFile": "Escudo Real Madrid 1908.png",
+      "at": "2026-06-13T04:06:58.443Z"
+    },
+    "barcelona": {
+      "status": "resolved",
+      "commonsFile": "Barcelona Metro Logo.svg",
+      "at": "2026-06-13T04:06:59.648Z"
+    },
+    "atletico-madrid": {
+      "status": "resolved",
+      "commonsFile": "Athletic Club crest 1903.png",
+      "at": "2026-06-13T04:23:53.069Z"
+    },
+    "sevilla": {
+      "status": "resolved",
+      "commonsFile": "Logo de la Diputación de Sevilla.svg",
+      "at": "2026-06-13T04:07:01.886Z"
+    },
+    "bayern-munich": {
+      "status": "resolved",
+      "commonsFile": "Logo FC Bayern München (2002–2017).svg",
+      "at": "2026-06-13T04:07:02.906Z"
+    },
+    "borussia-dortmund": {
+      "status": "resolved",
+      "commonsFile": "Borussia Dortmund logo.svg",
+      "at": "2026-06-13T04:07:03.914Z"
+    },
+    "bayer-leverkusen": {
+      "status": "resolved",
+      "commonsFile": "Logo TSV Bayer 04 Leverkusen.svg",
+      "at": "2026-06-13T04:07:05.076Z"
+    },
+    "rb-leipzig": {
+      "status": "resolved",
+      "commonsFile": "VEREINFACHTES LOGO - RB Leipzig.svg",
+      "at": "2026-06-13T04:07:06.110Z"
+    },
+    "eintracht-frankfurt": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:07:09.874Z"
+    },
+    "ac-milan": {
+      "status": "resolved",
+      "commonsFile": "Logo of AC Milan.svg",
+      "at": "2026-06-13T04:07:10.849Z"
+    },
+    "inter-milan": {
+      "status": "resolved",
+      "commonsFile": "Inter Old Logo (2007-2014).svg",
+      "at": "2026-06-13T04:07:11.866Z"
+    },
+    "juventus": {
+      "status": "resolved",
+      "commonsFile": "Juventus FC - logo black (Italy, 2017).svg",
+      "at": "2026-06-13T04:07:12.847Z"
+    },
+    "napoli": {
+      "status": "resolved",
+      "commonsFile": "Logo Napoli del 1930-1960.svg",
+      "at": "2026-06-13T04:07:13.972Z"
+    },
+    "roma": {
+      "status": "resolved",
+      "commonsFile": "Logo AS Roma 1960s.svg",
+      "at": "2026-06-13T04:07:14.901Z"
+    },
+    "lazio": {
+      "status": "resolved",
+      "commonsFile": "Logo of S.S. Lazio (1943).svg",
+      "at": "2026-06-13T04:07:16.006Z"
+    },
+    "paris-saint-germain": {
+      "status": "resolved",
+      "commonsFile": "Paris Saint-Germain (1992-1996).gif",
+      "at": "2026-06-13T04:23:54.843Z"
+    },
+    "marseille": {
+      "status": "resolved",
+      "commonsFile": "Olympique Marseille logo.svg",
+      "at": "2026-06-13T04:07:18.108Z"
+    },
+    "lyon": {
+      "status": "resolved",
+      "commonsFile": "Logo aéroport Lyon S 00 illustrator copie2.svg",
+      "at": "2026-06-13T04:07:19.339Z"
+    },
+    "monaco": {
+      "status": "resolved",
+      "commonsFile": "Monaco Red Cross logo.svg",
+      "at": "2026-06-13T04:07:21.024Z"
+    },
+    "lille": {
+      "status": "resolved",
+      "commonsFile": "Lille Metro Logo 2017.svg",
+      "at": "2026-06-13T04:07:22.268Z"
+    },
+    "ajax": {
+      "status": "resolved",
+      "commonsFile": "Ajax logo.svg",
+      "at": "2026-06-13T04:07:23.277Z"
+    },
+    "psv": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:07:27.055Z"
+    },
+    "feyenoord": {
+      "status": "resolved",
+      "commonsFile": "Logo Sportclub Feyenoord.png",
+      "at": "2026-06-13T04:07:28.352Z"
+    },
+    "az-alkmaar": {
+      "status": "resolved",
+      "commonsFile": "AZ Alkmaar.svg",
+      "at": "2026-06-13T04:24:06.503Z"
+    },
+    "fc-twente": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:07:32.916Z"
+    },
+    "west-ham": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:07:36.776Z"
+    },
+    "brighton": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:00.115Z"
+    },
+    "wolves": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:04.282Z"
+    },
+    "crystal-palace": {
+      "status": "resolved",
+      "commonsFile": "Crystal Palace footie flag.png",
+      "at": "2026-06-13T04:23:56.456Z"
+    },
+    "brentford": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:09.439Z"
+    },
+    "everton": {
+      "status": "resolved",
+      "commonsFile": "Logo Everton FC 1976.svg",
+      "at": "2026-06-13T04:08:10.560Z"
+    },
+    "fulham": {
+      "status": "resolved",
+      "commonsFile": "Coat of arms of the London Borough of Hammersmith and Fulham.svg",
+      "at": "2026-06-13T04:24:00.738Z"
+    },
+    "athletic-bilbao": {
+      "status": "resolved",
+      "commonsFile": "Mohawk Athletic Club logo.svg",
+      "at": "2026-06-13T04:08:15.666Z"
+    },
+    "real-sociedad": {
+      "status": "resolved",
+      "commonsFile": "Escudo de la Real Sociedad de Tenis de La Magdalena (Santander).svg",
+      "at": "2026-06-13T04:08:16.822Z"
+    },
+    "real-betis": {
+      "status": "resolved",
+      "commonsFile": "Escudo del Betis Balompié entre 1931-1932.svg",
+      "at": "2026-06-13T04:08:17.922Z"
+    },
+    "villarreal": {
+      "status": "resolved",
+      "commonsFile": "Aven de l’Arquet 9a.jpg",
+      "at": "2026-06-13T04:24:07.449Z"
+    },
+    "celta-vigo": {
+      "status": "resolved",
+      "commonsFile": "Escudo RC Celta de Vigo.svg",
+      "at": "2026-06-13T04:08:20.193Z"
+    },
+    "valencia": {
+      "status": "resolved",
+      "commonsFile": "EMT Valencia logo.svg",
+      "at": "2026-06-13T04:08:21.417Z"
+    },
+    "vfb-stuttgart": {
+      "status": "resolved",
+      "commonsFile": "VfB Stuttgart Logo.svg",
+      "at": "2026-06-13T04:08:22.634Z"
+    },
+    "borussia-monchengladbach": {
+      "status": "resolved",
+      "commonsFile": "Bm gladbach wappen.svg",
+      "at": "2026-06-13T04:24:02.336Z"
+    },
+    "wolfsburg": {
+      "status": "resolved",
+      "commonsFile": "VfL Wolfsburg logo.svg",
+      "at": "2026-06-13T04:08:24.931Z"
+    },
+    "werder-bremen": {
+      "status": "resolved",
+      "commonsFile": "SV-Werder-Bremen-Logo.svg",
+      "at": "2026-06-13T04:08:26.329Z"
+    },
+    "levante": {
+      "status": "resolved",
+      "commonsFile": "Levante ferries logo.svg",
+      "at": "2026-06-13T04:08:27.654Z"
+    },
+    "mainz": {
+      "status": "resolved",
+      "commonsFile": "Altes Logo der Johannes-Gutenberg-Universität Mainz.jpg",
+      "at": "2026-06-13T04:08:28.745Z"
+    },
+    "fc-koln": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:32.885Z"
+    },
+    "heidenheim": {
+      "status": "resolved",
+      "commonsFile": "1. FC Heidenheim 1846.svg",
+      "at": "2026-06-13T04:24:26.453Z"
+    },
+    "union-berlin": {
+      "status": "resolved",
+      "commonsFile": "CDU LV Berlin Logo 2020.svg",
+      "at": "2026-06-13T04:08:35.202Z"
+    },
+    "fc-augsburg": {
+      "status": "resolved",
+      "commonsFile": "Wappen FC Augsburg bis 1997.gif",
+      "at": "2026-06-13T04:08:36.269Z"
+    },
+    "st-pauli": {
+      "status": "resolved",
+      "commonsFile": "Fc st pauli logo.svg",
+      "at": "2026-06-13T04:08:37.238Z"
+    },
+    "hamburger-sv": {
+      "status": "resolved",
+      "commonsFile": "600px Azzurro con Rombi bianco nero e bianco.png",
+      "at": "2026-06-13T04:24:27.394Z"
+    },
+    "hoffenheim": {
+      "status": "resolved",
+      "commonsFile": "Logo TSG Hoffenheim.png",
+      "at": "2026-06-13T04:08:39.471Z"
+    },
+    "fc-utrecht": {
+      "status": "resolved",
+      "commonsFile": "FC Utrecht.png",
+      "at": "2026-06-13T04:24:28.287Z"
+    },
+    "sc-heerenveen": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:44.011Z"
+    },
+    "fc-groningen": {
+      "status": "resolved",
+      "commonsFile": "FC Groningen logo.png",
+      "at": "2026-06-13T04:08:45.267Z"
+    },
+    "nec-nijmegen": {
+      "status": "resolved",
+      "commonsFile": "SC NEC Nijmegen (logo, 70s).svg",
+      "at": "2026-06-13T04:08:46.311Z"
+    },
+    "sparta-rotterdam": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:50.047Z"
+    },
+    "fortuna-sittard": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:53.778Z"
+    },
+    "go-ahead-eagles": {
+      "status": "resolved",
+      "commonsFile": "Go Ahead Eagles logo.svg",
+      "at": "2026-06-13T04:08:54.885Z"
+    },
+    "heracles-almelo": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:08:58.613Z"
+    },
+    "sc-telstar": {
+      "status": "resolved",
+      "commonsFile": "Telstar 18 Logo.jpg",
+      "at": "2026-06-13T04:08:59.684Z"
+    },
+    "nac-breda": {
+      "status": "resolved",
+      "commonsFile": "Logo NAC Breda.png",
+      "at": "2026-06-13T04:09:00.904Z"
+    },
+    "fc-volendam": {
+      "status": "resolved",
+      "commonsFile": "FC Volendam logo.png",
+      "at": "2026-06-13T04:09:02.008Z"
+    },
+    "pec-zwolle": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:09:05.649Z"
+    },
+    "excelsior-rotterdam": {
+      "status": "resolved",
+      "commonsFile": "Excelsior Rotterdam logo 2002.svg",
+      "at": "2026-06-13T04:09:06.787Z"
+    },
+    "atlanta-united": {
+      "status": "resolved",
+      "commonsFile": "Atlanta United wordmark red.svg",
+      "at": "2026-06-13T04:09:07.901Z"
+    },
+    "austin-fc": {
+      "status": "resolved",
+      "commonsFile": "USL Austin interim logo.jpg",
+      "at": "2026-06-13T04:09:09.062Z"
+    },
+    "charlotte-fc": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Charlotte FC.svg",
+      "at": "2026-06-13T04:09:10.379Z"
+    },
+    "chicago-fire": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Chicago Fire 2020.svg",
+      "at": "2026-06-13T04:09:11.500Z"
+    },
+    "fc-cincinnati": {
+      "status": "resolved",
+      "commonsFile": "FC Cincinnati orange full text logo.svg",
+      "at": "2026-06-13T04:09:13.149Z"
+    },
+    "colorado-rapids": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Colorado Rapids.svg",
+      "at": "2026-06-13T04:09:14.698Z"
+    },
+    "columbus-crew": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Columbus Crew.svg",
+      "at": "2026-06-13T04:09:16.042Z"
+    },
+    "dc-united": {
+      "status": "resolved",
+      "commonsFile": "Logo of the United States Secret Service.svg",
+      "at": "2026-06-13T04:09:17.212Z"
+    },
+    "fc-dallas": {
+      "status": "resolved",
+      "commonsFile": "FC Dallas Stadium logo.svg",
+      "at": "2026-06-13T04:09:18.262Z"
+    },
+    "houston-dynamo": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Houston Dynamo 2015.svg",
+      "at": "2026-06-13T04:09:19.472Z"
+    },
+    "inter-miami": {
+      "status": "resolved",
+      "commonsFile": "Inter Miami CF wordmark pink.svg",
+      "at": "2026-06-13T04:09:20.454Z"
+    },
+    "la-galaxy": {
+      "status": "resolved",
+      "commonsFile": "GalaxyS6 Logo.svg",
+      "at": "2026-06-13T04:09:21.584Z"
+    },
+    "lafc": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Los Angeles FC.svg",
+      "at": "2026-06-13T04:09:22.691Z"
+    },
+    "san-diego-fc": {
+      "status": "resolved",
+      "commonsFile": "San Diego Wave FC 2021 wordmark blue.svg",
+      "at": "2026-06-13T04:09:23.835Z"
+    },
+    "minnesota-united": {
+      "status": "resolved",
+      "commonsFile": "MNUFC wordmark dark.svg",
+      "at": "2026-06-13T04:33:14.263Z"
+    },
+    "cf-montreal": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Montreal Impact 2015.svg",
+      "at": "2026-06-13T04:09:26.139Z"
+    },
+    "nashville-sc": {
+      "status": "resolved",
+      "commonsFile": "Nashville SC logo, 2020.svg",
+      "at": "2026-06-13T04:09:27.286Z"
+    },
+    "new-england-revolution": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - New England Revolution.svg",
+      "at": "2026-06-13T04:09:28.672Z"
+    },
+    "new-york-city-fc": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - New York City FC 2015.svg",
+      "at": "2026-06-13T04:09:29.865Z"
+    },
+    "new-york-red-bulls": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - New York Red Bulls.svg",
+      "at": "2026-06-13T04:09:31.803Z"
+    },
+    "orlando-city": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Orlando City SC.svg",
+      "at": "2026-06-13T04:09:33.079Z"
+    },
+    "philadelphia-union": {
+      "status": "resolved",
+      "commonsFile": "Philadelphia Union footie flag.png",
+      "at": "2026-06-13T04:33:15.216Z"
+    },
+    "portland-timbers": {
+      "status": "resolved",
+      "commonsFile": "PortlandTimbers.svg",
+      "at": "2026-06-13T04:33:16.132Z"
+    },
+    "real-salt-lake": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Real Salt Lake.svg",
+      "at": "2026-06-13T04:09:36.820Z"
+    },
+    "san-jose-earthquakes": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - San Jose Earthquakes.svg",
+      "at": "2026-06-13T04:09:37.906Z"
+    },
+    "seattle-sounders": {
+      "status": "resolved",
+      "commonsFile": "Seattle Sounders FC crest banner.svg",
+      "at": "2026-06-13T04:09:38.973Z"
+    },
+    "sporting-kansas-city": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Sporting Kansas City.svg",
+      "at": "2026-06-13T04:09:40.329Z"
+    },
+    "st-louis-city": {
+      "status": "resolved",
+      "commonsFile": "STLCity WordmarkStackedOutline Blue.svg",
+      "at": "2026-06-13T04:09:41.607Z"
+    },
+    "freiburg": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:09:53.816Z"
+    },
+    "lens": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:09:57.880Z"
+    },
+    "nice": {
+      "status": "resolved",
+      "commonsFile": "OGC Nice (simplified logo).svg",
+      "at": "2026-06-13T04:09:58.968Z"
+    },
+    "rennes": {
+      "status": "resolved",
+      "commonsFile": "Stade Rennais (logo 1960).svg",
+      "at": "2026-06-13T04:10:00.057Z"
+    },
+    "strasbourg": {
+      "status": "resolved",
+      "commonsFile": "Logo RC Strasbourg - 1987-88.svg",
+      "at": "2026-06-13T04:10:01.070Z"
+    },
+    "leeds": {
+      "status": "resolved",
+      "commonsFile": "Leedsstudentlogo.png",
+      "at": "2026-06-13T04:10:02.225Z"
+    },
+    "bournemouth": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:10:06.256Z"
+    },
+    "sunderland": {
+      "status": "resolved",
+      "commonsFile": "Amherst and Sunderland Street Railway.svg",
+      "at": "2026-06-13T04:24:08.380Z"
+    },
+    "nottingham-forest": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:10:12.223Z"
+    },
+    "burnley": {
+      "status": "resolved",
+      "commonsFile": "Burnley Youth Theatre Logo 2012.svg",
+      "at": "2026-06-13T04:10:13.405Z"
+    },
+    "atalanta": {
+      "status": "resolved",
+      "commonsFile": "Atalanta Motors logo.svg",
+      "at": "2026-06-13T04:10:14.540Z"
+    },
+    "bologna": {
+      "status": "resolved",
+      "commonsFile": "Bologna-Prozess-Logo.svg",
+      "at": "2026-06-13T04:10:15.715Z"
+    },
+    "fiorentina": {
+      "status": "resolved",
+      "commonsFile": "ACF Fiorentina.svg",
+      "at": "2026-06-13T04:24:09.329Z"
+    },
+    "genoa": {
+      "status": "resolved",
+      "commonsFile": "Genoa Systems logo.jpg",
+      "at": "2026-06-13T04:10:18.106Z"
+    },
+    "udinese": {
+      "status": "resolved",
+      "commonsFile": "Udinese Calcio 2010.svg",
+      "at": "2026-06-13T04:24:10.152Z"
+    },
+    "torino": {
+      "status": "resolved",
+      "commonsFile": "Musei Reali Torino - logo (Italy, 2017).svg",
+      "at": "2026-06-13T04:10:20.319Z"
+    },
+    "cagliari": {
+      "status": "resolved",
+      "commonsFile": "Logo of Sistema Bibliotecario Monte Claro, Cagliari.png",
+      "at": "2026-06-13T04:10:21.762Z"
+    },
+    "lecce": {
+      "status": "resolved",
+      "commonsFile": "Blason Ecu Marie Enghien 3D.svg",
+      "at": "2026-06-13T04:24:13.529Z"
+    },
+    "sassuolo": {
+      "status": "resolved",
+      "commonsFile": "Stemma US Sassuolo Calcio 2008.svg",
+      "at": "2026-06-13T04:24:14.389Z"
+    },
+    "verona": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:10:30.233Z"
+    },
+    "parma": {
+      "status": "resolved",
+      "commonsFile": "FC Parma.svg",
+      "at": "2026-06-13T04:24:15.322Z"
+    },
+    "como": {
+      "status": "resolved",
+      "commonsFile": "Calcio Como - logo (Italy, 1950-1970).svg",
+      "at": "2026-06-13T04:10:32.612Z"
+    },
+    "cremonese": {
+      "status": "resolved",
+      "commonsFile": "Cremonese logo 1985-1997.svg",
+      "at": "2026-06-13T04:10:33.629Z"
+    },
+    "pisa": {
+      "status": "resolved",
+      "commonsFile": "PISA Network Logo.svg",
+      "at": "2026-06-13T04:10:34.904Z"
+    },
+    "aj-auxerre": {
+      "status": "resolved",
+      "commonsFile": "Ici Auxerre.svg",
+      "at": "2026-06-13T04:24:16.325Z"
+    },
+    "fc-lorient": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:10:39.805Z"
+    },
+    "fc-metz": {
+      "status": "resolved",
+      "commonsFile": "Metz Aerials Logo.svg",
+      "at": "2026-06-13T04:10:41.039Z"
+    },
+    "fc-toulouse": {
+      "status": "resolved",
+      "commonsFile": "Toulouse Business School Logo.svg",
+      "at": "2026-06-13T04:10:42.162Z"
+    },
+    "fc-nantes": {
+      "status": "resolved",
+      "commonsFile": "Université de nantes logo.jpg",
+      "at": "2026-06-13T04:10:43.450Z"
+    },
+    "ac-le-havre": {
+      "status": "resolved",
+      "commonsFile": "Université Le Havre Normandie.png",
+      "at": "2026-06-13T04:24:17.244Z"
+    },
+    "sco-angers": {
+      "status": "resolved",
+      "commonsFile": "Intrépide Angers.svg",
+      "at": "2026-06-13T04:24:18.183Z"
+    },
+    "stade-brest": {
+      "status": "resolved",
+      "commonsFile": "RegioWikiCamp Brest 2011.svg",
+      "at": "2026-06-13T04:24:19.147Z"
+    },
+    "paris-fc": {
+      "status": "resolved",
+      "commonsFile": "RedStarParis93.png",
+      "at": "2026-06-13T04:24:20.086Z"
+    },
+    "osasuna": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:10:52.548Z"
+    },
+    "alaves": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:10:56.248Z"
+    },
+    "espanyol": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:11:00.995Z"
+    },
+    "elche": {
+      "status": "resolved",
+      "commonsFile": "Aena Alicante logo.svg",
+      "at": "2026-06-13T04:24:21.036Z"
+    },
+    "getafe": {
+      "status": "resolved",
+      "commonsFile": "Getafe CF Logo.png",
+      "at": "2026-06-13T04:11:03.242Z"
+    },
+    "girona": {
+      "status": "resolved",
+      "commonsFile": "Hospital Universitari de Girona Doctor Josep Trueta.svg",
+      "at": "2026-06-13T04:24:21.958Z"
+    },
+    "rayo-vallecano": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:11:07.946Z"
+    },
+    "mallorca": {
+      "status": "resolved",
+      "commonsFile": "Aena Mallorca logo.svg",
+      "at": "2026-06-13T04:11:09.050Z"
+    },
+    "real-oviedo": {
+      "status": "resolved",
+      "commonsFile": "Escudo de Las Regueras.svg",
+      "at": "2026-06-13T04:24:25.552Z"
+    },
+    "toronto-fc": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Toronto FC.svg",
+      "at": "2026-06-13T04:11:14.021Z"
+    },
+    "vancouver-whitecaps": {
+      "status": "resolved",
+      "commonsFile": "MLS crest logo RGB - Vancouver Whitecaps FC.svg",
+      "at": "2026-06-13T04:11:15.108Z"
+    },
+    "chapecoense": {
+      "status": "resolved",
+      "commonsFile": "Símbolo Chapecoense sem estrelas.svg",
+      "at": "2026-06-13T04:33:16.967Z"
+    },
+    "vasco-da-gama": {
+      "status": "resolved",
+      "commonsFile": "Fundraising 2010 - Vasco da Gama banner.xcf",
+      "at": "2026-06-13T04:33:22.000Z"
+    },
+    "atletico-mineiro": {
+      "status": "resolved",
+      "commonsFile": "Atletico mineiro galo.png",
+      "at": "2026-06-13T04:33:22.977Z"
+    },
+    "athletico-paranaense": {
+      "status": "resolved",
+      "commonsFile": "CA Paranaense.svg",
+      "at": "2026-06-13T04:33:23.890Z"
+    },
+    "flamengo": {
+      "status": "resolved",
+      "commonsFile": "Clube de Regatas do Flamengo logo.svg",
+      "at": "2026-06-13T04:11:22.494Z"
+    },
+    "remo": {
+      "status": "resolved",
+      "commonsFile": "Clube do Remo.svg",
+      "at": "2026-06-13T04:33:24.732Z"
+    },
+    "coritiba": {
+      "status": "resolved",
+      "commonsFile": "Coritiba Foot Ball Club logo.svg",
+      "at": "2026-06-13T04:11:24.583Z"
+    },
+    "cruzeiro": {
+      "status": "resolved",
+      "commonsFile": "Cruzeirodosul-df.gif",
+      "at": "2026-06-13T04:33:25.630Z"
+    },
+    "bahia": {
+      "status": "resolved",
+      "commonsFile": "Casas Bahia logo (2015).svg",
+      "at": "2026-06-13T04:11:27.260Z"
+    },
+    "vitoria": {
+      "status": "resolved",
+      "commonsFile": "Radio vitoria Spain.svg",
+      "at": "2026-06-13T04:33:26.674Z"
+    },
+    "fluminense": {
+      "status": "resolved",
+      "commonsFile": "Logo UFF (blue).svg",
+      "at": "2026-06-13T04:33:27.548Z"
+    },
+    "gremio": {
+      "status": "resolved",
+      "commonsFile": "Gremio Prudente Emblem.svg",
+      "at": "2026-06-13T04:11:30.717Z"
+    },
+    "mirassol": {
+      "status": "resolved",
+      "commonsFile": "Mirassol FC logo.png",
+      "at": "2026-06-13T04:11:31.659Z"
+    },
+    "bragantino": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:11:35.536Z"
+    },
+    "botafogo": {
+      "status": "resolved",
+      "commonsFile": "Botafogo Futebol Clube (PB) logo.svg",
+      "at": "2026-06-13T04:11:37.102Z"
+    },
+    "santos": {
+      "status": "resolved",
+      "commonsFile": "Grupo Silvio Santos logo.svg",
+      "at": "2026-06-13T04:11:38.417Z"
+    },
+    "sao-paulo": {
+      "status": "resolved",
+      "commonsFile": "Sao Paulo Metro Logo.svg",
+      "at": "2026-06-13T04:11:39.541Z"
+    },
+    "palmeiras": {
+      "status": "resolved",
+      "commonsFile": "Palmeiras logo.svg",
+      "at": "2026-06-13T04:11:40.667Z"
+    },
+    "corinthians": {
+      "status": "resolved",
+      "commonsFile": "Arena Corinthians (Fundo Transparente).png",
+      "at": "2026-06-13T04:33:28.516Z"
+    },
+    "internacional": {
+      "status": "resolved",
+      "commonsFile": "Sport Club Internacional logo (1909-1957).svg",
+      "at": "2026-06-13T04:11:42.853Z"
+    },
+    "ext-tm-club-45193": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:32.306Z"
+    },
+    "ext-tm-club-2156": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:36.145Z"
+    },
+    "ext-tm-club-3612": {
+      "status": "resolved",
+      "commonsFile": "Alahlilogo.svg",
+      "at": "2026-06-13T04:33:37.165Z"
+    },
+    "ext-tm-club-18487": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:40.942Z"
+    },
+    "ext-tm-club-7": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:44.741Z"
+    },
+    "ext-tm-club-2150": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:48.455Z"
+    },
+    "ext-tm-club-1230": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:52.105Z"
+    },
+    "ext-tm-club-78312": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:55.905Z"
+    },
+    "ext-tm-club-14456": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:33:59.521Z"
+    },
+    "ext-tm-club-26091": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:03.161Z"
+    },
+    "ext-tm-club-7732": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:06.754Z"
+    },
+    "ext-tm-club-46718": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:10.505Z"
+    },
+    "ext-tm-club-13592": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:14.149Z"
+    },
+    "ext-tm-club-27221": {
+      "status": "resolved",
+      "commonsFile": "Al Fateh SC Logo.svg",
+      "at": "2026-06-13T04:34:15.230Z"
+    },
+    "ext-tm-club-50531": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:18.823Z"
+    },
+    "ext-tm-club-6297": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:22.682Z"
+    },
+    "ext-tm-club-9131": {
+      "status": "skip",
+      "reason": "no_match",
+      "at": "2026-06-13T04:34:26.508Z"
+    }
+  }
+}

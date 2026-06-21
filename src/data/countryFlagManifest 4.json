@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-13T04:06:28.546Z",
+  "entryCount": 55,
+  "entries": {
+    "England": {
+      "country": "England",
+      "slug": "england",
+      "path": "/images/flags/england.svg",
+      "commonsFile": "Flag of England.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_England.svg",
+      "imageLicense": "Public domain"
+    },
+    "France": {
+      "country": "France",
+      "slug": "france",
+      "path": "/images/flags/france.svg",
+      "commonsFile": "Flag of France.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_France.svg",
+      "imageLicense": "Public domain"
+    },
+    "Spain": {
+      "country": "Spain",
+      "slug": "spain",
+      "path": "/images/flags/spain.svg",
+      "commonsFile": "Flag of Spain.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Spain.svg",
+      "imageLicense": "Public domain"
+    },
+    "Brazil": {
+      "country": "Brazil",
+      "slug": "brazil",
+      "path": "/images/flags/brazil.svg",
+      "commonsFile": "Flag of Brazil.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Brazil.svg",
+      "imageLicense": "Public domain"
+    },
+    "Argentina": {
+      "country": "Argentina",
+      "slug": "argentina",
+      "path": "/images/flags/argentina.svg",
+      "commonsFile": "Flag of Argentina.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Argentina.svg",
+      "imageLicense": "Public domain"
+    },
+    "Germany": {
+      "country": "Germany",
+      "slug": "germany",
+      "path": "/images/flags/germany.svg",
+      "commonsFile": "Flag of Germany.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Germany.svg",
+      "imageLicense": "Public domain"
+    },
+    "Portugal": {
+      "country": "Portugal",
+      "slug": "portugal",
+      "path": "/images/flags/portugal.svg",
+      "commonsFile": "Flag of Portugal.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Portugal.svg",
+      "imageLicense": "Public domain"
+    },
+    "Italy": {
+      "country": "Italy",
+      "slug": "italy",
+      "path": "/images/flags/italy.svg",
+      "commonsFile": "Flag of Italy.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Italy.svg",
+      "imageLicense": "Public domain"
+    },
+    "Netherlands": {
+      "country": "Netherlands",
+      "slug": "netherlands",
+      "path": "/images/flags/netherlands.svg",
+      "commonsFile": "Flag of the Netherlands.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_the_Netherlands.svg",
+      "imageLicense": "Public domain"
+    },
+    "Belgium": {
+      "country": "Belgium",
+      "slug": "belgium",
+      "path": "/images/flags/belgium.svg",
+      "commonsFile": "Flag of Belgium.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Belgium.svg",
+      "imageLicense": "Public domain"
+    },
+    "Croatia": {
+      "country": "Croatia",
+      "slug": "croatia",
+      "path": "/images/flags/croatia.svg",
+      "commonsFile": "Flag of Croatia.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Croatia.svg",
+      "imageLicense": "Public domain"
+    },
+    "Switzerland": {
+      "country": "Switzerland",
+      "slug": "switzerland",
+      "path": "/images/flags/switzerland.svg",
+      "commonsFile": "Flag of Switzerland.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Switzerland.svg",
+      "imageLicense": "Public domain"
+    },
+    "Denmark": {
+      "country": "Denmark",
+      "slug": "denmark",
+      "path": "/images/flags/denmark.svg",
+      "commonsFile": "Flag of Denmark.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Denmark.svg",
+      "imageLicense": "Public domain"
+    },
+    "Serbia": {
+      "country": "Serbia",
+      "slug": "serbia",
+      "path": "/images/flags/serbia.svg",
+      "commonsFile": "Flag of Serbia.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Serbia.svg",
+      "imageLicense": "Public domain"
+    },
+    "Turkey": {
+      "country": "Turkey",
+      "slug": "turkey",
+      "path": "/images/flags/turkey.svg",
+      "commonsFile": "Flag of Turkey.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Turkey.svg",
+      "imageLicense": "Public domain"
+    },
+    "United States": {
+      "country": "United States",
+      "slug": "united-states",
+      "path": "/images/flags/united-states.svg",
+      "commonsFile": "Flag of the United States.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_the_United_States.svg",
+      "imageLicense": "Public domain"
+    },
+    "Mexico": {
+      "country": "Mexico",
+      "slug": "mexico",
+      "path": "/images/flags/mexico.svg",
+      "commonsFile": "Flag of Mexico.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Mexico.svg",
+      "imageLicense": "Public domain"
+    },
+    "Uruguay": {
+      "country": "Uruguay",
+      "slug": "uruguay",
+      "path": "/images/flags/uruguay.svg",
+      "commonsFile": "Flag of Uruguay.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Uruguay.svg",
+      "imageLicense": "Public domain"
+    },
+    "Colombia": {
+      "country": "Colombia",
+      "slug": "colombia",
+      "path": "/images/flags/colombia.svg",
+      "commonsFile": "Flag of Colombia.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Colombia.svg",
+      "imageLicense": "Public domain"
+    },
+    "Chile": {
+      "country": "Chile",
+      "slug": "chile",
+      "path": "/images/flags/chile.svg",
+      "commonsFile": "Flag of Chile.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Chile.svg",
+      "imageLicense": "Public domain"
+    },
+    "Morocco": {
+      "country": "Morocco",
+      "slug": "morocco",
+      "path": "/images/flags/morocco.svg",
+      "commonsFile": "Flag of Morocco.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Morocco.svg",
+      "imageLicense": "Public domain"
+    },
+    "Senegal": {
+      "country": "Senegal",
+      "slug": "senegal",
+      "path": "/images/flags/senegal.svg",
+      "commonsFile": "Flag of Senegal.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Senegal.svg",
+      "imageLicense": "Public domain"
+    },
+    "Nigeria": {
+      "country": "Nigeria",
+      "slug": "nigeria",
+      "path": "/images/flags/nigeria.svg",
+      "commonsFile": "Flag of Nigeria.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Nigeria.svg",
+      "imageLicense": "Public domain"
+    },
+    "Japan": {
+      "country": "Japan",
+      "slug": "japan",
+      "path": "/images/flags/japan.svg",
+      "commonsFile": "Flag of Japan.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Japan.svg",
+      "imageLicense": "Public domain"
+    },
+    "South Korea": {
+      "country": "South Korea",
+      "slug": "south-korea",
+      "path": "/images/flags/south-korea.svg",
+      "commonsFile": "Flag of South Korea.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_South_Korea.svg",
+      "imageLicense": "Public domain"
+    },
+    "Norway": {
+      "country": "Norway",
+      "slug": "norway",
+      "path": "/images/flags/norway.svg",
+      "commonsFile": "Flag of Norway.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Norway.svg",
+      "imageLicense": "Public domain"
+    },
+    "Ghana": {
+      "country": "Ghana",
+      "slug": "ghana",
+      "path": "/images/flags/ghana.svg",
+      "commonsFile": "Flag of Ghana.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Ghana.svg",
+      "imageLicense": "Public domain"
+    },
+    "Algeria": {
+      "country": "Algeria",
+      "slug": "algeria",
+      "path": "/images/flags/algeria.svg",
+      "commonsFile": "Flag of Algeria.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Algeria.svg",
+      "imageLicense": "Public domain"
+    },
+    "Poland": {
+      "country": "Poland",
+      "slug": "poland",
+      "path": "/images/flags/poland.svg",
+      "commonsFile": "Flag of Poland.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Poland.svg",
+      "imageLicense": "Public domain"
+    },
+    "Austria": {
+      "country": "Austria",
+      "slug": "austria",
+      "path": "/images/flags/austria.svg",
+      "commonsFile": "Flag of Austria.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Austria.svg",
+      "imageLicense": "Public domain"
+    },
+    "Ukraine": {
+      "country": "Ukraine",
+      "slug": "ukraine",
+      "path": "/images/flags/ukraine.svg",
+      "commonsFile": "Flag of Ukraine.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Ukraine.svg",
+      "imageLicense": "Public domain"
+    },
+    "Scotland": {
+      "country": "Scotland",
+      "slug": "scotland",
+      "path": "/images/flags/scotland.svg",
+      "commonsFile": "Flag of Scotland.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Scotland.svg",
+      "imageLicense": "Public domain"
+    },
+    "Paraguay": {
+      "country": "Paraguay",
+      "slug": "paraguay",
+      "path": "/images/flags/paraguay.svg",
+      "commonsFile": "Flag of Paraguay.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Paraguay.svg",
+      "imageLicense": "Public domain"
+    },
+    "Czechia": {
+      "country": "Czechia",
+      "slug": "czechia",
+      "path": "/images/flags/czechia.svg",
+      "commonsFile": "Flag of the Czech Republic.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_the_Czech_Republic.svg",
+      "imageLicense": "Public domain"
+    },
+    "Sweden": {
+      "country": "Sweden",
+      "slug": "sweden",
+      "path": "/images/flags/sweden.svg",
+      "commonsFile": "Flag of Sweden.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Sweden.svg",
+      "imageLicense": "Public domain"
+    },
+    "Côte d'Ivoire": {
+      "country": "Côte d'Ivoire",
+      "slug": "cote-d-ivoire",
+      "path": "/images/flags/cote-d-ivoire.svg",
+      "commonsFile": "Flag of Côte d'Ivoire.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_C%C3%B4te_d'Ivoire.svg",
+      "imageLicense": "Public domain"
+    },
+    "Canada": {
+      "country": "Canada",
+      "slug": "canada",
+      "path": "/images/flags/canada.svg",
+      "commonsFile": "Flag of Canada.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Canada.svg",
+      "imageLicense": "Public domain"
+    },
+    "Australia": {
+      "country": "Australia",
+      "slug": "australia",
+      "path": "/images/flags/australia.svg",
+      "commonsFile": "Flag of Australia.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Australia.svg",
+      "imageLicense": "Public domain"
+    },
+    "Ecuador": {
+      "country": "Ecuador",
+      "slug": "ecuador",
+      "path": "/images/flags/ecuador.svg",
+      "commonsFile": "Flag of Ecuador.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Ecuador.svg",
+      "imageLicense": "Public domain"
+    },
+    "Bosnia and Herzegovina": {
+      "country": "Bosnia and Herzegovina",
+      "slug": "bosnia-and-herzegovina",
+      "path": "/images/flags/bosnia-and-herzegovina.svg",
+      "commonsFile": "Flag of Bosnia and Herzegovina.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Bosnia_and_Herzegovina.svg",
+      "imageLicense": "Public domain"
+    },
+    "DR Congo": {
+      "country": "DR Congo",
+      "slug": "dr-congo",
+      "path": "/images/flags/dr-congo.svg",
+      "commonsFile": "Flag of the Democratic Republic of the Congo.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_the_Democratic_Republic_of_the_Congo.svg",
+      "imageLicense": "Public domain"
+    },
+    "Haiti": {
+      "country": "Haiti",
+      "slug": "haiti",
+      "path": "/images/flags/haiti.svg",
+      "commonsFile": "Flag of Haiti.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Haiti.svg",
+      "imageLicense": "Public domain"
+    },
+    "Tunisia": {
+      "country": "Tunisia",
+      "slug": "tunisia",
+      "path": "/images/flags/tunisia.svg",
+      "commonsFile": "Flag of Tunisia.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Tunisia.svg",
+      "imageLicense": "Public domain"
+    },
+    "Egypt": {
+      "country": "Egypt",
+      "slug": "egypt",
+      "path": "/images/flags/egypt.svg",
+      "commonsFile": "Flag of Egypt.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Egypt.svg",
+      "imageLicense": "Public domain"
+    },
+    "Qatar": {
+      "country": "Qatar",
+      "slug": "qatar",
+      "path": "/images/flags/qatar.svg",
+      "commonsFile": "Flag of Qatar.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Qatar.svg",
+      "imageLicense": "Public domain"
+    },
+    "Saudi Arabia": {
+      "country": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "path": "/images/flags/saudi-arabia.svg",
+      "commonsFile": "Flag of Saudi Arabia.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Saudi_Arabia.svg",
+      "imageLicense": "Public domain"
+    },
+    "Iran": {
+      "country": "Iran",
+      "slug": "iran",
+      "path": "/images/flags/iran.svg",
+      "commonsFile": "Flag of Iran.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Iran.svg",
+      "imageLicense": "Public domain"
+    },
+    "South Africa": {
+      "country": "South Africa",
+      "slug": "south-africa",
+      "path": "/images/flags/south-africa.svg",
+      "commonsFile": "Flag of South Africa.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_South_Africa.svg",
+      "imageLicense": "Public domain"
+    },
+    "Panama": {
+      "country": "Panama",
+      "slug": "panama",
+      "path": "/images/flags/panama.svg",
+      "commonsFile": "Flag of Panama.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Panama.svg",
+      "imageLicense": "Public domain"
+    },
+    "Iraq": {
+      "country": "Iraq",
+      "slug": "iraq",
+      "path": "/images/flags/iraq.svg",
+      "commonsFile": "Flag of Iraq.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Iraq.svg",
+      "imageLicense": "Public domain"
+    },
+    "Jordan": {
+      "country": "Jordan",
+      "slug": "jordan",
+      "path": "/images/flags/jordan.svg",
+      "commonsFile": "Flag of Jordan.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Jordan.svg",
+      "imageLicense": "Public domain"
+    },
+    "Uzbekistan": {
+      "country": "Uzbekistan",
+      "slug": "uzbekistan",
+      "path": "/images/flags/uzbekistan.svg",
+      "commonsFile": "Flag of Uzbekistan.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Uzbekistan.svg",
+      "imageLicense": "Public domain"
+    },
+    "New Zealand": {
+      "country": "New Zealand",
+      "slug": "new-zealand",
+      "path": "/images/flags/new-zealand.svg",
+      "commonsFile": "Flag of New Zealand.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_New_Zealand.svg",
+      "imageLicense": "Public domain"
+    },
+    "Cape Verde": {
+      "country": "Cape Verde",
+      "slug": "cape-verde",
+      "path": "/images/flags/cape-verde.svg",
+      "commonsFile": "Flag of Cape Verde.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Cape_Verde.svg",
+      "imageLicense": "Public domain"
+    },
+    "Curaçao": {
+      "country": "Curaçao",
+      "slug": "curacao",
+      "path": "/images/flags/curacao.svg",
+      "commonsFile": "Flag of Curaçao.svg",
+      "imageSource": "Wikimedia Commons",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlag_of_Cura%C3%A7ao.svg",
+      "imageLicense": "Public domain"
+    }
+  }
+}
