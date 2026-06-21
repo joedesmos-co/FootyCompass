@@ -71,7 +71,7 @@ export function requiresAttribution(licenseShort) {
 }
 
 const FOOTBALL_CONTEXT =
-  /\b(football|footballer|soccer|fútbol|futbol|fifa|uefa|world cup|copa|euro|premier|bundesliga|serie a|ligue 1|la liga|national team|selección|striker|midfielder|goalkeeper|defender|\bfc\b|\bcf\b|\bafc\b|\bvs\.?\b| vs |match|training|cup|qualification|rennes|madrid|barcelona|manchester|liverpool|chelsea|arsenal|juventus|milan|inter|dortmund|bayern|benfica|porto|zenit|argentina|uruguay|brazil|spain|germany|france|england|aston villa|celebrates|scoring|goalkeeper|champions league)\b/i;
+  /\b(football|footballer|soccer|fútbol|futbol|fifa|uefa|world cup|copa|euro|premier|bundesliga|serie a|ligue 1|la liga|national team|selección|striker|midfielder|goalkeeper|defender|\bfc\b|\bcf\b|\bafc\b|\bogc\b|\bpsg\b|\bvs\.?\b| vs |match|training|cup|qualification|rennes|madrid|barcelona|manchester|liverpool|chelsea|arsenal|juventus|milan|inter|dortmund|bayern|benfica|porto|zenit|argentina|uruguay|brazil|spain|germany|france|england|aston villa|celebrates|scoring|goalkeeper|champions league)\b/i;
 
 export function hasFootballContext(meta) {
   const hay = `${meta.description} ${meta.commonsFile}`;
@@ -323,6 +323,8 @@ export async function resolvePlayerCommonsImage(spec, player, { onDelay = sleep 
   let meta = null;
   let quality = null;
 
+  const identityPlayerName = mergedSpec.identityName ?? player.name;
+
   const identityOptions = {
     allowExactNameWithoutFootballContext:
       mergedSpec.allowExactNameWithoutFootballContext ?? Boolean(mergedSpec.commonsFile),
@@ -341,7 +343,7 @@ export async function resolvePlayerCommonsImage(spec, player, { onDelay = sleep 
     if (direct) {
       quality = scorePlayerImage(direct, player.name, mergedSpec.verifyName);
       if (quality.pass) meta = direct;
-      else if (!override) {
+      else if (!override && !mergedSpec.commonsFileOnly) {
         // fall through to search for a better candidate
       } else {
         return { skip: true, reason: `quality_below_threshold:${quality.score}` };
@@ -366,7 +368,7 @@ export async function resolvePlayerCommonsImage(spec, player, { onDelay = sleep 
       results.filter((candidate) => {
         if (!isAllowedLicense(candidate.licenseShort)) return false;
         if (
-          !verifyIdentity(candidate, mergedSpec.verifyName, player.name, mergedSpec.excludeTerms, identityOptions)
+          !verifyIdentity(candidate, mergedSpec.verifyName, identityPlayerName, mergedSpec.excludeTerms, identityOptions)
         ) {
           return false;
         }
@@ -410,7 +412,8 @@ export async function resolvePlayerCommonsImage(spec, player, { onDelay = sleep 
     return { skip: true, reason: `unclear_license:${meta.licenseShort || 'unknown'}` };
   }
   if (
-    !verifyIdentity(meta, mergedSpec.verifyName, player.name, mergedSpec.excludeTerms, identityOptions)
+    !mergedSpec.skipIdentityCheck &&
+    !verifyIdentity(meta, mergedSpec.verifyName, identityPlayerName, mergedSpec.excludeTerms, identityOptions)
   ) {
     return { skip: true, reason: 'identity_mismatch' };
   }

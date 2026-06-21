@@ -1,14 +1,14 @@
 {
   "summary": {
-    "generatedAt": "2026-06-21T15:03:26.409Z",
-    "approvedPhotos": 493,
+    "generatedAt": "2026-06-21T15:49:52.451Z",
+    "approvedPhotos": 509,
     "totalPlayers": 4827,
-    "missingPhotos": 4334,
-    "quizReadyMissing": 226,
-    "learningPathMissing": 6,
-    "worldCupMissing": 1311,
-    "homepageFeaturedMissing": 226,
-    "onManualReviewList": 46,
+    "missingPhotos": 4318,
+    "quizReadyMissing": 210,
+    "learningPathMissing": 2,
+    "worldCupMissing": 1298,
+    "homepageFeaturedMissing": 210,
+    "onManualReviewList": 32,
     "topGaps": [
       {
         "id": "tm-640428",
@@ -53,127 +53,6 @@
         "attempts": 2
       },
       {
-        "id": "tm-332697",
-        "name": "Weston McKennie",
-        "club": "Juventus",
-        "league": "Serie A",
-        "nationalTeam": "United States",
-        "importanceScore": 84,
-        "visibilityScore": 21084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "learningPath",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-504215",
-        "name": "Giovanni Reyna",
-        "club": "Borussia Mönchengladbach",
-        "league": "Bundesliga",
-        "nationalTeam": "United States",
-        "importanceScore": 83,
-        "visibilityScore": 21083,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "learningPath",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-245337",
-        "name": "Walker Zimmerman",
-        "club": "Toronto FC",
-        "league": "Major League Soccer",
-        "nationalTeam": "United States",
-        "importanceScore": 84,
-        "visibilityScore": 20084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "learningPath",
-          "worldCupStar",
-          "homepageFeatured"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-221624",
-        "name": "Zack Steffen",
-        "club": "Colorado Rapids",
-        "league": "Major League Soccer",
-        "nationalTeam": "United States",
-        "importanceScore": 78,
-        "visibilityScore": 17078,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "learningPath",
-          "homepageFeatured"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-503482",
-        "name": "Min-jae Kim",
-        "club": "Bayern Munich",
-        "league": "Bundesliga",
-        "nationalTeam": "Korea, South",
-        "importanceScore": 90,
-        "visibilityScore": 16090,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-173504",
-        "name": "James Tarkowski",
-        "club": "Everton",
-        "league": "Premier League",
-        "nationalTeam": "England",
-        "importanceScore": 85,
-        "visibilityScore": 16085,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "commons_denylisted",
-        "attempts": 2
-      },
-      {
         "id": "tm-192635",
         "name": "Nico Elvedi",
         "club": "Borussia Mönchengladbach",
@@ -191,46 +70,6 @@
         "quizEligible": true,
         "onReviewList": true,
         "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-284732",
-        "name": "Ramy Bensebaini",
-        "club": "Borussia Dortmund",
-        "league": "Bundesliga",
-        "nationalTeam": "Algeria",
-        "importanceScore": 85,
-        "visibilityScore": 16085,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-369316",
-        "name": "Ferdi Kadıoğlu",
-        "club": "Brighton & Hove Albion",
-        "league": "Premier League",
-        "nationalTeam": "Türkiye",
-        "importanceScore": 85,
-        "visibilityScore": 16085,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "commons_denylisted",
         "attempts": 2
       },
       {
@@ -294,91 +133,11 @@
         "attempts": 2
       },
       {
-        "id": "tm-211474",
-        "name": "Ali Abdi",
-        "club": "OGC Nice",
-        "league": "Ligue 1",
-        "nationalTeam": "Tunisia",
-        "importanceScore": 84,
-        "visibilityScore": 16084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
         "id": "tm-223979",
         "name": "Xaver Schlager",
         "club": "RB Leipzig",
         "league": "Bundesliga",
         "nationalTeam": "Austria",
-        "importanceScore": 84,
-        "visibilityScore": 16084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-251075",
-        "name": "Zeki Çelik",
-        "club": "AS Roma",
-        "league": "Serie A",
-        "nationalTeam": "Türkiye",
-        "importanceScore": 84,
-        "visibilityScore": 16084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "commons_denylisted",
-        "attempts": 2
-      },
-      {
-        "id": "tm-289592",
-        "name": "Orel Mangala",
-        "club": "Lyon",
-        "league": "Ligue 1",
-        "nationalTeam": "Belgium",
-        "importanceScore": 84,
-        "visibilityScore": 16084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-293194",
-        "name": "Borna Sosa",
-        "club": "Crystal Palace",
-        "league": "Premier League",
-        "nationalTeam": "Croatia",
         "importanceScore": 84,
         "visibilityScore": 16084,
         "primaryTier": "quizReady",
@@ -439,26 +198,6 @@
         "club": "Brighton & Hove Albion",
         "league": "Premier League",
         "nationalTeam": "Netherlands",
-        "importanceScore": 84,
-        "visibilityScore": 16084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-467437",
-        "name": "Malik Tillman",
-        "club": "Bayer Leverkusen",
-        "league": "Bundesliga",
-        "nationalTeam": "United States",
         "importanceScore": 84,
         "visibilityScore": 16084,
         "primaryTier": "quizReady",
@@ -539,26 +278,6 @@
         "club": "Lille",
         "league": "Ligue 1",
         "nationalTeam": "Belgium",
-        "importanceScore": 84,
-        "visibilityScore": 16084,
-        "primaryTier": "quizReady",
-        "tiers": [
-          "quizReady",
-          "worldCupStar",
-          "homepageFeatured",
-          "majorLeagueStarter"
-        ],
-        "quizEligible": true,
-        "onReviewList": true,
-        "fetchStatus": "no_safe_match",
-        "attempts": 2
-      },
-      {
-        "id": "tm-616341",
-        "name": "Nuno Mendes",
-        "club": "Paris Saint-Germain",
-        "league": "Ligue 1",
-        "nationalTeam": "Portugal",
         "importanceScore": 84,
         "visibilityScore": 16084,
         "primaryTier": "quizReady",
@@ -812,6 +531,286 @@
         "onReviewList": true,
         "fetchStatus": "no_safe_match",
         "attempts": 2
+      },
+      {
+        "id": "tm-805714",
+        "name": "Renato Veiga",
+        "club": "Villarreal",
+        "league": "La Liga",
+        "nationalTeam": "Portugal",
+        "importanceScore": 84,
+        "visibilityScore": 16084,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": true,
+        "fetchStatus": "no_safe_match",
+        "attempts": 2
+      },
+      {
+        "id": "tm-849410",
+        "name": "Valentín Barco",
+        "club": "RC Strasbourg",
+        "league": "Ligue 1",
+        "nationalTeam": "Argentina",
+        "importanceScore": 84,
+        "visibilityScore": 16084,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": true,
+        "fetchStatus": "no_safe_match",
+        "attempts": 2
+      },
+      {
+        "id": "tm-894914",
+        "name": "Antonio Nusa",
+        "club": "RB Leipzig",
+        "league": "Bundesliga",
+        "nationalTeam": "Norway",
+        "importanceScore": 84,
+        "visibilityScore": 16084,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": true,
+        "fetchStatus": "no_safe_match",
+        "attempts": 2
+      },
+      {
+        "id": "tm-918969",
+        "name": "Lamine Camara",
+        "club": "Monaco",
+        "league": "Ligue 1",
+        "nationalTeam": "Senegal",
+        "importanceScore": 84,
+        "visibilityScore": 16084,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": true,
+        "fetchStatus": "no_safe_match",
+        "attempts": 2
+      },
+      {
+        "id": "tm-939964",
+        "name": "Jean-Mattéo Bahoya",
+        "club": "Eintracht Frankfurt",
+        "league": "Bundesliga",
+        "nationalTeam": "France",
+        "importanceScore": 84,
+        "visibilityScore": 16084,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": true,
+        "fetchStatus": "no_safe_match",
+        "attempts": 2
+      },
+      {
+        "id": "tm-261503",
+        "name": "Álvaro Fidalgo",
+        "club": "Real Betis",
+        "league": "La Liga",
+        "nationalTeam": "Mexico",
+        "importanceScore": 83,
+        "visibilityScore": 16083,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": true,
+        "fetchStatus": "no_safe_match",
+        "attempts": 2
+      },
+      {
+        "id": "tm-1056993",
+        "name": "Estêvão",
+        "club": "Chelsea",
+        "league": "Premier League",
+        "nationalTeam": "Brazil",
+        "importanceScore": 82,
+        "visibilityScore": 16082,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
+      },
+      {
+        "id": "tm-131225",
+        "name": "Nicolás Tagliafico",
+        "club": "Lyon",
+        "league": "Ligue 1",
+        "nationalTeam": "Argentina",
+        "importanceScore": 82,
+        "visibilityScore": 16082,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
+      },
+      {
+        "id": "tm-290587",
+        "name": "Ellyes Skhiri",
+        "club": "Eintracht Frankfurt",
+        "league": "Bundesliga",
+        "nationalTeam": "Tunisia",
+        "importanceScore": 82,
+        "visibilityScore": 16082,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
+      },
+      {
+        "id": "tm-332705",
+        "name": "Tyler Adams",
+        "club": "Bournemouth",
+        "league": "Premier League",
+        "nationalTeam": "United States",
+        "importanceScore": 82,
+        "visibilityScore": 16082,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
+      },
+      {
+        "id": "tm-410225",
+        "name": "Ismaïla Sarr",
+        "club": "Crystal Palace",
+        "league": "Premier League",
+        "nationalTeam": "Senegal",
+        "importanceScore": 82,
+        "visibilityScore": 16082,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
+      },
+      {
+        "id": "tm-59323",
+        "name": "Cristhian Stuani",
+        "club": "Girona",
+        "league": "La Liga",
+        "nationalTeam": "Uruguay",
+        "importanceScore": 82,
+        "visibilityScore": 16082,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
+      },
+      {
+        "id": "tm-955070",
+        "name": "Ernest Nuamah",
+        "club": "Lyon",
+        "league": "Ligue 1",
+        "nationalTeam": "Ghana",
+        "importanceScore": 82,
+        "visibilityScore": 16082,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
+      },
+      {
+        "id": "tm-159088",
+        "name": "Robert Andrich",
+        "club": "Bayer Leverkusen",
+        "league": "Bundesliga",
+        "nationalTeam": "Germany",
+        "importanceScore": 80,
+        "visibilityScore": 16080,
+        "primaryTier": "quizReady",
+        "tiers": [
+          "quizReady",
+          "worldCupStar",
+          "homepageFeatured",
+          "majorLeagueStarter"
+        ],
+        "quizEligible": true,
+        "onReviewList": false,
+        "fetchStatus": "no_safe_match",
+        "attempts": 0
       }
     ]
   },
@@ -859,127 +858,6 @@
       "attempts": 2
     },
     {
-      "id": "tm-332697",
-      "name": "Weston McKennie",
-      "club": "Juventus",
-      "league": "Serie A",
-      "nationalTeam": "United States",
-      "importanceScore": 84,
-      "visibilityScore": 21084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "learningPath",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-504215",
-      "name": "Giovanni Reyna",
-      "club": "Borussia Mönchengladbach",
-      "league": "Bundesliga",
-      "nationalTeam": "United States",
-      "importanceScore": 83,
-      "visibilityScore": 21083,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "learningPath",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-245337",
-      "name": "Walker Zimmerman",
-      "club": "Toronto FC",
-      "league": "Major League Soccer",
-      "nationalTeam": "United States",
-      "importanceScore": 84,
-      "visibilityScore": 20084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "learningPath",
-        "worldCupStar",
-        "homepageFeatured"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-221624",
-      "name": "Zack Steffen",
-      "club": "Colorado Rapids",
-      "league": "Major League Soccer",
-      "nationalTeam": "United States",
-      "importanceScore": 78,
-      "visibilityScore": 17078,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "learningPath",
-        "homepageFeatured"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-503482",
-      "name": "Min-jae Kim",
-      "club": "Bayern Munich",
-      "league": "Bundesliga",
-      "nationalTeam": "Korea, South",
-      "importanceScore": 90,
-      "visibilityScore": 16090,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-173504",
-      "name": "James Tarkowski",
-      "club": "Everton",
-      "league": "Premier League",
-      "nationalTeam": "England",
-      "importanceScore": 85,
-      "visibilityScore": 16085,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "commons_denylisted",
-      "attempts": 2
-    },
-    {
       "id": "tm-192635",
       "name": "Nico Elvedi",
       "club": "Borussia Mönchengladbach",
@@ -997,46 +875,6 @@
       "quizEligible": true,
       "onReviewList": true,
       "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-284732",
-      "name": "Ramy Bensebaini",
-      "club": "Borussia Dortmund",
-      "league": "Bundesliga",
-      "nationalTeam": "Algeria",
-      "importanceScore": 85,
-      "visibilityScore": 16085,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-369316",
-      "name": "Ferdi Kadıoğlu",
-      "club": "Brighton & Hove Albion",
-      "league": "Premier League",
-      "nationalTeam": "Türkiye",
-      "importanceScore": 85,
-      "visibilityScore": 16085,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "commons_denylisted",
       "attempts": 2
     },
     {
@@ -1100,91 +938,11 @@
       "attempts": 2
     },
     {
-      "id": "tm-211474",
-      "name": "Ali Abdi",
-      "club": "OGC Nice",
-      "league": "Ligue 1",
-      "nationalTeam": "Tunisia",
-      "importanceScore": 84,
-      "visibilityScore": 16084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
       "id": "tm-223979",
       "name": "Xaver Schlager",
       "club": "RB Leipzig",
       "league": "Bundesliga",
       "nationalTeam": "Austria",
-      "importanceScore": 84,
-      "visibilityScore": 16084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-251075",
-      "name": "Zeki Çelik",
-      "club": "AS Roma",
-      "league": "Serie A",
-      "nationalTeam": "Türkiye",
-      "importanceScore": 84,
-      "visibilityScore": 16084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "commons_denylisted",
-      "attempts": 2
-    },
-    {
-      "id": "tm-289592",
-      "name": "Orel Mangala",
-      "club": "Lyon",
-      "league": "Ligue 1",
-      "nationalTeam": "Belgium",
-      "importanceScore": 84,
-      "visibilityScore": 16084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-293194",
-      "name": "Borna Sosa",
-      "club": "Crystal Palace",
-      "league": "Premier League",
-      "nationalTeam": "Croatia",
       "importanceScore": 84,
       "visibilityScore": 16084,
       "primaryTier": "quizReady",
@@ -1245,26 +1003,6 @@
       "club": "Brighton & Hove Albion",
       "league": "Premier League",
       "nationalTeam": "Netherlands",
-      "importanceScore": 84,
-      "visibilityScore": 16084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-467437",
-      "name": "Malik Tillman",
-      "club": "Bayer Leverkusen",
-      "league": "Bundesliga",
-      "nationalTeam": "United States",
       "importanceScore": 84,
       "visibilityScore": 16084,
       "primaryTier": "quizReady",
@@ -1345,26 +1083,6 @@
       "club": "Lille",
       "league": "Ligue 1",
       "nationalTeam": "Belgium",
-      "importanceScore": 84,
-      "visibilityScore": 16084,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "worldCupStar",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": true,
-      "fetchStatus": "no_safe_match",
-      "attempts": 2
-    },
-    {
-      "id": "tm-616341",
-      "name": "Nuno Mendes",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "nationalTeam": "Portugal",
       "importanceScore": 84,
       "visibilityScore": 16084,
       "primaryTier": "quizReady",
@@ -3056,25 +2774,6 @@
       "nationalTeam": "Spain",
       "importanceScore": 87,
       "visibilityScore": 13087,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "homepageFeatured",
-        "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": false,
-      "fetchStatus": "no_safe_match",
-      "attempts": 0
-    },
-    {
-      "id": "tm-181767",
-      "name": "Marquinhos",
-      "club": "Paris Saint-Germain",
-      "league": "Ligue 1",
-      "nationalTeam": "Brazil",
-      "importanceScore": 86,
-      "visibilityScore": 13086,
       "primaryTier": "quizReady",
       "tiers": [
         "quizReady",
@@ -4847,24 +4546,6 @@
         "quizReady",
         "homepageFeatured",
         "majorLeagueStarter"
-      ],
-      "quizEligible": true,
-      "onReviewList": false,
-      "fetchStatus": "no_safe_match",
-      "attempts": 0
-    },
-    {
-      "id": "tm-236045",
-      "name": "Denis Bouanga",
-      "club": "Los Angeles FC",
-      "league": "Major League Soccer",
-      "nationalTeam": "Gabon",
-      "importanceScore": 86,
-      "visibilityScore": 12086,
-      "primaryTier": "quizReady",
-      "tiers": [
-        "quizReady",
-        "homepageFeatured"
       ],
       "quizEligible": true,
       "onReviewList": false,

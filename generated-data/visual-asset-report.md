@@ -1,12 +1,12 @@
 # FootyCompass visual asset report
 
-Generated: 2026-06-21T15:02:36.832Z
+Generated: 2026-06-21T15:49:41.293Z
 
 ## Coverage summary
 
 | Category | Real asset | Generated fallback | Total | Visual coverage |
 | --- | ---: | ---: | ---: | ---: |
-| Players | 493 | 4334 | 4827 | 100% |
+| Players | 509 | 4318 | 4827 | 100% |
 | Clubs | 143 | 192 | 335 | 100% |
 | Leagues (logos) | 8 | 0 | 8 | 100% |
 | National teams (flags) | 55 | 0 | 55 | 100% |
@@ -21,8 +21,8 @@ All 4827 players and 335 clubs have an intentional visual (real asset or polishe
 ## Missing real assets — top reasons (players)
 
 - **not_attempted**: 3706
-- **no_safe_match**: 613
-- **commons_denylisted**: 11
+- **no_safe_match**: 600
+- **commons_denylisted**: 8
 - **identity_mismatch:matched Alejandro Serrano Garcia, not Alejandro Garcia**: 1
 - **identity_mismatch**: 1
 - **identity_mismatch:matched Ben Foster, not Ben Old**: 1
@@ -32,13 +32,13 @@ All 4827 players and 335 clubs have an intentional visual (real asset or polishe
 
 **Players without Commons photo (high importance):**
 - Eduardo Camavinga (`tm-640428`) — no_safe_match
-- Min-jae Kim (`tm-503482`) — no_safe_match
 - Gerard Moreno (`tm-177467`) — no_safe_match
 - Ollie Watkins (`tm-324358`) — no_safe_match
-- Denis Bouanga (`tm-236045`) — no_safe_match
-- Marquinhos (`tm-181767`) — no_safe_match
 - Strahinja Pavlović (`tm-574671`) — no_safe_match
 - Yuri Berchiche (`tm-61812`) — no_safe_match
+- Alejandro Balde (`tm-636688`) — no_safe_match
+- Nico Elvedi (`tm-192635`) — no_safe_match
+- Mykhaylo Mudryk (`tm-537860`) — no_safe_match
 
 **Clubs without Wikimedia crest (generated badge used):**
 - Aston Villa (`aston-villa`, premier-league)

@@ -275,7 +275,10 @@ async function main() {
       }
     }
 
-    const entry = buildApprovedEntry(player, meta, imageUrl, quality);
+    const entry = buildApprovedEntry(player, meta, imageUrl, quality, {
+      ...(spec.identityNote ? { identityNote: spec.identityNote } : {}),
+      imageTier: 'wikimedia',
+    });
 
     if (!args.dryRun) {
       cache.resolved[playerId] = { meta, at: new Date().toISOString() };
