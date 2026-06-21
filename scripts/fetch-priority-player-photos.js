@@ -6,29 +6,18 @@
  *   1. Owner-licensed local/stock assets (player-image-licensed.mjs)
  *   2. Wikimedia Commons (curated + verified search)
  *
- * FootyRenders and similar render sites are excluded (non-commercial-only, no scraping).
- *
- * Priority order:
- *   1. Quiz-ready players
- *   2. Learning-path players
- *   3. World Cup / national-team prep players
- *   4. High-importance major-league players
- *   5. Remaining players
+ * Priority (visibility score): quiz-ready → learning-path → WC stars → homepage featured → major-league starters
  *
  *   npm run fetch:priority-player-photos
- *   npm run fetch:priority-player-photos -- --limit=50 --quiz-ready-only --force
- *   npm run fetch:priority-player-photos -- --dry-run --limit=10
+ *   npm run fetch:priority-player-photos -- --limit=50 --quiz-ready-only
+ *   npm run report:player-image-visibility-gaps
  */
 
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { collections } from '../src/data/collectionsData.js';
-import { learningPaths } from '../src/data/learningPathsData.js';
-import { getTeamName, players, teams } from '../src/data/sampleData.js';
-import live from '../src/data/nationalTeamLive.json' with { type: 'json' };
-import qualifiedManifest from '../editorial-overlays/world-cup-2026-qualified-teams.json' with { type: 'json' };
+import { getTeamName, players } from '../src/data/sampleData.js';
 import curated from './data/wikimedia-player-curated.mjs';
 import {
   API_DELAY_MS,
@@ -39,6 +28,18 @@ import {
   categorizeSkipReason,
   resolvePlayerImageSources,
 } from './lib/playerImageSourceResolver.mjs';
+import {
+  MAX_AUTO_ATTEMPTS,
+  isOnReviewList,
+  promoteToReviewList,
+  recordSkipAttempt,
+  shouldAutoRetry,
+} from './lib/playerImageReview.mjs';
+import {
+  computeVisibilityScore,
+  hasRealPlayerPhoto,
+  listMissingPhotoGaps,
+} from './lib/playerImageVisibility.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -47,22 +48,13 @@ const CACHE_PATH = join(root, 'generated-data/player-image-wikimedia-cache.json'
 const RUN_LOG_PATH = join(root, 'generated-data/priority-player-photo-batch-last-run.json');
 const IMAGES_DIR = join(root, 'public/images/players');
 
-const MAJOR_LEAGUE_IDS = new Set([
-  'premier-league',
-  'la-liga',
-  'bundesliga',
-  'serie-a',
-  'ligue-1',
-]);
-
 const DEFAULT_BATCH = 50;
 
 function parseArgs(argv) {
   const out = {
     dryRun: argv.includes('--dry-run'),
     download: argv.includes('--download'),
-    force: argv.includes('--force'),
-    forceRetry: argv.includes('--force-retry') || argv.includes('--force'),
+    forceRetry: argv.includes('--force-retry'),
     unattemptedOnly: argv.includes('--unattempted-only'),
     quizReadyOnly: argv.includes('--quiz-ready-only'),
     offset: 0,
@@ -75,68 +67,16 @@ function parseArgs(argv) {
   return out;
 }
 
+function writeJson(path, data) {
+  writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+}
+
 function readJson(path, fallback) {
   try {
     return JSON.parse(readFileSync(path, 'utf8'));
   } catch {
     return fallback;
   }
-}
-
-function writeJson(path, data) {
-  writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
-}
-
-function collectLearningPathPlayerIds() {
-  const ids = new Set();
-  const collectionIds = new Set();
-  const byId = new Map(collections.map((c) => [c.id, c]));
-
-  for (const path of learningPaths) {
-    if (path.collectionId) collectionIds.add(path.collectionId);
-    for (const step of path.steps ?? []) {
-      if (step.entityType === 'player' && step.id) ids.add(step.id);
-      if (step.collectionId) collectionIds.add(step.collectionId);
-    }
-  }
-
-  for (const collectionId of collectionIds) {
-    for (const item of byId.get(collectionId)?.items ?? []) {
-      if (item.type === 'player' && item.id) ids.add(item.id);
-    }
-  }
-
-  return ids;
-}
-
-function collectWorldCupPrepPlayerIds() {
-  const ids = new Set();
-  const qualifiedIds = new Set((qualifiedManifest.teams ?? []).map((team) => team.id));
-
-  for (const collection of collections) {
-    const isWorldCupCollection =
-      collection.tags?.includes('World Cup') || /world cup/i.test(collection.title ?? '');
-    if (!isWorldCupCollection) continue;
-    for (const item of collection.items ?? []) {
-      if (item.type === 'player' && item.id) ids.add(item.id);
-    }
-  }
-
-  for (const membership of live.nationalMemberships ?? []) {
-    if (!qualifiedIds.has(membership.nationalTeamId)) continue;
-    if (membership.playerId) ids.add(membership.playerId);
-  }
-
-  return ids;
-}
-
-function priorityRank(player, learningPathIds, worldCupIds) {
-  if (player.quizEligible === true) return 1;
-  if (learningPathIds.has(player.id)) return 2;
-  if (worldCupIds.has(player.id)) return 3;
-  const team = teams.find((t) => t.id === player.teamId);
-  if (team && MAJOR_LEAGUE_IDS.has(team.leagueId) && (player.importanceScore ?? 0) >= 65) return 4;
-  return 5;
 }
 
 function autoPlayerSpec(player) {
@@ -164,31 +104,39 @@ function buildPlayerSpec(player) {
 }
 
 function buildPriorityQueue(approvedEntries, cache, args) {
-  const learningPathIds = collectLearningPathPlayerIds();
-  const worldCupIds = collectWorldCupPrepPlayerIds();
+  const gaps = listMissingPhotoGaps();
+  const pool = args.quizReadyOnly ? gaps.filter((row) => row.quizEligible) : gaps;
 
-  return players
-    .filter((player) => {
-      if (approvedEntries[player.id]?.imageUrl) return false;
-      if (args.quizReadyOnly && player.quizEligible !== true) return false;
+  return pool
+    .filter((row) => {
+      if (approvedEntries[row.id]?.imageUrl) return false;
+      if (isOnReviewList(row.id)) return false;
       if (args.unattemptedOnly) {
-        return !cache.skipped?.[player.id] && !cache.resolved?.[player.id];
+        return !cache.skipped?.[row.id] && !cache.resolved?.[row.id];
       }
-      if (!args.forceRetry && cache.skipped?.[player.id]) return false;
+      if (!args.forceRetry && cache.skipped?.[row.id]) return false;
+      if (args.forceRetry && !shouldAutoRetry(cache, row.id)) return false;
       return true;
     })
-    .map((player) => ({
-      player,
-      spec: buildPlayerSpec(player),
-      rank: priorityRank(player, learningPathIds, worldCupIds),
-      importance: player.importanceScore ?? 0,
-    }))
+    .map((row) => {
+      const player = players.find((p) => p.id === row.id);
+      return {
+        player,
+        spec: buildPlayerSpec(player),
+        visibilityScore: row.visibilityScore,
+      };
+    })
+    .filter((row) => row.player)
     .sort(
       (a, b) =>
-        a.rank - b.rank ||
-        b.importance - a.importance ||
+        b.visibilityScore - a.visibilityScore ||
+        (b.player.importanceScore ?? 0) - (a.player.importanceScore ?? 0) ||
         a.player.id.localeCompare(b.player.id),
     );
+}
+
+function countQuizReadyGaps(approvedEntries) {
+  return players.filter((p) => p.quizEligible && !approvedEntries[p.id]?.imageUrl && !hasRealPlayerPhoto(p)).length;
 }
 
 async function main() {
@@ -203,15 +151,17 @@ async function main() {
   const batch = queue.slice(args.offset, args.offset + args.limit);
 
   console.log('FootyCompass — priority player photo batch');
-  console.log(`Queue: ${queue.length} priority missing | Batch: ${batch.length} (offset ${args.offset})`);
+  console.log(`Queue: ${queue.length} eligible missing | Batch: ${batch.length} (offset ${args.offset})`);
   console.log(
     `Mode: ${args.dryRun ? 'dry-run' : 'write'}${args.download ? ' + download' : ''}${args.forceRetry ? ' + force-retry' : ''}${args.quizReadyOnly ? ' + quiz-ready-only' : ''}`,
   );
-  console.log('Sources: licensed local → Wikimedia Commons (FootyRenders excluded)');
+  console.log(`Manual review list skips: ${players.filter((p) => isOnReviewList(p.id)).length}`);
+  console.log(`Max auto attempts before review: ${MAX_AUTO_ATTEMPTS}`);
   console.log('');
 
   if (!batch.length) {
     console.log('Nothing to process in this batch.');
+    console.log(`Remaining quiz-ready gaps: ${countQuizReadyGaps(approved.entries)}`);
     return;
   }
 
@@ -225,48 +175,50 @@ async function main() {
     rejected: 0,
     no_safe_match: 0,
     wrong_player_blocked: 0,
-    alreadyApproved: 0,
-    notClearlyBetter: 0,
-    details: { added: [], rejected: [], no_safe_match: [], wrong_player_blocked: [] },
+    sentToReview: 0,
+    skippedReviewList: 0,
+    details: { added: [], rejected: [], no_safe_match: [], wrong_player_blocked: [], sentToReview: [] },
   };
 
   for (let i = 0; i < batch.length; i += 1) {
     const { player, spec } = batch[i];
     const playerId = player.id;
-    const existingEntry = approved.entries[playerId];
 
-    if (existingEntry?.imageUrl && !args.force) {
-      stats.alreadyApproved += 1;
+    if (approved.entries[playerId]?.imageUrl) {
       console.log(`[${i + 1}/${batch.length}] ${playerId} (${player.name}): skip — already approved`);
       continue;
     }
 
-    if (cache.skipped[playerId] && !args.forceRetry) {
+    if (isOnReviewList(playerId)) {
+      stats.skippedReviewList += 1;
+      console.log(`[${i + 1}/${batch.length}] ${playerId} (${player.name}): skip — manual review list`);
+      continue;
+    }
+
+    if (cache.skipped[playerId] && !args.forceRetry && !args.unattemptedOnly) {
       const bucket = categorizeSkipReason(cache.skipped[playerId].reason);
       stats[bucket] += 1;
-      stats.details[bucket].push({
-        playerId,
-        name: player.name,
-        reason: cache.skipped[playerId].reason,
-        cached: true,
-      });
       console.log(`[${i + 1}/${batch.length}] ${playerId} (${player.name}): skip — cached ${cache.skipped[playerId].reason}`);
       continue;
     }
 
-    console.log(`[${i + 1}/${batch.length}] ${playerId} (${player.name}): resolving…`);
+    console.log(`[${i + 1}/${batch.length}] ${playerId} (${player.name}, visibility ${computeVisibilityScore(player)}): resolving…`);
 
     let result;
     try {
       result = await resolvePlayerImageSources(player, spec, {
-        existingEntry,
+        existingEntry: approved.entries[playerId],
       });
     } catch (err) {
       const reason = err.name === 'TimeoutError' || err.name === 'AbortError' ? 'timeout' : `error:${err.message}`;
       stats.rejected += 1;
       stats.details.rejected.push({ playerId, name: player.name, reason });
       if (!args.dryRun) {
-        cache.skipped[playerId] = { reason, at: new Date().toISOString() };
+        const attempts = recordSkipAttempt(cache, playerId, reason);
+        if (attempts >= MAX_AUTO_ATTEMPTS && promoteToReviewList(playerId, reason)) {
+          stats.sentToReview += 1;
+          stats.details.sentToReview.push({ playerId, name: player.name, reason });
+        }
         writeJson(CACHE_PATH, { ...cache, updatedAt: new Date().toISOString() });
       }
       console.log(`  error: ${reason}`);
@@ -275,14 +227,17 @@ async function main() {
 
     if (result.skip) {
       const bucket = categorizeSkipReason(result.reason);
-      if (result.reason === 'existing_image_not_clearly_better') {
-        stats.notClearlyBetter += 1;
-      } else {
+      if (result.reason !== 'existing_image_not_clearly_better') {
         stats[bucket] += 1;
         stats.details[bucket].push({ playerId, name: player.name, reason: result.reason, tier: result.tier });
       }
       if (!args.dryRun && result.reason !== 'existing_image_not_clearly_better') {
-        cache.skipped[playerId] = { reason: result.reason, at: new Date().toISOString() };
+        const attempts = recordSkipAttempt(cache, playerId, result.reason);
+        if (attempts >= MAX_AUTO_ATTEMPTS && promoteToReviewList(playerId, result.reason)) {
+          stats.sentToReview += 1;
+          stats.details.sentToReview.push({ playerId, name: player.name, reason: result.reason });
+          console.log(`  → manual review list (attempt ${attempts})`);
+        }
         writeJson(CACHE_PATH, { ...cache, updatedAt: new Date().toISOString() });
       }
       console.log(`  skip: ${result.reason}`);
@@ -290,7 +245,6 @@ async function main() {
     }
 
     let entry = result.entry;
-    let imageUrl = entry.imageUrl;
 
     if (args.download && result.tier === 'wikimedia' && result.meta?.thumbUrl) {
       mkdirSync(IMAGES_DIR, { recursive: true });
@@ -300,13 +254,15 @@ async function main() {
       if (!args.dryRun) {
         try {
           await downloadImage(result.meta.thumbUrl, localAbs, writeFileSync);
-          imageUrl = localRel;
           entry = { ...entry, imageUrl: localRel };
         } catch (err) {
           const reason = `download_failed:${err.message}`;
           stats.rejected += 1;
           stats.details.rejected.push({ playerId, name: player.name, reason });
-          cache.skipped[playerId] = { reason, at: new Date().toISOString() };
+          const attempts = recordSkipAttempt(cache, playerId, reason);
+          if (attempts >= MAX_AUTO_ATTEMPTS && promoteToReviewList(playerId, reason)) {
+            stats.sentToReview += 1;
+          }
           writeJson(CACHE_PATH, { ...cache, updatedAt: new Date().toISOString() });
           console.log(`  skip: ${reason}`);
           continue;
@@ -331,7 +287,6 @@ async function main() {
       name: player.name,
       tier: result.tier,
       source: entry.commonsFile ?? entry.imageSourceUrl ?? entry.imageUrl,
-      identityNote: entry.identityNote,
     });
     console.log(`  added (${result.tier}): ${entry.commonsFile ?? entry.imageUrl}`);
 
@@ -339,6 +294,7 @@ async function main() {
   }
 
   stats.finishedAt = new Date().toISOString();
+  stats.remainingQuizReadyGaps = countQuizReadyGaps(approved.entries);
   if (!args.dryRun) writeJson(RUN_LOG_PATH, stats);
 
   console.log('\n--- Priority batch summary ---');
@@ -346,8 +302,8 @@ async function main() {
   console.log(`Rejected: ${stats.rejected}`);
   console.log(`No safe match: ${stats.no_safe_match}`);
   console.log(`Wrong-player blocked: ${stats.wrong_player_blocked}`);
-  console.log(`Already approved: ${stats.alreadyApproved}`);
-  if (stats.notClearlyBetter) console.log(`Existing kept (not clearly better): ${stats.notClearlyBetter}`);
+  console.log(`Sent to manual review: ${stats.sentToReview}`);
+  console.log(`Remaining quiz-ready gaps: ${stats.remainingQuizReadyGaps}`);
 
   const nextOffset = args.offset + batch.length;
   if (nextOffset < queue.length) {

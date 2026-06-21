@@ -1,72 +1,40 @@
 {
-  "startedAt": "2026-06-14T01:51:12.721Z",
+  "startedAt": "2026-06-21T15:00:20.040Z",
   "offset": 0,
   "limit": 50,
-  "quizReadyOnly": true,
+  "quizReadyOnly": false,
   "forceRetry": true,
-  "added": 8,
-  "rejected": 7,
-  "no_safe_match": 35,
+  "added": 4,
+  "rejected": 4,
+  "no_safe_match": 42,
   "wrong_player_blocked": 0,
-  "alreadyApproved": 0,
-  "notClearlyBetter": 0,
+  "sentToReview": 46,
+  "skippedReviewList": 0,
   "details": {
     "added": [
       {
-        "playerId": "tm-128223",
-        "name": "Álvaro Morata",
+        "playerId": "tm-474800",
+        "name": "Facundo Medina",
         "tier": "wikimedia",
-        "source": "Álvaro Morata, Spain U-19, SBS Cup 2010 in Fujieda, Japan (cropped).jpg",
-        "identityNote": "Wikimedia identity verified: Álvaro Morata; context: Spain, Spain, Como"
+        "source": "Facundo Medina Lens.jpg"
       },
       {
-        "playerId": "tm-503743",
-        "name": "Morgan Rogers",
+        "playerId": "tm-485585",
+        "name": "Ian Maatsen",
         "tier": "wikimedia",
-        "source": "Morgan Rogers April 2026.jpg",
-        "identityNote": "Wikimedia identity verified: Morgan Rogers; context: England, England, Aston Villa"
+        "source": "Ian Maatsen Aston Villa.jpg"
       },
       {
-        "playerId": "tm-626724",
-        "name": "João Pedro",
+        "playerId": "tm-746910",
+        "name": "Mohamed Amoura",
         "tier": "wikimedia",
-        "source": "Joao Pedro holder Chelsea drakt 2025.jpg",
-        "identityNote": "Wikimedia identity verified: João Pedro; context: Brazil, Brazil, Chelsea"
+        "source": "Mohamed Amoura Signature.png"
       },
       {
-        "playerId": "tm-319745",
-        "name": "Dani Ceballos",
+        "playerId": "tm-591949",
+        "name": "Aaron Hickey",
         "tier": "wikimedia",
-        "source": "Ceballos 15001.jpg",
-        "identityNote": "Wikimedia identity verified: Ceballos; context: Spain, Spain, Real Madrid"
-      },
-      {
-        "playerId": "tm-398065",
-        "name": "Harvey Barnes",
-        "tier": "wikimedia",
-        "source": "Harvey Barnes 24052026 (1).jpg",
-        "identityNote": "Wikimedia identity verified: Harvey Barnes; context: England, England, Newcastle United"
-      },
-      {
-        "playerId": "tm-503987",
-        "name": "Noni Madueke",
-        "tier": "wikimedia",
-        "source": "1 Noni Madueke.jpg",
-        "identityNote": "Wikimedia identity verified: Madueke; context: England, England, Arsenal"
-      },
-      {
-        "playerId": "tm-148367",
-        "name": "Christian Nørgaard",
-        "tier": "wikimedia",
-        "source": "Christian Nørgaard 2 -HSV.jpg",
-        "identityNote": "Wikimedia identity verified: Nørgaard; context: Denmark, Denmark, Arsenal"
-      },
-      {
-        "playerId": "tm-205562",
-        "name": "Thomas Lemar",
-        "tier": "wikimedia",
-        "source": "Thomas Lemar.jpg",
-        "identityNote": "Wikimedia identity verified: Lemar; context: France, France, Girona"
+        "source": "Aaron Hickey Scotland v Bolivia 6 June 2026-87.jpg"
       }
     ],
     "rejected": [
@@ -77,26 +45,8 @@
         "tier": "wikimedia"
       },
       {
-        "playerId": "tm-331511",
-        "name": "Riqui Puig",
-        "reason": "commons_denylisted",
-        "tier": "wikimedia"
-      },
-      {
         "playerId": "tm-369316",
         "name": "Ferdi Kadıoğlu",
-        "reason": "commons_denylisted",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-385105",
-        "name": "Gabriel Suazo",
-        "reason": "commons_denylisted",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-386446",
-        "name": "Alessandro Buongiorno",
         "reason": "commons_denylisted",
         "tier": "wikimedia"
       },
@@ -107,8 +57,8 @@
         "tier": "wikimedia"
       },
       {
-        "playerId": "tm-174094",
-        "name": "Morgan Sanson",
+        "playerId": "tm-251075",
+        "name": "Zeki Çelik",
         "reason": "commons_denylisted",
         "tier": "wikimedia"
       }
@@ -121,32 +71,38 @@
         "tier": "wikimedia"
       },
       {
-        "playerId": "tm-503482",
-        "name": "Min-jae Kim",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-177467",
-        "name": "Gerard Moreno",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-181767",
-        "name": "Marquinhos",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-236045",
-        "name": "Denis Bouanga",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
         "playerId": "tm-324358",
         "name": "Ollie Watkins",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-332697",
+        "name": "Weston McKennie",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-504215",
+        "name": "Giovanni Reyna",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-245337",
+        "name": "Walker Zimmerman",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-221624",
+        "name": "Zack Steffen",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-503482",
+        "name": "Min-jae Kim",
         "reason": "no_safe_match",
         "tier": "wikimedia"
       },
@@ -163,92 +119,8 @@
         "tier": "wikimedia"
       },
       {
-        "playerId": "tm-318204",
-        "name": "David Raum",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-344598",
-        "name": "Dan-Axel Zagadou",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-410425",
-        "name": "Yves Bissouma",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-459658",
-        "name": "Andrea Cambiaso",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-474800",
-        "name": "Facundo Medina",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-537860",
-        "name": "Mykhaylo Mudryk",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-568157",
-        "name": "Yéremy Pino",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-574671",
-        "name": "Strahinja Pavlović",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-585959",
-        "name": "Arnaud Kalimuendo",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-61812",
-        "name": "Yuri Berchiche",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-636688",
-        "name": "Alejandro Balde",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-648046",
-        "name": "Evan Ferguson",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
         "playerId": "tm-660867",
         "name": "Julio Enciso",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-1014172",
-        "name": "Yannick Gerritsen",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-117674",
-        "name": "Maximilian Arnold",
         "reason": "no_safe_match",
         "tier": "wikimedia"
       },
@@ -259,50 +131,8 @@
         "tier": "wikimedia"
       },
       {
-        "playerId": "tm-157635",
-        "name": "Yussuf Poulsen",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-167329",
-        "name": "Alassane Pléa",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-185817",
-        "name": "Jizz Hornkamp",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-195778",
-        "name": "Alexander Nübel",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-202788",
-        "name": "Robin Pröpper",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
         "playerId": "tm-211474",
         "name": "Ali Abdi",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-212862",
-        "name": "Álex Remiro",
-        "reason": "no_safe_match",
-        "tier": "wikimedia"
-      },
-      {
-        "playerId": "tm-215616",
-        "name": "Erick Pulgar",
         "reason": "no_safe_match",
         "tier": "wikimedia"
       },
@@ -313,19 +143,414 @@
         "tier": "wikimedia"
       },
       {
-        "playerId": "tm-229006",
-        "name": "Franck Honorat",
+        "playerId": "tm-289592",
+        "name": "Orel Mangala",
         "reason": "no_safe_match",
         "tier": "wikimedia"
       },
       {
-        "playerId": "tm-242632",
-        "name": "Glen Kamara",
+        "playerId": "tm-293194",
+        "name": "Borna Sosa",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-375382",
+        "name": "André Almeida",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-394236",
+        "name": "Filip Ugrinic",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-415381",
+        "name": "Mats Wieffer",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-467437",
+        "name": "Malik Tillman",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-479648",
+        "name": "Félix Correia",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-483046",
+        "name": "Josip Stanisic",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-536835",
+        "name": "Amad Diallo",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-548254",
+        "name": "Nathan Ngoy",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-616341",
+        "name": "Nuno Mendes",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-618494",
+        "name": "Tyler Morton",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-659459",
+        "name": "Carney Chukwuemeka",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-659813",
+        "name": "Piero Hincapié",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-662261",
+        "name": "Rafa Marín",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-668207",
+        "name": "Petar Sučić",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-696164",
+        "name": "Tim Oermann",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-725912",
+        "name": "Antonín Kinský",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-733576",
+        "name": "Alberto Moleiro",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-743600",
+        "name": "Andrey Santos",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-776798",
+        "name": "Abdallah Sima",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-798404",
+        "name": "Alidu Seidu",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-80293",
+        "name": "Aïssa Mandi",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-805714",
+        "name": "Renato Veiga",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-849410",
+        "name": "Valentín Barco",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-894914",
+        "name": "Antonio Nusa",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-918969",
+        "name": "Lamine Camara",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-939964",
+        "name": "Jean-Mattéo Bahoya",
+        "reason": "no_safe_match",
+        "tier": "wikimedia"
+      },
+      {
+        "playerId": "tm-261503",
+        "name": "Álvaro Fidalgo",
         "reason": "no_safe_match",
         "tier": "wikimedia"
       }
     ],
-    "wrong_player_blocked": []
+    "wrong_player_blocked": [],
+    "sentToReview": [
+      {
+        "playerId": "tm-640428",
+        "name": "Eduardo Camavinga",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-324358",
+        "name": "Ollie Watkins",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-332697",
+        "name": "Weston McKennie",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-504215",
+        "name": "Giovanni Reyna",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-245337",
+        "name": "Walker Zimmerman",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-221624",
+        "name": "Zack Steffen",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-503482",
+        "name": "Min-jae Kim",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-173504",
+        "name": "James Tarkowski",
+        "reason": "commons_denylisted"
+      },
+      {
+        "playerId": "tm-192635",
+        "name": "Nico Elvedi",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-284732",
+        "name": "Ramy Bensebaini",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-369316",
+        "name": "Ferdi Kadıoğlu",
+        "reason": "commons_denylisted"
+      },
+      {
+        "playerId": "tm-388165",
+        "name": "Yoane Wissa",
+        "reason": "commons_denylisted"
+      },
+      {
+        "playerId": "tm-660867",
+        "name": "Julio Enciso",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-155025",
+        "name": "Fábio Cardoso",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-211474",
+        "name": "Ali Abdi",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-223979",
+        "name": "Xaver Schlager",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-251075",
+        "name": "Zeki Çelik",
+        "reason": "commons_denylisted"
+      },
+      {
+        "playerId": "tm-289592",
+        "name": "Orel Mangala",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-293194",
+        "name": "Borna Sosa",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-375382",
+        "name": "André Almeida",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-394236",
+        "name": "Filip Ugrinic",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-415381",
+        "name": "Mats Wieffer",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-467437",
+        "name": "Malik Tillman",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-479648",
+        "name": "Félix Correia",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-483046",
+        "name": "Josip Stanisic",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-536835",
+        "name": "Amad Diallo",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-548254",
+        "name": "Nathan Ngoy",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-616341",
+        "name": "Nuno Mendes",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-618494",
+        "name": "Tyler Morton",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-659459",
+        "name": "Carney Chukwuemeka",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-659813",
+        "name": "Piero Hincapié",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-662261",
+        "name": "Rafa Marín",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-668207",
+        "name": "Petar Sučić",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-696164",
+        "name": "Tim Oermann",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-725912",
+        "name": "Antonín Kinský",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-733576",
+        "name": "Alberto Moleiro",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-743600",
+        "name": "Andrey Santos",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-776798",
+        "name": "Abdallah Sima",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-798404",
+        "name": "Alidu Seidu",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-80293",
+        "name": "Aïssa Mandi",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-805714",
+        "name": "Renato Veiga",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-849410",
+        "name": "Valentín Barco",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-894914",
+        "name": "Antonio Nusa",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-918969",
+        "name": "Lamine Camara",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-939964",
+        "name": "Jean-Mattéo Bahoya",
+        "reason": "no_safe_match"
+      },
+      {
+        "playerId": "tm-261503",
+        "name": "Álvaro Fidalgo",
+        "reason": "no_safe_match"
+      }
+    ]
   },
-  "finishedAt": "2026-06-14T01:52:46.368Z"
+  "finishedAt": "2026-06-21T15:02:14.096Z",
+  "remainingQuizReadyGaps": 226
 }

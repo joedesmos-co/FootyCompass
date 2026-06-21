@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-14T01:52:46.362Z",
+  "updatedAt": "2026-06-21T15:02:13.441Z",
   "resolved": {
     "tm-28003": {
       "meta": {
@@ -7825,6 +7825,70 @@
         "description": "Сборная России проиграла французам"
       },
       "at": "2026-06-14T01:52:33.094Z"
+    },
+    "tm-474800": {
+      "meta": {
+        "commonsFile": "Facundo Medina Lens.jpg",
+        "pageTitle": "File:Facundo Medina Lens.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AFacundo_Medina_Lens.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Facundo_Medina_Lens.jpg/960px-Facundo_Medina_Lens.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Facundo_Medina_Lens.jpg",
+        "width": 1008,
+        "height": 2439,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Bigmatbasket",
+        "description": "Facundo Medina avant le début de la deuxième mi-temps du match contre l'Olympique de Marseille, le 26 septembre 2021 au stade Vélodrome de Marseille"
+      },
+      "at": "2026-06-21T15:00:25.418Z"
+    },
+    "tm-485585": {
+      "meta": {
+        "commonsFile": "Ian Maatsen Aston Villa.jpg",
+        "pageTitle": "File:Ian Maatsen Aston Villa.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AIan_Maatsen_Aston_Villa.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ian_Maatsen_Aston_Villa.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ian_Maatsen_Aston_Villa.jpg",
+        "width": 373,
+        "height": 562,
+        "mime": "image/jpeg",
+        "licenseShort": "CC0",
+        "artist": "Harold9595959",
+        "description": "Ian Maatsen playing for Aston Villa (Aston Villa 3–2 Athletic Bilbao)."
+      },
+      "at": "2026-06-21T15:01:15.282Z"
+    },
+    "tm-746910": {
+      "meta": {
+        "commonsFile": "Mohamed Amoura Signature.png",
+        "pageTitle": "File:Mohamed Amoura Signature.png",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AMohamed_Amoura_Signature.png",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Mohamed_Amoura_Signature.png",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Mohamed_Amoura_Signature.png",
+        "width": 454,
+        "height": 438,
+        "mime": "image/png",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Reda Kerbush",
+        "description": "Mohamed Amoura Signature"
+      },
+      "at": "2026-06-21T15:01:49.274Z"
+    },
+    "tm-591949": {
+      "meta": {
+        "commonsFile": "Aaron Hickey Scotland v Bolivia 6 June 2026-87.jpg",
+        "pageTitle": "File:Aaron Hickey Scotland v Bolivia 6 June 2026-87.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File%3AAaron_Hickey_Scotland_v_Bolivia_6_June_2026-87.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Aaron_Hickey_Scotland_v_Bolivia_6_June_2026-87.jpg/960px-Aaron_Hickey_Scotland_v_Bolivia_6_June_2026-87.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Aaron_Hickey_Scotland_v_Bolivia_6_June_2026-87.jpg",
+        "width": 3333,
+        "height": 5000,
+        "mime": "image/jpeg",
+        "licenseShort": "CC BY-SA 4.0",
+        "artist": "Bryan Berlin",
+        "description": "Aaron Hickey during Scotland v Bolivia on June 6, 2026"
+      },
+      "at": "2026-06-21T15:02:13.438Z"
     }
   },
   "skipped": {
@@ -7838,7 +7902,9 @@
     },
     "tm-192635": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:51:30.721Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:40.428Z",
+      "lastReason": "no_safe_match"
     },
     "tm-459658": {
       "reason": "no_safe_match",
@@ -7862,11 +7928,15 @@
     },
     "tm-289592": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:03.242Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:56.852Z",
+      "lastReason": "no_safe_match"
     },
     "tm-293194": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:06.809Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:00.634Z",
+      "lastReason": "no_safe_match"
     },
     "tm-303657": {
       "reason": "no_safe_match",
@@ -7874,7 +7944,9 @@
     },
     "tm-332697": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:11.386Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:28.636Z",
+      "lastReason": "no_safe_match"
     },
     "tm-334221": {
       "reason": "no_safe_match",
@@ -7914,7 +7986,9 @@
     },
     "tm-394236": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:38.713Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:06.054Z",
+      "lastReason": "no_safe_match"
     },
     "tm-404842": {
       "reason": "no_safe_match",
@@ -7930,7 +8004,9 @@
     },
     "tm-415381": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:49.541Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:08.213Z",
+      "lastReason": "no_safe_match"
     },
     "tm-462823": {
       "reason": "no_safe_match",
@@ -7938,15 +8014,21 @@
     },
     "tm-467437": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:53.185Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:10.182Z",
+      "lastReason": "no_safe_match"
     },
     "tm-479648": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:55.119Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:12.466Z",
+      "lastReason": "no_safe_match"
     },
     "tm-483046": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:34:59.309Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:14.566Z",
+      "lastReason": "no_safe_match"
     },
     "tm-516716": {
       "reason": "no_safe_match",
@@ -7958,7 +8040,9 @@
     },
     "tm-536835": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:35:07.836Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:18.058Z",
+      "lastReason": "no_safe_match"
     },
     "tm-538996": {
       "reason": "no_safe_match",
@@ -7970,7 +8054,9 @@
     },
     "tm-548254": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:35:13.527Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:21.063Z",
+      "lastReason": "no_safe_match"
     },
     "tm-550106": {
       "reason": "no_safe_match",
@@ -7978,11 +8064,15 @@
     },
     "tm-640428": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:51:14.660Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:22.474Z",
+      "lastReason": "no_safe_match"
     },
     "tm-503482": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:51:16.506Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:37.499Z",
+      "lastReason": "no_safe_match"
     },
     "tm-571020": {
       "reason": "no_safe_match",
@@ -8002,11 +8092,15 @@
     },
     "tm-616341": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:06.341Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:24.694Z",
+      "lastReason": "no_safe_match"
     },
     "tm-618494": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:08.924Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:28.389Z",
+      "lastReason": "no_safe_match"
     },
     "tm-627228": {
       "reason": "no_safe_match",
@@ -8018,19 +8112,27 @@
     },
     "tm-659459": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:18.174Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:30.511Z",
+      "lastReason": "no_safe_match"
     },
     "tm-659813": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:21.203Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:32.638Z",
+      "lastReason": "no_safe_match"
     },
     "tm-662261": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:23.928Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:36.837Z",
+      "lastReason": "no_safe_match"
     },
     "tm-668207": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:25.881Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:38.750Z",
+      "lastReason": "no_safe_match"
     },
     "tm-674612": {
       "reason": "no_safe_match",
@@ -8042,7 +8144,9 @@
     },
     "tm-696164": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:32.690Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:40.996Z",
+      "lastReason": "no_safe_match"
     },
     "tm-698164": {
       "reason": "no_safe_match",
@@ -8062,7 +8166,9 @@
     },
     "tm-725912": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:43.429Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:43.078Z",
+      "lastReason": "no_safe_match"
     },
     "tm-729814": {
       "reason": "no_safe_match",
@@ -8070,15 +8176,15 @@
     },
     "tm-733576": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:48.352Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:45.080Z",
+      "lastReason": "no_safe_match"
     },
     "tm-743600": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:50.420Z"
-    },
-    "tm-746910": {
-      "reason": "no_safe_match",
-      "at": "2026-05-30T20:36:54.025Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:47.490Z",
+      "lastReason": "no_safe_match"
     },
     "tm-823486": {
       "reason": "commons_denylisted",
@@ -8094,7 +8200,9 @@
     },
     "tm-660867": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:52:11.536Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:46.948Z",
+      "lastReason": "no_safe_match"
     },
     "tm-3333": {
       "reason": "commons_denylisted",
@@ -8166,7 +8274,9 @@
     },
     "tm-221624": {
       "reason": "no_safe_match",
-      "at": "2026-05-30T20:45:31.955Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:35.326Z",
+      "lastReason": "no_safe_match"
     },
     "tm-270393": {
       "reason": "no_safe_match",
@@ -8350,7 +8460,9 @@
     },
     "tm-324358": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:51:25.493Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:24.661Z",
+      "lastReason": "no_safe_match"
     },
     "tm-236045": {
       "reason": "no_safe_match",
@@ -8358,11 +8470,15 @@
     },
     "tm-173504": {
       "reason": "commons_denylisted",
-      "at": "2026-06-14T01:51:28.989Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:38.219Z",
+      "lastReason": "commons_denylisted"
     },
     "tm-284732": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:51:32.583Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:42.662Z",
+      "lastReason": "no_safe_match"
     },
     "tm-318204": {
       "reason": "no_safe_match",
@@ -8378,7 +8494,9 @@
     },
     "tm-369316": {
       "reason": "commons_denylisted",
-      "at": "2026-06-14T01:51:40.788Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:43.375Z",
+      "lastReason": "commons_denylisted"
     },
     "tm-385105": {
       "reason": "commons_denylisted",
@@ -8390,15 +8508,13 @@
     },
     "tm-388165": {
       "reason": "commons_denylisted",
-      "at": "2026-06-14T01:51:42.961Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:44.096Z",
+      "lastReason": "commons_denylisted"
     },
     "tm-410425": {
       "reason": "no_safe_match",
       "at": "2026-06-14T01:51:46.744Z"
-    },
-    "tm-474800": {
-      "reason": "no_safe_match",
-      "at": "2026-06-14T01:51:51.475Z"
     },
     "tm-537860": {
       "reason": "no_safe_match",
@@ -8418,7 +8534,9 @@
     },
     "tm-155025": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:52:19.707Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:48.943Z",
+      "lastReason": "no_safe_match"
     },
     "tm-157635": {
       "reason": "no_safe_match",
@@ -8446,7 +8564,9 @@
     },
     "tm-211474": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:52:35.491Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:51.124Z",
+      "lastReason": "no_safe_match"
     },
     "tm-212862": {
       "reason": "no_safe_match",
@@ -8458,7 +8578,9 @@
     },
     "tm-223979": {
       "reason": "no_safe_match",
-      "at": "2026-06-14T01:52:41.185Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:53.863Z",
+      "lastReason": "no_safe_match"
     },
     "tm-229006": {
       "reason": "no_safe_match",
@@ -8470,11 +8592,15 @@
     },
     "tm-245337": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:12:01.704Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:33.157Z",
+      "lastReason": "no_safe_match"
     },
     "tm-251075": {
       "reason": "commons_denylisted",
-      "at": "2026-06-13T04:12:02.676Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:54.607Z",
+      "lastReason": "commons_denylisted"
     },
     "tm-271072": {
       "reason": "no_safe_match",
@@ -8486,11 +8612,9 @@
     },
     "tm-375382": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:12:12.705Z"
-    },
-    "tm-485585": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:12:15.513Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:03.901Z",
+      "lastReason": "no_safe_match"
     },
     "tm-493513": {
       "reason": "no_safe_match",
@@ -8502,7 +8626,9 @@
     },
     "tm-776798": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:12:30.210Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:52.068Z",
+      "lastReason": "no_safe_match"
     },
     "tm-792380": {
       "reason": "no_safe_match",
@@ -8510,15 +8636,21 @@
     },
     "tm-798404": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:12:34.264Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:54.369Z",
+      "lastReason": "no_safe_match"
     },
     "tm-80293": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:12:38.418Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:56.761Z",
+      "lastReason": "no_safe_match"
     },
     "tm-805714": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:12:40.750Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:01:58.935Z",
+      "lastReason": "no_safe_match"
     },
     "tm-811778": {
       "reason": "commons_denylisted",
@@ -8526,11 +8658,15 @@
     },
     "tm-849410": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:33:15.792Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:02:01.410Z",
+      "lastReason": "no_safe_match"
     },
     "tm-894914": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:33:18.065Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:02:04.536Z",
+      "lastReason": "no_safe_match"
     },
     "tm-917911": {
       "reason": "no_safe_match",
@@ -8538,11 +8674,15 @@
     },
     "tm-918969": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:33:22.424Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:02:06.940Z",
+      "lastReason": "no_safe_match"
     },
     "tm-939964": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:33:24.472Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:02:09.110Z",
+      "lastReason": "no_safe_match"
     },
     "tm-199248": {
       "reason": "no_safe_match",
@@ -8562,7 +8702,9 @@
     },
     "tm-261503": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:33:43.731Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:02:11.070Z",
+      "lastReason": "no_safe_match"
     },
     "tm-278837": {
       "reason": "no_safe_match",
@@ -8582,7 +8724,9 @@
     },
     "tm-504215": {
       "reason": "no_safe_match",
-      "at": "2026-06-13T04:34:04.876Z"
+      "attempts": 2,
+      "at": "2026-06-21T15:00:30.750Z",
+      "lastReason": "no_safe_match"
     },
     "tm-530742": {
       "reason": "no_safe_match",
@@ -8591,10 +8735,6 @@
     "tm-547499": {
       "reason": "no_safe_match",
       "at": "2026-06-13T04:34:08.948Z"
-    },
-    "tm-591949": {
-      "reason": "no_safe_match",
-      "at": "2026-06-13T04:34:14.620Z"
     },
     "tm-1056993": {
       "reason": "no_safe_match",
