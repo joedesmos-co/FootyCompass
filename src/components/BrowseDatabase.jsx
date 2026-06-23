@@ -28,6 +28,7 @@ import PageFallback, { PageLoadingInline } from './PageFallback';
 import PlayerAutocomplete from './PlayerAutocomplete';
 import PlayerCard from './PlayerCard';
 import BreadcrumbNav from './BreadcrumbNav';
+import RandomFootballJourney from './RandomFootballJourney';
 
 const BROWSE_PAGE_SIZE = 60;
 const browseLeagueTaxonomy = buildBrowseLeagueTaxonomy();
@@ -416,6 +417,8 @@ export default function BrowseDatabase() {
           </NavLink>
         </nav>
       </header>
+
+      <RandomFootballJourney variant="compact" className="browse-journey-cta" />
 
       {indexLoading && showPlayersTab ? <PageFallback label="Loading search…" /> : null}
 

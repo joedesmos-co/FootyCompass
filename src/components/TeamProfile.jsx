@@ -39,6 +39,7 @@ import BreadcrumbNav from './BreadcrumbNav';
 import CollectionStudyReturnBar from './CollectionStudyReturnBar';
 import EntityRelatedNav from './EntityRelatedNav';
 import ProfileKeepExploring from './ProfileKeepExploring';
+import FootballJourneyArrival from './FootballJourneyArrival';
 import { dedupeInternalLinks } from '../utils/internalLinking.js';
 import {
   buildKeepExploringLinks,
@@ -224,6 +225,7 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
     <div
       className={`page team-profile${premiumClub ? ' profile--premium team-profile--premium' : ''}`}
     >
+      <FootballJourneyArrival />
       <BreadcrumbNav
         items={[
           { label: CRUMB_HOME, to: '/' },

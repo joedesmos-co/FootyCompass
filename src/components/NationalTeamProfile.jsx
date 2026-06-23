@@ -33,6 +33,7 @@ import {
 } from '../utils/seoCtr.js';
 import { canonicalUrlForPath } from '../utils/brand.js';
 import BreadcrumbNav from './BreadcrumbNav';
+import FootballJourneyArrival from './FootballJourneyArrival';
 import CollectionStudyReturnBar from './CollectionStudyReturnBar';
 import EntityRelatedNav from './EntityRelatedNav';
 import ProfileKeepExploring from './ProfileKeepExploring';
@@ -306,6 +307,7 @@ export default function NationalTeamProfile() {
 
   return (
     <div className={`page national-team-profile${topTier ? ' profile--premium national-team-profile--premium' : ''}`}>
+      <FootballJourneyArrival />
       <BreadcrumbNav items={breadcrumbItems} />
       <CollectionStudyReturnBar />
 

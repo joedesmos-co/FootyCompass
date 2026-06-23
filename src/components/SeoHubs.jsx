@@ -40,6 +40,7 @@ import {
   FIELD_NATIONALITY,
   LINK_ALL_NATIONALITIES,
 } from '../utils/entityCopy.js';
+import RandomFootballJourney from './RandomFootballJourney';
 
 function useLandingSeo({ title, description, canonical, links, faqs }) {
   useEffect(() => {
@@ -127,11 +128,13 @@ export function SeoHubsIndex() {
   return (
     <div className="page collections-page explore-page">
       <BreadcrumbNav items={exploreBreadcrumbs()} />
-      <header className="page-header">
+      <header className="page-header page-header--explore">
         <p className="page-header__eyebrow">{EXPLORE_INDEX_EYEBROW}</p>
         <h1>{EXPLORE_INDEX_TITLE}</h1>
         <p>{EXPLORE_INDEX_LEDE}</p>
       </header>
+
+      <RandomFootballJourney variant="card" className="explore-journey-card" />
 
       <ul className="explore-index-grid explore-index-grid--compact" aria-label="Explore topics">
         <li className="explore-index-card">

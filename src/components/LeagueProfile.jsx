@@ -48,6 +48,7 @@ import CollectionStudyReturnBar from './CollectionStudyReturnBar';
 import { CRUMB_BROWSE, CRUMB_HOME, CTA_BACK_TO_BROWSE } from '../utils/entityCopy.js';
 import EntityRelatedNav from './EntityRelatedNav';
 import ProfileKeepExploring from './ProfileKeepExploring';
+import FootballJourneyArrival from './FootballJourneyArrival';
 import { buildLeagueHeroLede } from '../utils/learnerProfileCopy';
 import { isTopTierLeague } from '../utils/topTierPages';
 import {
@@ -151,6 +152,7 @@ function LeagueProfileContent({ league, leagueTeams, leaguePlayers }) {
 
   return (
     <div className={`page league-profile${topTier ? ' profile--premium' : ''}`}>
+      <FootballJourneyArrival />
       <BreadcrumbNav
         items={[
           { label: CRUMB_HOME, to: '/' },

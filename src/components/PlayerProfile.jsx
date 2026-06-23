@@ -39,6 +39,7 @@ import RelatedPlayersSection from './RelatedPlayersSection';
 import ShareButton from './ShareButton';
 import EntityRelatedNav from './EntityRelatedNav';
 import ProfileKeepExploring from './ProfileKeepExploring';
+import FootballJourneyArrival from './FootballJourneyArrival';
 import { buildPlayerInternalLinks } from '../utils/internalLinking.js';
 import { getCanonicalUrl, upsertJsonLdScript } from '../utils/jsonLd';
 import {
@@ -526,6 +527,7 @@ export default function PlayerProfile() {
     <div
       className={`page profile player-profile${profileEditorial.topTier ? ' profile--premium' : ''}${profileEditorial.enrichThin || (Array.isArray(player.knownFor) && player.knownFor.length) ? ' player-profile--enriched' : ''}`}
     >
+      <FootballJourneyArrival />
       <BreadcrumbNav
         items={[
           { label: CRUMB_HOME, to: '/' },

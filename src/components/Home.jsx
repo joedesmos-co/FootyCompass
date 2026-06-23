@@ -5,6 +5,7 @@ import { SITE_NAME } from '../utils/brand';
 import PageFallback from './PageFallback';
 import HomeQuickNav from './HomeQuickNav';
 import HomeTrustStrip from './HomeTrustStrip';
+import RandomFootballJourney from './RandomFootballJourney';
 
 const HomePopularNow = lazy(() => import('./HomePopularNow'));
 const HomeSpotlight = lazy(() => import('./HomeSpotlight'));
@@ -36,6 +37,7 @@ export default function Home() {
             <Link to="/browse" className="btn btn--secondary hero__cta-secondary">
               Browse players &amp; clubs
             </Link>
+            <RandomFootballJourney variant="inline" className="hero__journey-cta" />
           </div>
 
           <dl className="hero__stats" aria-label="FootyCompass at a glance">
@@ -81,6 +83,8 @@ export default function Home() {
       </section>
 
       <HomeQuickNav />
+
+      <RandomFootballJourney variant="banner" />
 
       <Suspense fallback={<PageFallback label="Loading picks…" />}>
         <HomePopularNow />
