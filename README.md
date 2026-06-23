@@ -1,32 +1,41 @@
-# FootyBrain
+# FootyCompass
 
-Soccer/football learning database with browse, team learning, and quiz modes. Frontend-only MVP using local sample data.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-Open the URL shown in the terminal (usually `http://localhost:5173`).
-
-## Build for production
-
-```bash
-npm run build
-npm run preview
-```
-
-## Project structure
-
-- `src/App.jsx` — routing and layout
-- `src/components/` — UI pages and cards
-- `src/data/sampleData.js` — leagues, teams, players (replace with API/Firebase later)
+FootyCompass is a football learning platform that helps fans learn players, clubs, leagues, and national teams through quizzes, profiles, collections, and World Cup content.
 
 ## Features
 
-- **Home** — entry points for Browse, Quiz, and Teams
-- **Browse Database** — filter by league/team, search, player cards and profiles
-- **Team Learning** — club profiles with history, fan guides, legends
-- **Quiz Mode** — progressive hints, loose answer matching, next question flow
+- 4,800+ players
+- 140+ clubs
+- National team hub
+- World Cup 2026 content
+- Player profiles
+- Club profiles
+- League profiles
+- Learning paths
+- Collections
+- Daily challenges
+- Search and filtering
+- Quiz modes
+- Save-to-learn system
+- Mobile responsive design
+
+## Live Site
+
+https://footycompass.com
+
+## Technology
+
+- React
+- Vite
+- Cloudflare Pages
+- Local curated football dataset
+
+## AI Usage
+
+AI was used as a development assistant for:
+- UI improvements
+- Data processing scripts
+- Image validation tooling
+- Refactoring and debugging
+
+All project direction, feature decisions, testing, deployment, and final implementation decisions were made by the project owner.
