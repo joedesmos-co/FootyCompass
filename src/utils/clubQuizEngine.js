@@ -236,6 +236,7 @@ function buildChoices(correctTeam, pool, difficulty, seed) {
  *   correctLabel: string,
  *   explanation?: string,
  *   difficulty: string,
+ *   promptTeamId?: string,
  * }} ClubQuizQuestion
  */
 
@@ -336,6 +337,7 @@ export function generateClubQuizQuestion(teams, leagues, categoryId, opts = {}) 
         correctLabel: leagueName,
         explanation: `${team.name} play in ${leagueName}.`,
         difficulty,
+        promptTeamId: team.id,
       };
       break;
     }
@@ -375,6 +377,7 @@ export function generateClubQuizQuestion(teams, leagues, categoryId, opts = {}) 
         correctLabel: correctCountry,
         explanation: `${team.name} — ${correctCountry}`,
         difficulty,
+        promptTeamId: team.id,
       };
       break;
     }
@@ -394,6 +397,7 @@ export function generateClubQuizQuestion(teams, leagues, categoryId, opts = {}) 
           correctLabel: team.name,
           explanation: `${team.name} ↔ ${rivalTeam.name}`,
           difficulty,
+          promptTeamId: rivalTeam.id,
         };
       } else {
         const correctRival =
@@ -434,6 +438,7 @@ export function generateClubQuizQuestion(teams, leagues, categoryId, opts = {}) 
           correctLabel: correctRival,
           explanation: `${team.name} — rivals include ${team.rivals.slice(0, 3).join(', ')}`,
           difficulty,
+          promptTeamId: team.id,
         };
       }
       break;

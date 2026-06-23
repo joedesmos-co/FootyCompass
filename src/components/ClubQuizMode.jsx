@@ -25,6 +25,7 @@ import { getLeagueDisplayName } from '../utils/footballDisplay';
 import { QUIZ_DIFFICULTY_OPTIONS } from '../utils/quizSession';
 import BreadcrumbNav from './BreadcrumbNav';
 import QuizSubNav from './QuizSubNav';
+import TeamBadge from './TeamBadge';
 import {
   getIncorrectMomentumCopy,
   getNextQuestionButtonLabel,
@@ -72,6 +73,11 @@ function ClubQuizCategoryPicker({ options, categoryId, onSelect, className = '' 
   );
 }
 
+function getQuestionChoiceTeam(choice, teamById) {
+  if (!choice?.id) return null;
+  return teamById.get(choice.id) ?? null;
+}
+
 export default function ClubQuizMode() {
   const [searchParams, setSearchParams] = useSearchParams();
   const requestedCategoryId = searchParams.get('category') ?? '';
@@ -112,6 +118,7 @@ export default function ClubQuizMode() {
     () => leagues.filter((l) => l.id && l.id !== 'external'),
     [],
   );
+  const teamById = useMemo(() => new Map(teams.map((team) => [team.id, team])), []);
 
   const poolSize = useMemo(
     () => (categoryId ? countClubQuizPool(teams, categoryId, { leagueId: leagueFilter }) : 0),
@@ -353,6 +360,10 @@ export default function ClubQuizMode() {
   const streakTier = getStreakTier(streak);
   const streakMilestoneLabel = getStreakMilestoneLabel(streak);
   const activeCat = getClubQuizCategoryById(categoryId);
+  const promptTeam = currentQuestion?.promptTeamId
+    ? teamById.get(currentQuestion.promptTeamId)
+    : null;
+  const feedbackTeam = feedback?.teamId ? teamById.get(feedback.teamId) : null;
   const nextQuestionLabel = feedback
     ? getNextQuestionButtonLabel(streak, feedback.isCorrect ? 'correct' : 'incorrect', {
         bestStreak,
@@ -560,10 +571,19 @@ export default function ClubQuizMode() {
 
       {currentQuestion && !sessionEnded ? (
         <section className="quiz-panel club-quiz__panel" aria-live="polite">
-          <p className="quiz-panel__prompt">{currentQuestion.prompt}</p>
-          {currentQuestion.subPrompt ? (
-            <p className="club-quiz__sub-prompt">{currentQuestion.subPrompt}</p>
-          ) : null}
+          <div className={`club-quiz__prompt-card${promptTeam ? ' club-quiz__prompt-card--with-badge' : ''}`}>
+            {promptTeam ? (
+              <span className="club-quiz__prompt-badge" aria-hidden="true">
+                <TeamBadge team={promptTeam} size="thumb" />
+              </span>
+            ) : null}
+            <div className="club-quiz__prompt-copy">
+              <p className="quiz-panel__prompt">{currentQuestion.prompt}</p>
+              {currentQuestion.subPrompt ? (
+                <p className="club-quiz__sub-prompt">{currentQuestion.subPrompt}</p>
+              ) : null}
+            </div>
+          </div>
 
           {streakMilestoneLabel ? (
             <p className="quiz-streak-indicator__milestone">{streakMilestoneLabel}</p>
@@ -571,16 +591,24 @@ export default function ClubQuizMode() {
 
           {!feedback && useMcq && currentQuestion.choices?.length ? (
             <div className="club-quiz__choices" role="group" aria-label="Answer choices">
-              {currentQuestion.choices.map((choice) => (
-                <button
-                  key={choice.id}
-                  type="button"
-                  className="club-quiz__choice-btn"
-                  onClick={() => handleMcqPick(choice)}
-                >
-                  {choice.label}
-                </button>
-              ))}
+              {currentQuestion.choices.map((choice) => {
+                const choiceTeam = getQuestionChoiceTeam(choice, teamById);
+                return (
+                  <button
+                    key={choice.id}
+                    type="button"
+                    className={`club-quiz__choice-btn${choiceTeam ? ' club-quiz__choice-btn--with-badge' : ''}`}
+                    onClick={() => handleMcqPick(choice)}
+                  >
+                    {choiceTeam ? (
+                      <span className="club-quiz__choice-badge" aria-hidden="true">
+                        <TeamBadge team={choiceTeam} size="thumb" />
+                      </span>
+                    ) : null}
+                    <span className="club-quiz__choice-label">{choice.label}</span>
+                  </button>
+                );
+              })}
             </div>
           ) : null}
 
@@ -611,8 +639,13 @@ export default function ClubQuizMode() {
               role="status"
             >
               <div
-                className={`quiz-feedback__banner${feedback.isCorrect ? ' quiz-feedback__banner--success' : ' quiz-feedback__banner--miss'}`}
+                className={`quiz-feedback__banner${feedback.isCorrect ? ' quiz-feedback__banner--success' : ' quiz-feedback__banner--miss'}${feedbackTeam ? ' quiz-feedback__banner--with-visual' : ''}`}
               >
+                {feedbackTeam ? (
+                  <div className="quiz-feedback__visual club-quiz__feedback-visual">
+                    <TeamBadge team={feedbackTeam} size="thumb" />
+                  </div>
+                ) : null}
                 <span className="quiz-feedback__icon" aria-hidden="true">
                   {feedback.isCorrect ? '✓' : '×'}
                 </span>
@@ -685,14 +718,25 @@ export default function ClubQuizMode() {
             <div className="quiz-summary__missed-block" id="club-quiz-missed">
               <h3 className="quiz-summary__subtitle">Clubs to revisit</h3>
               <ul className="quiz-summary__missed">
-                {sessionSummary.missed.map((q) => (
-                  <li key={q.id}>
-                    <Link to={`/team/${q.correctTeamId}`} className="quiz-summary__missed-link">
-                      <span>{q.correctLabel}</span>
-                      <span className="quiz-summary__missed-cta">Open club →</span>
-                    </Link>
-                  </li>
-                ))}
+                {sessionSummary.missed.map((q) => {
+                  const missedTeam = q.correctTeamId ? teamById.get(q.correctTeamId) : null;
+                  return (
+                    <li key={q.id}>
+                      <Link
+                        to={`/team/${q.correctTeamId}`}
+                        className={`quiz-summary__missed-link${missedTeam ? ' quiz-summary__missed-link--with-badge' : ''}`}
+                      >
+                        {missedTeam ? (
+                          <span className="quiz-summary__missed-badge" aria-hidden="true">
+                            <TeamBadge team={missedTeam} size="thumb" />
+                          </span>
+                        ) : null}
+                        <span>{q.correctLabel}</span>
+                        <span className="quiz-summary__missed-cta">Open club →</span>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ) : (

@@ -8379,6 +8379,27 @@ a.player-identity-chip:focus-visible {
   overflow-wrap: anywhere;
 }
 
+.quiz-summary__missed-link--with-badge {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  justify-content: stretch;
+}
+
+.quiz-summary__missed-link--with-badge .quiz-summary__missed-badge {
+  font-weight: initial;
+  overflow-wrap: normal;
+}
+
+.quiz-summary__missed-link--with-badge > span:nth-child(2) {
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
+.quiz-summary__missed-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
 .quiz-summary__missed-cta {
   flex-shrink: 0;
   color: var(--color-accent);
@@ -13605,12 +13626,38 @@ p.browse-results-empty {
   margin-bottom: 0;
 }
 
+.club-quiz__prompt-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.club-quiz__prompt-badge,
+.club-quiz__choice-badge {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.club-quiz__prompt-copy,
+.club-quiz__choice-label {
+  min-width: 0;
+}
+
+.club-quiz__prompt-card .quiz-panel__prompt {
+  margin: 0;
+}
+
 .club-quiz__sub-prompt {
   font-size: 1.05rem;
   font-weight: 650;
   color: var(--color-soft);
   margin: 0 0 var(--space-md);
   line-height: 1.45;
+}
+
+.club-quiz__prompt-card .club-quiz__sub-prompt {
+  margin: 0.25rem 0 0;
 }
 
 .club-quiz__choices {
@@ -13639,6 +13686,17 @@ p.browse-results-empty {
   transition:
     border-color 0.15s var(--ease-out),
     background 0.15s var(--ease-out);
+}
+
+.club-quiz__choice-btn--with-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-block: 0.65rem;
+}
+
+.club-quiz__choice-label {
+  overflow-wrap: anywhere;
 }
 
 .club-quiz__choice-btn:hover {
