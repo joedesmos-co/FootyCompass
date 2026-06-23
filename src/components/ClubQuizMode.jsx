@@ -38,11 +38,46 @@ import {
 } from '../utils/quizUiPolish';
 import QuizFeedbackActions from './QuizFeedbackActions';
 
+function ClubQuizCategoryPicker({ options, categoryId, onSelect, className = '' }) {
+  if (!options.length) {
+    return (
+      <p className="club-quiz__no-categories" role="status">
+        No club quiz categories have enough clubs for the current filter.
+      </p>
+    );
+  }
+
+  return (
+    <div className={`club-quiz__category-grid${className ? ` ${className}` : ''}`}>
+      {options.map(({ cat, count }) => {
+        const isActive = categoryId === cat.id;
+        return (
+          <button
+            key={cat.id}
+            type="button"
+            aria-pressed={isActive}
+            className={`club-quiz__category-card${isActive ? ' club-quiz__category-card--active' : ''}`}
+            onClick={() => onSelect(cat.id)}
+          >
+            <span className="club-quiz__category-icon" aria-hidden="true">
+              {cat.icon}
+            </span>
+            <span className="club-quiz__category-label">{cat.label}</span>
+            <span className="club-quiz__category-desc">{cat.description}</span>
+            <span className="club-quiz__category-meta">{count} clubs ready</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function ClubQuizMode() {
   const [searchParams, setSearchParams] = useSearchParams();
   const requestedCategoryId = searchParams.get('category') ?? '';
   const requestedLeagueId = searchParams.get('league') ?? '';
   const requestedDifficulty = searchParams.get('difficulty') ?? '';
+  const requestedAutoStart = searchParams.get('start') === '1';
 
   const activeCategory = useMemo(
     () => getClubQuizCategoryById(requestedCategoryId),
@@ -53,7 +88,7 @@ export default function ClubQuizMode() {
     ? requestedDifficulty
     : (activeCategory?.defaultDifficulty ?? 'medium');
 
-  const [categoryId, setCategoryId] = useState(() => requestedCategoryId || activeCategory?.id || '');
+  const [categoryId, setCategoryId] = useState(() => activeCategory?.id ?? '');
   const [leagueFilter, setLeagueFilter] = useState(requestedLeagueId);
   const [difficulty, setDifficulty] = useState(initialDifficulty);
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -67,6 +102,7 @@ export default function ClubQuizMode() {
   const [sessionEnded, setSessionEnded] = useState(false);
   const askedQuestionIdsRef = useRef([]);
   const askedTeamIdsRef = useRef([]);
+  const autoStartRef = useRef('');
 
   const sessionMilestoneRef = useRef(false);
   const questionIndexRef = useRef(0);
@@ -84,6 +120,14 @@ export default function ClubQuizMode() {
 
   const poolReady = poolSize >= CLUB_QUIZ_MIN_POOL;
   const useMcq = usesClubQuizMultipleChoice(difficulty);
+  const categoryOptions = useMemo(
+    () =>
+      CLUB_QUIZ_CATEGORY_CATALOG.map((cat) => ({
+        cat,
+        count: countClubQuizPool(teams, cat.id, { leagueId: leagueFilter }),
+      })).filter(({ count }) => count >= CLUB_QUIZ_MIN_POOL),
+    [leagueFilter],
+  );
 
   useEffect(() => {
     const seo = buildClubQuizSeoFromSearchParams(searchParams, { poolSize });
@@ -114,8 +158,9 @@ export default function ClubQuizMode() {
   }, [resetQuestionState]);
 
   const loadNextQuestion = useCallback(
-    (overrideCategoryId) => {
+    (overrideCategoryId, overrideDifficulty) => {
       const activeId = overrideCategoryId || categoryId;
+      const activeDifficulty = overrideDifficulty || difficulty;
       const size = activeId
         ? countClubQuizPool(teams, activeId, { leagueId: leagueFilter })
         : 0;
@@ -125,7 +170,7 @@ export default function ClubQuizMode() {
         askedQuestionIdsRef.current.at(-1),
       );
       let q = generateClubQuizQuestion(teams, leagues, activeId, {
-        difficulty,
+        difficulty: activeDifficulty,
         leagueId: leagueFilter,
         excludeTeamIds: askedTeamIdsRef.current,
         seed,
@@ -133,7 +178,7 @@ export default function ClubQuizMode() {
       if (!q && askedTeamIdsRef.current.length > 0) {
         askedTeamIdsRef.current = [];
         q = generateClubQuizQuestion(teams, leagues, activeId, {
-          difficulty,
+          difficulty: activeDifficulty,
           leagueId: leagueFilter,
           excludeTeamIds: [],
           seed: seed + 1,
@@ -157,17 +202,19 @@ export default function ClubQuizMode() {
 
   const handleSelectCategory = useCallback(
     (nextCategoryId) => {
+      const cat = getClubQuizCategoryById(nextCategoryId);
+      const nextDifficulty = cat?.defaultDifficulty ?? difficulty;
       resetSession();
       setCategoryId(nextCategoryId);
-      const cat = getClubQuizCategoryById(nextCategoryId);
+      setDifficulty(nextDifficulty);
       const params = new URLSearchParams();
       params.set('category', nextCategoryId);
-      if (cat?.defaultDifficulty) params.set('difficulty', cat.defaultDifficulty);
+      params.set('difficulty', nextDifficulty);
       if (leagueFilter) params.set('league', leagueFilter);
+      params.set('start', '1');
       setSearchParams(params, { replace: true });
-      if (cat?.defaultDifficulty) setDifficulty(cat.defaultDifficulty);
     },
-    [leagueFilter, resetSession, setSearchParams],
+    [difficulty, leagueFilter, resetSession, setSearchParams],
   );
 
   const handleClearLeagueFilter = useCallback(() => {
@@ -254,11 +301,32 @@ export default function ClubQuizMode() {
   };
 
   const handleStart = () => {
-    const id = categoryId || requestedCategoryId || activeCategory?.id || '';
+    const id = categoryId || activeCategory?.id || '';
     if (id && id !== categoryId) setCategoryId(id);
     resetSession();
     loadNextQuestion(id);
   };
+
+  useEffect(() => {
+    if (!requestedAutoStart || !categoryId || !poolReady || currentQuestion || sessionEnded) {
+      return;
+    }
+    const key = `${categoryId}:${leagueFilter}:${difficulty}`;
+    if (autoStartRef.current === key) return;
+    autoStartRef.current = key;
+    resetSession();
+    loadNextQuestion(categoryId, difficulty);
+  }, [
+    requestedAutoStart,
+    categoryId,
+    poolReady,
+    currentQuestion,
+    sessionEnded,
+    leagueFilter,
+    difficulty,
+    resetSession,
+    loadNextQuestion,
+  ]);
 
   const sessionSummary = useMemo(() => {
     if (!sessionEnded) return null;
@@ -339,80 +407,58 @@ export default function ClubQuizMode() {
           className="filters quiz-filters club-quiz__filters quiz-filters-details__body"
           aria-label="Club quiz settings"
         >
-        <div className="club-quiz__category-grid" role="list">
-          {CLUB_QUIZ_CATEGORY_CATALOG.map((cat) => {
-            const count = countClubQuizPool(teams, cat.id, { leagueId: leagueFilter });
-            const viable = count >= CLUB_QUIZ_MIN_POOL;
-            const isActive = categoryId === cat.id;
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                role="listitem"
-                className={`club-quiz__category-card${isActive ? ' club-quiz__category-card--active' : ''}${!viable ? ' club-quiz__category-card--thin' : ''}`}
-                disabled={!viable}
-                onClick={() => handleSelectCategory(cat.id)}
+          <ClubQuizCategoryPicker
+            options={categoryOptions}
+            categoryId={categoryId}
+            onSelect={handleSelectCategory}
+          />
+
+          <div className="quiz-filters__row">
+            <label className="quiz-filters__field">
+              <span>League filter</span>
+              <select
+                value={leagueFilter}
+                onChange={(e) => {
+                  resetSession();
+                  setLeagueFilter(e.target.value);
+                  const params = new URLSearchParams(searchParams);
+                  if (e.target.value) params.set('league', e.target.value);
+                  else params.delete('league');
+                  setSearchParams(params, { replace: true });
+                }}
               >
-                <span className="club-quiz__category-icon" aria-hidden="true">
-                  {cat.icon}
-                </span>
-                <span className="club-quiz__category-label">{cat.label}</span>
-                <span className="club-quiz__category-meta">
-                  {viable
-                    ? `${count} clubs`
-                    : `${count} of ${CLUB_QUIZ_MIN_POOL} clubs`}
-                </span>
-              </button>
-            );
-          })}
-        </div>
+                <option value="">All leagues</option>
+                {leagueOptions.map((league) => (
+                  <option key={league.id} value={league.id}>
+                    {getLeagueDisplayName(league)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <fieldset className="quiz-filters__difficulty">
+              <legend>Difficulty</legend>
+              <div className="quiz-difficulty-pills">
+                {QUIZ_DIFFICULTY_OPTIONS.map((option) => (
+                  <button
+                    key={option.id}
+                    type="button"
+                    className={`quiz-difficulty-pill${difficulty === option.id ? ' quiz-difficulty-pill--active' : ''}`}
+                    onClick={() => setDifficulty(option.id)}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+          </div>
 
-        <div className="quiz-filters__row">
-          <label className="quiz-filters__field">
-            <span>League filter</span>
-            <select
-              value={leagueFilter}
-              onChange={(e) => {
-                resetSession();
-                setLeagueFilter(e.target.value);
-                const params = new URLSearchParams(searchParams);
-                if (e.target.value) params.set('league', e.target.value);
-                else params.delete('league');
-                setSearchParams(params, { replace: true });
-              }}
-            >
-              <option value="">All leagues</option>
-              {leagueOptions.map((league) => (
-                <option key={league.id} value={league.id}>
-                  {getLeagueDisplayName(league)}
-                </option>
-              ))}
-            </select>
-          </label>
-          <fieldset className="quiz-filters__difficulty">
-            <legend>Difficulty</legend>
-            <div className="quiz-difficulty-pills">
-              {QUIZ_DIFFICULTY_OPTIONS.map((option) => (
-                <button
-                  key={option.id}
-                  type="button"
-                  className={`quiz-difficulty-pill${difficulty === option.id ? ' quiz-difficulty-pill--active' : ''}`}
-                  onClick={() => setDifficulty(option.id)}
-                >
-                  {option.label}
-                </button>
-              ))}
-            </div>
-          </fieldset>
-        </div>
-
-        {categoryId ? (
-          <p className="quiz-filters__focus-note">
-            {poolSize} clubs
-            {poolReady ? '' : ` (need ${CLUB_QUIZ_MIN_POOL}+ to start)`}
-            {leagueFilter ? ` · ${getLeagueDisplayName({ id: leagueFilter })}` : ''}
-          </p>
-        ) : null}
+          {categoryId ? (
+            <p className="quiz-filters__focus-note">
+              {poolSize} clubs
+              {poolReady ? '' : ` (need ${CLUB_QUIZ_MIN_POOL}+ to start)`}
+              {leagueFilter ? ` · ${getLeagueDisplayName({ id: leagueFilter })}` : ''}
+            </p>
+          ) : null}
         </section>
       </details>
 
@@ -443,36 +489,71 @@ export default function ClubQuizMode() {
 
       {!currentQuestion && !sessionEnded ? (
         <section className="quiz-panel quiz-panel--idle" aria-label="Start club quiz">
-          <div className="quiz-panel__empty">
-            <p>
-              {categoryId
-                ? poolReady
-                  ? 'Ready when you are — club questions use editorial data (stadiums, rivals, history).'
-                  : `${poolSize} of ${CLUB_QUIZ_MIN_POOL} clubs — try another category or clear the league filter.`
-                : 'Pick a club quiz category above to start.'}
-            </p>
-            <div className="quiz-panel__empty-actions">
-              {categoryId && poolReady ? (
-                <button type="button" className="btn btn--primary btn--large" onClick={handleStart}>
-                  Start club quiz
-                </button>
-              ) : null}
-              {categoryId && !poolReady && leagueFilter ? (
-                <button
-                  type="button"
-                  className="btn btn--secondary"
-                  onClick={handleClearLeagueFilter}
-                >
-                  Clear league filter
-                </button>
-              ) : null}
-              <Link to="/hubs/quizzes/clubs" className="btn btn--secondary">
-                Club quiz guides
-              </Link>
-              <Link to="/quiz" className="btn btn--secondary">
-                Player quiz
-              </Link>
-            </div>
+          <div className={`quiz-panel__empty${categoryId ? '' : ' club-quiz__starter'}`}>
+            {categoryId ? (
+              <>
+                <p>
+                  {poolReady
+                    ? 'Ready when you are — club questions use editorial data (stadiums, rivals, history).'
+                    : `${poolSize} of ${CLUB_QUIZ_MIN_POOL} clubs — try another category or clear the league filter.`}
+                </p>
+                <div className="quiz-panel__empty-actions">
+                  {poolReady ? (
+                    <button type="button" className="btn btn--primary btn--large" onClick={handleStart}>
+                      Start club quiz
+                    </button>
+                  ) : null}
+                  {!poolReady && leagueFilter ? (
+                    <button
+                      type="button"
+                      className="btn btn--secondary"
+                      onClick={handleClearLeagueFilter}
+                    >
+                      Clear league filter
+                    </button>
+                  ) : null}
+                  <Link to="/hubs/quizzes/clubs" className="btn btn--secondary">
+                    Club quiz guides
+                  </Link>
+                  <Link to="/quiz" className="btn btn--secondary">
+                    Player quiz
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="club-quiz__starter-copy">
+                  <h2>Choose a club quiz category</h2>
+                  <p>
+                    Start with stadiums, leagues, rivalries, history, identity, or a mixed club
+                    quiz. Categories with too little data are hidden automatically.
+                  </p>
+                </div>
+                <ClubQuizCategoryPicker
+                  options={categoryOptions}
+                  categoryId={categoryId}
+                  onSelect={handleSelectCategory}
+                  className="club-quiz__category-grid--starter"
+                />
+                <div className="quiz-panel__empty-actions">
+                  {leagueFilter && !categoryOptions.length ? (
+                    <button
+                      type="button"
+                      className="btn btn--secondary"
+                      onClick={handleClearLeagueFilter}
+                    >
+                      Clear league filter
+                    </button>
+                  ) : null}
+                  <Link to="/hubs/quizzes/clubs" className="btn btn--secondary">
+                    Club quiz guides
+                  </Link>
+                  <Link to="/quiz" className="btn btn--secondary">
+                    Player quiz
+                  </Link>
+                </div>
+              </>
+            )}
           </div>
         </section>
       ) : null}

@@ -139,6 +139,10 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
     Array.isArray(team.rivals) && team.rivals.length > 0
       ? getClubQuizPlayHref('rivalry', { leagueId: team.leagueId })
       : null;
+  const primaryClubQuizHref =
+    stadiumClubQuizHref ??
+    rivalryClubQuizHref ??
+    getClubQuizPlayHref('league', { leagueId: team.leagueId });
   const saved = isTeamSaved(team.id);
   const identityTags = formatClubIdentityTags(team.identityTags);
   const keyPlayerCards = buildTeamKeyPlayerCards(team, roster);
@@ -285,11 +289,20 @@ function TeamProfileContent({ team, leagueName, league, roster, squadLoading, le
             saved={saved}
             onToggle={() => toggleTeam(team.id)}
           />
-          {hasTeamQuiz ? (
+          {primaryClubQuizHref ? (
             <>
-              <Link to={`/quiz?team=${team.id}`} className="btn btn--primary">
+              <Link to={primaryClubQuizHref} className="btn btn--primary">
                 Start club quiz
               </Link>
+              {hasTeamQuiz ? (
+                <Link to={`/quiz?team=${team.id}`} className="btn btn--secondary">
+                  Squad player quiz
+                </Link>
+              ) : (
+                <a href="#team-squad" className="btn btn--secondary">
+                  Browse squad
+                </a>
+              )}
               <Link to={`/hubs/quizzes/team/${team.id}`} className="btn btn--secondary">
                 Club quiz guide
               </Link>

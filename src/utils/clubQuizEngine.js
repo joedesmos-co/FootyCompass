@@ -24,6 +24,8 @@ const KIT_CUE_PATTERNS = [
   /\b([A-Z][a-z]+(?:\s+[a-z]+)?)\s+is the colour\b/i,
 ];
 
+const MIXED_CLUB_QUIZ_CATEGORY_IDS = ['stadium', 'league', 'rivalry', 'history', 'kit'];
+
 /** @param {string} text */
 export function normalizeClubAnswer(text) {
   let n = normalizeAnswer(text);
@@ -152,6 +154,15 @@ export function getClubQuizEligibleTeams(teams, categoryId, filters = {}) {
   if (!cat) return [];
 
   switch (cat.id) {
+    case 'mixed': {
+      const byId = new Map();
+      for (const id of MIXED_CLUB_QUIZ_CATEGORY_IDS) {
+        for (const team of getClubQuizEligibleTeams(teams, id, filters)) {
+          byId.set(team.id, team);
+        }
+      }
+      return [...byId.values()];
+    }
     case 'stadium':
       return teamsWithUniqueStadium(pool.filter((t) => String(t.stadium ?? '').trim().length > 4));
     case 'league':
@@ -258,6 +269,25 @@ export function generateClubQuizQuestion(teams, leagues, categoryId, opts = {}) 
   let question;
 
   switch (cat.id) {
+    case 'mixed': {
+      const viableCategoryIds = MIXED_CLUB_QUIZ_CATEGORY_IDS.filter((id) => {
+        const size = getClubQuizEligibleTeams(teams, id, { leagueId }).filter(
+          (t) => !excludeTeamIds.includes(t.id),
+        ).length;
+        return size >= CLUB_QUIZ_MIN_POOL;
+      });
+      if (!viableCategoryIds.length) return null;
+      const nextCategoryId = viableCategoryIds[seed % viableCategoryIds.length];
+      const mixedQuestion = generateClubQuizQuestion(teams, leagues, nextCategoryId, {
+        difficulty,
+        leagueId,
+        excludeTeamIds,
+        seed: seed + 7,
+      });
+      return mixedQuestion
+        ? { ...mixedQuestion, id: `mixed-${mixedQuestion.id}` }
+        : null;
+    }
     case 'stadium': {
       question = {
         id: `stadium-${team.id}-${seed}`,

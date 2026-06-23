@@ -81,8 +81,31 @@ function ScrollToTop() {
   return null;
 }
 
+function getClubQuizRedirectPath(search) {
+  const params = new URLSearchParams(search);
+  const mode = String(params.get('mode') ?? '').toLowerCase();
+  const type = String(params.get('type') ?? '').toLowerCase();
+  const wantsClubQuiz =
+    mode === 'club' || mode === 'clubs' || type === 'club' || type === 'clubs';
+
+  if (!wantsClubQuiz) return null;
+
+  params.delete('mode');
+  params.delete('type');
+  if (params.has('category') && !params.has('start')) params.set('start', '1');
+
+  const nextSearch = params.toString();
+  return `/club-quiz${nextSearch ? `?${nextSearch}` : ''}`;
+}
+
 function QuizRoute() {
   const { search } = useLocation();
+  const clubQuizRedirectPath = getClubQuizRedirectPath(search);
+
+  if (clubQuizRedirectPath) {
+    return <Navigate to={clubQuizRedirectPath} replace />;
+  }
+
   return (
     <Suspense fallback={<PageFallback label="Loading quiz…" />}>
       <QuizMode key={search} />

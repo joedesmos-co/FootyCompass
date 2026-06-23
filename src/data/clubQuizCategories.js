@@ -3,7 +3,7 @@
  * Pool builders live in src/utils/clubQuizEngine.js.
  */
 
-/** @typedef {'stadium' | 'league' | 'rivalry' | 'country' | 'player-to-club' | 'history' | 'trophy' | 'kit'} ClubQuizCategoryId */
+/** @typedef {'stadium' | 'league' | 'rivalry' | 'country' | 'player-to-club' | 'history' | 'trophy' | 'kit' | 'mixed'} ClubQuizCategoryId */
 
 /**
  * @typedef {{
@@ -99,7 +99,7 @@ export const CLUB_QUIZ_CATEGORY_CATALOG = [
   },
   {
     id: 'kit',
-    label: 'Kit & colours',
+    label: 'Kits & identity',
     description: 'Shirt colours and kit cues from fan guides — visual memory without fake assets.',
     icon: '👕',
     defaultDifficulty: 'medium',
@@ -107,6 +107,17 @@ export const CLUB_QUIZ_CATEGORY_CATALOG = [
     seoTitle: 'Football kit colours quiz',
     seoDescription:
       'Kit and colours quiz: guess the club from shirt colour cues in editorial fan guides.',
+  },
+  {
+    id: 'mixed',
+    label: 'Mixed club quiz',
+    description: 'A rotating set of stadium, league, rivalry, history, and identity clues.',
+    icon: '🎲',
+    defaultDifficulty: 'medium',
+    mvpTier: 1,
+    seoTitle: 'Mixed football club quiz',
+    seoDescription:
+      'Mixed club quiz: stadiums, leagues, rivalries, history, and identity clues in one session.',
   },
 ];
 
@@ -130,5 +141,6 @@ export function getClubQuizPlayHref(categoryId, { difficulty, leagueId } = {}) {
     params.set('difficulty', difficulty);
   }
   if (leagueId) params.set('league', leagueId);
+  params.set('start', '1');
   return `/club-quiz?${params.toString()}`;
 }

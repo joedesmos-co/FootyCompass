@@ -13530,7 +13530,7 @@ p.browse-results-empty {
   background: var(--color-surface-2);
   color: var(--color-text);
   text-align: left;
-  min-height: 5.5rem;
+  min-height: 7.25rem;
   cursor: pointer;
   transition:
     border-color 0.15s var(--ease-out),
@@ -13566,9 +13566,43 @@ p.browse-results-empty {
   line-height: 1.25;
 }
 
+.club-quiz__category-desc {
+  color: var(--color-muted);
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+
 .club-quiz__category-meta {
   font-size: 0.72rem;
   color: var(--color-muted);
+  margin-top: auto;
+}
+
+.club-quiz__starter {
+  display: grid;
+  gap: var(--space-md);
+  text-align: left;
+}
+
+.club-quiz__starter-copy {
+  max-width: 44rem;
+}
+
+.club-quiz__starter-copy h2 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+}
+
+.club-quiz__starter-copy p,
+.club-quiz__no-categories {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.club-quiz__category-grid--starter {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  margin-bottom: 0;
 }
 
 .club-quiz__sub-prompt {
@@ -13671,7 +13705,7 @@ p.browse-results-empty {
 }
 
 .club-quiz__category-card {
-  min-height: 5.75rem;
+  min-height: 7.25rem;
   touch-action: manipulation;
 }
 
@@ -13780,6 +13814,10 @@ p.browse-results-empty {
 
   .club-quiz__category-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .club-quiz__category-grid--starter {
+    grid-template-columns: 1fr;
   }
 
   .hero__cta-primary,
@@ -15061,7 +15099,7 @@ p.browse-results-empty {
   }
 
   .club-quiz__category-card {
-    min-height: 6rem;
+    min-height: 7.25rem;
     padding: 0.75rem;
   }
 
@@ -15541,6 +15579,10 @@ p.browse-results-empty {
 
   .club-quiz__category-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .club-quiz__category-grid--starter {
+    grid-template-columns: 1fr;
   }
 }
 
