@@ -17,30 +17,26 @@ export default function Home() {
     <div className="home home--premium home--sports">
       <section className="hero hero--home hero--redesign hero--polished hero--sports">
         <div className="hero__content">
-          <p className="hero__eyebrow">Premier League · La Liga · MLS · World Cup 2026</p>
+          <p className="hero__eyebrow">{SITE_NAME} · football learning</p>
           <h1 className="hero__title hero__title--seo">
             Know the game. Quiz yourself.
           </h1>
-          <p className="hero__brand-line">
-            <span className="hero__brand-name">{SITE_NAME}</span>
-            <span className="hero__brand-tagline">Players, clubs, and football quizzes</span>
-          </p>
           <p className="hero__subcopy hero__subcopy--lead">
             Study squads, test yourself on names and club knowledge, and follow the road to World Cup
             2026 — free, no account.
           </p>
 
-          <div className="hero__actions hero__actions--stack">
-            <Link to="/quiz" className="btn btn--primary btn--large hero__cta-primary">
+          <div className="hero__actions hero__actions--inline">
+            <Link to="/quiz" className="btn btn--primary btn--large">
               Play player quiz
             </Link>
-            <Link to="/browse" className="btn btn--secondary hero__cta-secondary">
+            <Link to="/browse" className="btn btn--secondary btn--large">
               Browse players &amp; clubs
             </Link>
-            <RandomFootballJourney variant="inline" className="hero__journey-cta" />
           </div>
+          <RandomFootballJourney variant="inline" className="hero__journey-cta" />
 
-          <dl className="hero__stats" aria-label="FootyCompass at a glance">
+          <dl className="hero__stats hero__scoreboard" aria-label="FootyCompass at a glance">
             <div>
               <dt>{playerCount}</dt>
               <dd>Players</dd>
@@ -56,30 +52,21 @@ export default function Home() {
           </dl>
         </div>
 
-        <div className="hero-visual" aria-hidden="true">
-          <div className="hero-visual__pitch">
-            <span className="hero-visual__line hero-visual__line--half" />
-            <span className="hero-visual__line hero-visual__line--box" />
-            <article className="floating-card floating-card--primary">
-              <span className="floating-card__label">Player quiz</span>
-              <strong>Guess from hints</strong>
-              <span>Club · nation · role</span>
-            </article>
-            <article className="floating-card floating-card--club">
-              <span className="floating-card__label">Club quiz</span>
-              <strong>Stadiums &amp; rivals</strong>
-              <span>League · history</span>
-            </article>
-            <article className="floating-card floating-card--quiz">
-              <span className="floating-card__label">Daily</span>
-              <strong>5 questions</strong>
-              <span>Streak · XP</span>
-            </article>
-            <div className="squad-tile squad-tile--one" />
-            <div className="squad-tile squad-tile--two" />
-            <div className="squad-tile squad-tile--three" />
-          </div>
-        </div>
+        <aside className="hero-preview" aria-label="Ways to train">
+          <p className="hero-preview__label">Ways to train</p>
+          <Link to="/quiz" className="hero-preview__item">
+            <span className="hero-preview__mode">Player quiz</span>
+            <span className="hero-preview__desc">Guess players from club, nation &amp; role hints</span>
+          </Link>
+          <Link to="/club-quiz" className="hero-preview__item">
+            <span className="hero-preview__mode">Club quiz</span>
+            <span className="hero-preview__desc">Stadiums, rivalries, history &amp; kits</span>
+          </Link>
+          <Link to="/daily" className="hero-preview__item">
+            <span className="hero-preview__mode">Daily challenge</span>
+            <span className="hero-preview__desc">Five quick questions, build a streak</span>
+          </Link>
+        </aside>
       </section>
 
       <HomeQuickNav />
