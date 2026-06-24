@@ -5,12 +5,12 @@
 
 import {
   COUNTRY_SESSION_POOL_CAP,
+  FEATURED_NATIONAL_TEAM_IDS,
   INTERNATIONAL_PER_NATION_CAP,
   INTERNATIONAL_UNION_POOL_CAP,
   WORLD_CUP_QUIZ_COLLECTION_IDS,
   WORLD_CUP_QUIZ_PREP_PARAM,
 } from './worldCupQuizConstants';
-import { FEATURED_NATIONAL_TEAM_IDS } from './worldCupHubData';
 import { getViableLiveNationalTeams, LIVE_NATIONAL_TEAM_IDS } from './nationalTeamData';
 
 export {

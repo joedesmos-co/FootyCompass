@@ -12,6 +12,7 @@ import { getPlayerById, getTeamName } from './sampleData';
 import { getWorldCup2026GroupsSummary } from './worldCup2026Prep';
 import { isQuizEligiblePlayer } from '../utils/quizPlayerRules';
 import { getViableWorldCupCountryQuizPoolMetas } from '../utils/worldCupQuizPools';
+import { FEATURED_NATIONAL_TEAM_IDS } from './worldCupQuizConstants';
 
 export const WORLD_CUP_HUB_META = {
   editionYear: 2026,
@@ -25,18 +26,8 @@ export const WORLD_CUP_HUB_META = {
   formatNote: '48-team edition · co-hosted across North America',
 };
 
-/** Live nations highlighted on the hub (order = editorial priority). */
-export const FEATURED_NATIONAL_TEAM_IDS = [
-  'argentina',
-  'brazil',
-  'france',
-  'england',
-  'germany',
-  'netherlands',
-  'spain',
-  'united-states',
-  'mexico',
-];
+/** Live nations highlighted on the hub — defined in worldCupQuizConstants, re-exported here for existing consumers. */
+export { FEATURED_NATIONAL_TEAM_IDS };
 
 const TOP_PLAYERS_COLLECTION_ID = 'world-cup-stars';
 const LEGENDS_COLLECTION_ID = 'world-cup-legends';

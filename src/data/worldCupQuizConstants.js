@@ -5,6 +5,19 @@
 /** URL flag: `?worldCup=prep` marks a prep-session (not live tournament mode). */
 export const WORLD_CUP_QUIZ_PREP_PARAM = 'prep';
 
+/** Live nations highlighted on the World Cup hub (order = editorial priority). */
+export const FEATURED_NATIONAL_TEAM_IDS = [
+  'argentina',
+  'brazil',
+  'france',
+  'england',
+  'germany',
+  'netherlands',
+  'spain',
+  'united-states',
+  'mexico',
+];
+
 /** Max quiz-ready players per single-country session (importance order). */
 export const COUNTRY_SESSION_POOL_CAP = 12;
 
