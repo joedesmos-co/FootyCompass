@@ -17603,7 +17603,7 @@ section.empty-state,
    Random Football Journey — compact discovery module
    ============================================================ */
 .football-journey--banner {
-  margin: 0.35rem 0;
+  margin: 0;
   border: 1px solid var(--color-border);
   border-left: 3px solid var(--color-accent);
   border-radius: var(--radius-md);
@@ -17616,8 +17616,9 @@ section.empty-state,
 }
 
 .football-journey--banner .football-journey__body {
-  gap: 0.6rem 1rem;
-  padding: 0.85rem 1.05rem;
+  align-items: center;
+  gap: var(--space-md) var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
 }
 
 .football-journey--banner .football-journey__eyebrow {
@@ -17634,6 +17635,13 @@ section.empty-state,
 .football-journey--banner .football-journey__lede {
   min-height: 0;
   font-size: 0.86rem;
+}
+
+.football-journey--banner .football-journey__cta {
+  min-height: var(--btn-height);
+  min-width: auto;
+  padding: 0.5rem 1.15rem;
+  font-size: 0.9rem;
 }
 
 .football-journey__icon {
@@ -17742,5 +17750,164 @@ section.empty-state,
 
   .hero.hero--home.hero--polished .hero__scoreboard dt {
     font-size: 1.35rem;
+  }
+}
+
+/* ============================================================
+   Homepage spacing & hierarchy polish
+   One flex gap rhythm — no stacked section margins or dividers.
+   ============================================================ */
+.home.home--premium.home--sports {
+  gap: var(--space-lg);
+}
+
+.home.home--premium.home--sports > .hero,
+.home.home--premium.home--sports > .home-quick-nav,
+.home.home--premium.home--sports > .football-journey--banner,
+.home.home--premium.home--sports > .home-popular-now,
+.home.home--premium.home--sports > .home-spotlight,
+.home.home--premium.home--sports > .home-footer-trust {
+  margin: 0;
+}
+
+.home.home--premium.home--sports .home-quick-nav {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.home.home--premium.home--sports .home-popular-now {
+  gap: var(--space-lg);
+}
+
+.home.home--premium.home--sports .home-popular-now__section + .home-popular-now__section {
+  margin-top: 0;
+  padding-top: var(--space-lg);
+}
+
+.home.home--premium.home--sports .home-section-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-sm);
+}
+
+.home.home--premium.home--sports .home-section-head h2,
+.home.home--premium.home--sports .home-popular-now__head h2,
+.home.home--premium.home--sports .home-spotlight__header h2 {
+  margin: 0;
+  font-size: clamp(1.125rem, 2.2vw, 1.25rem);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.2;
+}
+
+.home.home--premium.home--sports .home-section-head p,
+.home.home--premium.home--sports .home-popular-now__head p,
+.home.home--premium.home--sports .home-spotlight__header p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--color-muted);
+}
+
+.home.home--premium.home--sports .home-popular-now__grid {
+  gap: var(--space-sm);
+}
+
+.home.home--premium.home--sports .home-popular-now__card {
+  min-height: 4.25rem;
+  justify-content: center;
+}
+
+.home.home--premium.home--sports .home-popular-now__card strong {
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.home.home--premium.home--sports .home-popular-now__card span {
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.home.home--premium.home--sports .home-quick-nav__link {
+  min-height: 3.5rem;
+}
+
+.home.home--premium.home--sports .home-spotlight {
+  margin: 0;
+  padding: var(--space-lg);
+}
+
+.home.home--premium.home--sports .home-spotlight__header {
+  margin-bottom: var(--space-sm);
+}
+
+.home.home--premium.home--sports .home-footer-trust {
+  margin: 0;
+  padding: var(--space-lg) 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Random Football Journey — vertically centered, compact CTA */
+.home.home--premium.home--sports .football-journey--banner {
+  margin: 0;
+}
+
+.home.home--premium.home--sports .football-journey--banner .football-journey__body {
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  gap: var(--space-md) var(--space-lg);
+}
+
+.home.home--premium.home--sports .football-journey--banner .football-journey__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home.home--premium.home--sports .football-journey--banner .football-journey__title {
+  margin: 0 0 var(--space-2xs);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.home.home--premium.home--sports .football-journey--banner .football-journey__lede {
+  margin: 0;
+}
+
+.home.home--premium.home--sports .football-journey--banner .football-journey__cta {
+  align-self: center;
+  min-width: auto;
+  min-height: var(--btn-height);
+  padding: 0.5rem 1.15rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .home.home--premium.home--sports {
+    gap: var(--space-md);
+  }
+
+  .home.home--premium.home--sports .home-popular-now {
+    gap: var(--space-md);
+  }
+
+  .home.home--premium.home--sports .home-popular-now__section + .home-popular-now__section {
+    padding-top: var(--space-md);
+  }
+}
+
+@media (max-width: 560px) {
+  .home.home--premium.home--sports .football-journey--banner .football-journey__body {
+    padding: var(--space-md);
+    gap: var(--space-sm);
+  }
+
+  .home.home--premium.home--sports .football-journey--banner .football-journey__cta {
+    width: 100%;
+    align-self: stretch;
   }
 }
