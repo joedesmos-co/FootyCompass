@@ -86,6 +86,8 @@ export default function Home() {
 
       <RandomFootballJourney variant="banner" />
 
+      <hr className="fc-pitch-divider" aria-hidden="true" />
+
       <Suspense fallback={<PageFallback label="Loading picks…" />}>
         <HomePopularNow />
       </Suspense>

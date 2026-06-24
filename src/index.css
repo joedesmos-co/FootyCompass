@@ -17219,3 +17219,466 @@ section.empty-state,
     font-size: 1.22rem;
   }
 }
+
+/* ============================================================
+   FootyCompass visual identity refresh (2026-06)
+   Magazine + matchday energy: pitch motifs, scouting cards,
+   scoreboard quiz UI, branded hero. Additive layer — appended
+   last so equal-specificity selectors win without !important.
+   ============================================================ */
+:root {
+  /* Extended spacing scale for stronger rhythm */
+  --space-2xs: 0.2rem;
+  --space-2xl: 2.4rem;
+  --space-3xl: 3.25rem;
+  /* Football identity tokens */
+  --fc-chalk: rgba(228, 242, 234, 0.5);
+  --fc-chalk-soft: rgba(228, 242, 234, 0.16);
+  --fc-stripe: rgba(52, 211, 153, 0.05);
+  --fc-pitch-deep: rgba(6, 47, 38, 0.55);
+  --fc-accent-grad: linear-gradient(118deg, var(--color-accent), var(--color-cyan));
+  --fc-gold-grad: linear-gradient(135deg, var(--color-gold), #f97316);
+  --fc-card-accent: var(--color-accent);
+  --fc-shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 14px 30px rgba(0, 0, 0, 0.26);
+}
+
+[data-theme='matchday-light'] {
+  --fc-chalk: rgba(15, 76, 58, 0.32);
+  --fc-chalk-soft: rgba(15, 76, 58, 0.12);
+  --fc-pitch-deep: rgba(13, 159, 110, 0.12);
+  --fc-shadow-card: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 12px 26px rgba(15, 26, 22, 0.12);
+}
+
+/* —— Football-inspired divider: chalk line with centre spot —— */
+.fc-pitch-divider {
+  position: relative;
+  height: 1px;
+  margin: var(--space-lg) 0;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--fc-chalk-soft) 12%,
+    var(--fc-chalk-soft) 88%,
+    transparent
+  );
+}
+
+.fc-pitch-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--fc-chalk);
+  border-radius: 50%;
+  background: var(--color-bg);
+}
+
+/* —— Magazine section headers: accent kicker bar —— */
+.section-heading--title,
+.collections-section-title,
+.entity-related-nav__title,
+.profile-keep-exploring h2 {
+  position: relative;
+  padding-left: 0.7rem;
+}
+
+.section-heading--title::before,
+.collections-section-title::before,
+.entity-related-nav__title::before,
+.profile-keep-exploring h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.16em;
+  bottom: 0.16em;
+  width: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--fc-accent-grad);
+}
+
+/* —— Button hierarchy: branded primary, defined tertiary —— */
+.btn--primary {
+  background: var(--fc-accent-grad);
+  background-size: 140% 140%;
+  color: #03130c;
+  font-weight: 750;
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: linear-gradient(118deg, #6ee7b7, #7dd3fc);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.18) inset,
+    0 8px 20px rgba(52, 211, 153, 0.26);
+}
+
+.btn--secondary {
+  border-color: var(--color-border-strong);
+}
+
+/* ============================================================
+   Scouting cards — player / club / league / national team
+   ============================================================ */
+.player-card,
+.team-card {
+  box-shadow: var(--fc-shadow-card);
+}
+
+/* Top accent stripe reads like a collectible card header band */
+.player-card::before,
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--fc-accent-grad);
+  opacity: 0.9;
+}
+
+.team-card {
+  position: relative;
+}
+
+/* Faint pitch-stripe texture behind card content */
+.player-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    115deg,
+    var(--fc-stripe) 0,
+    var(--fc-stripe) 1px,
+    transparent 1px,
+    transparent 16px
+  );
+  opacity: 0.6;
+}
+
+.player-card > *,
+.team-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Importance score → "scouting cap" badge */
+.player-card__score {
+  flex-direction: column;
+  min-width: 2.7rem;
+  min-height: 2.55rem;
+  padding: 0.22rem 0.5rem;
+  border-radius: var(--radius-md);
+  background: var(--fc-gold-grad);
+  box-shadow: 0 6px 16px rgba(251, 191, 36, 0.24);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.player-card__score::before {
+  content: 'FC';
+  font-size: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  opacity: 0.72;
+}
+
+/* Position pill: clearer, badge-like */
+.player-card__position-pill {
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  background: rgba(56, 189, 248, 0.13);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Meta tiles: crisper stat-sheet look */
+.player-card__meta div,
+.team-card__facts div {
+  border-color: var(--fc-chalk-soft);
+  background: var(--fc-pitch-deep);
+}
+
+.player-card__meta dd,
+.team-card__facts dd {
+  font-variant-numeric: tabular-nums;
+}
+
+.player-card__link {
+  font-weight: 750;
+}
+
+/* Club card: crest + league colour band emphasis */
+.team-card__league {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  letter-spacing: 0.05em;
+}
+
+.team-card__league::before {
+  content: '';
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 2px;
+  background: var(--fc-accent-grad);
+}
+
+/* ============================================================
+   Homepage hero — branded, stadium energy
+   ============================================================ */
+.hero.hero--home.hero--polished {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background:
+    radial-gradient(ellipse 70% 55% at 88% -10%, rgba(92, 200, 255, 0.16), transparent 60%),
+    radial-gradient(ellipse 90% 70% at 8% 0%, rgba(52, 211, 153, 0.16), transparent 55%),
+    linear-gradient(165deg, rgba(13, 148, 136, 0.22), rgba(15, 23, 42, 0.46));
+}
+
+/* Chalk baseline + centre-circle arc along the bottom of the hero */
+.hero.hero--home.hero--polished::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  pointer-events: none;
+  opacity: 0.5;
+  background:
+    radial-gradient(circle at 50% 100%, transparent 0 58px, var(--fc-chalk-soft) 58px 59px, transparent 59px),
+    linear-gradient(0deg, var(--fc-chalk-soft), var(--fc-chalk-soft)) bottom / 100% 1px no-repeat;
+}
+
+.hero.hero--home.hero--polished .hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__brand-name {
+  background: var(--fc-accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--color-accent);
+}
+
+/* Hero stat tiles read like a scoreboard */
+.hero.hero--home.hero--polished .hero__stats div {
+  position: relative;
+  overflow: hidden;
+  border-color: var(--fc-chalk-soft);
+  background: rgba(5, 12, 10, 0.42);
+}
+
+.hero.hero--home.hero--polished .hero__stats div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--fc-accent-grad);
+  opacity: 0.7;
+}
+
+.hero.hero--home.hero--polished .hero__stats dt {
+  font-variant-numeric: tabular-nums;
+  background: var(--fc-accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================================================
+   Random Football Journey — signature feature treatment
+   ============================================================ */
+.football-journey--banner {
+  border-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-border));
+  background:
+    linear-gradient(125deg, rgba(52, 211, 153, 0.16), rgba(56, 189, 248, 0.06) 60%, transparent),
+    repeating-linear-gradient(
+      90deg,
+      var(--fc-stripe) 0,
+      var(--fc-stripe) 42px,
+      transparent 42px,
+      transparent 84px
+    ),
+    var(--card-bg);
+  box-shadow: var(--fc-shadow-card);
+}
+
+/* "Ticket notch" edges to signal a special/signature feature */
+.football-journey--banner::before,
+.football-journey--banner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 1.1rem;
+  height: 1.1rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--color-bg);
+  z-index: 2;
+}
+
+.football-journey--banner::before {
+  left: -0.6rem;
+}
+
+.football-journey--banner::after {
+  right: -0.6rem;
+}
+
+.football-journey--banner .football-journey__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-accent) 16%, transparent);
+}
+
+.football-journey--banner .football-journey__eyebrow::before {
+  content: '★';
+  font-size: 0.7em;
+}
+
+/* ============================================================
+   Quiz — matchday / training mode
+   ============================================================ */
+.quiz-scoreboard div {
+  position: relative;
+  overflow: hidden;
+  border-color: var(--fc-chalk-soft);
+  background: linear-gradient(180deg, rgba(5, 12, 10, 0.7), rgba(16, 26, 23, 0.95));
+}
+
+.quiz-scoreboard div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--fc-accent-grad);
+  opacity: 0.65;
+}
+
+.quiz-scoreboard strong {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.quiz-scoreboard__hot {
+  text-shadow: 0 0 14px rgba(252, 211, 77, 0.4);
+}
+
+/* Mode / category picker label feels like a coach's clipboard heading */
+.quiz-mode-picker__label,
+.quiz-themes-picker__head {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.quiz-mode-picker__label::before {
+  content: '';
+  width: 0.85rem;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--fc-accent-grad);
+}
+
+/* Selected category reads like a chosen line-up slot */
+.quiz-mode-card--active {
+  border-color: var(--color-accent);
+  background: linear-gradient(180deg, rgba(52, 211, 153, 0.16), rgba(52, 211, 153, 0.06));
+  box-shadow:
+    0 0 0 1px rgba(52, 211, 153, 0.28),
+    0 8px 20px rgba(52, 211, 153, 0.14);
+}
+
+.quiz-mode-card--active .quiz-mode-card__meta::after {
+  content: ' ✓ selected';
+}
+
+.quiz-panel__prompt {
+  letter-spacing: var(--tracking-tight);
+}
+
+/* Ensure quiz club crests keep their aspect and never stretch */
+.quiz-panel img[src*='/images/clubs/'],
+.quiz-mode-card img[src*='/images/clubs/'],
+.club-quiz-discovery img[src*='/images/clubs/'] {
+  object-fit: contain;
+}
+
+/* ============================================================
+   Profile — cleaner stat rows, less generic panels
+   ============================================================ */
+.profile-stat-strip {
+  border-color: var(--fc-chalk-soft);
+  background: linear-gradient(180deg, rgba(5, 12, 10, 0.4), rgba(14, 26, 22, 0.3));
+}
+
+.profile-stat-strip__item {
+  position: relative;
+  border-right-color: var(--fc-chalk-soft);
+}
+
+.profile-stat-strip__item dd {
+  font-variant-numeric: tabular-nums;
+}
+
+.profile-stat-strip__item dt {
+  color: var(--color-accent);
+  opacity: 0.85;
+}
+
+/* Subtle chalk baseline under sports profile heroes */
+.player-profile__hero--sports,
+.club-hero--sports,
+.national-hero--sports {
+  position: relative;
+}
+
+.player-profile__hero--sports::after,
+.club-hero--sports::after,
+.national-hero--sports::after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--fc-chalk-soft) 30%, var(--fc-chalk-soft) 70%, transparent);
+}
+
+/* ============================================================
+   Mobile safety — keep refresh tidy on small screens
+   ============================================================ */
+@media (max-width: 520px) {
+  .football-journey--banner::before,
+  .football-journey--banner::after {
+    display: none;
+  }
+
+  .player-card__score {
+    min-width: 2.5rem;
+    min-height: 2.35rem;
+  }
+
+  .hero.hero--home.hero--polished::before {
+    height: 80px;
+  }
+
+  .player-card::after {
+    opacity: 0.4;
+  }
+}
